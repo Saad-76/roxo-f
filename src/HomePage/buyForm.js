@@ -22,8 +22,8 @@ const BuyForm = () => {
         </h3>
       </div>
       <div className="col-md-12 buy-card-main">
-        <div className="col-md-4"></div>
-        <div className="col-md-4">
+        <div className="col-md-3"></div>
+        <div className="col-md-6">
           <div className="buy-card-body">
             <div className="buy-card-body-flex">
               <div className="col-md-12 sell-button-main">
@@ -86,7 +86,7 @@ const BuyForm = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-4"></div>
+        <div className="col-md-3"></div>
       </div>
       <Footer />
     </>

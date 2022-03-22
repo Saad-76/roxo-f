@@ -48,9 +48,12 @@ padding: 8px 0px;
   color: white;
   display: flex;
   justify-content: space-between;
+  background-color: #262250;
+  margin-top: 120px;
 }
 .footer-roxo-icons h3 {
   color: white;
+
 }
 .inner-icons {
   display: flex;

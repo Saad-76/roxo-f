@@ -31,6 +31,8 @@
   /* padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 30px; */
+  padding: 0px 79px;
+
 }
 .gaming-section-pad {
   padding-left: 40px;
@@ -241,6 +243,8 @@
   .gaming-nft-img-resp-margin {
     margin-top: 20px;
   }
-
+  .gaming-nft-outer-pad{
+    padding: 0px !important;
+  }
 
 }

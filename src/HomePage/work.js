@@ -56,7 +56,7 @@ const Work = () => {
             <div className="col-md-8 d-flex">
               <div className="work-button-style-outer">
                 <div>
-                  <button className="work-button-style" onClick={handleDataOne}>
+                  <button className="work-button-style active " onClick={handleDataOne}>
                     1
                   </button>
                 </div>

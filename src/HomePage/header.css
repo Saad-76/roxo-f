@@ -73,8 +73,8 @@
 
   border-radius: 12px;
   color: #ffffff;
-  background-color: #ff409a;
-  border: none;
+  background: #58acff;
+    border: none;
   padding: 5px 10px;
 }
 .dropdown-content {
@@ -285,12 +285,12 @@
   color: white !important;
   width: 120px !important;
   height: 40px !important;
-  border: 1px solid #ff409a !important;
+  border: 1px solid  #58acff !important;
   text-align: center !important;
   background: transparent !important;
 }
 .header-price-button-style:hover{
-  background-color: #ff409a !important;
+  background-color: #58acff !important;
 }
 
 @media only screen and (max-width: 900px) {

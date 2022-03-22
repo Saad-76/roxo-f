@@ -66,6 +66,11 @@
   color: white;
   font-weight: bold;
 }
+.active {
+  background-color: #393469;
+  color: white;
+  font-weight: bold;
+}
 .stepper-button-inner-line {
   border-bottom: 6px solid #393469;
   width: 8em;

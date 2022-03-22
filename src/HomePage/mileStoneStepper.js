@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState,useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import "./mileStoneStepper.css";
 
@@ -35,6 +35,20 @@ const MileStoneStepper = () => {
     setDataFour(true);
   };
 
+  // useEffect(() => {
+  //   let header = document.getElementById("myDIV");
+  // let btns = header.getElementsByClassName("stepper-button-style");
+  // for (let i = 0; i < btns.length; i++) {
+  //   btns[i].addEventListener("click", function() {
+  //   let current = document.getElementsByClassName("active");
+  //   current[0].className = current[0].className.replace(" active", "");
+  //   this.className += " active";
+  //   });
+  // }
+  // },[]);
+  
+  
+
   return (
     <div className="milestone-steper-pad">
       <div className="milestone-heading-outer">
@@ -43,10 +57,10 @@ const MileStoneStepper = () => {
       {/* -------button-style------------------ */}
       <div className="col-md-12 d-flex">
         <div className="col-md-2"></div>
-        <div className="col-md-8 stepper-button-outer">
+        <div className="col-md-8 stepper-button-outer " id="myDIV">
           <button
             type="button"
-            className="stepper-button-style"
+            className="stepper-button-style  active"
             onClick={handleDataFour}
           >
             Q4
@@ -54,7 +68,7 @@ const MileStoneStepper = () => {
           <div className="stepper-button-inner-line"></div>
           <button
             type="button"
-            className="stepper-button-style"
+            className="stepper-button-style "
             onClick={handleDataOne}
           >
             Q1
@@ -63,7 +77,7 @@ const MileStoneStepper = () => {
 
           <button
             type="button"
-            className="stepper-button-style"
+            className="stepper-button-style "
             onClick={handleDataTwo}
           >
             Q2
@@ -72,7 +86,7 @@ const MileStoneStepper = () => {
 
           <button
             type="button"
-            className="stepper-button-style"
+            className="stepper-button-style "
             onClick={handleDataThree}
           >
             Q3
