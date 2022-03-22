@@ -12,6 +12,8 @@ const Play = () => {
     <>
       <div className="col-md-12 play-main-style">
       <div className="col-md-6 ">
+      <div className="play-heading-outer"><h1>GET IT NOW?</h1></div>
+
         <div className="play-image-style">
         <img  className="play-image-size" src={Mobilephoto} alt="playImagae"  />
         </div>

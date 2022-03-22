@@ -37,6 +37,9 @@ const MileStoneStepper = () => {
 
   return (
     <div className="milestone-steper-pad">
+      <div className="milestone-heading-outer">
+        <h1>MILESTONE</h1>
+      </div>
       <div className="stepper-button-outer">
         <button
           type="button"
@@ -45,7 +48,6 @@ const MileStoneStepper = () => {
         >
           1
         </button>
-        <HiArrowNarrowRight className="arrow-icon-style" size={50} />
         <button
           type="button"
           className="stepper-button-style"
@@ -53,7 +55,6 @@ const MileStoneStepper = () => {
         >
           2
         </button>
-        <HiArrowNarrowRight className="arrow-icon-style" size={50} />
         <button
           type="button"
           className="stepper-button-style"
@@ -61,7 +62,6 @@ const MileStoneStepper = () => {
         >
           3
         </button>
-        <HiArrowNarrowRight className="arrow-icon-style" size={50} />
         <button
           type="button"
           className="stepper-button-style"

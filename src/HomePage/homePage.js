@@ -10,10 +10,10 @@ import TesCards from "./TesCards";
 import Login from "./login";
 import SignUp from "./signUp";
 import Footer from "./footer";
-import MileStone from "./mileStone";
+
 import OurCommunity from "./ourCommunity";
 import GamingNft from "./gamingNft";
-// import LegendaryNft from "./legendaryNft";
+
 import Partners from "./partners";
 import Work from "./work";
 import MileStoneStepper from "./mileStoneStepper";
@@ -28,8 +28,7 @@ const HomePage = () => {
       <TesCards />
       <Roxo />
       <GamingNft />
-      {/* <LegendaryNft /> */}
-      {/* <MileStone /> */}
+
       <MileStoneStepper />
       <Vision />
       <Play />

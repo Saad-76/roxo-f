@@ -79,7 +79,7 @@ const GamingNft = () => {
       <div className="gaming-nft-outer gaming-section-pad">
         <div className="gaming_nft">
           <div className="gaming-nft-heading">
-            <h3>Gaming NFTs</h3>
+            <h1>GAMING NFTs</h1>
           </div>
 
           <div className="gaming-nft-outer-pad">
@@ -166,34 +166,41 @@ const GamingNft = () => {
               )}
 
               <div className="col-md-8">
-                <div className="gaming-inner-flex-images">
+                <div className="gamingnft-detail-bottom-outer">
                   <img
+                    className="gaming-nft-img-resp-margin"
                     src={NFT1}
-                    alt=""
+                    alt="nft1"
                     height="100px"
                     width="100px"
-                    style={{ borderRadius: "12px",margin:"0px",padding:"0px" }}
                   />
                   <img
+                    className="gaming-nft-img-resp-margin"
                     src={NFT1}
-                    alt=""
+                    alt="nft1"
                     height="100px"
                     width="100px"
-                    style={{ borderRadius: "12px", marginTop: "12px" }}
                   />
                   <img
+                    className="gaming-nft-img-resp-margin"
                     src={NFT1}
-                    alt=""
+                    alt="nft1"
                     height="100px"
                     width="100px"
-                    style={{ borderRadius: "12px", marginTop: "12px" }}
                   />
                   <img
+                    className="gaming-nft-img-resp-margin"
                     src={NFT1}
-                    alt=""
+                    alt="nft1"
                     height="100px"
                     width="100px"
-                    style={{ borderRadius: "12px", marginTop: "12px" }}
+                  />
+                  <img
+                    className="gaming-nft-img-resp-margin"
+                    src={NFT1}
+                    alt="nft1"
+                    height="100px"
+                    width="100px"
                   />
                 </div>
                 <div>
@@ -226,7 +233,7 @@ const GamingNft = () => {
             </button>
             <img
               onClick={handleNftOne}
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT1}
               alt="nf"
               height="100px"
@@ -234,7 +241,7 @@ const GamingNft = () => {
             />
             <img
               onClick={handleNftTwo}
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT2}
               alt="nf"
               height="100px"
@@ -243,7 +250,7 @@ const GamingNft = () => {
 
             <img
               onClick={handleNftThree}
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT3}
               alt="nf"
               height="100px"
@@ -252,7 +259,7 @@ const GamingNft = () => {
 
             <img
               onClick={handleNftFour}
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT4}
               alt="nf"
               height="100px"
@@ -261,7 +268,7 @@ const GamingNft = () => {
 
             <img
               onClick={handleNftFive}
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT1}
               alt="nf"
               height="100px"
@@ -269,7 +276,7 @@ const GamingNft = () => {
             />
             <img
               onClick={handleNftSix}
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT2}
               alt="nf"
               height="100px"
@@ -277,7 +284,7 @@ const GamingNft = () => {
             />
 
             <img
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT3}
               alt="nf"
               height="100px"
@@ -285,7 +292,7 @@ const GamingNft = () => {
             />
 
             <img
-              className="image-slider-style"
+              className="image-slider-game"
               src={NFT4}
               alt="nf"
               height="100px"

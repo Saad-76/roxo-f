@@ -1,29 +1,178 @@
-import React from "react";
+import { React, useState } from "react";
 import Footer from "../HomePage/footer";
 import Header from "../HomePage/header";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import NFT1 from "../Assests/NFT1.png";
+import NFT2 from "../Assests/NFT2.jpg";
+import NFT3 from "../Assests/NFT3.png";
+import NFT4 from "../Assests/NFT4.jpg";
+
 import TokenCoin from "../Assests/Token Coin.png";
 import "./marketProductDetail.css";
 
 const MarketProductDetail = () => {
+  const [nftOne, setNftOne] = useState(true);
+  const [nftTwo, setNftTwo] = useState(false);
+  const [nftThree, setNftThree] = useState(false);
+  const [nftFour, setNftFour] = useState(false);
+  const [nftFive, setNftFive] = useState(false);
+
+  const handleNftOne = () => {
+    setNftOne(true);
+    setNftTwo(false);
+    setNftThree(false);
+    setNftFour(false);
+    setNftFive(false);
+  };
+  const handleNftTwo = () => {
+    setNftOne(false);
+    setNftTwo(true);
+    setNftThree(false);
+    setNftFour(false);
+    setNftFive(false);
+  };
+  const handleNftThree = () => {
+    setNftOne(false);
+    setNftTwo(false);
+    setNftThree(true);
+    setNftFour(false);
+    setNftFive(false);
+  };
+  const handleNftFour = () => {
+    setNftOne(false);
+    setNftTwo(false);
+    setNftThree(false);
+    setNftFour(true);
+    setNftFive(false);
+  };
+  const handleNftFive = () => {
+    setNftOne(false);
+    setNftTwo(false);
+    setNftThree(false);
+    setNftFour(false);
+    setNftFive(true);
+  };
+
   return (
     <div>
       <Header />
       <div className="market-product-detail row">
-        <div className="card  col-md-3">
-          <div>
-            <p>Lorem</p>
+        {nftOne && (
+          <div className="card  col-md-3">
+            <div>
+              <p>Lorem</p>
+            </div>
+            <div className="crd-head">
+              <img
+                src={NFT1}
+                alt=""
+                height="284px"
+                width="250px"
+                style={{ borderRadius: "12px" }}
+              />
+            </div>
+            <center>
+              <button className="crd_btn">ID: 133856</button>
+            </center>
+            <center>
+              <div className="btm_txt_crd">BUSD: 15,17</div>
+            </center>
+            <div className="bottom_crd"></div>
           </div>
-          <div className="crd-head"></div>
-          <center>
-            <button className="crd_btn">ID: 133856</button>
-          </center>
-          <center>
-            <div className="btm_txt_crd">BUSD: 15,17</div>
-          </center>
-          <div className="bottom_crd"></div>
-        </div>
+        )}
+        {nftTwo && (
+          <div className="card  col-md-3">
+            <div>
+              <p>Lorem</p>
+            </div>
+            <div className="crd-head">
+              <img
+                src={NFT2}
+                alt=""
+                height="284px"
+                width="250px"
+                style={{ borderRadius: "12px" }}
+              />
+            </div>
+            <center>
+              <button className="crd_btn">ID: 133856</button>
+            </center>
+            <center>
+              <div className="btm_txt_crd">BUSD: 15,17</div>
+            </center>
+            <div className="bottom_crd"></div>
+          </div>
+        )}
+        {nftThree && (
+          <div className="card  col-md-3">
+            <div>
+              <p>Lorem</p>
+            </div>
+            <div className="crd-head">
+              <img
+                src={NFT3}
+                alt=""
+                height="284px"
+                width="250px"
+                style={{ borderRadius: "12px" }}
+              />
+            </div>
+            <center>
+              <button className="crd_btn">ID: 133856</button>
+            </center>
+            <center>
+              <div className="btm_txt_crd">BUSD: 15,17</div>
+            </center>
+            <div className="bottom_crd"></div>
+          </div>
+        )}
+        {nftFour && (
+          <div className="card  col-md-3">
+            <div>
+              <p>Lorem</p>
+            </div>
+            <div className="crd-head">
+              <img
+                src={NFT4}
+                alt=""
+                height="284px"
+                width="250px"
+                style={{ borderRadius: "12px" }}
+              />
+            </div>
+            <center>
+              <button className="crd_btn">ID: 133856</button>
+            </center>
+            <center>
+              <div className="btm_txt_crd">BUSD: 15,17</div>
+            </center>
+            <div className="bottom_crd"></div>
+          </div>
+        )}
+        {nftFive && (
+          <div className="card  col-md-3">
+            <div>
+              <p>Lorem</p>
+            </div>
+            <div className="crd-head">
+              <img
+                src={NFT1}
+                alt=""
+                height="284px"
+                width="250px"
+                style={{ borderRadius: "12px" }}
+              />
+            </div>
+            <center>
+              <button className="crd_btn">ID: 133856</button>
+            </center>
+            <center>
+              <div className="btm_txt_crd">BUSD: 15,17</div>
+            </center>
+            <div className="bottom_crd"></div>
+          </div>
+        )}
+
         <div className="col-md-8">
           <div className="market-product-detail-background">
             <div className="price-grid">
@@ -51,13 +200,36 @@ const MarketProductDetail = () => {
             </div>
             <div className="nft">
               <div className="market-detail-bottom-outer">
-                <img src={NFT1} alt="nft1" height="100px" width="100px" />
                 <img
-                  className="img-resp-margin"
                   src={NFT1}
                   alt="nft1"
                   height="100px"
                   width="100px"
+                  onClick={handleNftOne}
+                />
+                <img
+                  className="img-resp-margin"
+                  src={NFT2}
+                  alt="nft1"
+                  height="100px"
+                  width="100px"
+                  onClick={handleNftTwo}
+                />
+                <img
+                  className="img-resp-margin"
+                  src={NFT3}
+                  alt="nft1"
+                  height="100px"
+                  width="100px"
+                  onClick={handleNftThree}
+                />
+                <img
+                  className="img-resp-margin"
+                  src={NFT4}
+                  alt="nft1"
+                  height="100px"
+                  width="100px"
+                  onClick={handleNftFour}
                 />
                 <img
                   className="img-resp-margin"
@@ -65,20 +237,7 @@ const MarketProductDetail = () => {
                   alt="nft1"
                   height="100px"
                   width="100px"
-                />
-                <img
-                  className="img-resp-margin"
-                  src={NFT1}
-                  alt="nft1"
-                  height="100px"
-                  width="100px"
-                />
-                <img
-                  className="img-resp-margin"
-                  src={NFT1}
-                  alt="nft1"
-                  height="100px"
-                  width="100px"
+                  onClick={handleNftFive}
                 />
               </div>
             </div>

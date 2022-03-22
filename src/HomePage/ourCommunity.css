@@ -49,16 +49,31 @@
 .twitter-icon-style {
   margin-left: 16px;
 }
-.community-outer-style{
-  padding: 40px 0px;
+.community-outer-style {
+  padding: 60px 0px;
 }
-
-@media only screen and (max-width: 900px){
+.community-heading-outer {
+  border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 17vh;
+  margin-top: 30px;
+  margin-bottom: 49px;
+  color: white;
+}
+@media only screen and (max-width: 900px) {
   .ourCommunity-outer-section {
     display: flex;
     flex-direction: column;
     padding: 40px;
     align-content: center;
     align-items: center;
+  }
+  .community-heading-outer {
+    border-left: 4px solid #c438ef;
+    padding-left: 15px;
+    margin-left: 7vh;
+    margin-top: 30px;
+    margin-bottom: 49px;
+    color: white;
 }
 }

@@ -70,4 +70,20 @@ padding: 8px 0px;
     
     margin-left: 10px;
 }
-
+.image-right {
+    display: block;
+  }
+@media screen and (max-width: 900px) {
+    .image-left {
+      display: none;
+    }
+    .image-right {
+      display: none;
+    }
+    .footer {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  

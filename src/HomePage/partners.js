@@ -6,7 +6,7 @@ const Partners = () => {
     <>
     <div className="partners-outer-style"> 
       <div className="partners-content-style">
-        <h3>Strategic Partners</h3>
+        <h1>STRATEGIC PARTNERS</h1>
         <p>FREE TO PLAY, PAY TO EARN</p>
       </div>
       <div className="partners-inner-pading">

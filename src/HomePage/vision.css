@@ -14,7 +14,7 @@
 .vision-style {
   /* padding: 27px 0px; */
   /* padding-top: 80px; */
-  padding-top: 40px;
+  padding-top: 60px 40px;
 }
 .vision-image-style {
   display: flex;
@@ -132,103 +132,14 @@ padding-right: 1px;
   line-height: 1.8;
 }
 
-/* @media screen and (max-width: 1240px) {
-   
-    .vision-text-style{
-        padding: 0px 0px;
-    }
-    .vision-image-style img{
-        height: 300px;
-        width: 500px;
-    }
-    .vision-text-style{
-        display: flex;
-        flex-direction: column;
-align-items: flex-end;
-        padding-right: 6%;
-        padding-top: 4%;
-    }
-  }
-  @media screen and (max-width: 1180px) {
-   
-    .vision-text-style{
-        padding: 0px 0px;
-    }
-    .vision-image-style img{
-        height: 300px;
-        width: 400px;
-    }
-    .vision-text-style{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-right: 6%;
-        padding-top: 4%;
-        padding-left: 4%;
-    }
-  }
-  @media screen and (max-width: 1120px) {
-   
-    .vision-text-style{
-        padding: 18px 67px;
-    }
-    .vision-image-style img{
-        height: 300px;
-        width: 400px;
-    }
-    .vision-text-style{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-right: 6%;
-        padding-top: 4%;
-    }
-  }
-  @media screen and (max-width: 930px) {
-   
-   
-    .vision-image-style {
-        padding: 18px 70px;
-
-    }
-    .vision-text-style{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-right: 6%;
-        padding-top: 4%;
-    }
-  }
-  @media screen and (max-width: 852px) {
-   
-    .vision-text-style{
-        padding: 0px 12px;
-    }
-    .vision-image-style img{
-        align-items: center;
-        height: 300px;
-        width: 300px;
-    }
-    .vision-text-style{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      
-    }
-  }
-
-
-
-@media screen and (max-width: 800px) {
-    .vision-main-style{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .vision-text-style{
-        padding: 0px 0px;
-    }
-  } */
+.vision-heading-outer{
+  border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 17vh;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  color: white;
+}
 @media only screen and (max-width: 900px) {
   .vision-main-style {
     display: flex;

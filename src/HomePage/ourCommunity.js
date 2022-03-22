@@ -39,6 +39,7 @@ const OurCommunity = () => {
   return (
     <>
       <div className="community-outer-style">
+        <div className="community-heading-outer"><h1>OUR COMMUNITY</h1></div>
         <div className="ourCommunity-outer-section col-md-12">
           <div className="">
             <div className="community-icons col-md-6">

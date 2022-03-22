@@ -13,8 +13,8 @@ const Roxo = () => {
       <div className="roxo-style">
         <div className="col-md-12 roxo-main-style">
           <div className="col-md-6 roxo-text-section">
-      
-            <h3 className="roxo-xoin-heading">ROXO COIN</h3>
+      <div className="roxo-coin-heading-outer">   <h1 className="roxo-xoin-heading">ROXO COIN</h1> </div>
+          
             <p className="text-style-roxo">
               ROXO is the first gaming platform that brings power and innovation
               to the mobile gaming industry where users can play and earn

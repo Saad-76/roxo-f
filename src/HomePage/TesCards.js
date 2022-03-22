@@ -19,7 +19,7 @@ const TesCards = (props) => {
     <>
     <div className="our-games-outer-pad">
       <div className="cards-nav game-heading-outer">
-        <h1 className="game-heading-cards"> Our Games</h1>
+        <h1 className="game-heading-cards"> OUR GAMES</h1>
       </div>
 
       <div className="tes-card" id="containe">

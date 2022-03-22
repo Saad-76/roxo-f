@@ -22,6 +22,13 @@
    */
   max-width: 345px;
 }
+.roxo-coin-heading-outer {
+  border-left: 4px solid #c438ef;
+  padding-left: 17px;
+  margin-left: -18vh;
+  margin-top: 2px;
+  margin-bottom: 41px;
+}
 .roxo-image-section {
   align-items: center;
 
@@ -35,28 +42,26 @@
   /* padding: 18px; */
 }
 .roxo-style {
-  padding: 40px;
+  padding: 60px 40px;
   /* padding-top: 115px; */
 
   /* padding: 115px; */
 }
-.buy-button-style{
-
+.buy-button-style {
   margin-top: 2%;
   padding: 6px 18px;
   width: 20%;
   border-radius: 12px;
-  background: #58ACFF;
+  background: #58acff;
   /* background: linear-gradient( 90deg , rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%); */
   border: none;
-
 }
-.buy-button-style a{
-text-decoration: none;
-color: #FFFFFF;
+.buy-button-style a {
+  text-decoration: none;
+  color: #ffffff;
 }
-.color-text-buy{
-/* color:  rgb(222,153,33); */
+.color-text-buy {
+  /* color:  rgb(222,153,33); */
 }
 @media only screen and (max-width: 900px) {
   .roxo-main-style {
