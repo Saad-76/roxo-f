@@ -58,3 +58,9 @@ justify-content: center;
         max-width: 60%;
 
     }
+    @media screen and (max-width: 900px) {
+      .modal-size-video{
+          max-width: 100% !important;
+      
+      }
+    }

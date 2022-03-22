@@ -30,7 +30,7 @@ const Roxo = () => {
             </button>
           </div>
           <div className="col-md-6 roxo-image-section">
-            <img src={Coin} alt="roxo" height="400px" width="450px" />
+            <img src={Coin} alt="roxo" height="400px" width="350px" />
           </div>
         </div>
       </div>

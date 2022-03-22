@@ -240,6 +240,7 @@ align-items: flex-end;
     margin-top: 40px;
   }
   .vision-image-size {
-    width: 478px;
+    width: 333px;
+    padding-bottom: 10px;
   }
 }

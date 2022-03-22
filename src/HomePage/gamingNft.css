@@ -157,3 +157,39 @@
   /* background: linear-gradient( 90deg , rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%); */
   border: none;
 }
+
+@media screen and (max-width: 900px) {
+  .gaming-inner-flex-images {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .gaming-nft-inner-flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #262250;
+    padding: 25px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .gaming-nft-link-button-inner {
+    width: auto;
+  }
+  .gaming-nft-heading {
+    border-left: 4px solid #c438ef;
+    padding-left: 15px;
+    margin-left: -2vh;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .gaming-nft-link-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .gaming-nft-link-button-inner {
+    margin-top: 12px;
+  }
+}

@@ -16,6 +16,7 @@ import GamingNft from "./gamingNft";
 // import LegendaryNft from "./legendaryNft";
 import Partners from "./partners";
 import Work from "./work";
+import MileStoneStepper from "./mileStoneStepper";
 
 const HomePage = () => {
   return (
@@ -28,11 +29,12 @@ const HomePage = () => {
       <Roxo />
       <GamingNft />
       {/* <LegendaryNft /> */}
-      <MileStone />
+      {/* <MileStone /> */}
+      <MileStoneStepper />
       <Vision />
       <Play />
       {/* <Video /> */}
-      <Work/>
+      <Work />
       <Partners />
       <OurCommunity />
       <Footer />

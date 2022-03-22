@@ -123,12 +123,12 @@ const DashboardHeader = () => {
               {/* <h5>ROXO</h5> */}
             </div>
           </Link>
-          <Link>
+          {/* <Link>
             <div className="coin-logo">
               <img src={coinPic} height="50px"></img>
               <p>$0.0025</p>
             </div>
-          </Link>
+          </Link> */}
           <Link>
             <button className="menu-btn" onClick={slideOpen}>
               <FiMenu size={35} />
@@ -146,7 +146,7 @@ const DashboardHeader = () => {
           </div>
           <div className="slide-down">
             <Link className="nav-links  single active " href="#vision">
-              <p>News </p>{" "}
+              <p>Market Place </p>{" "}
             </Link>{" "}
           </div>
           <div className="slide-down">
@@ -171,8 +171,8 @@ const DashboardHeader = () => {
                   Telegran
                 </Link>
               </div>
-              Our Community
-              <p>O</p>
+             
+              <p> Our Community</p>
             </Link>
           </div>
           <div className="slide-down">

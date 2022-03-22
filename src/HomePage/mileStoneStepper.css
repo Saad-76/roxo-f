@@ -1,0 +1,54 @@
+.stepper-button-style {
+  border-radius: 100px;
+  background-color: white;
+  color: black;
+  border-radius: 107px;
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  border: none;
+}
+.stepper-button-style:hover {
+  background-color: #58acff;
+}
+.stepper-content-background {
+  background-color: #262250;
+  height: 400px;
+  width: 800px;
+  border-radius: 30px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+.stepper-button-outer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.arrow-icon-style {
+  margin: 0px 12px;
+  color: #6b94bd;
+}
+.milestone-steper-pad {
+  padding: 60px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .stepper-content-background {
+    background-color: #262250;
+    height: 394px;
+    width: 383px;
+    border-radius: 30px;
+    padding: 30px;
+    margin-left: 12px;
+    color: white;
+    text-align: center;
+  }
+  .arrow-icon-style {
+    margin: 0px -1px;
+    color: #6b94bd;
+  }
+}
