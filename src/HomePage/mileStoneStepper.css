@@ -11,22 +11,22 @@
   border: none;
 }
 .stepper-button-style:hover {
-  background-color: #58acff;
+  background-color: #393469;
+  color: white;
 }
 .stepper-content-background {
   background-color: #262250;
   height: 400px;
   width: 800px;
   border-radius: 30px;
-  padding: 30px;
+
   color: white;
-  text-align: center;
 }
+
 .stepper-button-outer {
   display: flex !important;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: stretch;
+  justify-content: center;
 }
 .arrow-icon-style {
   margin: 0px 12px;
@@ -43,16 +43,46 @@
   color: white;
   margin-bottom: 55px;
 }
+.stepper-inner-heading {
+  background-color: #393469;
+  padding: 20px 0px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  text-align: center;
+}
+.milestone-inner-content {
+  padding: 20px;
+}
+.milestone-inner-content h3 {
+  text-align: center;
+  padding: 12px 0px;
+}
+.status-content {
+  text-align: center;
+  padding-top: 60px;
+}
+.stepper-button-outer button:focus {
+  background-color: #393469;
+  color: white;
+  font-weight: bold;
+}
+.stepper-button-inner-line {
+  border-bottom: 6px solid #393469;
+  width: 8em;
+  margin-bottom: 40px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
 @media screen and (max-width: 900px) {
   .stepper-content-background {
     background-color: #262250;
     height: 394px;
     width: 383px;
     border-radius: 30px;
-    padding: 30px;
+
     margin-left: 12px;
     color: white;
-    text-align: center;
   }
   .arrow-icon-style {
     margin: 0px -1px;

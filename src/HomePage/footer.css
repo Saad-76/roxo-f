@@ -9,25 +9,24 @@
   overflow: hidden;
 }
 
-.footer-roxo-icons{
+.footer-roxo-icons {
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.inner-icons-flex-footer{
+.inner-icons-flex-footer {
   display: flex;
-    flex-direction: row;
-    align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 
 @media screen and (max-width: 900px) {
-.image-left{
-  display: none;
-}
-.image-right{
-  display: none;
-}
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
+  }
 }

@@ -6,12 +6,14 @@ const Work = () => {
   const [dataTwo, setDataTwo] = useState(false);
   const [dataThree, setDataThree] = useState(false);
   const [dataFour, setDataFour] = useState(false);
+  const[dataFive,setDataFive]= useState(false);
 
   const handleDataOne = () => {
     setDataOne(true);
     setDataTwo(false);
     setDataThree(false);
     setDataFour(false);
+    setDataFive(false);
   };
 
   const handleDataTwo = () => {
@@ -19,19 +21,29 @@ const Work = () => {
     setDataTwo(true);
     setDataThree(false);
     setDataFour(false);
+    setDataFive(false);
   };
   const handleDataThree = () => {
     setDataOne(false);
     setDataTwo(false);
     setDataThree(true);
     setDataFour(false);
+    setDataFive(false);
   };
   const handleDataFour = () => {
     setDataOne(false);
     setDataTwo(false);
     setDataThree(false);
     setDataFour(true);
+    setDataFive(false);
   };
+  const handleDataFive=()=>{
+    setDataOne(false);
+    setDataTwo(false);
+    setDataThree(false);
+    setDataFour(false);
+    setDataFive(true);
+  }
   return (
     <>
       <div className="work-outer">
@@ -40,8 +52,9 @@ const Work = () => {
         </div>
         <div className="container">
           <div className="col-md-12 d-flex">
-            <div className="col-md-6 d-flex">
-              <div>
+            <div className="col-md-2"></div>
+            <div className="col-md-8 d-flex">
+              <div className="work-button-style-outer">
                 <div>
                   <button className="work-button-style" onClick={handleDataOne}>
                     1
@@ -66,6 +79,14 @@ const Work = () => {
                     onClick={handleDataFour}
                   >
                     4
+                  </button>
+                </div>
+                <div>
+                  <button
+                    className="work-button-style"
+                    onClick={handleDataFive}
+                  >
+                    5
                   </button>
                 </div>
               </div>
@@ -95,11 +116,15 @@ const Work = () => {
                     <p>Lore IpsM lOREM ipsum</p>
                   </div>
                 )}
+                   {dataFive && (
+                  <div className="work-content-section-backgroud">
+                    <h3>Work 5</h3>
+                    <p>Lore IpsM lOREM ipsum</p>
+                  </div>
+                )}
               </div>
             </div>
-            <div className="col-md-6">
-              <img src="" alt="" />
-            </div>
+            <div className="col-md-2"></div>
           </div>
         </div>
       </div>

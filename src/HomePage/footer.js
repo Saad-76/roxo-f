@@ -13,32 +13,17 @@ const Footer = () => {
         <div className="col-md-4 image-left">
           <img src={FooterLeft} alt="" className="img-fluid" />
         </div>
-        <center>
-          <div className="col-md-4 m-auto footer-roxo-icons ">
+    
+          <div className="col-md-4 footer-content-style  ">
             <h3>ROXO</h3>
-            <div className="inner-icons">
-              <div className="inner-icons-flex-footer">
-                Facebook &nbsp;
-                <BsFacebook size={25} />
-              </div>
-              &nbsp; &nbsp; &nbsp;
-              <div className="inner-icons-flex-footer">
-                Instagram <AiOutlineInstagram size={30} />
-              </div>
-            </div>
-            <div className="inner-icons ">
-              <div className="inner-icons-flex-footer">
-                LinkedIn
-                <BsLinkedin size={25} />
-              </div>
-              &nbsp; &nbsp;
-              <div className="inner-icons-flex-footer">
-                Google
-                <AiFillGoogleCircle size={30} />
-              </div>
-            </div>
+      <p>Copyrights 2022 ROXO LTD.
+        <br/>
+        All rights reserved.
+      </p>
+      <p>Contact US | Careers | White Paper</p>
+           
           </div>
-        </center>
+        
         <div className="col-md-4 ">
           <div className="col-sm-12 text-right image-right">
             <img src={FooterRight} alt="" className="img-fluid" />

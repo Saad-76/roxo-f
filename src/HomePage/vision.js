@@ -7,7 +7,9 @@ const Vision = () => {
   return (
     <div>
       <div className="vision-style">
-        <div className="vision-heading-outer"><h1>OUR VISION</h1></div>
+        <div className="vision-heading-outer">
+          <h1>OUR VISION</h1>
+        </div>
         <div className="col-md-12 vision-main-style">
           <div className="col-md-8 vision-image-style">
             <img
@@ -18,16 +20,13 @@ const Vision = () => {
           </div>
           <div className="col-md-4 vision-text-style">
             <div className="vision-text-data-style">
-              {/* <div className="visiion-upper-text"> */}
               <div className="vision-upper-flex">
-                <h3 className="vision-heading-style">Our Vision</h3>
+                <h3 className="vision-heading-style">PLAY TO EARN</h3>
               </div>
-              {/* </div> */}
               <p className="vision-para">
-                Our vision is that no NFT metaverse should be singular but
-                rather each metaverse can be interconnected each unique NFT
-                increased utility through NFT interoperability between games and
-                platforms
+                ROXO vision is to empowering the users by rewarding them for
+                their engagement and enjoyment, through our best quality and
+                interactive multiplayer mobile titles.
               </p>
             </div>
           </div>

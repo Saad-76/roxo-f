@@ -3,10 +3,10 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import "./mileStoneStepper.css";
 
 const MileStoneStepper = () => {
-  const [dataOne, setDataOne] = useState(true);
+  const [dataOne, setDataOne] = useState(false);
   const [dataTwo, setDataTwo] = useState(false);
   const [dataThree, setDataThree] = useState(false);
-  const [dataFour, setDataFour] = useState(false);
+  const [dataFour, setDataFour] = useState(true);
 
   const handleDataOne = () => {
     setDataOne(true);
@@ -40,46 +40,69 @@ const MileStoneStepper = () => {
       <div className="milestone-heading-outer">
         <h1>MILESTONE</h1>
       </div>
-      <div className="stepper-button-outer">
-        <button
-          type="button"
-          className="stepper-button-style"
-          onClick={handleDataOne}
-        >
-          1
-        </button>
-        <button
-          type="button"
-          className="stepper-button-style"
-          onClick={handleDataTwo}
-        >
-          2
-        </button>
-        <button
-          type="button"
-          className="stepper-button-style"
-          onClick={handleDataThree}
-        >
-          3
-        </button>
-        <button
-          type="button"
-          className="stepper-button-style"
-          onClick={handleDataFour}
-        >
-          4
-        </button>
+      {/* -------button-style------------------ */}
+      <div className="col-md-12 d-flex">
+        <div className="col-md-2"></div>
+        <div className="col-md-8 stepper-button-outer">
+          <button
+            type="button"
+            className="stepper-button-style"
+            onClick={handleDataFour}
+          >
+            Q4
+          </button>
+          <div className="stepper-button-inner-line"></div>
+          <button
+            type="button"
+            className="stepper-button-style"
+            onClick={handleDataOne}
+          >
+            Q1
+          </button>
+          <div className="stepper-button-inner-line"></div>
+
+          <button
+            type="button"
+            className="stepper-button-style"
+            onClick={handleDataTwo}
+          >
+            Q2
+          </button>
+          <div className="stepper-button-inner-line"></div>
+
+          <button
+            type="button"
+            className="stepper-button-style"
+            onClick={handleDataThree}
+          >
+            Q3
+          </button>
+        </div>
+        <div className="col-md-2"></div>
       </div>
+
       {dataOne && (
         <div className="col-md-12 d-flex">
           <div className="col-md-2"></div>
           <div className="col-md-8">
             <div className="stepper-content-background">
-              <p>MileStone 1</p>
-              <p>
-                Lorem Ipsm Lorem IpsmLorem IpsmLorem IpsmLorem Ipsm Lorem Ipsm
-                Lorem Ipsm Lorem Ipsm.
-              </p>
+              <div className="stepper-inner-heading">
+                <h3>Q1- 2022</h3>
+              </div>
+              <div className="col-md-12 d-flex milestone-inner-content">
+                <div className="col-md-6">
+                  <h3>GOALS</h3>
+                  <p>• Causal 3D PVP Game. </p>
+                  <p>• ROXO platform Alpha development. </p>
+                  <p>• Contracts on BSC.</p>
+                  <p>• Complete NFT Smart Contracts.</p>
+                  <p>• Introduce Free to play, play to earn mechanism.</p>
+                </div>
+                <div className="col-md-6 ">
+                  <h3>STATUS</h3>
+                  <p className="status-content">Under Development</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-md-2"></div>
@@ -90,11 +113,28 @@ const MileStoneStepper = () => {
           <div className="col-md-2"></div>
           <div className="col-md-8">
             <div className="stepper-content-background">
-              <p>MileStone 2</p>
-              <p>
-                Lorem Ipsm Lorem IpsmLorem IpsmLorem IpsmLorem Ipsm Lorem Ipsm
-                Lorem Ipsm Lorem Ipsm.
-              </p>
+              <div className="stepper-inner-heading">
+                <h3>Q2- 2022</h3>
+              </div>
+              <div className="col-md-12 d-flex milestone-inner-content">
+                <div className="col-md-6">
+                  <h3>GOALS</h3>
+                  <p>
+                    • ROXO Free to play - Play to earn Platform official launch.{" "}
+                  </p>
+                  <p>
+                    • Update Haste King Features and link with ROXO Platform.{" "}
+                  </p>
+                  <p>
+                    • Integrate Haste King with ROXO Platform for secure Token
+                    Distribution.
+                  </p>
+                </div>
+                <div className="col-md-6 ">
+                  <h3>STATUS</h3>
+                  <p className="status-content">Under Development</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-md-2"></div>
@@ -105,11 +145,22 @@ const MileStoneStepper = () => {
           <div className="col-md-2"></div>
           <div className="col-md-8">
             <div className="stepper-content-background">
-              <p>MileStone 3</p>
-              <p>
-                Lorem Ipsm Lorem IpsmLorem IpsmLorem IpsmLorem Ipsm Lorem Ipsm
-                Lorem Ipsm Lorem Ipsm.
-              </p>
+              <div className="stepper-inner-heading">
+                <h3>Q3- 2022</h3>
+              </div>
+              <div className="col-md-12 d-flex milestone-inner-content">
+                <div className="col-md-6">
+                  <h3>GOALS</h3>
+                  <p>• ROXO Haste King NFT decentralized exchange. </p>
+                  <p>• ROXO Bridge for Cross Chain NFT support. </p>
+                  <p>• Testing .</p>
+                  <p>• Official Launch for the world .</p>
+                </div>
+                <div className="col-md-6 ">
+                  <h3>STATUS</h3>
+                  <p className="status-content">Under Development</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-md-2"></div>
@@ -120,11 +171,22 @@ const MileStoneStepper = () => {
           <div className="col-md-2"></div>
           <div className="col-md-8">
             <div className="stepper-content-background">
-              <p>MileStone 4</p>
-              <p>
-                Lorem Ipsm Lorem IpsmLorem IpsmLorem IpsmLorem Ipsm Lorem Ipsm
-                Lorem Ipsm Lorem Ipsm.
-              </p>
+              <div className="stepper-inner-heading">
+                <h3>Q4- 2021</h3>
+              </div>
+              <div className="col-md-12 d-flex milestone-inner-content">
+                <div className="col-md-6">
+                  <h3>GOALS</h3>
+                  <p>• Market Research. </p>
+                  <p>• Brainstorming, & Team Formation . </p>
+                  <p>• Roxo Platform and Game Proof-Of-Concept.</p>
+                  <p>• ROXO Platform Initial development.</p>
+                </div>
+                <div className="col-md-6 ">
+                  <h3>STATUS</h3>
+                  <p className="status-content">Complete</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-md-2"></div>

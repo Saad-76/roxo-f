@@ -106,11 +106,18 @@ const DashboardHeader = () => {
               </div>
             </Link>
           </div>
-          <Link to="/homepage">
-            <button>
-              <b> Log Out </b>
-            </button>
-          </Link>
+          <div>
+            <Link to="/buyForm">
+              <button className="header-price-button-style">$ 5.09</button>
+            </Link>
+            &nbsp;&nbsp;
+            <Link to="/homepage">
+              <button>
+                <b> Log Out </b>
+              </button>
+            </Link>
+          </div>
+
           {/* <button data-bs-toggle="modal" data-bs-target="#exampleModal">
           GAME EARNINGS
         </button> */}
@@ -171,7 +178,7 @@ const DashboardHeader = () => {
                   Telegran
                 </Link>
               </div>
-             
+
               <p> Our Community</p>
             </Link>
           </div>

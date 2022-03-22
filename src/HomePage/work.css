@@ -3,11 +3,11 @@
   padding: 60px 40px;
 }
 .work-heading-outer {
-    border-left: 4px solid #c438ef;
-    padding-left: 15px;
-    margin-left: 17vh;
-    margin-top: 30px;
-    margin-bottom: 63px;
+  border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 17vh;
+  margin-top: 30px;
+  margin-bottom: 63px;
 }
 .work-button-style {
   border-radius: 100px;
@@ -21,16 +21,22 @@
   margin-bottom: 20px;
   border: none;
 }
-.work-button-style:hover{
-    background-color: #58ACFF;
+.work-button-style:hover {
+    background-color: #393469;
+    color: white;
 }
 .work-content-section-backgroud {
   background-color: #262250;
-  height: 300px;
-  width: 400px;
+  height: 345px;
+  width: 800px;
   border-radius: 30px;
   padding: 30px;
   color: white;
   text-align: center;
   margin-left: 20px;
+}
+.work-button-style-outer button:focus {
+  background-color: #393469;
+  color: white;
+  font-weight: bold;
 }

@@ -103,16 +103,10 @@ const Header = () => {
           </Link>
         </div>
         <div>
-          {/* <Link>
-          <div className="hover-coin">
-            <img className="glowCoin" src={Glowcoin} height="50px"></img>
-            <div className="coin-logo">
-              <img src={coinPic} height="60px"></img>
-              <p>$0.0025</p>
-            </div>
-          </div>
-        </Link> */}
-          {/* <Link  to="/login"> */}
+          <Link to="/buyForm">
+            <button className="header-price-button-style">$ 5.09</button>
+          </Link>
+          &nbsp;&nbsp;
           <button
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
@@ -156,7 +150,7 @@ const Header = () => {
         </div>
         <div className="slide-down">
           <Link className="nav-links  single active " href="#vision">
-            <p>News </p>{" "}
+            <p>Market Place </p>{" "}
           </Link>{" "}
         </div>
         <div className="slide-down">
@@ -208,6 +202,10 @@ const Header = () => {
             </div>
             <p>More</p>
           </Link>
+        </div>
+        <div>
+          <button className="header-price-button-style-resp ">$ 5.09</button>{" "}
+          &nbsp;&nbsp;
         </div>
         <div className="slide-down">
           {/* <Link className="nav-links single " to="/login"> */}

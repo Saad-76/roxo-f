@@ -4,7 +4,7 @@
 
 .tes-scr {
   height: 370px;
-  width: 380px;
+  width: 340px;
 
   margin: 0px 25px;
   background-color: #262250;
@@ -52,7 +52,7 @@
   display: none;
 }
 .tes-icon img {
-  width: 380px;
+  width: 340px;
   height: 220px;
 
   border-top-right-radius: 20px;
@@ -61,10 +61,9 @@
 .tes-scr h3 {
   padding-left: 30px;
   color: #ffffff;
-
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 25px;
-  /* font-weight: 700; */
+
   padding-bottom: 20px;
 }
 .cards-nav {
@@ -188,34 +187,19 @@
 }
 .tes-scr h4 {
   align-items: center;
-  padding-left: 20px;
-  /* color: #1c1e21; */
-  /* padding-top: 50px; */
+  padding-left: 4px;
   position: absolute;
   color: #ffffff;
-
-  /* font-size: 25px; */
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
-  /* font-weight: 700; */
   padding-top: 50px;
   margin-left: 7%;
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2; /* color: #1c1e21; */
-  /* padding-top: 50px; */
-  /* font-size: 25px; */
-  /* font-weight: 700; */
-  /* padding-bottom: 20px;k */
-  /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; */
+  line-height: 1.2;
 }
-.cards-nav {
-}
+
 @media only screen and (max-width: 900px) {
   .cards-style-test-data {
     display: flex;

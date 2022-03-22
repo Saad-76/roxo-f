@@ -52,8 +52,10 @@
   padding: 34px;
 }
 .gaming-nft-slider-outer {
-  padding-left: 60px;
-  padding-right: 60px;
+  /* padding-left: 60px;
+  padding-right: 60px; */
+  padding-left: 219px;
+  padding-right: 318px;
 }
 .nftSlider-heading {
   display: flex;
@@ -98,20 +100,20 @@
   background-color: #1c1e21;
   position: absolute;
   margin-top: 40px;
-  margin-left: 35%;
+  margin-left: 50%;
   width: 20px;
   height: 50px;
   opacity: 0;
   border-radius: 25px;
   border: 0;
 }
-.tes-btn12 {
+.tes-btnSecond {
   color: honeydew;
   background-color: #1c1e21;
   position: absolute;
   margin-top: 40px;
   opacity: 0;
-  margin-left: 55%;
+  margin-left: 50%;
   width: 20px;
   height: 50px;
   border-radius: 25px;
@@ -129,10 +131,10 @@
   border: 0;
   box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
 }
-.gaming-nft-slider:hover > .tes-btn12 {
+.gaming-nft-slider:hover > .tes-btnSecond {
   position: absolute;
   margin-top: 40px;
-  margin-left: 80%;
+  margin-left: 50%;
   width: 50px;
   height: 50px;
   border-radius: 25px;
@@ -214,12 +216,6 @@
 .gaming-nft-slider-outer {
   padding-left: 0px;
   padding-right: 60px;
-}
-.tes-btn11{
-  display: none;
-}
-.tes-btn12{
-  display: none;
 }
 
 

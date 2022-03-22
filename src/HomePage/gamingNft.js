@@ -228,7 +228,7 @@ const GamingNft = () => {
             <button onClick={Leftscrol} className="tes-btn11">
               <FaArrowLeft size={22.5} />
             </button>
-            <button onClick={Rightscrol} className="tes-btn12">
+            <button onClick={Rightscrol} className="tes-btnSecond">
               <FaArrowRight size={22.5} />
             </button>
             <img
