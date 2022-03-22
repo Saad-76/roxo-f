@@ -1,0 +1,112 @@
+
+.connect-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.connect-address-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+
+
+}
+.connect-address-section p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+
+
+}
+.connect-main-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.background-connectWallet{
+    background-color: #262250;    border-radius: 12px;
+    padding: 10px 0px;
+    margin-right: 48px;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+}
+.wallet-connected-button-style{
+    padding: 6px 18px;
+  
+    width: 100%;
+    border-radius: 12px;
+    /* margin: 4% 0; */
+    color: #ffff;
+
+  
+    background-color: #58ACFF;
+    border:none;
+  
+}
+.connect-GameName{
+    /* margin-top: 77px; */
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   padding: 0px 30px; 
+
+}
+.connect-gameName-heading{
+    padding-left: 14px;
+    font-weight:500;
+
+    font-size: large;
+    margin: 0;
+    
+}
+.connect-address-section p{
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monterserat;
+}
+.connect-address-section button{
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monterserat;
+}
+.copy-icon-connect{
+    border: none;
+    background: none;
+}
+.copy-icon-connect svg{
+    color: white;
+}
+/* .wallet-address-connect{
+    border: none;
+    width: 120%;
+    background-color: #e4e6eb;
+    border-radius: 12px;
+} */
+
+@media only screen and (max-width: 900px) {
+ .connect-GameName-outer{
+     display: none;
+ }
+ .connect-address-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+}
+.background-connectWallet {
+    background-color: #262250;    border-radius: 12px;
+    padding: 10px 0px;
+    /* margin-right: 48px; */
+    margin-right: 0%;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+}
+  }

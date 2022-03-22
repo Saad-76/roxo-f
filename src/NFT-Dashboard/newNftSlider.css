@@ -1,0 +1,113 @@
+.nftSlider-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: center;
+  padding: 12px 30px;
+/* background-color: rgba(0,0,0,0.1);   */
+}
+.newNftSlider-view-button-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 27px 0px;
+}
+.newNftSlider-view-button-inner{
+    padding: 6px 18px;
+  
+    width: 20%;
+    border-radius: 12px;
+    /* margin: 4% 0; */
+    color: #1c1e21;
+  
+    background-color: #58ACFF;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+    color: #ffff;
+
+    border:none;
+}
+
+.nft-Slider{
+    overflow:scroll;
+    background-color: #262250;    display: flex;
+    padding: 40px 0px;
+}
+.nft-Slider::-webkit-scrollbar {
+    display: none;
+}
+.tes-btn11{
+    color: honeydew;
+    background-color: #1c1e21;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 35%;
+    width: 20px;
+    height: 50px;
+    opacity: 0;
+    border-radius: 25px;
+    border: 0;
+    
+}
+.tes-btn12{
+    color: honeydew;
+    background-color: #1c1e21;
+    position: absolute;
+    margin-top: 100px;
+    opacity: 0;
+    margin-left: 55%;
+    width: 20px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+}
+.nft-Slider:hover> .tes-btn11{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: .5s;
+    opacity: 1;
+    border: 0;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+}
+.nft-Slider:hover> .tes-btn12{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 90%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: .5s;
+    opacity: 1;
+    border: 0;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+}
+   
+
+
+
+.image-slider-style{
+    /* margin-left: 120px; */
+    margin-left: 152px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+
+}
+@media screen and (max-width: 900px) {
+  
+        .newNftSlider-view-button-inner {
+            padding: 6px 18px;
+            width: 50%;
+            border-radius: 12px;
+            /* margin: 4% 0; */
+            color: #1c1e21;
+            background-color: #58ACFF;
+            box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+            color: #ffff;
+            border: none;
+        }
+
+  }

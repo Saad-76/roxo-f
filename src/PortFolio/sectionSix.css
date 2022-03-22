@@ -1,0 +1,10 @@
+.sectionSix-background-image{
+    background-image: url("../Assests/portfolio/SixBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+height: 100vh;
+background-position-y: -10rem;
+}
+.section-heading{
+    color: white;
+}

@@ -1,0 +1,115 @@
+.tokenConverter-style{
+    padding: 50px 0px;
+}
+
+.converter-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+
+}
+.roxo-coin-converter{
+    padding-top: 24px;
+}    
+
+.roxo-coin-converter p{
+    font-size: 15px;
+    
+
+    line-height: 1.8;
+    font-family: monterserat;
+}
+.game-coin-converter{
+    padding-top: 24px;
+    padding-left: 8px;
+}
+.game-coin-converter p{
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monterserat;
+}
+.convert-roxo-allData{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 0%; */
+    justify-content: center;
+
+    /* justify-content: center; */
+}
+.convert-gameCoin-allData{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 40%;
+}
+
+.coverter-column-flex{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 30px 0px;
+    background-color: white; */
+
+}
+.background-border-converter{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 30px 0px;
+    background-color: #262250;    border-radius: 12px;
+    /* justify-content: space-around; */
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+}
+
+.token-convert-button{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin-top: 12px;
+}
+.token-convert-button-style{
+   /* margin: 2px 2px; */
+   font-size: 17.5px;
+    font-family: monterserat;
+   padding: 6px 18px;
+   /* margin: 4% 0; */
+   font-weight: 600;
+   color: #FFFF;
+   border-radius: 12px;
+   width: 95%;
+   background-color: #FF409A;   box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+   border: none;
+}
+.converter-middleArrow{
+    display: flex;
+    flex-direction: column;
+}
+.converter-outer-columns{
+    justify-content: flex-end;
+    display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+    .converter-outer-columns {
+        justify-content: center;
+        display: flex;
+    }
+    .token-convert-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .coverter-column-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+     }

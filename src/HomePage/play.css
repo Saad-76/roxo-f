@@ -1,0 +1,116 @@
+.play-main-style{
+    display: flex;
+    flex-direction: row;
+    /* Padding-top: 80px; */
+    margin: -120px 0px;
+padding-bottom: 40px;
+}
+.play-text-style{
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+}
+.play-text-data-style{
+    max-width: 300px;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+.play-para{
+    font-family: Monterserat;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: end;
+
+}
+.getNow-style{
+    /* padding-left: 14px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 14px;
+    color: white;
+/* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */
+/* padding: 20px 0px; */
+}
+.google-play-image{
+    margin-left: 20px;
+
+}
+.play-image-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-image-style img{
+   
+    /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6); */
+}
+.play-image-size{
+    /* height: 800px;
+    width: 700px; */
+    height: 605px;
+}
+
+.first-buttons-style{
+display: flex;
+flex-direction: row;
+
+}
+.second-buttons-style{
+    display: flex;
+    flex-direction: row;
+    
+}
+.button-style-play{
+  
+    /* padding: 4px 9px;
+    margin: 8px 0px;
+    background-color: #f0f2f5;
+    color: #050505;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif; */
+
+      
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* @media screen and (max-width: 800px) {
+    .play-main-style{
+        display: flex;
+        flex-direction: column;
+    }
+    .play-image-style{
+        height: 300px;
+        width: 450px;
+    }
+
+  } */
+  @media only screen and (max-width: 900px){
+    .play-main-style{
+        /* margin-top: 40px; */
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+    .play-text-style{
+        margin-top: 40px;
+    }
+    .play-image-size {
+        height: 423px;
+    }
+    .first-buttons-style {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+  }

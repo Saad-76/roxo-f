@@ -1,0 +1,27 @@
+.careers-heading-style {
+  text-align: center;
+  color: white;
+  padding: 60px 0px;
+}
+.careers-home-outer {
+  color: white;
+}
+.careers-dropdown{
+  background-color: #262250;
+  width: 40%;
+  height: 30px;
+  margin-left: 180px;
+  padding: 0px 12px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+}
+.careers-drop-down-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.careers-drop-outer{
+  padding-top: 20px;
+}

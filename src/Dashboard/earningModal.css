@@ -1,0 +1,69 @@
+.earning-modal-style{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.earning-game-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.earning-game-data img{
+    border-radius: 12px;
+}
+.earning-modal-style h5{
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monterserat;
+    color: white;
+}
+.earning-modal-style h3{
+    /* font-size: 15px;
+    line-height: 1.8; */
+    font-family: monterserat;
+    color: white;
+}
+.earning-modal-style p{
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monterserat;
+    color: white;
+}
+.earning-modal-style h6{
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monterserat;
+    color: white;
+}
+
+.earning-modal-steps{
+    font-weight: 400px;
+    font-size: 20px;
+}
+.earning-modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 15px 52px;
+}
+.earning-video-button{
+    padding: 6px 18px;
+
+ 
+    width: 100%;
+    font-weight: bold;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: #58ACFF;
+
+    /* background: rgb(222,153,33);
+    background: linear-gradient(90deg, rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%);    */
+       border:none;  
+    border:none;
+}
+.earning-modal-size{
+    max-width: 56.5% !important;
+
+}

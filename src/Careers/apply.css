@@ -1,0 +1,96 @@
+.apply-first-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.apply-second-flex {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1100px;
+}
+.apply-third-flex {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1200px;
+}
+.apply-button-outer-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container-style-apply {
+  padding: 40px 0px;
+  color: white;
+}
+.job-apply-button {
+  padding: 6px 18px;
+  width: 24%;
+  border-radius: 12px;
+  background-color: #58acff;
+  color: white;
+
+  border: none;
+}
+.job-apply-button-two {
+  padding: 6px 20px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #58acff;
+  color: white;
+
+  border: none;
+}
+@media only screen and (max-width: 900px) {
+  .apply-first-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .apply-second-flex {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+  }
+  .apply-third-flex {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+  }
+  .job-apply-button {
+    padding: 6px 18px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #58acff;
+    color: white;
+    border: none;
+  }
+}

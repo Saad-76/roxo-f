@@ -1,0 +1,64 @@
+.ourCommunity-outer-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* padding: 40px; */
+}
+.community-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+}
+.community-heading {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+  color: #ffffff;
+}
+
+.community-icon-detail {
+  color: #ffffff;
+  border-radius: 30px;
+
+  background-color: #262250;
+  padding: 40px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+.community-icon-display-outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icon-image-detail {
+  background-color: #ffffff;
+  padding: 12px;
+  color: black;
+}
+.community-icon-content {
+  max-width: 818px;
+  /* padding: 8px; */
+  padding-left: 39px;
+}
+.twitter-icon-style {
+  margin-left: 16px;
+}
+.community-outer-style{
+  padding: 40px 0px;
+}
+
+@media only screen and (max-width: 900px){
+  .ourCommunity-outer-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-content: center;
+    align-items: center;
+}
+}

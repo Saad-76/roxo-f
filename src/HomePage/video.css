@@ -1,0 +1,86 @@
+.video_section-style {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+
+  /* height: 230px; */
+  height: 340px;
+  /* padding-right: 100px; */
+  border-radius: 15px;
+}
+.video-main-style {
+  display: flex;
+  flex-direction: row;
+  /* padding: 50px 0; */
+  /* padding-top: 80px; */
+}
+.video-text-style {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-items: center;
+  padding-left: 8%;
+  color: white;
+
+  flex-direction: column;
+  text-align: justify;
+}
+
+.video-text {
+  max-width: 324px;
+  font-family: Monterserat;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.video-section-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.video-text-style h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.primary-video {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding-right: 47px; */
+  align-items: center;
+}
+.how-video-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------full width and your height style---------------- */
+/* .video_section-style{
+
+    height: 60vh;
+    width: 100%;
+    object-fit: fill;
+    
+    } */
+
+@media only screen and (max-width: 900px) {
+  .video-main-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .primary-video {
+    margin-top: 40px;
+  }
+  .video_section-style {
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 60%);
+    /* height: 230px; */
+    /* height: 340px; */
+    /* padding-right: 100px; */
+    border-radius: 15px;
+    width: 80%;
+}
+}

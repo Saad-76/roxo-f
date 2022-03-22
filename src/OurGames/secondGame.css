@@ -1,0 +1,127 @@
+.secondGame-main-style {
+  display: flex;
+  flex-direction: row;
+}
+.secondGame-text-section {
+  color: #ffffff;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.text-style-secondGame {
+  font-family: Monterserat;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  /* 1. Text sizes:15px
+    2. Font-family: monterserat.
+    3. Line hight: 1.8
+     */
+  max-width: 345px;
+}
+.secondGame-image-section {
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+  margin-left: 120px;
+}
+.secondGame-image-section img {
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6); */
+}
+.secondGame-xoin-heading {
+  padding: 18px;
+}
+.secondGame-style {
+  padding-top: 115px;
+
+  /* padding: 115px; */
+}
+/* .secondGame-coin-size{
+    height:"150px";
+    width:"150px"
+  } */
+@media only screen and (max-width: 900px) {
+  .secondGame-main-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .secondGame-image-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 22px;
+    margin-right: 20px;
+  }
+  .image-height {
+    height: 371px;
+  }
+}
+/* ----------------------------------------------------- */
+.secondGameCarousel-style {
+  padding-top: 9px;
+  border-radius: 12px;
+  /* border-bottom-left-radius: 12px; */
+  /* border-radius: 100px 100px 100px 100px; */
+  /* height: 500px; */
+  /* margin-bottom: 60px; */
+  /* margin-top: 40px; */
+  /* margin-left: 200px; */
+  /* margin-right: 200px; */
+}
+/* .slider-carousel-heading{
+  
+    justify-content: center;
+    display: flex;
+    font-family: Azonix;
+    color: white;
+    padding-top: 6%;
+} */
+.image-height {
+  /* height: 500px; */
+  /* height: 370px; */
+
+  /* border-radius: 10px; */
+  /* background-color: black; */
+}
+.carousel-inner {
+  /* border-radius: 20px; */
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  /* max-width: 1354px; */
+}
+
+.carousel-inner {
+  /* border-radius: 10px; */
+  height: 374px;
+}
+.carousel {
+  margin: auto;
+}
+.inner-style {
+  border-radius: 10px;
+}
+
+/* .carousel-item-style{
+    width: 80%;
+
+} */
+
+@media only screen and (max-width: 900px) {
+  .image-height {
+    /* height: 300px; */
+  }
+  .slider-carousel-heading {
+    margin-bottom: 2%;
+    margin-top: 1%;
+  }
+}

@@ -1,0 +1,12 @@
+.sectionOne-background-image{
+    background-image: url("../Assests/portfolio/OneBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.one-main-body{
+    display: flex;
+    padding-left: 30%;
+padding-top: 2%;
+}

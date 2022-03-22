@@ -1,0 +1,23 @@
+.footer-outer {
+  color: white;
+}
+.footer-content {
+  color: white;
+}
+
+.overflow-main {
+  overflow: hidden;
+}
+
+.footer-roxo-icons{
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inner-icons-flex-footer{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -1,0 +1,63 @@
+.mile-stone-outer{
+  padding: 40px 40px;
+}
+
+.vertical-timeline-element-icon {
+  color: white !important;
+}
+.vertical-timeline-element-icon {
+  color: white !important;
+}
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+  width: 40px;
+  height: 40px;
+  left: 50.8%;
+  margin-left: -30px;
+}
+.bounce-in {
+  color: white !important;
+}
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 60px;
+  background: #fff;
+  border-radius: 0.25em;
+  padding: 1em;
+  /* box-shadow: 0 3px 0 #201d47; */
+}
+.vertical-timeline-element-content-arrow {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: none;
+}
+.mile-stone-heading {
+  text-align: center;
+  color: white;
+  padding: 30px 0px;
+}
+.roadmap-two-heading-outer{
+  /* border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 13vh;
+
+  margin-top: 30px;
+  margin-bottom: 30px; */
+}
+
+@media only screen and (max-width: 900px) {
+  .vertical-timeline-element-content.bounce-in {
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    width: 40px;
+    height: 40px;
+    left: 8.5%;
+    margin-left: -30px;
+  }
+}

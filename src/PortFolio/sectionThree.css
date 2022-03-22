@@ -1,0 +1,7 @@
+.sectionThree-background-image{
+    background-image: url("../Assests/portfolio/ThreeBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+   height: 100vh;
+
+}

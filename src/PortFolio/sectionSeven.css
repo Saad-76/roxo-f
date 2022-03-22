@@ -1,0 +1,9 @@
+.sectionSeven-background-image{
+    background-image: url("../Assests/portfolio/SevenBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+height: 100vh;
+}
+.section-heading{
+    color: white;
+}

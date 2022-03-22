@@ -1,0 +1,71 @@
+.roxo-main-style {
+  display: flex;
+  flex-direction: row;
+}
+.roxo-text-section {
+  color: #ffffff;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.text-style-roxo {
+  font-family: Monterserat;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  /* 1. Text sizes:15px
+  2. Font-family: monterserat.
+  3. Line hight: 1.8
+   */
+  max-width: 345px;
+}
+.roxo-image-section {
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+}
+.roxo-image-section img {
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6); */
+}
+.roxo-xoin-heading {
+  /* padding: 18px; */
+}
+.roxo-style {
+  padding: 40px;
+  /* padding-top: 115px; */
+
+  /* padding: 115px; */
+}
+.buy-button-style{
+
+  margin-top: 2%;
+  padding: 6px 18px;
+  width: 20%;
+  border-radius: 12px;
+  background: #58ACFF;
+  /* background: linear-gradient( 90deg , rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%); */
+  border: none;
+
+}
+.buy-button-style a{
+text-decoration: none;
+color: #FFFFFF;
+}
+.color-text-buy{
+/* color:  rgb(222,153,33); */
+}
+@media only screen and (max-width: 900px) {
+  .roxo-main-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .roxo-image-section {
+    margin-top: 40px;
+  }
+}

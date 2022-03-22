@@ -1,0 +1,248 @@
+.our-games-outer-pad {
+  padding: 40px 0px;
+}
+
+.tes-scr {
+  height: 370px;
+  width: 380px;
+
+  margin: 0px 25px;
+  background-color: #262250;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cards-style-test-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-heading-cards {
+  /* padding-top: 20px;
+  padding-left: 20%; */
+}
+.game-heading-outer {
+  border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 36vh;
+  margin-top: 30px;
+}
+.tes-card {
+  overflow: scroll;
+
+  padding: 20px 0px;
+}
+.scrol-sec {
+  display: flex;
+  padding: 100px 100px;
+  position: relative;
+}
+.tes-icon {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.tes-card::-webkit-scrollbar {
+  display: none;
+}
+.tes-icon img {
+  width: 380px;
+  height: 220px;
+
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.tes-scr h3 {
+  padding-left: 30px;
+  color: #ffffff;
+
+  padding-top: 50px;
+  font-size: 25px;
+  /* font-weight: 700; */
+  padding-bottom: 20px;
+}
+.cards-nav {
+  color: #ffffff;
+
+  z-index: 3;
+}
+.cards-nav img {
+  padding: 0px 50px;
+}
+.tes-scr h6 {
+  padding-left: 30px;
+  color: #ffffff;
+
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.rating {
+  padding-left: 30px;
+  display: flex;
+  color: #f3cc30;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.tes-scr p {
+  font-size: 20;
+  /* padding: 20px 30px; */
+  padding-top: 0 !important;
+  font-family: auto;
+
+  color: #ffffff;
+}
+.tes-scr a {
+  text-decoration: none;
+  color: white;
+}
+.tes-scr button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 20px; */
+  /* margin: 2px 2px; */
+  padding: 6px 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  color: white;
+  font-weight: bold;
+  background-color: #58acff;
+  /* background: rgb(222,153,33);
+    background: linear-gradient(90deg, rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%);    */
+  border: none;
+  border-radius: 12px;
+  border: none;
+}
+
+.tes-btn {
+  color: honeydew;
+  background-color: #1c1e21;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 35%;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  border-radius: 25px;
+  border: 0;
+}
+.tes-btn1 {
+  color: honeydew;
+  background-color: #1c1e21;
+  position: absolute;
+  margin-top: 200px;
+  opacity: 0;
+  margin-left: 55%;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0;
+}
+.tes-card:hover > .tes-btn {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  transition: 0.5s;
+  opacity: 1;
+  border: 0;
+  box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+}
+.tes-card:hover > .tes-btn1 {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 90%;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  transition: 0.5s;
+  opacity: 1;
+  border: 0;
+  box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+}
+
+.first-card-style {
+  display: flex;
+  flex-direction: column;
+}
+.flex-style-props {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-col-style {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tes-scr h4 {
+  align-items: center;
+  padding-left: 20px;
+  /* color: #1c1e21; */
+  /* padding-top: 50px; */
+  position: absolute;
+  color: #ffffff;
+
+  /* font-size: 25px; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  /* font-weight: 700; */
+  padding-top: 50px;
+  margin-left: 7%;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2; /* color: #1c1e21; */
+  /* padding-top: 50px; */
+  /* font-size: 25px; */
+  /* font-weight: 700; */
+  /* padding-bottom: 20px;k */
+  /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+}
+.cards-nav {
+}
+@media only screen and (max-width: 900px) {
+  .cards-style-test-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .tes-scr {
+    margin-top: 20px;
+  }
+  .tes-btn {
+    display: none;
+  }
+  .tes-btn1 {
+    display: none;
+  }
+  .game-heading-outer {
+    border-left: 0px solid #c438ef;
+    padding-left: 0px;
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .our-games-outer-pad {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .work-outer-style {
+    padding: 40px 0px;
+    margin-top: 70px;
+  }
+}

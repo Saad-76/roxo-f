@@ -1,0 +1,118 @@
+.icons-back-style-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icons-back-style-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.careers-form-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #262250;
+    padding: 12px;
+ 
+    border-radius: 40px;
+}
+
+.input-fieds-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-field-inner{
+    /* background-color: #262250; */
+     
+    margin-top: 4%;
+    padding: 6px 18px;
+    outline: none;
+    color: #ffffff;
+    background: rgba(88, 88, 88, 0.21);
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+ 
+}
+.career-form-label{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+}
+.input-field-style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container-applyForm{
+    padding: 2px 251px;
+    color: white;
+}
+.submit-application-button{
+    margin-top: 4%; 
+    padding: 6px 18px;
+    width: 25%;
+    border-radius: 12px;
+    background-color: #58ACFF;
+    border: none;
+
+}
+
+.submit-application-heading{
+    padding: 7px 0px;
+    border-radius: 25px;
+    color: #ffe600;
+    width: 246px;
+    height: 40px;
+    border: 1px solid #ffe600;
+    text-align: center;
+    margin: 11px;
+
+}
+.job-titile-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 0px;
+}
+.applyForm-background{
+ height: 100vh;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.icons-backstyle-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 900px) {
+    .career-form-label{
+      display: none;
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .container-applyForm{
+        padding: 2px 87px;
+    }
+    .submit-application-button {
+        background-color: #58ACFF;
+        border: none;
+        border-radius: 12px;
+        margin-top: 4%;
+        padding: 6px 18px;
+        width: 100%;
+    }
+    .icons-backstyle-two {
+       display: none;
+    }
+  }

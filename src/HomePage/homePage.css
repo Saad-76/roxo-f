@@ -1,0 +1,29 @@
+.background-color-main {
+  background-color: #201d47;
+  overflow: visible !important;
+}
+/* .body {
+    overflow: visible !important;
+  } */
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(../Assests/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Vollkorn;
+  src: url(../Assests/Vollkorn-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Monterserat;
+  src: url(../Assests/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url(../Assests/BarlowCondensed-Medium.ttf);
+}
+/* @font-face {
+  font-family: OpenSans;
+  src: url(../Assests/OpenSans-VariableFont_wdth\wght.ttf);
+} */

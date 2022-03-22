@@ -1,0 +1,14 @@
+.text-align{
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+.work-heading-style{
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+.work-outer-style{
+    padding: 40px 0px;
+}

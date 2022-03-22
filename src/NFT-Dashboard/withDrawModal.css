@@ -1,0 +1,111 @@
+.withDraw-modal-style{
+    /* padding: 56px; */
+    padding: 6px;
+   
+    margin: 0px 0px 50px 0px;
+
+
+}
+.withDraw-address{
+    padding-left: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+.withDraw-network{
+    padding-left: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+.withDraw-Amount{
+    padding-left: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+.withDraw-Receive{
+    padding-left: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+.withDrawModal-heading{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #393469;
+    border-radius: 12px;
+    justify-content: center;
+
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+}
+.withdraw-address-field{
+    margin-left: 12px;
+    padding: 5px 12px;
+    background-color: #393469;    border-radius: 12px;
+    outline: none;
+
+    
+border: none;
+width: 64%;
+}
+.withDraw-network-field{
+    font-size: 15px;
+    line-height: 1.8;
+    outline: none;
+    color: #a79393;
+
+    font-family: monterserat;
+    margin-left: 32px;
+    padding: 5px 12px;
+    background-color: #393469;    border-radius: 12px;
+    border: none;
+width: 64%;
+}
+.withDraw-Amount-field{
+    margin-left: 12px;
+    padding: 5px 12px;
+    background-color: #393469;    border-radius: 12px;
+    outline: none;
+
+    border: none;
+width: 64%;
+
+}
+.withDraw-recieve-field{
+    margin-left: 12px;
+    margin-top: 20px;
+    padding: 5px 12px;
+    /* background-color: #e4e6e
+    b ; */
+    
+    outline: none;
+
+    border-radius: 12px;
+}
+.withDrawModal-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.withDrawModal-button-style{
+    padding: 6px 4px;
+    /* margin: 4% 0; */
+    color: white;
+    border-radius: 12px;
+    width: 15%;
+  
+    background-color: #393469;    border:none;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+}
+.modal-size-withDraw{
+    max-width: 56.5% !important;
+
+}

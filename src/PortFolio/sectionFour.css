@@ -1,0 +1,8 @@
+.sectionFour-background-image{
+    background-image: url("../Assests/portfolio/FourBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 137vh;
+  /* background-position-y: -14rem; */
+
+}

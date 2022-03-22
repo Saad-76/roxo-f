@@ -1,0 +1,147 @@
+.legendary-nft-outer{
+  padding: 60px 0px;
+}
+.legendary_nft {
+    color: white;
+    padding: 18px 60px;
+
+  }
+  .legendary-nft-inner-flex {
+    display: flex;
+    flex-direction: row;
+    background-color: #262250;
+    padding: 25px;
+    border-radius: 30px;
+  }
+  
+  .legendary-inner-left {
+    text-align: center;
+  }
+  .legendary-nft-link-button-outer {
+  }
+  .legendary-nft-outer-pad {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+  }
+  .legendary-nft-link-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .legendary-inner-flex-images {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .legendary-inner-heading {
+    text-align: center;
+    padding: 34px;
+  }
+  .legendary-nft-slider-outer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .nftSlider-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    /* background-color: rgba(0,0,0,0.1);   */
+  }
+  .newNftSlider-view-button-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 27px 0px;
+  }
+  .newNftSlider-view-button-inner {
+    padding: 6px 18px;
+  
+    width: 20%;
+    border-radius: 12px;
+    /* margin: 4% 0; */
+    color: #1c1e21;
+  
+    background-color: #58acff;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+    color: #ffff;
+  
+    border: none;
+  }
+  
+  .legendary-nft-slider {
+    overflow: scroll;
+    display: flex;
+    /* padding: 40px 0px; */
+  }
+  .legendary-nft-slider::-webkit-scrollbar {
+    display: none;
+  }
+  .tes-btn11 {
+    color: honeydew;
+    background-color: #1c1e21;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 35%;
+    width: 20px;
+    height: 50px;
+    opacity: 0;
+    border-radius: 25px;
+    border: 0;
+  }
+  .tes-btn12 {
+    color: honeydew;
+    background-color: #1c1e21;
+    position: absolute;
+    margin-top: 40px;
+    opacity: 0;
+    margin-left: 55%;
+    width: 20px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+  }
+  .legendary-nft-slider:hover > .tes-btn11 {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+    opacity: 1;
+    border: 0;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+  }
+  .legendary-nft-slider:hover > .tes-btn12 {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 80%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+    opacity: 1;
+    border: 0;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+  }
+  
+  .image-slider-style {
+    margin-left: 100px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+  }
+  .legendary-nft-link-button-inner {
+    /* margin-top: 2%; */
+    padding: 6px 10px;
+    width: 16%;
+    border-radius: 12px;
+    color: white;
+    background: #58acff;
+    /* background: linear-gradient( 90deg , rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%); */
+    border: none;
+  }
+  

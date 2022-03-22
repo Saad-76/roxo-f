@@ -1,0 +1,6 @@
+.sectionFive-background-image{
+    background-image: url("../Assests/portfolio/FiveBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+height: 100vh;
+}

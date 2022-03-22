@@ -1,0 +1,113 @@
+.market-product-detail-background {
+  background-color: #262250;
+  margin: 50px;
+  height: 440px;
+  border-radius: 10px;
+  padding: 30px;
+}
+.price-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+.coin-button-outer {
+  text-align: center;
+}
+.product-detail-price {
+  background-color: #393469;
+
+  padding: -9px 14px;
+  width: 20%;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
+.market-purchase-outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.market-purchase-button-inner {
+  background-color: #58acff;
+
+  padding: 12px 14px;
+  width: 30%;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+.market-add-button-inner {
+  background-color: #201d47;
+
+  padding: 12px 14px;
+  width: 30%;
+  border-radius: 12px;
+  border: 1px solid #58acff;
+  color: white;
+}
+.market-detail-bottom-outer {
+  background-color: #393469;
+  padding: 20px;
+  margin-top: 4%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.confirm-text {
+  text-align: center;
+  color: white;
+  padding: 20px 0px;
+}
+.market-confirm-inner {
+  background-color: #58acff;
+
+  padding: 12px 14px;
+  width: 30%;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+.market-cancel-inner {
+  background-color: #58acff;
+
+  padding: 12px 14px;
+  width: 30%;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+.confirm-modal-outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 12px;
+}
+@media screen and (max-width: 900px) {
+  .market-detail-bottom-outer {
+    background-color: #393469;
+    padding: 20px;
+    margin-top: 4%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    align-content: space-between;
+  }
+  .market-product-detail-background {
+    background-color: #262250;
+    margin: 50px;
+    height: 935px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .img-resp-margin {
+    margin-top: 20px;
+  }
+}

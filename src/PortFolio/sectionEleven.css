@@ -1,0 +1,10 @@
+.sectionEleven-background-image{
+    background-image: url("../Assests/back2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+
+}
+.section-heading{
+    color: white;
+}

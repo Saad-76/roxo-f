@@ -1,0 +1,33 @@
+/* .contact-us-heading{
+    color: white;
+}
+.contact-react-text{
+    text-align: center;
+}
+.contact-col-section{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+} */
+
+.contact-us-heading {
+  padding: 10px 0px;
+  margin: 20px 0px;
+}
+.contact-us-section-pad {
+  padding: 50px 0px;
+}
+.contact-us-outer {
+  border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 18vh;
+  color: white;
+}
+@media only screen and (max-width: 900px) {
+  .contact-us-outer {
+    border-left: 4px solid #c438ef;
+    padding-left: 15px;
+    margin-left: 6vh;
+  }
+}

@@ -1,0 +1,25 @@
+.gameTwo-main-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.image-gameTwo-outer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.image-gameTwo-inner{
+    border-radius: 12px;
+}
+.content-gameTwo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 536px;
+    text-align: justify;
+    
+}

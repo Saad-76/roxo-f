@@ -1,0 +1,19 @@
+.portfolio-sidebar-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 160px;
+    /* padding: 49px 20px; */
+    position: fixed;
+    border-right: 0.4px solid rgb(232, 232, 232);
+
+}
+.portfolio-sidebar-style a{
+    text-decoration: none;
+    color: white;
+    padding-top: 36px;
+}
