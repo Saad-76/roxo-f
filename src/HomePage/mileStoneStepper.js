@@ -1,4 +1,4 @@
-import { React, useState,useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import "./mileStoneStepper.css";
 
@@ -34,20 +34,6 @@ const MileStoneStepper = () => {
     setDataThree(false);
     setDataFour(true);
   };
-
-  // useEffect(() => {
-  //   let header = document.getElementById("myDIV");
-  // let btns = header.getElementsByClassName("stepper-button-style");
-  // for (let i = 0; i < btns.length; i++) {
-  //   btns[i].addEventListener("click", function() {
-  //   let current = document.getElementsByClassName("active");
-  //   current[0].className = current[0].className.replace(" active", "");
-  //   this.className += " active";
-  //   });
-  // }
-  // },[]);
-  
-  
 
   return (
     <div className="milestone-steper-pad">

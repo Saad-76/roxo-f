@@ -6,7 +6,8 @@ import ForWebsite from "../Assests/For Website.png";
 import HasteKing  from "../Assests/HasteKing.png";
 import SliderImage3 from "../Assests/SliderImage3.png"
 
-// import Render9 from "../Assests/render 9.png";
+
+import Render9 from "../Assests/render 9.png";
 // import Render11 from "../Assests/render 11.png";
 
 import "./slider.css"
@@ -27,9 +28,13 @@ const Slider=()=> {
             <Carousel.Item>
               <img
                 className="d-block image-height   w-100"
+                id="imagebg"
                 src={ForWebsite}
                 alt="Second slide"
               />
+
+              {/* <img className='img-sm' src={Render9} alt="render9"/> */}
+
             </Carousel.Item>
             <Carousel.Item>
               <img

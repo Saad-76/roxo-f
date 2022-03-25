@@ -14,7 +14,7 @@ const Dashboard = () => {
   return (
     <div>
       <DashboardHeader/>
-      {/* <MetaMaskLoginData/> */}
+      <MetaMaskLoginData/>
       <Welcome />
       <RoxoPlay/>
       {/* <PlayGames /> */}

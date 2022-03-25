@@ -1,60 +1,47 @@
 import React, { useState, useEffect } from "react";
 import { ethers, utils } from "ethers";
-import "./metaMask.css"
+import "./metaMask.css";
 
-
-
-
-
-const MetaMaskLoginData=()=> {
-
-
-
-  
+const MetaMaskLoginData = () => {
   const [account, setAccount] = useState({});
 
+  const connectWallet = async () => {
+    if (!window.ethereum) {
+      alert("please install MetaMask");
+      return;
+    }
 
+    try {
+      await window.ethereum.request({ method: "eth_requestAccounts" });
 
-const connectWallet =async ()=>{
-  if (!window.ethereum) {
-    alert('please install MetaMask');
-    return;
-  }
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
 
-try {
-  await window.ethereum.request({ method: 'eth_requestAccounts' });
+      const signer = provider.getSigner();
+      const address = await signer.getAddress();
+      const ens = await provider.lookupAddress(address);
+      // const avatar = await provider.getAvatar(ens);
 
-  const provider =  new ethers.providers.Web3Provider(window.ethereum);
- 
-  const signer = provider.getSigner();
-  const address = await signer.getAddress();
-  const ens = await provider.lookupAddress(address);
-  // const avatar = await provider.getAvatar(ens);
+      setAccount({
+        address,
+        // avatar,
+        ens,
+      });
 
-  setAccount({
-    address,
-    // avatar,
-    ens
-  });
-
-  console.log('address', address)
-} catch (error) {
-  console.log(error)
-}}
-
-
+      console.log("address", address);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
-<>
-{account.address ? (
-    <p color='black'> MetaMask wallet address is : {account.address}</p>
-  ) : (
-    <button onClick={connectWallet}>Connect wallet</button>
-  )}
-
-</>
-    
+    <>
+      {account.address ? (
+        <p color="black"> MetaMask wallet address is : {account.address}</p>
+      ) : (
+        <button onClick={connectWallet}>Connect wallet</button>
+      )}
+    </>
   );
-}
+};
 
 export default MetaMaskLoginData;

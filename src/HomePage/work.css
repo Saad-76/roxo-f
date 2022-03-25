@@ -40,3 +40,15 @@
   color: white;
   font-weight: bold;
 }
+@media only screen and (max-width: 900px) {
+  .work-content-section-backgroud {
+    background-color: #262250;
+    height: 345px;
+    width: 243px;
+    border-radius: 30px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+}
+}

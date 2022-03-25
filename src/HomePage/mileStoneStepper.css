@@ -82,15 +82,17 @@
 @media screen and (max-width: 900px) {
   .stepper-content-background {
     background-color: #262250;
-    height: 394px;
-    width: 383px;
+    height: 528px;
+    width: 328px;
     border-radius: 30px;
-
     margin-left: 12px;
     color: white;
-  }
+}
   .arrow-icon-style {
     margin: 0px -1px;
     color: #6b94bd;
+  }
+  .stepper-button-inner-line{
+    display: none;
   }
 }
