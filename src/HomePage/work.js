@@ -53,7 +53,7 @@ const Work = () => {
         <div className="container">
           <div className="col-md-12 d-flex">
             <div className="col-md-2"></div>
-            <div className="col-md-8 d-flex">
+            <div className="col-md-8 work-outer-flex-style">
               <div className="work-button-style-outer">
                 <div>
                   <button className="work-button-style active " onClick={handleDataOne}>

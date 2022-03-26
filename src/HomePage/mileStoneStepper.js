@@ -41,12 +41,15 @@ const MileStoneStepper = () => {
         <h1>MILESTONE</h1>
       </div>
       {/* -------button-style------------------ */}
-      <div className="col-md-12 d-flex">
+      <div className="milestone-icon-main col-md-12  d-flex">
         <div className="col-md-2"></div>
-        <div className="col-md-8 stepper-button-outer " id="myDIV">
+        <div
+          className="col-md-8 stepper-button-outer mile-stone-middle-flex "
+          id="myDIV"
+        >
           <button
             type="button"
-            className="stepper-button-style  active"
+            className="stepper-button-style  "
             onClick={handleDataFour}
           >
             Q4
@@ -84,7 +87,7 @@ const MileStoneStepper = () => {
       {dataOne && (
         <div className="col-md-12 d-flex">
           <div className="col-md-2"></div>
-          <div className="col-md-8">
+          <div className="col-md-8 mile-stone-middle-flex ">
             <div className="stepper-content-background">
               <div className="stepper-inner-heading">
                 <h3>Q1- 2022</h3>
@@ -98,9 +101,9 @@ const MileStoneStepper = () => {
                   <p>• Complete NFT Smart Contracts.</p>
                   <p>• Introduce Free to play, play to earn mechanism.</p>
                 </div>
-                <div className="col-md-6 ">
+                <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
-                  <p className="status-content">Under Development</p>
+                  <h3 className="status-content">Under Development</h3>
                 </div>
               </div>
             </div>
@@ -111,7 +114,7 @@ const MileStoneStepper = () => {
       {dataTwo && (
         <div className="col-md-12 d-flex">
           <div className="col-md-2"></div>
-          <div className="col-md-8">
+          <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">
               <div className="stepper-inner-heading">
                 <h3>Q2- 2022</h3>
@@ -130,9 +133,9 @@ const MileStoneStepper = () => {
                     Distribution.
                   </p>
                 </div>
-                <div className="col-md-6 ">
+                <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
-                  <p className="status-content">Under Development</p>
+                  <h3 className="status-content">Under Development</h3>
                 </div>
               </div>
             </div>
@@ -143,7 +146,7 @@ const MileStoneStepper = () => {
       {dataThree && (
         <div className="col-md-12 d-flex">
           <div className="col-md-2"></div>
-          <div className="col-md-8">
+          <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">
               <div className="stepper-inner-heading">
                 <h3>Q3- 2022</h3>
@@ -156,9 +159,9 @@ const MileStoneStepper = () => {
                   <p>• Testing .</p>
                   <p>• Official Launch for the world .</p>
                 </div>
-                <div className="col-md-6 ">
+                <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
-                  <p className="status-content">Under Development</p>
+                  <h3 className="status-content">Under Development</h3>
                 </div>
               </div>
             </div>
@@ -169,7 +172,7 @@ const MileStoneStepper = () => {
       {dataFour && (
         <div className="col-md-12 d-flex">
           <div className="col-md-2"></div>
-          <div className="col-md-8">
+          <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">
               <div className="stepper-inner-heading">
                 <h3>Q4- 2021</h3>
@@ -182,9 +185,9 @@ const MileStoneStepper = () => {
                   <p>• Roxo Platform and Game Proof-Of-Concept.</p>
                   <p>• ROXO Platform Initial development.</p>
                 </div>
-                <div className="col-md-6 ">
+                <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
-                  <p className="status-content">Complete</p>
+                  <h3 className="status-content">Complete</h3>
                 </div>
               </div>
             </div>

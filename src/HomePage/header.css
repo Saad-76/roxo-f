@@ -12,7 +12,7 @@
   display: flex;
   background-color: #201d47;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   /* -------------- */
   color: #ffffff;
@@ -23,7 +23,11 @@
   display: flex;
   flex-direction: row;
 }
-.ourGames {
+
+.display-header a {
+  margin: 0px 20px;
+}
+/* .ourGames {
   margin-left: 34px;
 }
 .ourCommunity {
@@ -34,7 +38,7 @@
 }
 .marketPlace {
   margin-left: 34px;
-}
+} */
 
 .glowCoin {
   position: absolute;
@@ -74,7 +78,7 @@
   border-radius: 12px;
   color: #ffffff;
   background: #58acff;
-    border: none;
+  border: none;
   padding: 5px 10px;
 }
 .dropdown-content {
@@ -176,13 +180,13 @@
   flex-direction: row;
 }
 .slides {
-  width: 40%;
+  width: 100%;
   position: absolute;
   top: 100px;
   background-color: #201d47;
   z-index: 3;
   display: none;
-  right: 10%;
+  /* right: 10%; */
   /* box-shadow: 2px 2px 2px 2px grey; */
 }
 .slide-down {
@@ -280,16 +284,16 @@
   background-color: #201d47;
   font-weight: 1000;
 }
-.header-price-button-style{
+.header-price-button-style {
   border-radius: 25px !important;
   color: white !important;
   width: 120px !important;
   height: 40px !important;
-  border: 1px solid  #58acff !important;
+  border: 1px solid #58acff !important;
   text-align: center !important;
   background: transparent !important;
 }
-.header-price-button-style:hover{
+.header-price-button-style:hover {
   background-color: #58acff !important;
 }
 
@@ -321,12 +325,11 @@
   .dropdown-content1 a {
     display: flex;
   }
-  .header-price-button-style-resp{
+  .header-price-button-style-resp {
     background: transparent;
     border: none;
     color: white;
     text-align: center;
-
   }
 }
 

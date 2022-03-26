@@ -207,15 +207,13 @@ const GamingNft = () => {
                   <h3 className="gaming-inner-heading">Lorem Ipsm</h3>
                 </div>
                 <div className="gaming-nft-link-buttons">
-                  <button className="gaming-nft-link-button-inner">
-                    Link1
-                  </button>
-                  <button className="gaming-nft-link-button-inner">
+                  <button className="gaming-nft-link-button-inner">Link</button>
+                  {/* <button className="gaming-nft-link-button-inner">
                     Link2
                   </button>
                   <button className="gaming-nft-link-button-inner">
                     Link3
-                  </button>
+                  </button> */}
                 </div>
                 {/* </div> */}
               </div>

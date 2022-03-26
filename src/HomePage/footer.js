@@ -1,6 +1,6 @@
 import React from "react";
-import FooterLeft from "../Assests/FooterLeft.png";
-import FooterRight from "../Assests/FooterRight.png";
+import FooterLeft from "../Assests/bottomleft.png";
+import FooterRight from "../Assests/bottomright.png";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import { AiOutlineInstagram, AiFillGoogleCircle } from "react-icons/ai";
 
@@ -9,7 +9,7 @@ import "./footerTwo.css";
 const Footer = () => {
   return (
     <>
-      <div className="footer col-sm-12  " style={{ overflowX: "hidden" }}>
+      <div className="footer col-sm-12  " >
         <div className="col-md-4 image-left">
           <img src={FooterLeft} alt="" className="img-fluid" />
         </div>

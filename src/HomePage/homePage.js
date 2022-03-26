@@ -17,6 +17,7 @@ import GamingNft from "./gamingNft";
 import Partners from "./partners";
 import Work from "./work";
 import MileStoneStepper from "./mileStoneStepper";
+import WalletModal from "./walletModal"
 
 const HomePage = () => {
   return (
@@ -26,9 +27,9 @@ const HomePage = () => {
       <Login />
       <Slider />
       <TesCards />
-      <Roxo />
+      {/* <Roxo /> */}
       <GamingNft />
-
+<WalletModal/>
       <MileStoneStepper />
       <Vision />
       <Play />

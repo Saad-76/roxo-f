@@ -154,7 +154,7 @@
 .gaming-nft-link-button-inner {
   /* margin-top: 2%; */
   padding: 6px 10px;
-  width: 16%;
+  width: 40%;
   border-radius: 12px;
   color: white;
   background: #58acff;
@@ -192,9 +192,7 @@
     border-radius: 30px;
     overflow: hidden;
   }
-  .gaming-nft-link-button-inner {
-    width: auto;
-  }
+ 
   .gaming-nft-heading {
     border-left: 4px solid #c438ef;
     padding-left: 15px;

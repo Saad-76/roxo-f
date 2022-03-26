@@ -11,6 +11,7 @@ const OurGames = () => {
   return (
     <>
       <Header />
+
       <div className="support-heading-outer">
         <h3 className="support-heading-style">Our Games</h3>
       </div>

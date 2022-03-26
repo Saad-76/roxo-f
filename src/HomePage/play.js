@@ -29,15 +29,19 @@ const Play = () => {
           <div className="col-md-6">
             <div>
             <img src={AppStore} alt="appstore" height="60px" width="185px"/>
+            <p className="text-coming" >Coming Soon...</p>
+
             </div>
             {/* <button className="button-style-play"> Download Wallet</button> */}
           </div>
           <div className=" col-md-6">
             <div>
           <img  className="google-play-image" src={PlayStore} alt="playstore" height="60px" width="185px"/>
+        <p className="text-coming" >Coming Soon...</p>
 </div>
             {/* <button className="pl-5 button-style-play ">IOS Download</button> */}
           </div>
+          
           </div>
 
           {/* <div className="col-md-12 mt-4 second-buttons-style">

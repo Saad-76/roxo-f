@@ -42,14 +42,32 @@ const Header = () => {
             {/* <h5>ROXO</h5> */}
           </div>
         </Link>
-        <div className="display-header">
-          <Link to="/ourgames" className="ourGames">
-            Our Games
-          </Link>
-          <Link className="marketPlace" to="/marketPlace">
-            Market Place
-          </Link>
-          {/* <Link>
+        <Link to="/" className="ourGames">
+          Home
+        </Link>
+        <Link to="/ourgames" className="ourGames">
+          Our Games
+        </Link>
+        <Link className="marketPlace" to="/marketPlace">
+          Market Place
+        </Link>
+        <Link to="/support">
+          {/* <img src={contactIcon} height="20px" /> */}
+          Support
+        </Link>
+        <Link to="/careers">
+          {/* <img src={careerIcon} height="20px" /> */}
+          Careers
+        </Link>
+        <Link onClick={onResumeClick}>
+          {/* <img src={WhiteIcon} height="20px" /> */}
+          White Paper
+        </Link>
+        <Link to="/contactus">
+          {/* <img src={contactIcon} height="20px" /> */}
+          Contact Us
+        </Link>
+        {/* <Link>
           <div className="hover-coin">
             <img className="glowCoin" src={Glowcoin} height="50px"></img>
             <div className="coin-logo">
@@ -58,7 +76,8 @@ const Header = () => {
             </div>
           </div>
         </Link> */}
-          <Link className="dropbtn ourCommunity">
+
+        {/* <Link className="dropbtn ourCommunity">
             Our Community <AiFillCaretDown size={10} />
             <div class="dropdown-content">
               <Link>
@@ -78,8 +97,9 @@ const Header = () => {
                 Telegram
               </Link>
             </div>
-          </Link>
-          <Link className="dropbtn1 more">
+          </Link> */}
+
+        {/* <Link className="dropbtn1 more">
             More
             <AiFillCaretDown size={10} />
             <div class="dropdown-content1">
@@ -100,20 +120,22 @@ const Header = () => {
                 Contact Us
               </Link>
             </div>
-          </Link>
-        </div>
+          </Link> */}
         <div>
           <Link to="/buyForm">
             <button className="header-price-button-style">$ 5.09</button>
           </Link>
           &nbsp;&nbsp;
-          <button
+          <button data-bs-toggle="modal" data-bs-target="#walletModal">
+            <b>Connect Wallet</b>
+          </button>
+          {/* <button
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             onClick={() => setModalShow(true)}
           >
             <b> GAME EARNINGS </b>
-          </button>
+          </button> */}
         </div>
         {/* <button data-bs-toggle="modal" data-bs-target="#exampleModal">
           GAME EARNINGS
@@ -144,21 +166,50 @@ const Header = () => {
           <p>Close</p>
         </div>
         <div className="slide-down">
-          <Link className="nav-links  single active " href="#homepage">
+          <Link className="nav-links  single  " href="#vision" to="/">
+            <p>Home </p>
+          </Link>
+        </div>
+        <div className="slide-down">
+          <Link className="nav-links  single  " href="#homepage">
             <p> Our Games </p>
           </Link>
         </div>
         <div className="slide-down">
-          <Link className="nav-links  single active " href="#vision">
-            <p>Market Place </p>{" "}
-          </Link>{" "}
+          <Link className="nav-links  single  " href="#vision">
+            <p>Market Place </p>
+          </Link>
         </div>
         <div className="slide-down">
+          <Link>
+            <p>Support</p>
+          </Link>
+        </div>
+        <div className="slide-down">
+          <Link>
+            <p> Careers</p>
+          </Link>
+        </div>
+        <div className="slide-down">
+          <Link>
+            <p> Contact Us </p>
+          </Link>
+        </div>
+        <div className="slide-down">
+          <Link onClick={onResumeClick}>
+            <p> White Paper</p>
+          </Link>
+        </div>
+        <div className="slide-down">
+          <Link onClick={onResumeClick}>
+            <p>$5.09</p>
+          </Link>
+        </div>
+        {/* <div className="slide-down">
           <Link className="nav-links-1 single " id="target2" href="#tools">
             <AiFillCaretLeft size={15} />
             <div class="dropdown-content">
               <Link>
-                {" "}
                 <img src={blogIcon} height="20px" />
                 Blog
               </Link>
@@ -176,10 +227,9 @@ const Header = () => {
               </Link>
             </div>
             Our Community
-            {/* <p>O</p> */}
           </Link>
-        </div>
-        <div className="slide-down">
+        </div> */}
+        {/* <div className="slide-down">
           <Link className="nav-links-2 single" id="target3" href="#news">
             <AiFillCaretLeft size={15} />
             <div class="dropdown-content1">
@@ -202,17 +252,17 @@ const Header = () => {
             </div>
             <p>More</p>
           </Link>
-        </div>
-        <div>
-          <button className="header-price-button-style-resp ">$ 5.09</button>{" "}
-          &nbsp;&nbsp;
-        </div>
+        </div> */}
         <div className="slide-down">
-          {/* <Link className="nav-links single " to="/login"> */}
-          <p onClick={() => setModalShow(true)}>GAME EARNINGS</p>{" "}
-          <Login show={modalShow} onHide={() => setModalShow(false)} />
-          {/* </Link> */}
+          <p data-bs-toggle="modal" data-bs-target="#walletModal">
+            {" "}
+            Connect Wallet
+          </p>
         </div>
+        {/* <div className="slide-down">
+          <p onClick={() => setModalShow(true)}>GAME EARNINGS</p>
+          <Login show={modalShow} onHide={() => setModalShow(false)} />
+        </div> */}
       </div>
     </div>
   );

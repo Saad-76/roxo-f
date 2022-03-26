@@ -81,7 +81,11 @@ align-items: center; */
   justify-content: center;
   align-items: center;
 }
-
+.text-coming{
+  color: white;
+  text-align: center;
+  padding-left: 25px;
+}
 /* @media screen and (max-width: 800px) {
     .play-main-style{
         display: flex;
