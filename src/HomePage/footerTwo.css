@@ -79,6 +79,12 @@ padding: 8px 0px;
   text-align: center;
   padding-top: 272px;
 }
+.footer-bg{
+  display: block;
+}
+.footer-resp{
+  display: none;
+}
 @media screen and (max-width: 900px) {
   .image-left {
     display: none;
@@ -91,4 +97,17 @@ padding: 8px 0px;
     display: flex;
     justify-content: center;
   }
+  .footer-resp{
+    color: white;
+    display: block;
+    background-color: #262250;
+  }
+  .footer-bg{
+    display: none;
+  }
+  .footer-content-style {
+    margin-top: 68px;
+    text-align: center;
+    padding-top: 28px;
+}
 }
