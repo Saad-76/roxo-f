@@ -1,0 +1,33 @@
+.connect-wallet-background {
+  background-color: #393469;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+.wallet-heading-style {
+  text-align: center;
+  color: white;
+  padding: 12px;
+}
+.wallet-button-style-inner {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 12px;
+  color: #ffffff;
+  background: #201d47;
+  border: none;
+  padding: 8px 12px;
+}
+.wallet-colose-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+.wallet-colose-btn svg {
+  color: red;
+}

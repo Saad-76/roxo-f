@@ -20,6 +20,7 @@ import BuyForm from "./HomePage/buyForm";
 import PortSideBar from "./PortFolio/portSideBar"
 import MarketPlace from "./MarketPlace/marketPlace";
 import MarketProductDetail from "./MarketPlace/marketProductDetail";
+import WalletModal from "./HomePage/walletModal";
 // import sectionOne from "./PortFolio/sectionOne"
 // import sectionTwo from "./PortFolio/sectionTwo"
 // import sectionThree from "./PortFolio/sectionThree"
@@ -32,6 +33,8 @@ const Routes = () => {
   return (
     <>
       <Router>
+      <WalletModal/>
+
         <Switch>
         <Route exact path="/homepage" component={HomePage}>
           <HomePage />
