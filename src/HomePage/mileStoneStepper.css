@@ -94,14 +94,12 @@
 
 @media screen and (max-width: 900px) {
   .stepper-content-background {
-    
-      background-color: #262250;
-      height: 568px;
-      width: 328px;
-      border-radius: 30px;
-      margin-left: 12px;
-      color: white;
- 
+    background-color: #262250;
+    height: 568px;
+    width: 328px;
+    border-radius: 30px;
+    margin-left: 12px;
+    color: white;
   }
   .arrow-icon-style {
     margin: 0px -1px;
@@ -132,13 +130,10 @@
     flex-direction: column;
   }
   .status-content {
-   
-      
-      padding: 6px;
-      text-align: center;
-      background-color: #393469;
-      border-radius: 12px;
-      width: 80%;
- 
+    padding: 6px;
+    text-align: center;
+    background-color: #393469;
+    border-radius: 12px;
+    width: 80%;
   }
 }

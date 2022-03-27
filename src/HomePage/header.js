@@ -171,27 +171,31 @@ const Header = () => {
           </Link>
         </div>
         <div className="slide-down">
-          <Link className="nav-links  single  " href="#homepage">
+          <Link className="nav-links  single  " to="/ourgames" href="#homepage">
             <p> Our Games </p>
           </Link>
         </div>
         <div className="slide-down">
-          <Link className="nav-links  single  " href="#vision">
+          <Link
+            className="nav-links  single  "
+            to="/marketPlace"
+            href="#vision"
+          >
             <p>Market Place </p>
           </Link>
         </div>
         <div className="slide-down">
-          <Link>
+          <Link to="/support">
             <p>Support</p>
           </Link>
         </div>
         <div className="slide-down">
-          <Link>
+          <Link to="/careers">
             <p> Careers</p>
           </Link>
         </div>
         <div className="slide-down">
-          <Link>
+          <Link to="/contactus">
             <p> Contact Us </p>
           </Link>
         </div>
@@ -201,7 +205,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="slide-down">
-          <Link onClick={onResumeClick}>
+          <Link to="/buyForm">
             <p>$5.09</p>
           </Link>
         </div>
@@ -255,7 +259,6 @@ const Header = () => {
         </div> */}
         <div className="slide-down">
           <p data-bs-toggle="modal" data-bs-target="#walletModal">
-            {" "}
             Connect Wallet
           </p>
         </div>
