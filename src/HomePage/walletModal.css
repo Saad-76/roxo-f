@@ -31,3 +31,10 @@
 .wallet-colose-btn svg {
   color: red;
 }
+.wallet-button-background{ 
+   background-color: #393469;
+  padding: 12px 20px;
+  border-radius: 14px;
+  margin-top: 12px;
+  color: white;
+}

@@ -11,7 +11,9 @@ const  Careers=()=> {
 <Header/>
 <CareersHome/>
 <Path/>
+<div className='carers-footer-height'>
 <Footer/>
+</div>
 </div>
       </>
   );

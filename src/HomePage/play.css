@@ -108,7 +108,7 @@ align-items: center; */
   } */
 @media only screen and (max-width: 900px) {
   .play-main-style {
-    /* margin-top: 40px; */
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -55,7 +55,7 @@ const Header = () => {
         <Link to="/support" className="font-style-header">
           Support
         </Link>
-        <Link to="/careers " className="font-style-header">
+        <Link to="/careers" className="font-style-header">
           Careers
         </Link>
         <Link onClick={onResumeClick} className="font-style-header">

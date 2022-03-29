@@ -15,7 +15,7 @@ const Engineering = () => {
         <Path />
         <div className="container">
           {/* <h1>Engineering</h1> */}
-          <div className="row">
+          <div className="row  cards-jobs-margin">
             <div className="col-md-6 column-style">
               <CardProp
                 headLg="Senior 3D Animator"

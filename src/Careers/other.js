@@ -15,7 +15,7 @@ const Other = () => {
       <CareersHome />
       <Path />
       <div className="container">
-        <div className="row">
+        <div className="row  cards-jobs-margin">
           <div className="col-md-6 column-style">
             <CardProp
               headLg="Senior 3D Animator"

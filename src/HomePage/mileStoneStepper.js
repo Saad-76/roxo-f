@@ -85,7 +85,7 @@ const MileStoneStepper = () => {
       </div>
 
       {dataOne && (
-        <div className="col-md-12 d-flex">
+        <div className="col-md-12 outer-flex-content-milestone">
           <div className="col-md-2"></div>
           <div className="col-md-8 mile-stone-middle-flex ">
             <div className="stepper-content-background">
@@ -112,7 +112,7 @@ const MileStoneStepper = () => {
         </div>
       )}
       {dataTwo && (
-        <div className="col-md-12 d-flex">
+        <div className="col-md-12 outer-flex-content-milestone">
           <div className="col-md-2"></div>
           <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">
@@ -144,7 +144,7 @@ const MileStoneStepper = () => {
         </div>
       )}
       {dataThree && (
-        <div className="col-md-12 d-flex">
+        <div className="col-md-12 outer-flex-content-milestone">
           <div className="col-md-2"></div>
           <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">
@@ -170,7 +170,7 @@ const MileStoneStepper = () => {
         </div>
       )}
       {dataFour && (
-        <div className="col-md-12 d-flex">
+        <div className="col-md-12 outer-flex-content-milestone">
           <div className="col-md-2"></div>
           <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">

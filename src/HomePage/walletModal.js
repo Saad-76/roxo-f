@@ -45,35 +45,37 @@ const WalletModal = () => {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-body">
-              {/* <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button> */}
               <div className="wallet-colose-btn">
-              <AiOutlineClose
-                data-bs-dismiss="modal"
-                aria-label="Close"
-                size={30}
-                type="button"
-              />
+                <AiOutlineClose
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  size={30}
+                  type="button"
+                />
               </div>
               <h3 className="wallet-heading-style">Connect MetaMask</h3>
-              <div className="connect-wallet-background">
+              <div className="">
                 {account.address ? (
                   <p color="black">
-                    {" "}
                     MetaMask wallet address is : {account.address}
                   </p>
                 ) : (
-                  <button
+                  <div className="wallet-button-background">
+                  <h6
+                  type="button"
                     onClick={connectWallet}
-                    className="wallet-button-style-inner"
+                    className=""
                   >
-                    Connect wallet
-                  </button>
+                    Connect MetaMask
+                  </h6>
+                  </div>
                 )}
+              </div>
+              <div className="wallet-button-background" >
+                <h6  type="button">Connect ROXO Wallet</h6>
+              </div>
+              <div className="wallet-button-background">
+                <h6  type="button">Connect Safepal</h6>
               </div>
             </div>
           </div>
