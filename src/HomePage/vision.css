@@ -36,6 +36,7 @@
     flex-direction: row;
     justify-content: flex-end;
     padding: 20px 0px;
+    font-family: 'Cinzel';
 }
 .vision-text-data-style {
   max-width: 300px;
@@ -121,7 +122,8 @@ padding-right: 1px;
   align-items: flex-end;
 }
 .vision-para {
-  font-family: Monterserat;
+  font-family: 'Nuninto';
+
   font-size: 15px;
   line-height: 1.8;
 }
@@ -135,10 +137,15 @@ padding-right: 1px;
 .vision-heading-outer{
   border-left: 4px solid #c438ef;
   padding-left: 15px;
-  margin-left: 17vh;
-  margin-top: 30px;
-  margin-bottom: 29px;
+  margin-left: 7vh;
+  margin-top: 8px;
   color: white;
+  margin-bottom: 38px;
+  font-family: 'Cinzel';
+}
+.vision-heading-outer h1{
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 @media only screen and (max-width: 900px) {
   .vision-main-style {

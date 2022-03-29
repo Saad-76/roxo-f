@@ -22,6 +22,12 @@
   max-width: 536px;
   text-align: justify;
 }
+.content-gameOne-section h3{
+  font-family: 'Cinzel';
+}
+.content-gameOne-section p{
+  font-family: Nuninto;
+}
 .gameOne-outer-pad {
   padding: 0px 50px;
 }

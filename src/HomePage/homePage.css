@@ -23,7 +23,15 @@
   font-family: Barlow;
   src: url(../Assests/BarlowCondensed-Medium.ttf);
 }
-/* @font-face {
-  font-family: OpenSans;
-  src: url(../Assests/OpenSans-VariableFont_wdth\wght.ttf);
-} */
+
+
+
+@font-face {
+  font-family: Nuninto;
+  src: url(../Assests/NunitoSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Cinzel;
+  src: url(../Assests/Cinzel-VariableFont_wght.ttf);
+}

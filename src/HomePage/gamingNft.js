@@ -77,11 +77,10 @@ const GamingNft = () => {
   return (
     <>
       <div className="gaming-nft-outer gaming-section-pad">
+        <div className="gaming-nft-heading">
+          <h1 className="gaming-nft-heading-inner">GAMING NFTs</h1>
+        </div>
         <div className="gaming_nft">
-          <div className="gaming-nft-heading">
-            <h1>GAMING NFTs</h1>
-          </div>
-
           <div className="gaming-nft-outer-pad">
             <div className="col-md-12 gaming-nft-inner-flex">
               {/* <div className="gaming-nft-inner"> */}

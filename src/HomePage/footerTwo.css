@@ -49,6 +49,8 @@ padding: 8px 0px;
   display: flex;
   height: 228px;
   justify-content: space-between;
+  margin-top: 200px;
+
   /* background-color: #262250; */
   /* margin-top: 120px; */
 }
@@ -78,6 +80,12 @@ padding: 8px 0px;
 .footer-content-style {
   text-align: center;
   padding-top: 272px;
+}
+.footer-content-style  h3{
+  font-family: 'Cinzel';
+}
+.footer-content-style p{
+  font-family: Nuninto;
 }
 .footer-bg{
   display: block;

@@ -16,6 +16,7 @@ import Glowcoin from "../Assests/glowCoin.png";
 import { AiFillCaretDown, AiFillCaretLeft } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
 import Login from "./login";
+import { GoThreeBars } from "react-icons/go";
 import PDF from "../Assests/PDF.pdf";
 
 const Header = () => {
@@ -23,48 +24,46 @@ const Header = () => {
     window.open(PDF);
   };
 
-  // -------------Modal Code--------------
   const [modalShow, setModalShow] = useState(false);
 
   const slideOpen = () => {
-    document.getElementById("mySidebar").style.display = "block";
+    if (document.getElementById("mySidebar").style.display == "block") {
+      document.getElementById("mySidebar").style.display = "none";
+    } else {
+      document.getElementById("mySidebar").style.display = "block";
+    }
   };
 
-  const slideClose = () => {
-    document.getElementById("mySidebar").style.display = "none";
-  };
   return (
     <div className="header">
       <div className="header-nav col-md-12">
         <Link to="/homepage">
           <div className="logo-head">
             <img src={logoPic} height="70px"></img>
-            {/* <h5>ROXO</h5> */}
+      
           </div>
         </Link>
-        <Link to="/" className="ourGames">
+        <Link to="/" className="ourGames font-style-header">
           Home
         </Link>
-        <Link to="/ourgames" className="ourGames">
+        <Link to="/ourgames" className="ourGames font-style-header">
           Our Games
         </Link>
-        <Link className="marketPlace" to="/marketPlace">
+        <Link className="marketPlace font-style-header" to="/marketPlace">
           Market Place
         </Link>
-        <Link to="/support">
-          {/* <img src={contactIcon} height="20px" /> */}
+        <Link to="/support" className="font-style-header">
           Support
         </Link>
-        <Link to="/careers">
-          {/* <img src={careerIcon} height="20px" /> */}
+        <Link to="/careers " className="font-style-header">
           Careers
         </Link>
-        <Link onClick={onResumeClick}>
-          {/* <img src={WhiteIcon} height="20px" /> */}
+        <Link onClick={onResumeClick} className="font-style-header">
+        
           White Paper
         </Link>
-        <Link to="/contactus">
-          {/* <img src={contactIcon} height="20px" /> */}
+        <Link to="/contactus" className="font-style-header">
+       
           Contact Us
         </Link>
         {/* <Link>
@@ -123,10 +122,16 @@ const Header = () => {
           </Link> */}
         <div>
           <Link to="/buyForm">
-            <button className="header-price-button-style">$ 5.09</button>
+            <button className="header-price-button-style font-style-header">
+              $ 5.09
+            </button>
           </Link>
           &nbsp;&nbsp;
-          <button data-bs-toggle="modal" data-bs-target="#walletModal">
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#walletModal"
+            className="font-style-header"
+          >
             <b>Connect Wallet</b>
           </button>
           {/* <button
@@ -149,6 +154,13 @@ const Header = () => {
             {/* <h5>ROXO</h5> */}
           </div>
         </Link>
+        <div>
+        <Link to="/buyForm">
+            <button className="header-price-button-style font-style-header">
+              $ 5.09
+            </button>
+          </Link>
+        </div>
         {/* <Link>
           <div className="coin-logo">
             <img src={coinPic} height="50px"></img>
@@ -156,23 +168,23 @@ const Header = () => {
           </div>
         </Link> */}
         <Link>
-          <button className="menu-btn" onClick={slideOpen}>
-            <FiMenu size={35} />
-          </button>
+          <p className="menu-btn" onClick={slideOpen}>
+            <GoThreeBars size={35} />
+          </p>
         </Link>
       </div>
       <div className="slides" id="mySidebar">
-        <div className="slide-down-1" onClick={slideClose}>
+        {/* <div className="slide-down-1" onClick={slideClose}>
           <p>Close</p>
-        </div>
+        </div> */}
         <div className="slide-down">
           <Link className="nav-links  single  " href="#vision" to="/">
-            <p>Home </p>
+            <p className="font-style-header">Home </p>
           </Link>
         </div>
         <div className="slide-down">
           <Link className="nav-links  single  " to="/ourgames" href="#homepage">
-            <p> Our Games </p>
+            <p className="font-style-header"> Our Games </p>
           </Link>
         </div>
         <div className="slide-down">
@@ -181,34 +193,34 @@ const Header = () => {
             to="/marketPlace"
             href="#vision"
           >
-            <p>Market Place </p>
+            <p className="font-style-header">Market Place </p>
           </Link>
         </div>
         <div className="slide-down">
           <Link to="/support">
-            <p>Support</p>
+            <p className="font-style-header">Support</p>
           </Link>
         </div>
         <div className="slide-down">
           <Link to="/careers">
-            <p> Careers</p>
+            <p className="font-style-header"> Careers</p>
           </Link>
         </div>
         <div className="slide-down">
           <Link to="/contactus">
-            <p> Contact Us </p>
+            <p className="font-style-header"> Contact Us </p>
           </Link>
         </div>
         <div className="slide-down">
           <Link onClick={onResumeClick}>
-            <p> White Paper</p>
+            <p className="font-style-header"> White Paper</p>
           </Link>
         </div>
-        <div className="slide-down">
+        {/* <div className="slide-down">
           <Link to="/buyForm">
-            <p>$5.09</p>
+            <p className="font-style-header">$5.09</p>
           </Link>
-        </div>
+        </div> */}
         {/* <div className="slide-down">
           <Link className="nav-links-1 single " id="target2" href="#tools">
             <AiFillCaretLeft size={15} />
@@ -258,7 +270,11 @@ const Header = () => {
           </Link>
         </div> */}
         <div className="slide-down">
-          <p data-bs-toggle="modal" data-bs-target="#walletModal">
+          <p
+            className="font-style-header"
+            data-bs-toggle="modal"
+            data-bs-target="#walletModal"
+          >
             Connect Wallet
           </p>
         </div>

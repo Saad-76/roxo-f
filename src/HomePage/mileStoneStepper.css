@@ -38,10 +38,18 @@
 .milestone-heading-outer {
   border-left: 4px solid #c438ef;
   padding-left: 15px;
-  margin-left: 19vh;
+  margin-left: 7vh;
   margin-top: 30px;
   color: white;
   margin-bottom: 55px;
+  font-family:Cinzel;
+}
+.milestone-heading-outer h1{
+
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+
 }
 .stepper-inner-heading {
   background-color: #393469;
@@ -49,19 +57,24 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   text-align: center;
+  font-family: 'Cinzel';
 }
 .milestone-inner-content {
   padding: 20px;
 }
+.milestone-inner-content p{
+  font-family: Nuninto;
+}  
 .milestone-inner-content h3 {
   text-align: center;
   padding: 12px 0px;
+  font-family: 'Cinzel';
 }
 .status-content {
   margin-top: 30px;
   background-color: #393469;
   border-radius: 12px;
-  width: 50%;
+  width: 55%;
 }
 .status-col-style {
   display: flex;
@@ -72,6 +85,10 @@
 .stepper-button-outer button:focus {
   background-color: #393469;
   color: white;
+  font-weight: bold;
+}
+.stepper-button-outer button{
+  font-family: 'Cinzel';
   font-weight: bold;
 }
 .active {
@@ -111,10 +128,12 @@
   .milestone-heading-outer {
     border-left: 4px solid #c438ef;
     padding-left: 15px;
-    margin-left: 12vh;
+    margin-left: 7vh;
     margin-top: 30px;
     color: white;
     margin-bottom: 55px;
+    font-family: Cinzel;
+   
   }
   .stepper-button-inner-line {
     border-bottom: 6px solid #393469;

@@ -17,6 +17,7 @@
 .market_typography {
   border-left: 4px solid #c438ef;
   padding-left: 15px;
+  font-family: 'Cinzel';
 }
 .marketHeader p {
   font-size: 12px;

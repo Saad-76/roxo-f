@@ -19,9 +19,18 @@
   color: white;
   border-left: 4px solid #c438ef;
   padding-left: 15px;
-  margin-left: 13vh;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-left: 7vh;
+  margin-top: 4px;
+  color: white;
+  margin-bottom: 50px;
+  font-family: 'Cinzel';
+}
+.partners-content-style h1{
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.partners-content-style p{
+  font-family: Nuninto;
 }
 .partners-outer-style {
   padding-top: 60px;

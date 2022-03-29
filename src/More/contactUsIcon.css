@@ -24,6 +24,13 @@
   margin-left: 18vh;
   color: white;
 }
+.contact-us-outer h3
+{
+  font-family: 'Cinzel';
+  
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 @media only screen and (max-width: 900px) {
   .contact-us-outer {
     border-left: 4px solid #c438ef;
