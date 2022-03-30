@@ -43,4 +43,14 @@
   .partners-inner-background {
     flex-wrap: wrap;
   }
+  .partners-content-style {
+    color: white;
+    border-left: 4px solid #c438ef;
+    padding-left: 15px;
+    margin-left: 1vh;
+    margin-top: 4px;
+    color: white;
+    margin-bottom: 50px;
+    font-family: 'Cinzel';
+}
 }

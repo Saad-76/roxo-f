@@ -293,7 +293,7 @@
     font-weight: 500;
 
     text-decoration: none;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .dropdown-content img {
     margin-right: 10px !important;
@@ -314,6 +314,12 @@
     color: white;
     text-align: center;
   }
+  .menu-btn svg {
+    text-decoration: none;
+    color: white;
+    margin-top: 16px;
+}
+
 }
 
 @media only screen and (min-width: 900px) {

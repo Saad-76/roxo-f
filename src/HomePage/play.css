@@ -129,10 +129,20 @@ align-items: center; */
   .play-heading-outer {
     border-left: 4px solid #c438ef;
     padding-left: 15px;
-    margin-left: 7vh;
+    margin-left: -2vh;
     margin-top: 4px;
     color: white;
     margin-bottom: 38px;
     font-family: 'Cinzel';
 }
+.google-play-image {
+  margin-left: 0px;
+}
+.text-coming {
+  color: white;
+  text-align: center;
+  padding-left: 9px;
+  font-family: Nuninto;
+}
+
 }
