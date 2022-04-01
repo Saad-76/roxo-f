@@ -18,12 +18,11 @@
 
   align-items: flex-end;
   color: #ffffff;
-
 }
-.community-heading h3{
-  font-family: 'Cinzel';
+.community-heading h3 {
+  font-family: "Cinzel";
 }
-.community-heading p{
+.community-heading p {
   font-family: Nuninto;
 }
 
@@ -48,18 +47,18 @@
   padding: 12px;
   color: black;
 }
-.icon-image-detail h3{
-  font-family: 'Cinzel';
+.icon-image-detail h3 {
+  font-family: "Cinzel";
 }
 .community-icon-content {
   max-width: 818px;
   /* padding: 8px; */
   padding-left: 39px;
 }
-.community-icon-content h3{
-  font-family: 'Cinzel';
+.community-icon-content h3 {
+  font-family: "Cinzel";
 }
-.community-icon-content p{
+.community-icon-content p {
   font-family: Nuninto;
 }
 .twitter-icon-style {
@@ -71,13 +70,13 @@
 .community-heading-outer {
   border-left: 4px solid #c438ef;
   padding-left: 15px;
-  margin-left: 12vh;
+  margin-left: 6vh;
   margin-top: 4px;
   color: white;
   margin-bottom: 38px;
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
 }
-.community-heading-outer h1{
+.community-heading-outer h1 {
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -92,11 +91,25 @@
   .community-heading-outer {
     border-left: 4px solid #c438ef;
     padding-left: 15px;
-    margin-left: 3vh;
+    margin-left: 2vh;
     margin-top: 4px;
     color: white;
     margin-bottom: 38px;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
 }
-
+  .community-icon-content {
+    max-width: 818px;
+    padding: 0px;
+  }
+  .community-icon-detail {
+    color: #ffffff;
+    border-radius: 30px;
+    background-color: #262250;
+    padding: 40px;
+    width: 320px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }

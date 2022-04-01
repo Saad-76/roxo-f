@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+
 import "./work.css";
 
 const Work = () => {
@@ -6,7 +7,7 @@ const Work = () => {
   const [dataTwo, setDataTwo] = useState(false);
   const [dataThree, setDataThree] = useState(false);
   const [dataFour, setDataFour] = useState(false);
-  const[dataFive,setDataFive]= useState(false);
+  const [dataFive, setDataFive] = useState(false);
 
   const handleDataOne = () => {
     setDataOne(true);
@@ -37,13 +38,13 @@ const Work = () => {
     setDataFour(true);
     setDataFive(false);
   };
-  const handleDataFive=()=>{
+  const handleDataFive = () => {
     setDataOne(false);
     setDataTwo(false);
     setDataThree(false);
     setDataFour(false);
     setDataFive(true);
-  }
+  };
   return (
     <>
       <div className="work-outer">
@@ -56,7 +57,10 @@ const Work = () => {
             <div className="col-md-8 work-outer-flex-style">
               <div className="work-button-style-outer">
                 <div>
-                  <button className="work-button-style active " onClick={handleDataOne}>
+                  <button
+                    className="work-button-style active "
+                    onClick={handleDataOne}
+                  >
                     1
                   </button>
                 </div>
@@ -116,7 +120,7 @@ const Work = () => {
                     <p>Lore IpsM lOREM ipsum</p>
                   </div>
                 )}
-                   {dataFive && (
+                {dataFive && (
                   <div className="work-content-section-backgroud">
                     <h3>Work 5</h3>
                     <p>Lore IpsM lOREM ipsum</p>

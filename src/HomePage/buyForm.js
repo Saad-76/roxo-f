@@ -1,15 +1,19 @@
 import React from "react";
-import "./buyForm.css";
+
 import Header from "./header";
 import Footer from "./footer";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import "./buyForm.css";
 
 const BuyForm = () => {
+
   const routePath = useLocation();
+
   const onTop = () => {
     window.scrollTo(0, 4);
   };
+
   useEffect(() => {
     onTop();
   }, [routePath]);
@@ -22,17 +26,14 @@ const BuyForm = () => {
         </h3>
       </div>
       <div className="col-md-12 buy-card-main">
-        <div className="col-md-3"></div>
-        <div className="col-md-6">
+        <div className="col-md-4"></div>
+        <div className="col-md-4">
           <div className="buy-card-body">
             <div className="buy-card-body-flex">
               <div className="col-md-12 sell-button-main">
                 <div className="col-md-6">
-                  <h3 className="sell-button-inner">Buy</h3>
+                  <h3>Icon Image here</h3>
                 </div>
-                {/* <div className="col-md-6 charts-sell-form">
-                  <h6>Charts</h6>
-                </div> */}
               </div>
               <div className="col-md-12 input-display-sellform">
                 <label>From</label>
@@ -52,6 +53,10 @@ const BuyForm = () => {
                   max="10000000"
                 />
               </div>
+              <hr
+                className="section-divider-sellform"
+                style={{ marginTop: "14%" }}
+              />
               <div className="col-md-12 trading-fee-flex">
                 <div className="col-md-6">
                   <p>Trading Fee</p>
@@ -76,7 +81,7 @@ const BuyForm = () => {
                   <br />
                   and can be different from the actual swap rate.
                   <br />
-                  Trade at your own risk.{" "}
+                  Trade at your own risk.
                 </p>
               </div>
 
@@ -86,7 +91,7 @@ const BuyForm = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3"></div>
+        <div className="col-md-4"></div>
       </div>
       <Footer />
     </>

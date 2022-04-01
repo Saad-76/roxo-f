@@ -1,11 +1,9 @@
 import React from "react";
-import FirstGame from "./firstGame";
-import SecondGame from "./secondGame";
+
 import Header from "../HomePage/header";
 import Footer from "../HomePage/footer";
-import Slider from "../HomePage/slider";
-
 import GameSlider1 from "../Assests/GameSlider1.jpeg";
+import "./ourGames.css";
 
 const OurGames = () => {
   return (
@@ -39,10 +37,9 @@ const OurGames = () => {
           </div>
         </div>
       </div>
-      {/* <Slider/>
-<FirstGame/>
-<SecondGame/> */}
-      <Footer />
+      <div className="our-games-footer-outer">
+        <Footer />
+      </div>
     </>
   );
 };

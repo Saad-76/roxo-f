@@ -1,9 +1,7 @@
 import React from "react";
+
 import FooterLeft from "../Assests/bottomleft.png";
 import FooterRight from "../Assests/bottomright.png";
-import { BsFacebook, BsLinkedin } from "react-icons/bs";
-import { AiOutlineInstagram, AiFillGoogleCircle } from "react-icons/ai";
-
 import "./footerTwo.css";
 
 const Footer = () => {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import { ethers, utils } from "ethers";
 import { AiOutlineClose } from "react-icons/ai";
 import "./walletModal.css";
@@ -61,21 +62,17 @@ const WalletModal = () => {
                   </p>
                 ) : (
                   <div className="wallet-button-background">
-                  <h6
-                  type="button"
-                    onClick={connectWallet}
-                    className=""
-                  >
-                    Connect MetaMask
-                  </h6>
+                    <h6 type="button" onClick={connectWallet} className="">
+                      Connect MetaMask
+                    </h6>
                   </div>
                 )}
               </div>
-              <div className="wallet-button-background" >
-                <h6  type="button">Connect ROXO Wallet</h6>
+              <div className="wallet-button-background">
+                <h6 type="button">Connect ROXO Wallet</h6>
               </div>
               <div className="wallet-button-background">
-                <h6  type="button">Connect Safepal</h6>
+                <h6 type="button">Connect Safepal</h6>
               </div>
             </div>
           </div>

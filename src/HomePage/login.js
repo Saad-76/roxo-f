@@ -2,16 +2,13 @@ import { React, useState } from "react";
 import Logo from "../Assests/3.png";
 
 import { Modal } from "react-bootstrap";
-import "./login.css";
-
 import { Link } from "react-router-dom";
-
 import SignUp from "./signUp";
-import LoginForm from "../Assests/LoginForm.jpeg";
-import { AiFillStar } from "react-icons/ai";
+import "./login.css";
 
 const Login = (props) => {
   const [modalShow, setModalShow] = useState(false);
+
   const SignUpHandler = () => {
     setModalShow(true);
     props.onHide();
@@ -21,9 +18,11 @@ const Login = (props) => {
     email: "",
     password: "",
   });
+
   const [error, setError] = useState({
     formError: "",
   });
+
   const handleRegister = () => {
     if (user.name !== "" && user.email !== "" && user.rollNumber !== "") {
       setUser({ email: "", password: "" });

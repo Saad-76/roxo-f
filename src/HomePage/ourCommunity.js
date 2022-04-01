@@ -1,8 +1,9 @@
 import { React, useState } from "react";
-import {AiFillTwitterCircle} from "react-icons/ai"
-import {SiDiscord} from "react-icons/si"
-import {ImTelegram} from "react-icons/im"
-import {RiWechatFill} from "react-icons/ri"
+
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { SiDiscord } from "react-icons/si";
+import { ImTelegram } from "react-icons/im";
+import { RiWechatFill } from "react-icons/ri";
 import "./ourCommunity.css";
 
 const OurCommunity = () => {
@@ -39,14 +40,36 @@ const OurCommunity = () => {
   return (
     <>
       <div className="community-outer-style">
-        <div className="community-heading-outer"><h1>OUR COMMUNITY</h1></div>
+        <div className="community-heading-outer">
+          <h1>OUR COMMUNITY</h1>
+        </div>
         <div className="ourCommunity-outer-section col-md-12">
           <div className="">
             <div className="community-icons col-md-6">
-              <div onClick={twitterHandler} type="button" ><AiFillTwitterCircle size={50}/></div>
-              <div onClick={discordHandler} className="twitter-icon-style" type="button" ><SiDiscord size={40}/></div>
-              <div onClick={telegramHandler} className="twitter-icon-style" type="button" ><ImTelegram size={40}/></div>
-              <div onClick={wechatHandler} className="twitter-icon-style" type="button" ><RiWechatFill size={50}/></div>
+              <div onClick={twitterHandler} type="button">
+                <AiFillTwitterCircle size={50} />
+              </div>
+              <div
+                onClick={discordHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <SiDiscord size={40} />
+              </div>
+              <div
+                onClick={telegramHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <ImTelegram size={40} />
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <RiWechatFill size={50} />
+              </div>
             </div>
           </div>
           <div className="community-heading col-md-6">

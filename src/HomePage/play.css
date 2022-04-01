@@ -5,16 +5,16 @@
   margin: -84px 0px;
   padding-bottom: 44px;
 }
-.play-heading-outer{
+.play-heading-outer {
   border-left: 4px solid #c438ef;
   padding-left: 15px;
   margin-left: 7vh;
   margin-top: 4px;
   color: white;
   margin-bottom: 38px;
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
 }
-.play-heading-outer h1{
+.play-heading-outer h1 {
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -25,8 +25,8 @@
   flex-direction: column;
   align-items: center;
 }
-.play-text-style h3{
-  font-family: 'Cinzel';
+.play-text-style h3 {
+  font-family: "Cinzel";
 }
 .play-text-data-style {
   max-width: 300px;
@@ -36,20 +36,13 @@
   font-family: Nuninto;
   font-size: 15px;
   line-height: 1.8;
-  text-align: end;
 }
 .getNow-style {
-  /* padding-left: 14px; */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+
   padding-left: 14px;
   color: white;
-  /* display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center; */
-  /* padding: 20px 0px; */
 }
 .google-play-image {
   margin-left: 20px;
@@ -59,12 +52,8 @@ align-items: center; */
   justify-content: center;
   align-items: center;
 }
-.play-image-style img {
-  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6); */
-}
+
 .play-image-size {
-  /* height: 800px;
-    width: 700px; */
   height: 605px;
 }
 
@@ -77,35 +66,18 @@ align-items: center; */
   flex-direction: row;
 }
 .button-style-play {
-  /* padding: 4px 9px;
-    margin: 8px 0px;
-    background-color: #f0f2f5;
-    color: #050505;
-    font-size: 12px;
-    font-family: Helvetica, Arial, sans-serif; */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.text-coming{
+.text-coming {
   color: white;
   text-align: center;
-  padding-left: 25px;
+  padding-left: 40px;
   font-family: Nuninto;
 }
-/* @media screen and (max-width: 800px) {
-    .play-main-style{
-        display: flex;
-        flex-direction: column;
-    }
-    .play-image-style{
-        height: 300px;
-        width: 450px;
-    }
 
-  } */
 @media only screen and (max-width: 900px) {
   .play-main-style {
     margin-top: 40px;
@@ -128,21 +100,20 @@ align-items: center; */
   }
   .play-heading-outer {
     border-left: 4px solid #c438ef;
-    padding-left: 15px;
+    padding-left: 7px;
     margin-left: -2vh;
     margin-top: 4px;
     color: white;
     margin-bottom: 38px;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
 }
-.google-play-image {
-  margin-left: 0px;
-}
-.text-coming {
-  color: white;
-  text-align: center;
-  padding-left: 9px;
-  font-family: Nuninto;
-}
-
+  .google-play-image {
+    margin-left: 0px;
+  }
+  .text-coming {
+    color: white;
+    text-align: center;
+    padding-left: 9px;
+    font-family: Nuninto;
+  }
 }

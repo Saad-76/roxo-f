@@ -1,142 +1,138 @@
-.buy-card-body{
-    background-color: #262250;    border-radius: 12px;
-    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
-    padding: 6px 6px 20px 6px;
-    color: white;
+.buy-card-body {
+  background-color: #262250;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+  padding: 6px 6px 20px 6px;
+  color: white;
+  border: 2px solid #58acff;
 }
 
-.buy-card-main{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.sell-button-main{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between
-}
-.sell-button-inner{
- 
-     
-        border-radius: 25px;
-        color: #ffe600;
-        width: 246px;
-     
-        height: 40px;
-        border: 1px solid #ffe600;
-        text-align: center;
-        width: 40%;
-        border-radius: 12px;
-        background: transparent;
-      
-
-}
-.charts-sell-form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 12px;
-}
-.buy-card-body-flex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 24px 30px;
-}
-.input-display-sellform{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 24px;
-}
-.input-field-sellfrom-inner{
-    /* margin-top: 4%; */
-     /* background-color: #262250; */
-     margin-top: 4%;
-     padding: 6px 18px;
-     outline: none;
-     color: #ffffff;
-     background: rgba(88, 88, 88, 0.21);
-     border: none;
-     border-radius: 12px;
-     width: 100%;
-}
-.trading-fee-flex{
-    padding-top: 24px;
-
-    display: flex;
-    flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
-}
-.trading-fee-value{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.tax-fee-flex{
-    
-    display: flex;
-    flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
-}
-.tax-fee-value{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.text-sell-form{
-    display: flex;
-    flex-direction: row;
-
-text-align: center;  
+.buy-card-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+}
+.sell-button-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sell-button-inner {
+  border-radius: 25px;
+  color: #ffe600;
+  width: 246px;
+
+  height: 40px;
+  border: 1px solid #ffe600;
+  text-align: center;
+  width: 40%;
+  border-radius: 12px;
+  background: transparent;
+}
+.charts-sell-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+}
+.buy-card-body-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 30px;
+}
+.input-display-sellform {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 24px;
+}
+.input-field-sellfrom-inner {
+  /* margin-top: 4%; */
+  /* background-color: #262250; */
+  margin-top: 4%;
+  padding: 6px 18px;
+  outline: none;
+  color: #ffffff;
+  background: rgba(88, 88, 88, 0.21);
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+}
+.trading-fee-flex {
   padding-top: 24px;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.section-divider-sellform{
-    width: 100%;
-    border: none;
-    height: 1px !important;
-    margin: 0;
-    padding: 0 !important;
-    /* margin-top: 35px; */
-    flex-shrink: 0;
-    margin-bottom: 35px;
-    background-color: #40444A;
-    margin: 0;
-    /* margin-bottom: 30px; */
+.trading-fee-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.swap-button-inner{
-    margin-top: 24px;
-    padding: 6px 18px;
-    width: 30%;
-    border-radius: 12px;
-    color: white;
+.tax-fee-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tax-fee-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.text-sell-form {
+  display: flex;
+  flex-direction: row;
 
-    background-color: #FFE600;
-    border: none;
+  text-align: center;
+  justify-content: center;
+  padding-top: 24px;
 }
-.swap-button-outer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.section-divider-sellform {
+  width: 100%;
+  border: none;
+  height: 1px !important;
+  margin: 0;
+  padding: 0 !important;
+  /* margin-top: 35px; */
+  flex-shrink: 0;
+  margin-bottom: 35px;
+  background-color: #40444a;
+  margin: 0;
+  /* margin-bottom: 30px; */
 }
-.sell-main-heading{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
- padding-top: 50px;
- padding-bottom: 20px;
+.swap-button-inner {
+  margin-top: 24px;
+  padding: 6px 18px;
+  width: 30%;
+  border-radius: 12px;
+  color: white;
+
+  background: #58acff;
+  border: none;
+}
+.swap-button-outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sell-main-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
-.sell-main-heading h3{
-    color: white;
+.sell-main-heading h3 {
+  color: white;
 }

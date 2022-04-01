@@ -1,12 +1,14 @@
 import { React, useState } from "react";
+
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { SiDiscord } from "react-icons/si";
 import { ImTelegram } from "react-icons/im";
 import { RiWechatFill } from "react-icons/ri";
 import "./contactUsIcon.css";
-// import { BsWhatsapp, BsBoxArrowInUpRight } from "react-icons/bs";
+
 
 const ContactUsIcon = () => {
+
   const [showTwitter, setShowTwitter] = useState(true);
   const [showTelegram, setShowTelegram] = useState(false);
   const [showDiscord, setShowDiscord] = useState(false);
@@ -41,60 +43,7 @@ const ContactUsIcon = () => {
       <div className="contact-us-outer">
         <h3 className="contact-us-heading">Contact Us</h3>
       </div>
-      {/* <p className="contact-react-text">React Us Directly</p>
-      <div className="row pt-3">
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-      </div>
 
-      <div className="row pt-3">
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-      </div>
-
-      <div className="row pt-3">
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-        <div className="col-md-4 contact-col-section">
-          <BsWhatsapp size={25} />
-          <p>Lore Ipsm</p>
-          <BsBoxArrowInUpRight size={25} />
-        </div>
-      </div> */}
       <div className="contact-us-section-pad">
         <div className="ourCommunity-outer-section  col-md-12">
           <div className="">

@@ -5,9 +5,9 @@
   text-align: center;
   color: white;
   padding: 60px 0px;
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
 }
-.support-heading-outer{
-  /* border-bottom: 4px solid  #C438EF;
-  width: 120px; */
+
+.support-footer-outer {
+  margin-top: 20%;
 }

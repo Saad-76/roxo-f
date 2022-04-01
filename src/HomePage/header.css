@@ -43,7 +43,7 @@
 }
 .header-nav a {
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
 }
 .coin-logo p {
@@ -58,7 +58,7 @@
   text-decoration: none;
   font-weight: 500;
 
-  border-radius: 12px;
+  border-radius: 25px;
   color: #ffffff;
   background: #58acff;
   border: none;
@@ -81,6 +81,7 @@
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 .drop-btn1 {
   min-width: 160px;
 }
@@ -220,6 +221,7 @@
 }
 .font-style-header {
   font-family: Cinzel;
+  
 }
 .slide-down-1 p {
   margin-bottom: 0px;

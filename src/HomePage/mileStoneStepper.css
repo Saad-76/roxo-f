@@ -111,15 +111,19 @@
 .outer-flex-content-milestone{
   display: flex;
 }
+.section-divider-milestone{
+  display: none;
+}
 @media screen and (max-width: 900px) {
   .stepper-content-background {
     background-color: #262250;
     height: 568px;
-    width: 328px;
+    width: 320px;
     border-radius: 30px;
     margin-left: 12px;
     color: white;
   }
+
   .arrow-icon-style {
     margin: 0px -1px;
     color: #6b94bd;
@@ -160,5 +164,18 @@
   .outer-flex-content-milestone{
     display: flex;
     justify-content: center;
+  }
+  .section-divider-milestone {
+    width: 100%;
+    border: none;
+    height: 1px !important;
+    margin: 0;
+    padding: 0 !important;
+    /* margin-top: 35px; */
+    flex-shrink: 0;
+    margin-bottom: 35px;
+    background-color: #40444a;
+    margin: 0;
+    /* margin-bottom: 30px; */
   }
 }

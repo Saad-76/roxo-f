@@ -1,7 +1,8 @@
 import React from "react";
-import "./vision.css";
-// import VisionImage from "../Assests/VisionImage.jpg";
+
 import NFTGamevision from "../Assests/NFT Game vision.png";
+import "./vision.css";
+
 
 const Vision = () => {
   return (

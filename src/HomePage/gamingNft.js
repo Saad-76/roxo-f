@@ -1,10 +1,11 @@
 import { React, useState } from "react";
-import "./gamingNft.css";
+
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import NFT1 from "../Assests/NFT1.png";
 import NFT2 from "../Assests/NFT2.jpg";
 import NFT3 from "../Assests/NFT3.png";
 import NFT4 from "../Assests/NFT4.jpg";
+import "./gamingNft.css";
 
 const GamingNft = () => {
   const [nftOne, setNftOne] = useState(true);
@@ -71,6 +72,7 @@ const GamingNft = () => {
   const Rightscrol = () => {
     document.getElementById("nftscroll").scrollLeft += 430;
   };
+
   const Leftscrol = () => {
     document.getElementById("nftscroll").scrollLeft -= 430;
   };
@@ -83,7 +85,6 @@ const GamingNft = () => {
         <div className="gaming_nft">
           <div className="gaming-nft-outer-pad">
             <div className="col-md-12 gaming-nft-inner-flex">
-              {/* <div className="gaming-nft-inner"> */}
               {nftOne && (
                 <div className="col-md-4 gaming-inner-left">
                   <img
@@ -93,8 +94,6 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                  <h6>Lorem Ipsm 1</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
               )}
 
@@ -207,14 +206,7 @@ const GamingNft = () => {
                 </div>
                 <div className="gaming-nft-link-buttons">
                   <button className="gaming-nft-link-button-inner">Link</button>
-                  {/* <button className="gaming-nft-link-button-inner">
-                    Link2
-                  </button>
-                  <button className="gaming-nft-link-button-inner">
-                    Link3
-                  </button> */}
                 </div>
-                {/* </div> */}
               </div>
             </div>
           </div>

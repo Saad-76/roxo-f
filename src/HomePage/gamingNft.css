@@ -19,7 +19,7 @@
 
   color: white;
 }
-.gaming-nft-heading h1{
+.gaming-nft-heading h1 {
   font-weight: bold;
 }
 .gaming-nft-inner-flex {
@@ -60,8 +60,7 @@
 .gaming-inner-heading {
   text-align: center;
   padding: 34px;
-  font-family: 'Cinzel';
-
+  font-family: "Cinzel";
 }
 .gaming-nft-slider-outer {
   /* padding-left: 60px;
@@ -165,7 +164,7 @@
   /* margin-top: 2%; */
   padding: 6px 10px;
   width: 40%;
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
 
   border-radius: 12px;
   color: white;
@@ -202,7 +201,11 @@
     border-radius: 30px;
     overflow: hidden;
   }
-
+  .gaming-section-pad {
+    padding-left: 31px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
   .gaming-nft-heading {
     border-left: 4px solid #c438ef;
     padding-left: 15px;
@@ -214,7 +217,6 @@
   }
 
   .gaming-nft-link-buttons {
-  
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -259,4 +261,26 @@
   .gaming-nft-outer-pad {
     padding: 0px !important;
   }
+  .image-slider-game {
+    margin-left: 22px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+  }
+  .tes-btn11 {
+    display: none;
+  }
+  .tes-btnSecond {
+    display: none;
+  }
+  .gaming-nft-slider:hover > .tes-btn11 {
+    display: none;
+  }
+  .gaming-nft-slider:hover > .tes-btnSecond {
+    display: none;
+  }
+  .gaming_nft {
+    color: white;
+    width: 316px;
+    padding: 30px 0px;
+}
 }

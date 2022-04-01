@@ -1,12 +1,13 @@
 import React from "react";
-import "./video.css";
+
 import Crypto33 from "../Assests/Crypto33.mp4";
+import "./video.css";
 
 const Video = () => {
   return (
     <div>
       <div className="col-md-12  video-main-style">
-      <div className="col-md-4 video-text-style">
+        <div className="col-md-4 video-text-style">
           <h3 className="how-video-style"> How it Works? </h3>
           <p className="video-text">
             5 simple steps to earn with ROXO platform!
@@ -16,8 +17,8 @@ const Video = () => {
             platforms{" "} */}
           </p>
         </div>
-        
-      <div className="col-md-8 primary-video">
+
+        <div className="col-md-8 primary-video">
           {/* <h5>Video Heading</h5> */}
           <video
             className="video_section-style"
@@ -26,10 +27,7 @@ const Video = () => {
             muted={true}
             autoPlay={true}
           />
-    
         </div>
-       
-      
       </div>
       {/* <video
         className="video_section-style"

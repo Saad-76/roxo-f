@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+
 import "./mileStoneStepper.css";
 
 const MileStoneStepper = () => {
@@ -101,6 +101,7 @@ const MileStoneStepper = () => {
                   <p>• Complete NFT Smart Contracts.</p>
                   <p>• Introduce Free to play, play to earn mechanism.</p>
                 </div>
+                <hr className="section-divider-milestone" />
                 <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
                   <h3 className="status-content">Under Development</h3>
@@ -133,6 +134,7 @@ const MileStoneStepper = () => {
                     Distribution.
                   </p>
                 </div>
+                <hr className="section-divider-milestone" />
                 <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
                   <h3 className="status-content">Under Development</h3>
@@ -159,6 +161,7 @@ const MileStoneStepper = () => {
                   <p>• Testing .</p>
                   <p>• Official Launch for the world .</p>
                 </div>
+                <hr className="section-divider-milestone" />
                 <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
                   <h3 className="status-content">Under Development</h3>
@@ -185,6 +188,8 @@ const MileStoneStepper = () => {
                   <p>• Roxo Platform and Game Proof-Of-Concept.</p>
                   <p>• ROXO Platform Initial development.</p>
                 </div>
+                <hr className="section-divider-milestone" />
+
                 <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
                   <h3 className="status-content">Complete</h3>

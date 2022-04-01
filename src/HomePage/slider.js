@@ -1,20 +1,15 @@
-import React from 'react'
-import { Carousel } from "react-bootstrap";
-// import Render3 from "../Assests/render 3.png";
-// import Render6 from "../Assests/render 6.png";
+import React from "react";
 import ForWebsite from "../Assests/For Website.png";
-import HasteKing  from "../Assests/HasteKing.png";
-import SliderImage3 from "../Assests/SliderImage3.png"
+import HasteKing from "../Assests/HasteKing.png";
+import SliderImage3 from "../Assests/SliderImage3.png";
 
 
-import Render9 from "../Assests/render 9.png";
-// import Render11 from "../Assests/render 11.png";
+import { Carousel } from "react-bootstrap";
+import "./slider.css";
 
-import "./slider.css"
-
-const Slider=()=> {
-    return (
-        <div>
+const Slider = () => {
+  return (
+    <div>
       <div className=" carousel-style">
         <div className="bg-color ">
           <Carousel className="inner-style">
@@ -34,13 +29,11 @@ const Slider=()=> {
               />
 
               {/* <img className='img-sm' src={Render9} alt="render9"/> */}
-
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block image-height  w-100"
                 src={SliderImage3}
-
                 alt="Third slide"
               />
             </Carousel.Item>
@@ -49,7 +42,6 @@ const Slider=()=> {
               <img
                 className="d-block image-height   w-100"
                 src={HasteKing}
-
                 alt="Third slide"
               />
             </Carousel.Item>
@@ -57,7 +49,7 @@ const Slider=()=> {
         </div>
       </div>
     </div>
-    )
-}
+  );
+};
 
 export default Slider;

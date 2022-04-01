@@ -1,25 +1,14 @@
 import { React, useState } from "react";
-import "./header.css";
+
 import { Link } from "react-router-dom";
 import logoPic from "../Assests/25.png";
-import coinPic from "../Assests/3.png";
 
-import blogIcon from "../Assests/3D-ICONS/Blog Icon/bloger 256.png";
-import discordIcon from "../Assests/3D-ICONS/Discord icon/main 256.png";
-import teleIcon from "../Assests/3D-ICONS/Telegram/main 256.png";
-import twitterIcon from "../Assests/3D-ICONS/Twitter Icon/main 256.png";
-import careerIcon from "../Assests/3D-ICONS/Career Icon/front 256.png";
-import contactIcon from "../Assests/3D-ICONS/Contact Us Icon/main 256.png";
-import WhiteIcon from "../Assests/whitePaper.png";
-import Glowcoin from "../Assests/glowCoin.png";
-
-import { AiFillCaretDown, AiFillCaretLeft } from "react-icons/ai";
-import { FiMenu } from "react-icons/fi";
-import Login from "./login";
 import { GoThreeBars } from "react-icons/go";
 import PDF from "../Assests/PDF.pdf";
+import "./header.css";
 
 const Header = () => {
+  
   const onResumeClick = () => {
     window.open(PDF);
   };
@@ -40,7 +29,6 @@ const Header = () => {
         <Link to="/homepage">
           <div className="logo-head">
             <img src={logoPic} height="70px"></img>
-      
           </div>
         </Link>
         <Link to="/" className="ourGames font-style-header">
@@ -59,11 +47,9 @@ const Header = () => {
           Careers
         </Link>
         <Link onClick={onResumeClick} className="font-style-header">
-        
           White Paper
         </Link>
         <Link to="/contactus" className="font-style-header">
-       
           Contact Us
         </Link>
         {/* <Link>
@@ -120,13 +106,15 @@ const Header = () => {
               </Link>
             </div>
           </Link> */}
-        <div>
+        <div className="header-buttons-outer-flex">
           <Link to="/buyForm">
             <button className="header-price-button-style font-style-header">
               $ 5.09
             </button>
           </Link>
-          &nbsp;&nbsp;
+        </div>
+
+        <div>
           <button
             data-bs-toggle="modal"
             data-bs-target="#walletModal"
@@ -134,14 +122,15 @@ const Header = () => {
           >
             <b>Connect Wallet</b>
           </button>
-          {/* <button
+        </div>
+        {/* <button
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             onClick={() => setModalShow(true)}
           >
             <b> GAME EARNINGS </b>
           </button> */}
-        </div>
+
         {/* <button data-bs-toggle="modal" data-bs-target="#exampleModal">
           GAME EARNINGS
         </button> */}
@@ -155,7 +144,7 @@ const Header = () => {
           </div>
         </Link>
         <div>
-        <Link to="/buyForm">
+          <Link to="/buyForm">
             <button className="header-price-button-style font-style-header">
               $ 5.09
             </button>

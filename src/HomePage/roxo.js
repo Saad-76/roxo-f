@@ -1,10 +1,7 @@
 import React from "react";
-import roxo from "../Assests/roxo.jpg";
+
 import Coin from "../Assests/Coin.png";
-
-import Logo from "../Assests/3.png";
 import { Link } from "react-router-dom";
-
 import "./roxo.css";
 
 const Roxo = () => {
@@ -13,8 +10,11 @@ const Roxo = () => {
       <div className="roxo-style">
         <div className="col-md-12 roxo-main-style">
           <div className="col-md-6 roxo-text-section">
-      <div className="roxo-coin-heading-outer">   <h1 className="roxo-xoin-heading">ROXO COIN</h1> </div>
-          
+            <div className="roxo-coin-heading-outer">
+              {" "}
+              <h1 className="roxo-xoin-heading">ROXO COIN</h1>{" "}
+            </div>
+
             <p className="text-style-roxo">
               ROXO is the first gaming platform that brings power and innovation
               to the mobile gaming industry where users can play and earn
@@ -25,7 +25,6 @@ const Roxo = () => {
               ecosystem for the mobile platforms.
             </p>
             <button className="buy-button-style">
-       
               <Link to="/buyForm">Buy</Link>
             </button>
           </div>

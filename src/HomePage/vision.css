@@ -34,7 +34,7 @@
 .vision-heading-style{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     padding: 20px 0px;
     font-family: 'Cinzel';
 }

@@ -1,6 +1,8 @@
 import { React, useState } from "react";
-import "./contactUsForm.css";
+
+
 import ContactForm from "../Assests/ContactForm.png";
+import "./contactUsForm.css";
 
 const ContactUsForm = () => {
   const [user, setUser] = useState({

@@ -1,58 +1,9 @@
-/* .footer-flex{
-    
-    flex-direction: row;
-    
-}
-.footer-icons-style{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 200px;
-background-color: rgba(0,0,0,0.1);
-padding: 8px 0px;
-    align-items: center;
-}
-.margin{
-}
-.roxo-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.footer-image-style{
-    background: url("../Assests/FooterLeft.png") bottom left no-repeat, url("../Assests/FooterRight.png") bottom right no-repeat ;
-    background-size: 450px, 350px;
-    padding-top: 15px;
-
-  
-}
-.footer-copyright{
-    font-family: Monterserat;
-    font-size: 8px;
-    margin-top: 2px;
-    margin: 0px;
-    font-family: Monterserat;
-    font-size: 15px;
-    line-height: 1.8;
-    padding-top: 16px;
-}
-.terms-footer{
-    font-family: Monterserat;
-    font-size: 15px;
-    
-    line-height: 1.8;
-}
- */
 .footer {
   color: white;
   display: flex;
   height: 228px;
   justify-content: space-between;
-  margin-top: 200px;
-
-  /* background-color: #262250; */
-  /* margin-top: 120px; */
+  margin-top: 100px;
 }
 .footer-roxo-icons h3 {
   color: white;
@@ -81,16 +32,16 @@ padding: 8px 0px;
   text-align: center;
   padding-top: 272px;
 }
-.footer-content-style  h3{
-  font-family: 'Cinzel';
+.footer-content-style h3 {
+  font-family: "Cinzel";
 }
-.footer-content-style p{
+.footer-content-style p {
   font-family: Nuninto;
 }
-.footer-bg{
+.footer-bg {
   display: block;
 }
-.footer-resp{
+.footer-resp {
   display: none;
 }
 @media screen and (max-width: 900px) {
@@ -105,17 +56,17 @@ padding: 8px 0px;
     display: flex;
     justify-content: center;
   }
-  .footer-resp{
+  .footer-resp {
     color: white;
     display: block;
     background-color: #262250;
   }
-  .footer-bg{
+  .footer-bg {
     display: none;
   }
   .footer-content-style {
     margin-top: 68px;
     text-align: center;
     padding-top: 28px;
-}
+  }
 }

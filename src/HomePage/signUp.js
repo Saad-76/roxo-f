@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+
 import { Modal } from "react-bootstrap";
 import Logo from "../Assests/3.png";
 import { Link } from "react-router-dom";
@@ -25,7 +26,13 @@ const SignUp = (props) => {
               <div className="col-md-6 signup-image-side">
                 {/* <h4>SignUp</h4> */}
 
-                <img className="signup-image-inner" src={Logo} alt="logologin" height="250px" width="250px" />
+                <img
+                  className="signup-image-inner"
+                  src={Logo}
+                  alt="logologin"
+                  height="250px"
+                  width="250px"
+                />
               </div>
               <div className="col-md-6 display-signup-style">
                 <div className="signup-fields-heading-outer">
