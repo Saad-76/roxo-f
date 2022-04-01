@@ -32,75 +32,74 @@ const Routes = () => {
     <>
       <Router>
         <WalletModal />
-
         <Switch>
-          <Route exact path="/homepage" component={HomePage}>
+          <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/signUp" component={SignUp}>
+          <Route path="/signUp">
             <SignUp />
           </Route>
-          <Route path="/login" component={Login}>
+          <Route path="/login">
             <Login />
           </Route>
-          <Route path="/ourgames" component={OurGames}>
+          <Route path="/ourgames">
             <OurGames />
           </Route>
-          <Route path="/contactus" component={ContactUs}>
+          <Route path="/contactus">
             <ContactUs />
           </Route>
-          <Route path="/careers" component={Careers}>
+          <Route path="/careers">
             <Careers />
           </Route>
-          <Route path="/support" component={Support}>
+          <Route path="/support">
             <Support />
           </Route>
-          <Route path="/apply" component={Apply}>
+          <Route path="/apply">
             <Apply />
           </Route>
-          <Route path="/applyform" component={ApplyForm}>
+          <Route path="/applyform">
             <ApplyForm />
           </Route>
-          <Route path="/engineering" component={Engineering}>
+          <Route path="/engineering">
             <Engineering />
           </Route>
-          <Route path="/design" component={Design}>
+          <Route path="/design">
             <Design />
           </Route>
-          <Route path="/art" component={Art}>
+          <Route path="/art">
             <Art />
           </Route>
-          <Route path="/operation" component={Operation}>
+          <Route path="/operation">
             <Operation />
           </Route>
-          <Route path="/other" component={Other}>
+          <Route path="/other">
             <Other />
           </Route>
-          <Route path="/buyForm" component={BuyForm}>
+          <Route path="/buyForm">
             <BuyForm />
           </Route>
-          <Route path="/portfolio" component={PortSideBar}>
+          <Route path="/portfolio">
             <PortSideBar />
           </Route>
-          <Route path="/portfolio" component={PortSideBar}>
+          <Route path="/portfolio">
             <PortSideBar />
           </Route>
 
-          <Route path="/marketPlace" component={MarketPlace}>
+          <Route path="/marketPlace">
             <MarketPlace />
           </Route>
-          <Route path="/market_product_detail" component={MarketProductDetail}>
+          <Route path="/market_product_detail">
             <MarketProductDetail />
           </Route>
 
           {/* -----------------Private-------- */}
-          <Route path="/dashboard" component={Dashboard}>
+          <Route path="/dashboard">
             <Dashboard />
           </Route>
-          <Route path="/nftdashboard" component={NftDashboard}>
+          <Route path="/nftdashboard">
             <NftDashboard />
           </Route>
-          <Redirect to="/homepage" />
+          <Redirect to="/" />
         </Switch>
       </Router>
     </>
