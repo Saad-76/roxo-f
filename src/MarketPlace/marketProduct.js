@@ -7,19 +7,21 @@ const MarketProduct = () => {
     <>
       <div className="card-row">
         <div className="card  col-md-3">
-          <Link to="/market_product_detail">
-            <div>
-              <p>Lorem</p>
-            </div>
-            <div className="crd-head"></div>
-            <center>
-              <button className="crd_btn">ID: 133856</button>
-            </center>
-            <center>
-              <div className="btm_txt_crd">BUSD: 15,17</div>
-            </center>
-            <div className="bottom_crd"></div>
-          </Link>
+          {/* <Link to="/market_product_detail"> */}
+          <div>
+            <p>Lorem</p>
+          </div>
+          <div className="crd-head"></div>
+          <center>
+            <button className="crd_btn">ID: 133856</button>
+          </center>
+          <center>
+            <div className="btm_txt_crd">BUSD: 15,17</div>
+            <h3>Button</h3>
+          </center>
+          <div className="bottom_crd"></div>
+       
+          {/* </Link> */}
         </div>
 
         <div className="card  col-md-3">
