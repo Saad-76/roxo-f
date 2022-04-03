@@ -136,3 +136,44 @@
 .sell-main-heading h3 {
   color: white;
 }
+@media screen and (max-width: 900px) {
+  .swap-button-inner {
+    margin-top: 24px;
+    padding: 6px 18px;
+    width: 100%;
+    border-radius: 12px;
+    color: white;
+    background: #58acff;
+    border: none;
+  }
+  .buy-card-body-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .input-field-sellfrom-inner {
+    margin-top: 4%;
+    padding: 6px 105px;
+    outline: none;
+    color: #ffffff;
+    background: rgba(88, 88, 88, 0.21);
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+  }
+  .trading-fee-flex {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tax-fee-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

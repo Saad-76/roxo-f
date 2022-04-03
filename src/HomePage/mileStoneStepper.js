@@ -184,7 +184,7 @@ const MileStoneStepper = () => {
                 <div className="col-md-6">
                   <h3>GOALS</h3>
                   <p>• Market Research. </p>
-                  <p>• Brainstorming, & Team Formation . </p>
+                  <p>• Brainstorming, & Team Formation. </p>
                   <p>• Roxo Platform and Game Proof-Of-Concept.</p>
                   <p>• ROXO Platform Initial development.</p>
                 </div>

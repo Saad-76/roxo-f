@@ -1,7 +1,12 @@
-.careers-background-color{
-    /* background-color: #f0f2f5; */
+.careers-background-color {
+  /* background-color: #f0f2f5; */
 }
-.carers-footer-height{
-    margin-top: 100%;
+.carers-footer-height {
+  margin-top: 100%;
+}
 
+@media screen and (max-width: 900px) {
+  .carers-footer-height {
+    margin-top: 150%;
+  }
 }

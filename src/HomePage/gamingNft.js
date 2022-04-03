@@ -106,8 +106,7 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                  <h6>Lorem Ipsm 2</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
+              
                 </div>
               )}
               {nftThree && (
@@ -119,8 +118,7 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                  <h6>Lorem Ipsm 3</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                
                 </div>
               )}
               {nftFour && (
@@ -132,8 +130,7 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                  <h6>Lorem Ipsm 4</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
+               
                 </div>
               )}
               {nftFive && (
@@ -145,8 +142,7 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                  <h6>Lorem Ipsm 5</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                
                 </div>
               )}
               {nftSix && (
@@ -158,8 +154,7 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                  <h6>Lorem Ipsm 6</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                
                 </div>
               )}
 
