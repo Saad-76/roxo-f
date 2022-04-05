@@ -46,9 +46,9 @@
   margin: auto;
 }
 
-/* .img-sm{
+.img-sm{
     display: none;
-} */
+}
 @media only screen and (max-width: 900px) {
   .image-height {
     height: 300px;
@@ -57,10 +57,10 @@
     margin-bottom: 2%;
     margin-top: 1%;
   }
-  /* #imagebg{
+  #imagebg{
     display: none !important;
-} */
-  /* .img-sm{
+} 
+ .img-sm{
       display: block;
-  } */
+  }
 }

@@ -28,6 +28,8 @@
   background-color: #262250;
   padding: 25px;
   border-radius: 30px;
+  box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
+
   overflow: hidden;
 }
 

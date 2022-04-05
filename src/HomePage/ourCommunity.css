@@ -29,6 +29,7 @@
 .community-icon-detail {
   color: #ffffff;
   border-radius: 30px;
+  box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
 
   background-color: #262250;
   padding: 40px;
@@ -106,6 +107,8 @@
     border-radius: 30px;
     background-color: #262250;
     padding: 40px;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
+
     width: 320px;
     height: 370px;
     display: flex;

@@ -2,6 +2,8 @@ import React from "react";
 import ForWebsite from "../Assests/For Website.png";
 import HasteKing from "../Assests/HasteKing.png";
 import SliderImage3 from "../Assests/SliderImage3.png";
+import webSlider1 from "../Assests/webSlider1.jpg"
+import moblSlider from "../Assests/moblSlider.png"
 
 
 import { Carousel } from "react-bootstrap";
@@ -13,13 +15,16 @@ const Slider = () => {
       <div className=" carousel-style">
         <div className="bg-color ">
           <Carousel className="inner-style">
-            {/* <Carousel.Item>
+          <Carousel.Item>
               <img
-                className="d-block image-height  w-100"
-                src={Render11}
-                alt="First slide"
+                className="d-block image-height   w-100"
+                id="imagebg"
+                src={webSlider1}
+                alt="Second slide"
               />
-            </Carousel.Item> */}
+
+              <img className='img-sm' src={moblSlider} alt="render9" width="100%" height="600px"/>
+            </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block image-height   w-100"

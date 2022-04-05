@@ -106,7 +106,6 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-              
                 </div>
               )}
               {nftThree && (
@@ -118,7 +117,6 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                
                 </div>
               )}
               {nftFour && (
@@ -130,7 +128,6 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-               
                 </div>
               )}
               {nftFive && (
@@ -142,7 +139,6 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                
                 </div>
               )}
               {nftSix && (
@@ -154,7 +150,6 @@ const GamingNft = () => {
                     width="150px"
                     style={{ borderRadius: "12px" }}
                   />
-                
                 </div>
               )}
 
