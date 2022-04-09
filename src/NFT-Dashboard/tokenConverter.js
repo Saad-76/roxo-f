@@ -12,8 +12,8 @@ const TokenConverter = () => {
       <div className="tokenConverter-style">
         {/* <h3 className="converter-heading">Instant Converter</h3> */}
         <div className="col-md-12 converter-outer-columns">
-          <div className="col-md-4"></div>
-          <div className="col-md-8">
+          <div className="col-md-3"></div>
+          <div className="col-md-9">
             <h3 className="converter-heading">Instant Converter</h3>
 
             <div className="col-md-12 coverter-column-flex">

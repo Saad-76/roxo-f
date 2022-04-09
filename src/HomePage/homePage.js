@@ -10,7 +10,7 @@ import SignUp from "./signUp";
 import Footer from "./footer";
 import OurCommunity from "./ourCommunity";
 import GamingNft from "./gamingNft";
-import Partners from "./partners";
+// import Partners from "./partners";
 import Work from "./work";
 import MileStoneStepper from "./mileStoneStepper";
 import WalletModal from "./walletModal";
@@ -30,7 +30,7 @@ const HomePage = () => {
       <Vision />
       <Play />
       <Work />
-      <Partners />
+      {/* <Partners /> */}
       <OurCommunity />
       <Footer />
     </div>

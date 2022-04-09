@@ -56,31 +56,25 @@
   justify-content: flex-end;
   padding: 20px;
 }
-.button-outer-marketplace button{
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 10px;
-    color: #ffffff;
-    background: #58acff;
-    border: none;
-    padding: 5px 10px;
+.button-outer-marketplace button {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #58acff;
+  border: none;
+  padding: 5px 10px;
 }
 
-.frame-image{
+.frame-image {
   position: absolute;
-  /* position: relative; */
+  margin-top: -5%;
 }
-.character-image{
- 
+.character-image {
   margin-top: 20%;
-  margin-left: 10%;
+  margin-left: 13%;
   position: absolute;
 }
-
-
-
-
-
 
 @media only screen and (max-width: 900px) {
   .card {

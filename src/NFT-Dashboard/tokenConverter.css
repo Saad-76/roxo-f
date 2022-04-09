@@ -85,7 +85,8 @@
    color: #FFFF;
    border-radius: 25px;
    width: 95%;
-   background-color: #FF409A;   box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+   background-color: #58acff;
+      box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
    border: none;
 }
 .converter-middleArrow{

@@ -85,7 +85,7 @@
     height: 80%;
     margin-top: 77px; */
   /* background-color: white; */
-  width: 90%;
+  width: 114%;
   height: 80%;
   margin-top: 19px;
 }
@@ -256,7 +256,7 @@
   color: #ffff;
 
   border-radius: 25px;
-  width: 30%;
+  width: 50%;
   background-color: #58acff;
   border: none;
   box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
@@ -434,11 +434,11 @@
   height: 2px;
   margin-top: 16px;
   margin-left: 18px;
-  width: 40%;
+  width: 57%;
   border-bottom: 1px solid rgb(189, 187, 187);
 }
 .balance-roxo-heading {
-  margin: 10px 54px;
+  margin: 23px 28px 6px;
   font-size: large;
   font-weight: 500;
   font-family: "Cinzel";
@@ -447,7 +447,7 @@
   height: 2px;
   margin-top: 8px;
   margin-left: 18px;
-  width: 40%;
+  width: 57%;
   border-bottom: 1px solid rgb(189, 187, 187);
 }
 

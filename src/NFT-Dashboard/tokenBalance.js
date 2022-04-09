@@ -13,7 +13,7 @@ const TokenBalance = () => {
   return (
     <>
       <div className="col-md-12 balance-style">
-        <div className="col-md-4 dashboard-sidebar">
+        <div className="col-md-3 dashboard-sidebar">
           <div>
             <div className="balance-dashboard">
               <img src={Dashboard} alt="game" width="40px" height="40px" />
@@ -24,7 +24,7 @@ const TokenBalance = () => {
             <img src={NftDashboard} alt="game" width="40px" height="40px" />
             <button className="nft-heading">NFTs</button>
           </div>
-          <div className="horizintal-line-style" />
+          {/* <div className="horizintal-line-style" /> */}
           <h6 className="balance-roxo-heading"> ROXO Token</h6>
           <div className="horizintal-line-Roxotoken-botttom" />
 

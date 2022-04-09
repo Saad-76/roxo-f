@@ -39,13 +39,13 @@ const MarketProduct = () => {
               className="frame-image"
               src={FrameMarket}
               alt=""
-              width="320px"
+              width="360px"
             />
             <img
               className="character-image"
               src={CharacterMarket}
               alt=""
-              height="340px"
+              height="350px"
               width="250px"
             />
           </div>

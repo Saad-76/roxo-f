@@ -18,7 +18,7 @@ const ConnectWallet = () => {
   return (
     <>
       {/* ---------------------------------resp sidebar  nft Dashboard---------- */}
-
+      <h2 className="connect-heading-resp">Dashboard</h2>
       <div className="resp-sidebar-dashboard">
         <div className="dashboad-sidebar-sml col 12">
           <p className="menu-btn" onClick={slideOpen}>
@@ -27,31 +27,37 @@ const ConnectWallet = () => {
         </div>
 
         <div className="dashboard-resp-view" id="dashboardSideBar">
-          <div className="slide-down">
-            <Link className="nav-links  single  " href="#vision">
-              <p className="font-style-header">Game Name </p>
+          <div className="slide-down-resp border-rep">
+            <Link className="nav-links  single   " href="#vision">
+              <div className="font-style-header ">Game Name </div>
             </Link>
           </div>
-          <div className="slide-down">
+          <div className="slide-down-resp">
             <Link
               className="nav-links  single  "
               to="/dashboard"
               href="#homepage"
             >
-              <p className="font-style-header"> Dashboard </p>
+              <div className="font-style-header"> Dashboard </div>
             </Link>
           </div>
-          <div className="slide-down">
+          <div className="slide-down-resp border-rep">
             <Link className="nav-links  single  " href="#vision">
-              <p className="font-style-header">NFTS </p>
+              <p className="font-style-header ">NFTS </p>
             </Link>
           </div>
-          <div className="slide-down">
+          <div className="slide-down-resp border-rep">
+            <Link className="nav-links  single  " href="#vision">
+              <div className="font-style-header ">ROXO Token </div>
+            </Link>
+          </div>
+
+          <div className="slide-down-resp">
             <Link>
-              <p className="font-style-header">Buy More</p>
+              <p className="font-style-header pt-2">Buy More</p>
             </Link>
           </div>
-          <div className="slide-down">
+          <div className="slide-down-resp">
             <p
               className="font-style-header"
               data-bs-toggle="modal"
@@ -61,7 +67,7 @@ const ConnectWallet = () => {
               Deposit
             </p>
           </div>
-          <div className="slide-down">
+          <div className="slide-down-resp">
             <p
               className="font-style-header"
               data-bs-toggle="modal"
@@ -70,7 +76,7 @@ const ConnectWallet = () => {
               With Draw{" "}
             </p>
           </div>
-          <div className="slide-down">
+          <div className="slide-down-resp">
             <p
               className="font-style-header"
               data-bs-toggle="modal"
@@ -87,7 +93,7 @@ const ConnectWallet = () => {
       <h2 className="connect-heading">Dashboard</h2>
 
       <div className="col-md-12 connect-main-section">
-        <div className="col-md-4 connect-GameName-outer">
+        <div className="col-md-3 connect-GameName-outer">
           <div className="connect-GameName">
             <img src={GAME} alt="game" width="40px" height="40px" />
             <p className="connect-gameName-heading">Game Name</p>
@@ -95,7 +101,7 @@ const ConnectWallet = () => {
           <div className="horizintal-line-style" />
         </div>
 
-        <div className="col-md-8">
+        <div className="col-md-9">
           <div className="background-connectWallet">
             <div className="connect-address-section">
               <div>
