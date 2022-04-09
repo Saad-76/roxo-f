@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
+  font-family: "Cinzel" ;
 
 }
 .roxo-coin-converter{
@@ -65,6 +66,7 @@
     background-color: #262250;    border-radius: 12px;
     /* justify-content: space-around; */
     box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+    font-family: "Cinzel" ;
 }
 
 .token-convert-button{
@@ -76,12 +78,12 @@
 .token-convert-button-style{
    /* margin: 2px 2px; */
    font-size: 17.5px;
-    font-family: monterserat;
+   font-family: "Cinzel" ;
    padding: 6px 18px;
    /* margin: 4% 0; */
    font-weight: 600;
    color: #FFFF;
-   border-radius: 12px;
+   border-radius: 25px;
    width: 95%;
    background-color: #FF409A;   box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
    border: none;
@@ -112,4 +114,20 @@
         align-items: center;
         justify-content: center;
     }
+    .convert-roxo-allData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 0%; */
+        justify-content: center;
+        /* justify-content: center; */
+    }
+    
+.convert-gameCoin-allData {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 100%;
+    align-items: center;
+}
      }

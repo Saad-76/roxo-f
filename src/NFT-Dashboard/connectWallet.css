@@ -1,87 +1,80 @@
-
-.connect-heading{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0px;
+.connect-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  font-family: "Cinzel";
 }
 
-.connect-address-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
+.connect-address-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+}
+.connect-address-section p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+}
+.connect-main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.background-connectWallet {
+  background-color: #262250;
+  border-radius: 12px;
+  padding: 10px 0px;
+  margin-right: 48px;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+}
+.wallet-connected-button-style {
+  padding: 6px 18px;
 
+  width: 100%;
+  border-radius: 25px;
+  /* margin: 4% 0; */
+  color: #ffff;
 
+  background-color: #58acff;
+  border: none;
 }
-.connect-address-section p{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-
-
+.connect-GameName {
+  /* margin-top: 77px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 30px;
 }
-.connect-main-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.connect-gameName-heading {
+  padding-left: 14px;
+  font-weight: 500;
+  font-family: "Cinzel";
+  font-size: large;
+  margin: 0;
 }
-.background-connectWallet{
-    background-color: #262250;    border-radius: 12px;
-    padding: 10px 0px;
-    margin-right: 48px;
-    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+.connect-address-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "Cinzel";
 }
-.wallet-connected-button-style{
-    padding: 6px 18px;
-  
-    width: 100%;
-    border-radius: 12px;
-    /* margin: 4% 0; */
-    color: #ffff;
-
-  
-    background-color: #58ACFF;
-    border:none;
-  
+.connect-address-section button {
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "Cinzel";
 }
-.connect-GameName{
-    /* margin-top: 77px; */
-    display: flex;
-    flex-direction: row;
-   align-items: center;
-   padding: 0px 30px; 
-
+.copy-icon-connect {
+  border: none;
+  background: none;
 }
-.connect-gameName-heading{
-    padding-left: 14px;
-    font-weight:500;
-
-    font-size: large;
-    margin: 0;
-    
-}
-.connect-address-section p{
-    font-size: 15px;
-    line-height: 1.8;
-    font-family: monterserat;
-}
-.connect-address-section button{
-    font-size: 15px;
-    line-height: 1.8;
-    font-family: monterserat;
-}
-.copy-icon-connect{
-    border: none;
-    background: none;
-}
-.copy-icon-connect svg{
-    color: white;
+.copy-icon-connect svg {
+  color: white;
 }
 /* .wallet-address-connect{
     border: none;
@@ -89,24 +82,44 @@
     background-color: #e4e6eb;
     border-radius: 12px;
 } */
-
+.resp-sidebar-dashboard {
+  display: none;
+}
 @media only screen and (max-width: 900px) {
- .connect-GameName-outer{
-     display: none;
- }
- .connect-address-section {
+  .connect-GameName-outer {
+    display: none;
+  }
+  .connect-address-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 12px;
     margin: 0px;
-}
-.background-connectWallet {
-    background-color: #262250;    border-radius: 12px;
+  }
+  .background-connectWallet {
+    background-color: #262250;
+    border-radius: 12px;
     padding: 10px 0px;
     /* margin-right: 48px; */
     margin-right: 0%;
     box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
-}
   }
+  .resp-sidebar-dashboard {
+    display: block;
+  }
+  .dashboard-resp-view {
+    width: 80%;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    background-color: #201d47;
+    z-index: 3;
+    display: none;
+  }
+  .dashboad-sidebar-sml {
+  }
+  
+
+ 
+}

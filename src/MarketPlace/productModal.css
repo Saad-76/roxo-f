@@ -1,0 +1,8 @@
+.card_item{
+    width: 80%;
+    background-color: #4e488b;
+    margin: 50px;
+    height: 440px;
+    border-radius: 10px;
+    text-align: center;
+}

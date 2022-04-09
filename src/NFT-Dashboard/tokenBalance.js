@@ -82,7 +82,6 @@ const TokenBalance = () => {
                 </p>
                 <div className="token-value">
                   <span className="small-size-words">
-                 
                     <p>
                       3223
                       <br />
@@ -90,14 +89,13 @@ const TokenBalance = () => {
                     </p>
                   </span>
                   <span className="small-size-words">
-                 <p className="ETH-style">
+                    <p className="ETH-style">
                       0.731
                       <br />
                       ETH
                     </p>
                   </span>
                   <span className="small-size-words">
-             
                     <p className="BTC-style">
                       0.12231
                       <br />
@@ -108,51 +106,40 @@ const TokenBalance = () => {
               </div>
             </div>
           </div>
- 
 
           {/* ------------------Third-Cardd---------------- */}
           <div className="thirdCard-main">
             <div className="third-card-set">
               <div className="thirdCard-backColor">
                 <span className="token-main-headings  nft-balance-heading">
-         
                   <p>NFTs balance</p>
                 </span>
                 <div className="balance-thirdCard-data">
                   <p>
-                    <span className="token-sub-headings">
-         
-                      Total NFTs OWN:{" "}
-                    </span>
+                    <span className="token-sub-headings">Total NFTs OWN: </span>
                   </p>
                   <span className="small-size-words">
-
                     <p>300</p>{" "}
                   </span>
                 </div>
                 <div className="balance-thirdCard-data">
                   <p>
-
                     <span className="token-sub-headings"> Total value: </span>
                   </p>
                   <span className="small-size-words">
-
                     <p>
                       2.31 ETH <br /> ($8733.12)
                     </p>
                   </span>
-                  
                 </div>
-                      <div className="thirdCard-button">
-            <button className="thirdCard-button-style">
-              <b>With Draw</b>
-            </button>
-          </div>
+                <div className="thirdCard-button">
+                  <button className="thirdCard-button-style">
+                    <b>With Draw</b>
+                  </button>
+                </div>
               </div>
-              
             </div>
           </div>
-    
         </div>
 
         <div className="col-md-4">
@@ -170,8 +157,11 @@ const TokenBalance = () => {
                   <br />
                   <span className="small-size-words"> 17832.12 ROXO </span>
                 </p>
-                <button className="convert-button-secondCard"     data-bs-toggle="modal"
-              data-bs-target="#convertModal">
+                <button
+                  className="convert-button-secondCard"
+                  data-bs-toggle="modal"
+                  data-bs-target="#convertModal"
+                >
                   <b>Convert</b>
                 </button>
               </div>

@@ -22,13 +22,14 @@
 .earning-modal-style h3{
     /* font-size: 15px;
     line-height: 1.8; */
-    font-family: monterserat;
+    font-family: "Cinzel";
     color: white;
 }
 .earning-modal-style p{
     font-size: 15px;
     line-height: 1.8;
-    font-family: monterserat;
+    font-family: Nuninto;
+
     color: white;
 }
 .earning-modal-style h6{
@@ -53,11 +54,11 @@
  
     width: 100%;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 25px;
     color: white;
     font-weight: bold;
     background-color: #58ACFF;
-
+    font-family: "Cinzel";
     /* background: rgb(222,153,33);
     background: linear-gradient(90deg, rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%);    */
        border:none;  

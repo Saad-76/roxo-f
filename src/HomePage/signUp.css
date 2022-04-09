@@ -18,11 +18,11 @@
   padding: 6px 18px;
 
   width: 100%;
-  border-radius: 12px;
+  border-radius: 25px;
   /* margin: 4% 0; */
 
   border-radius: 12px;
-  background-color: #ffe600;
+  background-color: #58acff;
   border: none;
 }
 .signup-button-style a {
@@ -145,11 +145,11 @@
   text-align: center;
   /* padding-top: 12px; */
   border-radius: 25px;
-  color: #ffe600;
+  color: #58acff;
   padding: 4px;
   width: 300px;
   height: 45px;
-  border: 1px solid #ffe600;
+  border: 1px solid #58acff;
   text-align: center;
 }
 .signup-fields-heading-outer {

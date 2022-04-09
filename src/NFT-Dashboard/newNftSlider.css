@@ -17,14 +17,14 @@
     padding: 6px 18px;
   
     width: 20%;
-    border-radius: 12px;
+    border-radius: 25px;
     /* margin: 4% 0; */
     color: #1c1e21;
   
     background-color: #58ACFF;
     box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
     color: #ffff;
-
+    font-family: "Cinzel" ;
     border:none;
 }
 

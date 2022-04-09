@@ -66,6 +66,22 @@
     padding: 5px 10px;
 }
 
+.frame-image{
+  position: absolute;
+  /* position: relative; */
+}
+.character-image{
+ 
+  margin-top: 20%;
+  margin-left: 10%;
+  position: absolute;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 900px) {
   .card {
     width: 35%;

@@ -230,6 +230,8 @@
 .slide-down p {
   margin-bottom: 0px;
   color: #ffffff;
+  font-size: 11.3px;
+
   white-space: break-spaces;
   width: 100px;
 }

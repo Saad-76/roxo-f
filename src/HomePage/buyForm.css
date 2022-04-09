@@ -19,13 +19,11 @@
   align-items: center;
   justify-content: space-between;
 }
-.sell-button-main p{
+.sell-button-main p {
   font-size: 12px;
-
 }
-.buy-hidden-image{
-
-visibility: hidden;
+.buy-hidden-image {
+  visibility: hidden;
 }
 .sell-button-inner {
   border-radius: 25px;
@@ -59,7 +57,7 @@ visibility: hidden;
   justify-content: flex-start;
   padding-top: 24px;
 }
-.input-display-sellform label{
+.input-display-sellform label {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -148,6 +146,12 @@ visibility: hidden;
 
 .sell-main-heading h3 {
   color: white;
+}
+.modal-content-style {
+  position: absolute;
+  z-index: 40;
+  width: 100%;
+
 }
 @media screen and (max-width: 900px) {
   .swap-button-inner {

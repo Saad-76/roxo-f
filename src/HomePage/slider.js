@@ -29,6 +29,16 @@ const Slider = () => {
               <img
                 className="d-block image-height   w-100"
                 id="imagebg"
+                src={moblSlider}
+                alt="Second slide"
+              />
+
+              {/* <img className='img-sm' src={Render9} alt="render9"/> */}
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block image-height   w-100"
+                id="imagebg"
                 src={ForWebsite}
                 alt="Second slide"
               />

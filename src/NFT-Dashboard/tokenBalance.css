@@ -107,7 +107,7 @@
   flex-direction: row;
   align-items: center;
   margin-top: 14px;
-
+  font-family: "Cinzel" !important;
   justify-content: space-evenly;
 }
 
@@ -183,12 +183,12 @@
 .convert-button-secondCard {
   padding: 6px 18px;
   color: #ffff;
-  border-radius: 12px;
+  border-radius: 25px;
   width: 30%;
   box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
   font-size: 15px;
   /* line-height: 1.8; */
-  font-family: monterserat;
+  font-family: "Cinzel" ;
 
   background-color: #58acff;
   border: none;
@@ -199,6 +199,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-family: "Cinzel" ;
 }
 
 .thirdCard-backColor {
@@ -254,21 +255,21 @@
 
   color: #ffff;
 
-  border-radius: 12px;
+  border-radius: 25px;
   width: 30%;
   background-color: #58acff;
   border: none;
   box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
   font-size: 15px;
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel" ;
 }
 
 .dashboard-heading {
   padding-left: 14px;
   font-size: 15px;
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel";
   margin: 0;
   font-weight: 600;
   border: none;
@@ -279,7 +280,7 @@
   padding-left: 14px;
   font-size: 15px;
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel";
   margin: 0;
   border: none;
   font-weight: 600;
@@ -363,7 +364,7 @@
   padding-left: 14px;
   font-size: 15px;
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel";
   margin: 0;
   border: none;
   font-weight: 600;
@@ -375,7 +376,7 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel";
   color: white;
   margin: 0;
   border: none;
@@ -385,7 +386,7 @@
   padding-left: 14px;
   font-size: 15px;
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel";
   margin: 0;
   border: none;
   font-weight: 600;
@@ -396,7 +397,7 @@
   padding-left: 14px;
   font-size: 15px;
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel";
   color: white;
   margin: 0;
   border: none;
@@ -437,9 +438,10 @@
   border-bottom: 1px solid rgb(189, 187, 187);
 }
 .balance-roxo-heading {
-  margin: 10px 60px;
+  margin: 10px 54px;
   font-size: large;
   font-weight: 500;
+  font-family: "Cinzel";
 }
 .horizintal-line-Roxotoken-botttom {
   height: 2px;
@@ -467,10 +469,11 @@
 .stat-fields p {
   /* font-size: 15px; */
   line-height: 1.8;
-  font-family: monterserat;
+  font-family: "Cinzel" ;
 }
 .token-valueIn {
   padding-left: 20px;
+  font-family: "Cinzel";
 }
 .ETH-style {
   padding-left: 40px;
@@ -481,6 +484,7 @@
 .token-main-headings {
   font-size: 16px;
   font-weight: 600;
+  font-family: "Cinzel";
 }
 .token-sub-headings {
   font-size: 13.5px;
@@ -515,12 +519,12 @@
   .convert-button-secondCard {
     padding: 6px 18px;
     color: #ffff;
-    border-radius: 12px;
+    border-radius: 25px;
     width: 50%;
     box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
     font-size: 15px;
     /* line-height: 1.8; */
-    font-family: monterserat;
+    font-family: "Cinzel" ;
     background-color: #58acff;
     border: none;
   }
@@ -538,20 +542,20 @@
 
     color: #ffff;
 
-    border-radius: 12px;
+    border-radius: 25px;
     width: 100%;
     background-color: #58acff;
     border: none;
     box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
     font-size: 15px;
     line-height: 1.8;
-    font-family: monterserat;
+    font-family: "Cinzel" ;
   }
   .firstCard-backColor {
     background-color: #262250;
     border-radius: 12px;
     box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
-    padding: 54px;
+    padding: 47px;
   }
   .secondCard-backColor {
     background-color: #262250;
