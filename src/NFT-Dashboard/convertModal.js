@@ -40,10 +40,10 @@ const ConvertModal = () => {
               <div className="convertModal-price">
                 <p className="convertModal-price-field"> Price: </p>
                 <p className="coinEqual">
-                  1 ROXO Token{" "}
+                  1 ROXO Token
                   <span className="swap-icon-margin">
                     <VscArrowSwap size={20} />
-                  </span>{" "}
+                  </span>
                   <span className="gameCoins-margin">10,000 Coin</span>
                 </p>
               </div>

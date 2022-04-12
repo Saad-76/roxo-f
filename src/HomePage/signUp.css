@@ -10,7 +10,7 @@
 }
 
 .signup-modal-body-padding {
-  padding: 20px 12px;
+  /* padding: 20px 12px; */
 }
 
 .signup-button-style {
@@ -146,11 +146,14 @@
   /* padding-top: 12px; */
   border-radius: 25px;
   color: #58acff;
-  padding: 4px;
-  width: 300px;
+  /* padding-top: 6px; */
+  margin-top: 27px;
+
+  width: 500px;
   height: 45px;
-  border: 1px solid #58acff;
+  /* border: 1px solid #58acff; */
   text-align: center;
+  font-family: Cinzel;
 }
 .signup-fields-heading-outer {
   text-align: center;
@@ -162,5 +165,17 @@
 @media screen and (max-width: 900px) {
   .signup-image-inner{
     display: none;
+  }
+  .signup-fields-heading{
+    text-align: center;
+    /* padding-top: 12px; */
+    border-radius: 25px;
+    color: #58acff;
+    padding-top: 19px;
+    width: 300px;
+    height: 45px;
+    /* border: 1px solid #58acff; */
+    text-align: center;
+    font-family: Cinzel;
   }
 }

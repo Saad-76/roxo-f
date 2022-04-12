@@ -4,6 +4,7 @@ import Coin from "../Assests/Coin.jpg";
 import GameCoin from "../Assests/GameCoin.png";
 
 import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
+import {AiOutlineArrowUp,AiOutlineArrowDown} from "react-icons/ai"
 import "./tokenConverter.css";
 
 const TokenConverter = () => {
@@ -28,6 +29,10 @@ const TokenConverter = () => {
                 <div className="converter-middleArrow">
                   <HiArrowSmRight size={60} />
                   <HiArrowSmLeft size={60} />
+                </div>
+                <div className="converter-middle-resp-arrow">
+                  <AiOutlineArrowDown size={60} />
+                  <AiOutlineArrowUp size={60} />
                 </div>
 
                 <div className="col-md-6  convert-gameCoin-allData">

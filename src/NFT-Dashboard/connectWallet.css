@@ -124,8 +124,8 @@
   .dashboad-sidebar-sml {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 30px;
+    justify-content: flex-start;
+    padding-left: 10px;
   }
 
   .connect-heading {
@@ -144,21 +144,16 @@
     background-color: #201d47;
     height: 50px;
     text-align: center;
- 
+
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .slide-down-resp a{
+  .slide-down-resp a {
     text-decoration: none;
     color: white;
   }
-  .border-rep{
+  .border-rep {
     border-bottom: 2px solid #afacac1c;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-    /* margin-top: 1%; */
-  
-    /* color: #afacac1c; */
   }
 }

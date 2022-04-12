@@ -29,12 +29,20 @@
   padding-top: 5px;
 }
 .wallet-colose-btn svg {
+ 
   color: red;
+  margin-right: 3px;
+  margin-top: 2px;
+
 }
 .wallet-button-background{ 
    background-color: #393469;
-  padding: 12px 20px;
+  padding: 4px 20px;
   border-radius: 14px;
   margin-top: 12px;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

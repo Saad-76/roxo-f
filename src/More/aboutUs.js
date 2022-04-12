@@ -23,7 +23,10 @@ const AboutUs = () => {
             </div>
 
             <div className="col-md-6 about-all-content">
-              <h3>Who We Are?</h3>
+              <div className="about-us-heading-outer">
+              <h1>Who We Are?</h1>
+              </div>
+            
               <p>Play With Fun</p>
               <p className="about-content-style">
                 ROXO is a leading interactive entertainment company for the

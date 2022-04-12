@@ -20,19 +20,19 @@ const SignUp = (props) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Body className="signup-modal-body-padding">
+        <Modal.Body className="signup-modal-body-padding login-image-style">
           <div className="signup-form-style">
             <div className="col-md-12 row login-divs">
               <div className="col-md-6 signup-image-side">
                 {/* <h4>SignUp</h4> */}
 
-                <img
+                {/* <img
                   className="signup-image-inner"
                   src={Logo}
                   alt="logologin"
                   height="250px"
                   width="250px"
-                />
+                /> */}
               </div>
               <div className="col-md-6 display-signup-style">
                 <div className="signup-fields-heading-outer">
@@ -142,6 +142,10 @@ const SignUp = (props) => {
                 {/* <p className="signup-have-account">Don’t you have an account?</p> */}
                 <p className="signup-register-now">
                   {/* <Link to="/homepage" > Login </Link> */}
+                  
+                </p>
+                <p className="register-now">
+                  {/* <button onClick={SignUpHandler}> Register Now! </button> */}
                 </p>
               </div>
             </div>

@@ -122,7 +122,18 @@
 .scan-icon-depositModal svg {
   color: white;
 }
-
+.depositModal-button-inner {
+  text-decoration: none;
+  font-weight: 500;
+  color: white !important;
+  font-family: Cinzel;
+  border-radius: 12px;
+  background-color: #58acff;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  border: none;
+  padding: 5px 10px;
+  margin-top: 60px;
+}
 
 @media screen and (max-width: 900px) {
   .modal-size-deposit {
@@ -134,14 +145,42 @@
   .deposit-network {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 36px;
     padding-left: 0%;
-  }
+}
   .network-field {
     font-size: 12px;
     line-height: 1.8;
     font-family: monterserat;
     outline: none;
   }
+  .depositeModal-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #262250;
+    border-radius: 12px;
+    
+  
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+  }
+  .deposit-modal-inner-height {
+    margin:  0px;
+}
+.depositModal-button-inner {
+  text-decoration: none;
+  font-weight: 500;
+  color: white !important;
+  font-family: Cinzel;
+  border-radius: 12px;
+  background-color: #58acff;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 19px;
+}
 }

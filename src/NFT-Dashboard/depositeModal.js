@@ -59,10 +59,12 @@ const DepositeModal=()=> {
             <p>Minimum Deposit: </p>
             <p className="minimumDeposite-field">0.2342 ROXO</p>
         </div>
-
+        <div className="convertModal-button-outer">
+                <button className="depositModal-button-inner">Deposit</button>
+              </div>
           </div>
        
-      
+        
         </div>
       </div>
     </div>

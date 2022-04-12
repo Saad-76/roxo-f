@@ -14,10 +14,10 @@
   text-decoration: none;
   font-weight: 500;
   color: white !important;
-
+font-family: Cinzel;
   border-radius: 12px;
-  
-  background-color: #393469;
+
+  background-color: #58acff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
   border: none;
@@ -36,7 +36,6 @@
 }
 .convertModal-style {
   padding: 6px;
- 
 }
 
 .amount-field-convertModal {
@@ -70,8 +69,6 @@
   flex-direction: row;
   padding: 30px 0px;
   margin-left: 90px;
-
-
 }
 
 .convertModal-price-field {
@@ -85,7 +82,7 @@
 
 .convertModal-amount-flex {
   display: flex !important;
- 
+
   padding: 30px 0px;
   flex-direction: row;
   align-items: center;
@@ -102,7 +99,7 @@
   font-family: monterserat;
 
   padding: 3px 12px;
-  background-color: #393469; 
+  background-color: #393469;
   border: none;
   border-radius: 12px;
   width: 67%;
@@ -123,65 +120,71 @@
     flex-direction: column;
     width: 100%;
     padding: 33px 10px;
-  
+
     background-color: #262250;
     border-radius: 12px;
-  
+
     box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
     align-items: center;
-}
-.covertModal-size {
-  max-width: 100% !important;
-}
-.convertModal-coinSelection {
-  font-size: 15px;
-  line-height: 1.8;
-  font-family: monterserat;
- 
-  padding: 6px 12px;
-  background-color: #393469;
-  color: rgb(233, 222, 203);
+  }
+  .covertModal-size {
+    max-width: 100% !important;
+  }
+  .convertModal-coinSelection {
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: monterserat;
 
-  margin-left: 15px;
-  outline: none;
-  border-radius: 12px;
-  border: none;
- 
-}
-.amount-field-convertModal {
- margin-left: 10px;
- padding: 5px 12px;
- background-color: #393469;
- border-radius: 12px;
- border: none;
+    padding: 6px 12px;
+    background-color: #393469;
+    color: rgb(233, 222, 203);
 
- width: 100%;
- outline: none;
-}
-.convertModal-price {
-  display: flex;
-  flex-direction: row;
-  padding: 30px 0px;
-  margin-left: 2px;
+    margin-left: 15px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+  }
+  .amount-field-convertModal {
+    margin-left: 10px;
+    padding: 5px 12px;
+    background-color: #393469;
+    border-radius: 12px;
+    border: none;
 
+    width: 100%;
+    outline: none;
+  }
+  .convertModal-price {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    margin-left: 2px;
+  }
+  .convert-coins-label {
+    margin-left: 31px;
+  }
+  .convert-Coins-field {
+    margin-top: 8px;
+    margin-left: 21px;
+    font-size: 15px;
+    line-height: 1.8;
+    outline: none;
+    font-family: monterserat;
+    padding: 3px 12px;
+    background-color: #393469;
+    border: none;
+    border-radius: 12px;
+    width: 83%;
 }
-.convert-coins-label {
-  margin-left: 31px;
-}
-.convert-Coins-field {
-  margin-top: 8px;
-  margin-left: 54px;
-  font-size: 15px;
-  line-height: 1.8;
-  outline: none;
-  font-family: monterserat;
-
-  padding: 3px 12px;
-  background-color: #393469;
- 
-  border: none;
-  border-radius: 12px;
-  width: 67%;
-}
-
+  .convertModal-heading {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #393469;
+    border-radius: 12px;
+    justify-content: flex-start;
+  
+    box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
+  }
 }

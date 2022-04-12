@@ -12,6 +12,7 @@ import { ethers, utils } from "ethers";
 import { AiOutlineClose } from "react-icons/ai";
 // --------------------------------------------
 
+import TokenCoin from "../Assests/Token Coin.png"
 import "./buyForm.css";
 
 const BuyForm = () => {
@@ -100,14 +101,17 @@ const BuyForm = () => {
                       <h6 type="button" onClick={connectWallet} className="">
                         Connect MetaMask
                       </h6>
+                      <img src={TokenCoin} alt="" height="50px" width="50px"/>
                     </div>
                   )}
                 </div>
                 <div className="wallet-button-background">
                   <h6 type="button">Connect ROXO Wallet</h6>
+                  <img src={TokenCoin} alt="" height="50px" width="50px"/>
                 </div>
                 <div className="wallet-button-background">
                   <h6 type="button">Connect Safepal</h6>
+                  <img src={TokenCoin} alt="" height="50px" width="50px"/>
                 </div>
               </div>
             </div>

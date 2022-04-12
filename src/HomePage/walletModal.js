@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-
 import { ethers, utils } from "ethers";
 import { AiOutlineClose } from "react-icons/ai";
+
+import TokenCoin from "../Assests/Token Coin.png";
 import "./walletModal.css";
 
 const WalletModal = () => {
@@ -61,18 +62,21 @@ const WalletModal = () => {
                     MetaMask wallet address is : {account.address}
                   </p>
                 ) : (
-                  <div className="wallet-button-background">
+                  <div className="wallet-button-background ">
                     <h6 type="button" onClick={connectWallet} className="">
                       Connect MetaMask
                     </h6>
+                    <img src={TokenCoin} alt="" height="50px" width="50px" />
                   </div>
                 )}
               </div>
               <div className="wallet-button-background">
                 <h6 type="button">Connect ROXO Wallet</h6>
+                <img src={TokenCoin} alt="" height="50px" width="50px" />
               </div>
               <div className="wallet-button-background">
                 <h6 type="button">Connect Safepal</h6>
+                <img src={TokenCoin} alt="" height="50px" width="50px" />
               </div>
             </div>
           </div>
