@@ -15,7 +15,7 @@ const OurGames = () => {
       </div>
       <div>
         <div className="gameOne-outer-pad">
-          <div className="col-md-12 gameOne-main-section">
+          <div className="col-md-8 gameOne-main-section">
             <div className="col-md-6 image-gameOne-outer ">
               <img
                 className="image-gameOne-inner"

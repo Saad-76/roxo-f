@@ -1,5 +1,10 @@
 import { React, useState } from "react";
 
+import StepOne from "../Assests/imagesHome/how it works/step1 desktop.png";
+import stepTwo from "../Assests/imagesHome/how it works/step 2 desktop.png";
+import StepThree from "../Assests/imagesHome/how it works/step3 desktop.png";
+import StepFour from "../Assests/imagesHome/how it works/step4 desktop.png";
+import StepOneMbl from "../Assests/imagesHome/how it works/step1 mobile.png";
 import "./work.css";
 
 const Work = () => {
@@ -58,7 +63,8 @@ const Work = () => {
               <div className="work-button-style-outer">
                 <div>
                   <button
-                    className="work-button-style active "
+                    className="work-button-style "
+                    // className="work-button-style active  "
                     onClick={handleDataOne}
                   >
                     1
@@ -85,47 +91,44 @@ const Work = () => {
                     4
                   </button>
                 </div>
-                <div>
+                {/* <div>
                   <button
                     className="work-button-style"
                     onClick={handleDataFive}
                   >
                     5
                   </button>
-                </div>
+                </div> */}
               </div>
 
               <div>
                 {dataOne && (
                   <div className="work-content-section-backgroud">
-                    <h3>Work 1</h3>
-                    <p>Lore IpsM lOREM ipsum</p>
+                    <img className="web-img-work" src={StepOne} alt="StepOne" />
+                    <img className="mbl-img-work" src={StepOneMbl} alt="StepOneMbl" />
                   </div>
                 )}
                 {dataTwo && (
                   <div className="work-content-section-backgroud">
-                    <h3>Work 2</h3>
-                    <p>Lore IpsM lOREM ipsum</p>
+                    <img className="web-img-work" src={stepTwo} alt="stepTwo" />
                   </div>
                 )}
                 {dataThree && (
                   <div className="work-content-section-backgroud">
-                    <h3>Work 3</h3>
-                    <p>Lore IpsM lOREM ipsum</p>
+                    <img className="web-img-work" src={StepThree} alt="StepThree" />
                   </div>
                 )}
                 {dataFour && (
                   <div className="work-content-section-backgroud">
-                    <h3>Work 4</h3>
-                    <p>Lore IpsM lOREM ipsum</p>
+                    <img className="web-img-work" src={StepFour} alt="StepFour" />
                   </div>
                 )}
-                {dataFive && (
+                {/* {dataFive && (
                   <div className="work-content-section-backgroud">
                     <h3>Work 5</h3>
                     <p>Lore IpsM lOREM ipsum</p>
                   </div>
-                )}
+                )} */}
               </div>
             </div>
             <div className="col-md-2"></div>

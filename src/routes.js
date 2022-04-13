@@ -26,6 +26,7 @@ import PortSideBar from "./PortFolio/portSideBar";
 import MarketPlace from "./MarketPlace/marketPlace";
 import MarketProductDetail from "./MarketPlace/marketProductDetail";
 import WalletModal from "./HomePage/walletModal";
+import NoJob from "./Careers/noJob";
 
 const Routes = () => {
   return (
@@ -90,6 +91,9 @@ const Routes = () => {
           </Route>
           <Route path="/market_product_detail">
             <MarketProductDetail />
+          </Route>
+          <Route path="/no_job">
+            <NoJob/>
           </Route>
 
           {/* -----------------Private-------- */}

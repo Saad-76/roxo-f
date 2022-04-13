@@ -2,6 +2,7 @@
   text-align: center;
   color: white;
   padding: 60px 0px;
+  font-family: 'Cinzel';
 }
 .careers-home-outer {
   color: white;
@@ -21,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   color: white;
+  font-family: 'Cinzel';
 }
 .careers-drop-outer{
   padding-top: 20px;

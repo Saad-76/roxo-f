@@ -4,17 +4,16 @@
 }
 .work-heading-outer {
   border-left: 4px solid #c438ef;
-    padding-left: 15px;
-    margin-left: 0vh;
-    margin-top: 4px;
-    color: white;
-    margin-bottom: 38px;
-    font-family: 'Cinzel';
+  padding-left: 15px;
+  margin-left: 0vh;
+  margin-top: 4px;
+  color: white;
+  margin-bottom: 38px;
+  font-family: "Cinzel";
 }
-.work-heading-outer h1{
+.work-heading-outer h1 {
   letter-spacing: 2px;
   font-weight: bold;
-  
 }
 .work-button-style {
   border-radius: 100px;
@@ -38,44 +37,47 @@
 }
 .work-content-section-backgroud {
   background-color: #262250;
-  height: 345px;
+  height: 402px;
   width: 800px;
   border-radius: 30px;
-  padding: 30px;
+  padding: 0px;
   color: white;
   box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
-
   text-align: center;
   margin-left: 20px;
 }
-.work-content-section-backgroud h3{
-  font-family: 'Cinzel';
+
+.web-img-work {
+  border-radius: 30px;
+  height: 400px;
+  width: 100%;
 }
-.work-content-section-backgroud p{
+.work-content-section-backgroud h3 {
+  font-family: "Cinzel";
+}
+.work-content-section-backgroud p {
   font-family: Nuninto;
 }
-.work-button-style-outer button{
-  font-family: 'Cinzel';
+.work-button-style-outer button {
+  font-family: "Cinzel";
   font-weight: bold;
+  margin-top: 10px;
 }
 .work-button-style-outer button:focus {
   background-color: #393469;
   color: white;
   font-weight: bold;
 }
+.first-button-style {
+  margin-top: 20px;
+}
+.work-button-style-outer {
+  margin-top: 40px;
+}
+.mbl-img-work {
+  display: none;
+}
 @media only screen and (max-width: 900px) {
-  .work-content-section-backgroud {
-    background-color: #262250;
-    height: 345px;
-    width: 280px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
-
-    padding: 30px;
-    color: white;
-    text-align: center;
-    margin-left: 20px;
-  }
   .work-heading-outer {
     border-left: 4px solid #c438ef;
     padding-left: 15px;
@@ -83,7 +85,7 @@
     margin-top: 4px;
     color: white;
     margin-bottom: 38px;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
   }
   .work-button-style-outer {
     display: flex;
@@ -97,5 +99,22 @@
   .work-outer {
     color: white;
     padding: 60px 23px;
-}
+  }
+  .web-img-work {
+    display: none;
+  }
+  .mbl-img-work {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
+  .work-content-section-backgroud {
+    background-color: #262250;
+    height: 378px;
+    width: 280px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
+    color: white;
+    text-align: center;
+  }
 }

@@ -2,9 +2,13 @@ import React from "react";
 import ForWebsite from "../Assests/For Website.png";
 import HasteKing from "../Assests/HasteKing.png";
 import SliderImage3 from "../Assests/SliderImage3.png";
-import webSlider1 from "../Assests/webSlider1.jpg"
-import moblSlider from "../Assests/moblSlider.png"
+import webSlider1 from "../Assests/webSlider1.jpg";
+import moblSlider from "../Assests/moblSlider.png";
 
+import SliderOneWeb from "../Assests/imagesHome/for slider/slider1 desktop.png";
+import SliderTwoWeb from "../Assests/imagesHome/for slider/slider2desktop.png";
+import SliderOneMbl from "../Assests/imagesHome/for slider/slider1 mobile.png";
+import SliderTwoMbl from "../Assests/imagesHome/for slider/slider 2 mobile.png";
 
 import { Carousel } from "react-bootstrap";
 import "./slider.css";
@@ -15,17 +19,41 @@ const Slider = () => {
       <div className=" carousel-style">
         <div className="bg-color ">
           <Carousel className="inner-style">
-          <Carousel.Item>
+            <Carousel.Item>
               <img
                 className="d-block image-height   w-100"
                 id="imagebg"
-                src={webSlider1}
+                src={SliderOneWeb}
                 alt="Second slide"
               />
 
-              <img className='img-sm' src={moblSlider} alt="render9" width="100%" height="600px"/>
+              <img
+                className="img-sm"
+                src={SliderOneMbl}
+                alt="render9"
+                width="100%"
+                height="600px"
+              />
             </Carousel.Item>
+
             <Carousel.Item>
+              <img
+                className="d-block image-height   w-100"
+                id="imagebg"
+                src={SliderTwoWeb}
+                alt="Second slide"
+              />
+
+              <img
+                className="img-sm"
+                src={SliderTwoMbl}
+                alt="render9"
+                width="100%"
+                height="600px"
+              />
+            </Carousel.Item>
+
+            {/* <Carousel.Item>
               <img
                 className="d-block image-height   w-100"
                 id="imagebg"
@@ -33,7 +61,6 @@ const Slider = () => {
                 alt="Second slide"
               />
 
-              {/* <img className='img-sm' src={Render9} alt="render9"/> */}
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -43,7 +70,6 @@ const Slider = () => {
                 alt="Second slide"
               />
 
-              {/* <img className='img-sm' src={Render9} alt="render9"/> */}
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -59,7 +85,7 @@ const Slider = () => {
                 src={HasteKing}
                 alt="Third slide"
               />
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         </div>
       </div>

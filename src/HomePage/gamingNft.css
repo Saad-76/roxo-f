@@ -64,9 +64,7 @@
   font-family: "Cinzel";
 }
 .gaming-nft-slider-outer {
-  /* padding-left: 60px;
-  padding-right: 60px; */
-  padding-left: 219px;
+  padding-left: 253px;
   padding-right: 318px;
 }
 .nftSlider-heading {
@@ -75,7 +73,7 @@
   align-items: center;
   justify-content: center;
   padding: 12px 30px;
-  font-family: "Cinzel" ;
+  font-family: "Cinzel";
   /* background-color: rgba(0,0,0,0.1);   */
 }
 .newNftSlider-view-button-outer {
@@ -227,28 +225,14 @@
   .gaming-nft-link-button-inner {
     margin-top: 12px;
   }
-  /* .image-slider-game{
-    margin-left: 44px;
-    border-radius: 12px;
-    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
-} */
+
   .gaming-nft-slider-outer {
     padding-left: 14px;
-    padding-right: 40px;
+    padding-right: 29px;
   }
 
   .gamingnft-detail-bottom-outer {
     display: none;
-    /* background-color: #393469;
-    padding: 20px;
-
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    align-items: center;
-    align-content: space-between; */
   }
   .market-product-detail-background {
     background-color: #262250;

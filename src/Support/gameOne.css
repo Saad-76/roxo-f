@@ -17,23 +17,25 @@
   flex-direction: column;
   align-items: flex-start;
   color: white;
-  max-width: 536px;
-  padding: 20px 40px;
-
+  max-width: 523px;
+  padding-right: 40px;
   text-align: justify;
 }
-.content-gameOne-section h3{
-  font-family: 'Cinzel';
+.content-gameOne-section h3 {
+  font-family: "Cinzel";
 }
-.content-gameOne-section p{
+.content-gameOne-section p {
   font-family: Nuninto;
 }
 .gameOne-outer-pad {
-  padding: 0px 50px;
+  padding: 0px;
+  display: flex;
+  flex-direction: revert;
+  justify-content: center;
 }
 .image-gameOne-inner {
   height: 300px;
-  width: 80%;
+  width: 90%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
@@ -50,14 +52,22 @@
     height: 300px;
     width: 100%;
     border-top-left-radius: 30px;
-   border-top-right-radius: 30px;
-   border-bottom-left-radius: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
   }
   .content-gameOne-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 536px;
-    padding: 16px 24px;
+    color: white;
+    max-width: 523px;
+    padding: 20px;
+    text-align: justify;
+  }
+  .gameOne-outer-pad {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: revert;
+    justify-content: center;
   }
 }

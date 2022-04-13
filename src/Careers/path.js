@@ -15,24 +15,12 @@ const Path = () => {
     <>
       <h3 className="path-heading-style">Choose Your Path</h3>
 
-      {/* <div  className="navbar-toggler"
-            type="button"
-             onClick={slideOpen}>Open</div>
-
-<div className="collapse-navbar " id="mySidebar">
-  <p onClick={slideClose} >Close</p>
-  <Link to="/engineering"><p >Engineering</p></Link>
-  <Link to="/design"><p>Design & Production </p></Link>
-  <Link to="/art"><p>Art & Animation </p></Link>
-  <Link to="/operation"><p>Operations & Marketing </p></Link>
-  <Link to="/other"><p>Others </p></Link>
-
-</div> */}
+ 
 
       <div className="container path-header-main">
         <div className="col-md-12 path-header-style haed-nav-btns">
           <div className="sections-style">
-            <Link to="/engineering">
+            <Link to="/no_job">
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -43,7 +31,9 @@ const Path = () => {
             </Link>
           </div>
           <div className="sections-style">
-            <Link to="/design">
+            {/* <Link to="/design"> */}
+            <Link to="/no_job">
+
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -54,7 +44,7 @@ const Path = () => {
             </Link>
           </div>
           <div className="sections-style">
-            <Link to="/art">
+            <Link to="/no_job">
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -65,7 +55,7 @@ const Path = () => {
             </Link>
           </div>
           <div className="sections-style">
-            <Link to="/operation">
+            <Link to="/no_job">
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -76,7 +66,7 @@ const Path = () => {
             </Link>
           </div>
           <div className="sections-style">
-            <Link to="/other">
+            <Link to="/no_job">
               <img
                 src={IconicImage}
                 alt="IconicImage"
