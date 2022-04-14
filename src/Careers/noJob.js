@@ -12,12 +12,12 @@ const NoJob = () => {
       <Header />
       <CareersHome />
       <Path />
-      <div className="develop-outer-style">
+      {/* <div className="develop-outer-style">
         <div className="develop-heading-style col-md-5">
           <h1>No Job Available</h1>
           <h5>Coming Soon...</h5>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

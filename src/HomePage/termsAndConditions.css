@@ -1,0 +1,26 @@
+.backgroud-terms-conditions {
+  color: white;
+  padding: 20px 150px;
+  background-color: #201d47;
+  text-align: justify;
+}
+.backgroud-terms-conditions h1 {
+  font-family: Cinzel;
+  text-align: center;
+  padding: 12px;
+}
+
+.backgroud-terms-conditions h3 {
+  font-family: Cinzel;
+}
+.backgroud-terms-conditions p {
+  font-family: Nuninto;
+}
+@media screen and (max-width: 900px) {
+  .backgroud-terms-conditions {
+    color: white;
+    padding: 20px 25px;
+    background-color: #201d47;
+    text-align: justify;
+  }
+}

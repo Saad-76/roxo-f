@@ -1,4 +1,6 @@
-import React from "react";
+import { React,useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import AboutUs from "./aboutUs";
 import ContactUsForm from "./contactUsForm";
 import Header from "../HomePage/header";
@@ -7,6 +9,14 @@ import ContactUsIcon from "./contactUsIcon";
 import "./contactUs.css";
 
 const ContactUs = () => {
+  const routePath = useLocation();
+
+  const onTop = () => {
+    window.scrollTo(0, 4);
+  };
+  useEffect(() => {
+      onTop();
+    }, [routePath]);
   return (
     <>
       <Header />

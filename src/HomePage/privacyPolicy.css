@@ -1,0 +1,27 @@
+.backgroud-privacy-policy {
+    color: white;
+    padding: 20px 150px;
+    background-color: #201d47;
+    text-align: justify;
+  }
+  .backgroud-privacy-policy h1 {
+    font-family: Cinzel;
+    text-align: center;
+    padding: 12px;
+  }
+  
+  .backgroud-privacy-policy h3 {
+    font-family: Cinzel;
+  }
+  .backgroud-privacy-policy p {
+    font-family: Nuninto;
+  }
+  @media screen and (max-width: 900px) {
+    .backgroud-privacy-policy {
+      color: white;
+      padding: 20px 25px;
+      background-color: #201d47;
+      text-align: justify;
+    }
+  }
+  

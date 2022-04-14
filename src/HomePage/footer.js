@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 import FooterLeft from "../Assests/bottomleft.png";
 import FooterRight from "../Assests/bottomright.png";
@@ -20,7 +22,13 @@ const Footer = () => {
               <br />
               All rights reserved.
             </p>
-            <p>Contact US | Careers | White Paper</p>
+            <p>
+              <span className="links-footer">
+                <Link to="/contactus">Contact US</Link> |
+                <Link to="/terms_conditions"> Terms and Conditions</Link> |
+                <Link to="/privacy_policy"> Privacy Policy</Link>
+              </span>
+            </p>
           </div>
 
           <div className="col-md-4 ">
@@ -41,7 +49,13 @@ const Footer = () => {
             <br />
             All rights reserved.
           </p>
-          <p>Contact US | Careers | White Paper</p>
+          <p>
+            <span className="links-footer">
+              <Link to="/contactus">Contact US</Link> |
+              <Link to="/terms_conditions"> Terms and Conditions</Link> |
+              <Link to="/privacy_policy"> Privacy Policy</Link>
+            </span>
+          </p>
         </div>
       </div>
     </>

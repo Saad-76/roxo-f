@@ -27,6 +27,8 @@ import MarketPlace from "./MarketPlace/marketPlace";
 import MarketProductDetail from "./MarketPlace/marketProductDetail";
 import WalletModal from "./HomePage/walletModal";
 import NoJob from "./Careers/noJob";
+import TermsAndConditions from "./HomePage/termsAndConditions";
+import PrivacyPolicy from "./HomePage/privacyPolicy";
 
 const Routes = () => {
   return (
@@ -95,7 +97,12 @@ const Routes = () => {
           <Route path="/no_job">
             <NoJob/>
           </Route>
-
+          <Route path="/terms_conditions">
+            <TermsAndConditions/>
+          </Route>
+          <Route path="/privacy_policy">
+            <PrivacyPolicy/>
+          </Route>
           {/* -----------------Private-------- */}
           <Route path="/dashboard">
             <Dashboard />

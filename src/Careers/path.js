@@ -21,6 +21,8 @@ const Path = () => {
         <div className="col-md-12 path-header-style haed-nav-btns">
           <div className="sections-style">
             <Link to="/no_job">
+            <button>
+
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -28,11 +30,13 @@ const Path = () => {
                 height="150px"
               />
               <p>Engineering</p>
+              </button>
             </Link>
           </div>
           <div className="sections-style">
             {/* <Link to="/design"> */}
             <Link to="/no_job">
+            <button>
 
               <img
                 src={IconicImage}
@@ -41,10 +45,12 @@ const Path = () => {
                 height="150px"
               />
               <p>Design & Production</p>
+              </button>
             </Link>
           </div>
           <div className="sections-style">
             <Link to="/no_job">
+              <button>
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -52,10 +58,13 @@ const Path = () => {
                 height="150px"
               />
               <p>Art & Animation</p>
+              </button>
             </Link>
           </div>
           <div className="sections-style">
             <Link to="/no_job">
+            <button>
+
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -63,10 +72,13 @@ const Path = () => {
                 height="150px"
               />
               <p>Operations & Marketing</p>
+              </button>
             </Link>
           </div>
           <div className="sections-style">
             <Link to="/no_job">
+            <button>
+
               <img
                 src={IconicImage}
                 alt="IconicImage"
@@ -74,8 +86,15 @@ const Path = () => {
                 height="150px"
               />
               <p>Others</p>
+              </button>
             </Link>
           </div>
+        </div>
+      </div>
+        <div className="develop-outer-style">
+        <div className="develop-heading-style col-md-5">
+          <h1>No Job Available</h1>
+          <h5>Coming Soon...</h5>
         </div>
       </div>
     </>

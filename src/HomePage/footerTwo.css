@@ -44,6 +44,10 @@
 .footer-resp {
   display: none;
 }
+.links-footer a{
+  text-decoration: none;
+  color: white;
+}
 @media screen and (max-width: 900px) {
   .image-left {
     display: none;
