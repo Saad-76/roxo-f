@@ -1,4 +1,4 @@
-import { React,useEffect } from "react";
+import { React, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import AboutUs from "./aboutUs";
@@ -15,8 +15,8 @@ const ContactUs = () => {
     window.scrollTo(0, 4);
   };
   useEffect(() => {
-      onTop();
-    }, [routePath]);
+    onTop();
+  }, [routePath]);
   return (
     <>
       <Header />

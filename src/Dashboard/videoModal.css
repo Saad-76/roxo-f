@@ -63,4 +63,9 @@ justify-content: center;
           max-width: 100% !important;
       
       }
+      .modalVideo-close-button button {
+        position: absolute;
+        right: 30px;
+        bottom: 12%;
+    }
     }

@@ -123,18 +123,15 @@ const Header = () => {
             <b>Connect Wallet</b>
           </button>
         </div>
-        {/* <button
+        <button
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             onClick={() => setModalShow(true)}
           >
             <b> GAME EARNINGS </b>
-          </button> */}
+          </button>
 
-        {/* <button data-bs-toggle="modal" data-bs-target="#exampleModal">
-          GAME EARNINGS
-        </button> */}
-        {/* </Link> */}
+      
       </div>
       <div className="header-nav-sml col 12">
         <Link to="/homepage">
@@ -267,10 +264,10 @@ const Header = () => {
             Connect Wallet
           </p>
         </div>
-        {/* <div className="slide-down">
+        <div className="slide-down">
           <p onClick={() => setModalShow(true)}>GAME EARNINGS</p>
           <Login show={modalShow} onHide={() => setModalShow(false)} />
-        </div> */}
+        </div>
       </div>
     </div>
   );
