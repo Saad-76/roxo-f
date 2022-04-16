@@ -83,17 +83,37 @@
 @media only screen and (max-width: 900px) {
   .path-header-style {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .sections-style {
     padding: 0;
-    /* padding-left: 30px; */
+  }
+  .haed-nav-btns a::after {
+    content: "";
+    display: block;
+    width: 10;
+    height: 0px;
+    background: #58acff;
+    transition: width 0.4s ease-in;
+  }
+  .sections-style p {
+    color: white;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Nuninto;
+  }
+  .sections-style button {
+    background: transparent;
+    border: none;
+    margin: 7px 7px;
   }
 }
 
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
   .collapse-navbar {
     display: flex;
     flex-direction: column;
@@ -105,14 +125,4 @@
     background-color: rgb(150, 0, 0);
   }
 
-  /* .navbar-style{
-  width: 40%;
-  position: absolute;
-  top: 100px;
-  background-color: #ffffff;
-  z-index: 3;
-  display: none !important;
-  right: 10%;
-  box-shadow: 2px 2px 2px 2px grey;
 } */
-}

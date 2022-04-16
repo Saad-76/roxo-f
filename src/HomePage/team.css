@@ -1,0 +1,110 @@
+.team-card-background {
+  background-color: #262250;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-family: Cinzel;
+  box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
+}
+.team-outer-style {
+  padding: 0px 60px;
+}
+.team-heading-outer {
+  border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 6vh;
+  margin-top: 60px;
+  color: white;
+  margin-bottom: 38px;
+  font-family: "Cinzel";
+}
+.team-cards-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.team-member-background {
+  background-color: #262250;
+  width: 300px;
+  height: 350px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 12px;
+  margin-top: 50px;
+  box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
+}
+.team-member-image-style {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+.team-member-background h3 {
+  font-family: Cinzel;
+  padding-top: 12px;
+}
+.team-member-background h5 {
+  font-family: Cinzel;
+}
+.team-member-background p {
+  max-width: 400px;
+  font-family: Nuninto;
+}
+
+.team-members-inner-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.team-members-inner-flex-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.team-members-inner-flex-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.join-team-flex {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .team-cards-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .team-outer-style {
+    padding: 12px 43px;
+  }
+  .join-team-flex {
+    display: block;
+  }
+  .team-heading-outer {
+    border-left: 4px solid #c438ef;
+    padding-left: 15px;
+    margin-left: 3vh;
+    margin-top: 53px;
+    color: white;
+    margin-bottom: 38px;
+    font-family: "Cinzel";
+  }
+  .team-member-background {
+    background-color: #262250;
+    width: 320px;
+    height: 350px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
+  }
+}

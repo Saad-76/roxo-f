@@ -7,6 +7,7 @@
 
 @media screen and (max-width: 900px) {
   .carers-footer-height {
-    margin-top: 150%;
+    /* margin-top: 150%; */
+    margin-top: 10%;
   }
 }

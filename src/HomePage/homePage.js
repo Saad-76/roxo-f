@@ -15,6 +15,7 @@ import Work from "./work";
 import MileStoneStepper from "./mileStoneStepper";
 import WalletModal from "./walletModal";
 import "./homePage.css";
+import Team from "./team";
 
 const HomePage = () => {
   return (
@@ -32,6 +33,7 @@ const HomePage = () => {
       <Work />
       {/* <Partners /> */}
       <OurCommunity />
+      <Team />
       <Footer />
     </div>
   );
