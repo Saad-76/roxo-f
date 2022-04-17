@@ -27,6 +27,7 @@ const Team = () => {
         <div className="col-md-12 team-cards-flex">
           <div className="col-md-4 team-members-inner-flex-left">
             <div className="team-member-background">
+              <div className="team-member-top-background"></div>
               <img className="team-member-image-style" src={NFT1} alt="NFT1" />
               <h3>Lorem Ipsm</h3>
               <h5>CEO</h5>
@@ -38,6 +39,8 @@ const Team = () => {
           </div>
           <div className="col-md-4 team-members-inner-flex">
             <div className="team-member-background">
+            <div className="team-member-top-background"></div>
+
               <img className="team-member-image-style" src={NFT4} alt="NFT1" />
               <h3>Lorem Ipsm</h3>
               <h5>CEO</h5>
@@ -49,6 +52,8 @@ const Team = () => {
           </div>
           <div className="col-md-4 team-members-inner-flex-right">
             <div className="team-member-background">
+            <div className="team-member-top-background"></div>
+
               <img className="team-member-image-style" src={NFT} alt="NFT1" />
               <h3>Lorem Ipsm</h3>
               <h5>CEO</h5>
@@ -63,6 +68,8 @@ const Team = () => {
         <div className="col-md-12 team-cards-flex">
           <div className="col-md-4 team-members-inner-flex-left">
             <div className="team-member-background">
+            <div className="team-member-top-background"></div>
+
               <img className="team-member-image-style" src={NFT4} alt="NFT1" />
               <h3>Lorem Ipsm</h3>
               <h5>CEO</h5>
@@ -74,6 +81,8 @@ const Team = () => {
           </div>
           <div className="col-md-4 team-members-inner-flex">
             <div className="team-member-background">
+            <div className="team-member-top-background"></div>
+
               <img className="team-member-image-style" src={NFT} alt="NFT1" />
               <h3>Lorem Ipsm</h3>
               <h5>CEO</h5>
@@ -85,6 +94,8 @@ const Team = () => {
           </div>
           <div className="col-md-4 team-members-inner-flex-right">
             <div className="team-member-background">
+            <div className="team-member-top-background"></div>
+
               <img className="team-member-image-style" src={NFT1} alt="NFT1" />
               <h3>Lorem Ipsm</h3>
               <h5>CEO</h5>

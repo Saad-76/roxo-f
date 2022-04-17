@@ -23,6 +23,10 @@
 .sections-style button:focus {
   background: #58acff;
 }
+.path-image-style {
+  height: 150px;
+  width: 150px;
+}
 /* @media only screen and (min-width: 900px){
       .responsiveNav{
           width: 40%;
@@ -103,13 +107,20 @@
     color: white;
     padding-top: 12px;
     text-align: center;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-family: Nuninto;
   }
   .sections-style button {
     background: transparent;
     border: none;
-    margin: 7px 7px;
+    /* margin: 7px 7px; */
+  }
+  .operation-font{
+    font-size: 14px;
+  }
+  .path-image-style {
+    height: 120px;
+    width: 120px;
   }
 }
 
