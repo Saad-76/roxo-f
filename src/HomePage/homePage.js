@@ -27,7 +27,7 @@ const HomePage = () => {
       <Slider />
       <TesCards />
       <GamingNft />
-      {/* <Roxo/> */}
+      <Roxo/>
       <WalletModal />
       <MileStoneStepper />
       <Vision />

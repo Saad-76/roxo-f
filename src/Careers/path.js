@@ -1,7 +1,13 @@
 import React from "react";
-import "./path.css";
 import { Link } from "react-router-dom";
+
+import EnginImg from "../Assests/web roxo/career/engeenering.jpg"
+import DesignImg from "../Assests/web roxo/career/design and production.jpg"
+import AnimatorImg from "../Assests/web roxo/career/Animator.jpg"
+import MarketImg from "../Assests/web roxo/career/marketing.jpg"
 import IconicImage from "../Assests/IconicImage.jpg";
+import "./path.css";
+
 
 const Path = () => {
   const slideOpen = () => {
@@ -21,7 +27,7 @@ const Path = () => {
             <Link to="/no_job">
               <button>
                 <img
-                  src={IconicImage}
+                  src={EnginImg}
                   alt="IconicImage"
                   className="path-image-style"
                 />
@@ -34,7 +40,7 @@ const Path = () => {
             <Link to="/no_job">
               <button>
                 <img
-                  src={IconicImage}
+                  src={DesignImg}
                   alt="IconicImage"
                   className="path-image-style"
                 />
@@ -46,7 +52,7 @@ const Path = () => {
             <Link to="/no_job">
               <button>
                 <img
-                  src={IconicImage}
+                  src={AnimatorImg}
                   alt="IconicImage"
                   className="path-image-style"
                 />
@@ -58,7 +64,7 @@ const Path = () => {
             <Link to="/no_job">
               <button>
                 <img
-                  src={IconicImage}
+                  src={MarketImg}
                   alt="IconicImage"
                   className="path-image-style"
                 />

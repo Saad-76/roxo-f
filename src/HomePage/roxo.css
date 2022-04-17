@@ -1,76 +1,92 @@
-.roxo-main-style {
+.buy-section-outer-flex {
   display: flex;
   flex-direction: row;
-}
-.roxo-text-section {
-  color: #ffffff;
-  display: flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  color: white;
+  justify-content: center;
+  padding-left: 99px;
+  padding-right: 20px;
 }
-.text-style-roxo {
-  font-family: Monterserat;
-  font-size: 15px;
-  line-height: 1.8;
+.buy-text-section{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 12px;
+
   text-align: justify;
-  /* 1. Text sizes:15px
-  2. Font-family: monterserat.
-  3. Line hight: 1.8
-   */
-  max-width: 345px;
 }
-.roxo-coin-heading-outer {
-  border-left: 4px solid #c438ef;
-  padding-left: 17px;
-  margin-left: -18vh;
-  margin-top: 2px;
-  margin-bottom: 41px;
+.buy-image-style{
+  height: 400px;
+  width: 600px;
 }
-.roxo-image-section {
-  align-items: center;
+.buy-button-style  a{
+  text-decoration: none;
+  color: white;
+}
+.buy-button-style{
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #ffffff;
+  background: #58acff;
+  width: 30%;
+  border: none;
+  padding: 5px 10px;
+  font-family: "Cinzel";
 
+}
+.roxo-heading-style{
+  border-left: 4px solid #c438ef;
+  padding-left: 15px;
+  margin-left: 6vh;
+  margin-top: 69px;
+  color: white;
+  margin-bottom: 15px;
+  font-family: "Cinzel";
+}
+.buy-text-section h3{
+  font-family: Cinzel;
+}
+.buy-text-section p{
+font-family: Nuninto;
+}
+.buy-button-outer{
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
-.roxo-image-section img {
-  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6); */
+.buy-text-section h3{
+  padding: 12px 0px
 }
-.roxo-xoin-heading {
-  /* padding: 18px; */
-}
-.roxo-style {
-  padding: 60px 40px;
-  /* padding-top: 115px; */
-
-  /* padding: 115px; */
-}
-.buy-button-style {
-  margin-top: 2%;
-  padding: 6px 18px;
-  width: 20%;
-  border-radius: 12px;
-  background: #58acff;
-  /* background: linear-gradient( 90deg , rgba(222,153,33,1) 0%, rgba(243,121,86,1) 100%); */
-  border: none;
-}
-.buy-button-style a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.color-text-buy {
-  /* color:  rgb(222,153,33); */
-}
-@media only screen and (max-width: 900px) {
-  .roxo-main-style {
+@media screen and (max-width: 900px) {
+  .buy-section-outer-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    color: white;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  .roxo-image-section {
-    margin-top: 40px;
+  .buy-text-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: justify;
+    padding: 12px 40px;
+}
+  .buy-image-style{
+    height: 300px;
+    width: 350px;
   }
+  .roxo-heading-style {
+    border-left: 4px solid #c438ef;
+    padding-left: 15px;
+    margin-left: 4vh;
+    margin-top: 42px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: "Cinzel";
+}
 }

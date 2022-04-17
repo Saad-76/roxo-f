@@ -107,7 +107,7 @@ const TermsAndConditions = () => {
           notify you of any changes by posting the new Terms and Conditions on
           this page.{" "}
         </p>
-        <p>These terms and conditions are effective as of 2021-01-21</p>
+        <p>These terms and conditions are effective as of 2022-01-21</p>
         <h3>Contact Us</h3>
         <p>
           If you have any questions or suggestions about our Privacy Policy,

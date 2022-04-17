@@ -11,6 +11,7 @@
   text-align: center;
   font-family: Nuninto;
 }
+
 .path-header-style:focus {
   /* background: green;
   height: 300px;
@@ -83,7 +84,9 @@
   text-decoration: none;
   color: black;
 }
-
+.operation-font{
+  font-size: 14px;
+}
 @media only screen and (max-width: 900px) {
   .path-header-style {
     display: flex;

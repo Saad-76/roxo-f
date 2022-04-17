@@ -259,11 +259,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 1</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>
@@ -289,11 +289,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 2</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>
@@ -319,11 +319,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 3</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>
@@ -349,11 +349,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 4</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>
@@ -379,11 +379,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 5</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>
@@ -409,11 +409,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 6</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>
@@ -439,11 +439,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 7</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>
@@ -469,11 +469,11 @@ const GamingNft = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="gaming-inner-heading">Lorem Ipsm 8</h3>
+                    <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
                     <button className="gaming-nft-link-button-inner">
-                      Link
+                   Buy
                     </button>
                   </div>
                 </div>

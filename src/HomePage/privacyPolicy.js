@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
           We may update our Privacy Policy from time to time. Thus, you are
           advised to review this page periodically for any changes. We will
           notify you of any changes by posting the new Privacy Policy on this
-          page. It was last modified on Feb 01, 2021.
+          page. It was last modified on Feb 01, 2022.
         </p>
         <h3>Contact Us</h3>
         <p>
