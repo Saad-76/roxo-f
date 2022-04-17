@@ -1,10 +1,14 @@
 import { React, useState } from "react";
 
-import StepOne from "../Assests/imagesHome/how it works/step1 desktop.png";
-import stepTwo from "../Assests/imagesHome/how it works/step 2 desktop.png";
-import StepThree from "../Assests/imagesHome/how it works/step3 desktop.png";
-import StepFour from "../Assests/imagesHome/how it works/step4 desktop.png";
-import StepOneMbl from "../Assests/imagesHome/how it works/step1 mobile.png";
+import StepOne from "../Assests/web roxo/how i work desktop jpg/step1 desktop.jpg";
+import stepTwo from "../Assests/web roxo/how i work desktop jpg/step 2 desktop.jpg";
+import StepThree from "../Assests/web roxo/how i work desktop jpg/step3 desktop.jpg";
+import StepFour from "../Assests/web roxo/how i work desktop jpg/step4 desktop.jpg";
+import StepOneMbl from "../Assests/web roxo/how it work mobile jpgs/mbl1.jpg";
+import StepOneMb2 from "../Assests/web roxo/how it work mobile jpgs/mbl2.jpg";
+import StepOneMb3 from "../Assests/web roxo/how it work mobile jpgs/mbl3.jpg";
+import StepOneMb4 from "../Assests/web roxo/how it work mobile jpgs/mbl4.jpg";
+
 import "./work.css";
 
 const Work = () => {
@@ -91,44 +95,79 @@ const Work = () => {
                     4
                   </button>
                 </div>
-                {/* <div>
-                  <button
-                    className="work-button-style"
-                    onClick={handleDataFive}
-                  >
-                    5
-                  </button>
-                </div> */}
+              
               </div>
 
               <div>
                 {dataOne && (
-                  <div className="work-content-section-backgroud">
-                    <img className="web-img-work" src={StepOne} alt="StepOne" />
-                    <img className="mbl-img-work" src={StepOneMbl} alt="StepOneMbl" />
-                  </div>
+                  <>
+                    <div className="work-content-section-backgroud work-resp-back">
+                      <img
+                        className="web-img-work"
+                        src={StepOne}
+                        alt="StepOne"
+                      />
+                    </div>
+                    {/* ------resp-image--- */}
+
+                    <img
+                      className="mbl-img-work"
+                      src={StepOneMbl}
+                      alt="StepOneMbl"
+                    />
+                  </>
                 )}
                 {dataTwo && (
-                  <div className="work-content-section-backgroud">
+                  <>
+                  <div className="work-content-section-backgroud  work-resp-back">
                     <img className="web-img-work" src={stepTwo} alt="stepTwo" />
                   </div>
+                    {/* ------resp-image--- */}
+
+                    <img
+                      className="mbl-img-work"
+                      src={StepOneMb2}
+                      alt="StepOneMbl"
+                    />
+</>
                 )}
                 {dataThree && (
-                  <div className="work-content-section-backgroud">
-                    <img className="web-img-work" src={StepThree} alt="StepThree" />
+                  <>
+                  <div className="work-content-section-backgroud  work-resp-back">
+                    <img
+                      className="web-img-work"
+                      src={StepThree}
+                      alt="StepThree"
+                    />
                   </div>
+                      {/* ------resp-image--- */}
+
+                      <img
+                      className="mbl-img-work"
+                      src={StepOneMb3}
+                      alt="StepOneMbl"
+                    />
+                  </>
                 )}
                 {dataFour && (
-                  <div className="work-content-section-backgroud">
-                    <img className="web-img-work" src={StepFour} alt="StepFour" />
+                  <>
+                  <div className="work-content-section-backgroud  work-resp-back">
+                    <img
+                      className="web-img-work"
+                      src={StepFour}
+                      alt="StepFour"
+                    />
                   </div>
+                      {/* ------resp-image--- */}
+
+                      <img
+                      className="mbl-img-work"
+                      src={StepOneMb4}
+                      alt="StepOneMbl"
+                    />
+                  </>
                 )}
-                {/* {dataFive && (
-                  <div className="work-content-section-backgroud">
-                    <h3>Work 5</h3>
-                    <p>Lore IpsM lOREM ipsum</p>
-                  </div>
-                )} */}
+              
               </div>
             </div>
             <div className="col-md-2"></div>

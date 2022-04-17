@@ -1,14 +1,12 @@
 import React from "react";
-import ForWebsite from "../Assests/For Website.png";
-import HasteKing from "../Assests/HasteKing.png";
-import SliderImage3 from "../Assests/SliderImage3.png";
-import webSlider1 from "../Assests/webSlider1.jpg";
-import moblSlider from "../Assests/moblSlider.png";
 
-import SliderOneWeb from "../Assests/imagesHome/for slider/slider1 desktop.png";
-import SliderTwoWeb from "../Assests/imagesHome/for slider/slider2desktop.png";
+
+import SliderOneWeb from "../Assests/web roxo/sliders/SliderOneWeb.jpg";
+import SliderTwoWeb from "../Assests/web roxo/sliders/SliderTwoWeb.jpg";
 import SliderOneMbl from "../Assests/imagesHome/for slider/slider1 mobile.png";
 import SliderTwoMbl from "../Assests/imagesHome/for slider/slider 2 mobile.png";
+
+
 
 import { Carousel } from "react-bootstrap";
 import "./slider.css";

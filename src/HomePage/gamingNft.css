@@ -185,6 +185,15 @@
   margin: 0px;
   border-radius: 12px;
 }
+.main-image-style{
+  height: 200px;
+  width: 200px;
+}
+.variant-images-size{
+  height: 120px;
+  width: 120px;
+
+}
 @media screen and (max-width: 900px) {
   .gaming-inner-flex-images {
     display: flex !important;

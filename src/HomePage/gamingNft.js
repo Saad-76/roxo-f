@@ -1,10 +1,46 @@
 import { React, useState } from "react";
-
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import NFT1 from "../Assests/NFT1.png";
-import NFT2 from "../Assests/NFT2.jpg";
-import NFT3 from "../Assests/NFT3.png";
-import NFT4 from "../Assests/NFT4.jpg";
+
+import NftOnem from "../Assests/web roxo/characters nfts/1-main.jpg";
+import NftOne1 from "../Assests/web roxo/characters nfts/1-1.jpg";
+import NftOne2 from "../Assests/web roxo/characters nfts/1-2.jpg";
+import NftOne3 from "../Assests/web roxo/characters nfts/1-3.jpg";
+
+import NftTwom from "../Assests/web roxo/characters nfts/2-main.jpg";
+import NftTwo1 from "../Assests/web roxo/characters nfts/2-1.jpg";
+import NftTwo2 from "../Assests/web roxo/characters nfts/2-2.jpg";
+import NftTwo3 from "../Assests/web roxo/characters nfts/2-3.jpg";
+
+import NftThreem from "../Assests/web roxo/characters nfts/3-main.jpg";
+import NftThree1 from "../Assests/web roxo/characters nfts/3-1.jpg";
+import NftThree2 from "../Assests/web roxo/characters nfts/3-2.jpg";
+import NftThree3 from "../Assests/web roxo/characters nfts/3-3.jpg";
+
+import NftFourm from "../Assests/web roxo/characters nfts/4-main.jpg";
+import NftFour1 from "../Assests/web roxo/characters nfts/4-1.jpg";
+import NftFour2 from "../Assests/web roxo/characters nfts/4-2.jpg";
+import NftFour3 from "../Assests/web roxo/characters nfts/4-3.jpg";
+
+import NftFivem from "../Assests/web roxo/characters nfts/5-main.jpg";
+import NftFive1 from "../Assests/web roxo/characters nfts/5-1.jpg";
+import NftFive2 from "../Assests/web roxo/characters nfts/5-2.jpg";
+import NftFive3 from "../Assests/web roxo/characters nfts/5-3.jpg";
+
+import NftSixm from "../Assests/web roxo/characters nfts/ash-main.jpg";
+import NftSix1 from "../Assests/web roxo/characters nfts/ash-1.jpg";
+import NftSix2 from "../Assests/web roxo/characters nfts/ash-2.jpg";
+import NftSix3 from "../Assests/web roxo/characters nfts/ash-3.jpg";
+
+import NftSevenm from "../Assests/web roxo/characters nfts/Jen main.jpg";
+import NftSeven1 from "../Assests/web roxo/characters nfts/jen-1.jpg";
+import NftSeven2 from "../Assests/web roxo/characters nfts/jen-2.jpg";
+import NftSeven3 from "../Assests/web roxo/characters nfts/jen-3.jpg";
+
+import NftEightm from "../Assests/web roxo/characters nfts/lilli-main.jpg";
+import NftEight1 from "../Assests/web roxo/characters nfts/lilli-1.jpg";
+import NftEight2 from "../Assests/web roxo/characters nfts/lilli-2.jpg";
+import NftEight3 from "../Assests/web roxo/characters nfts/lilli-3.jpg";
+
 import "./gamingNft.css";
 
 const GamingNft = () => {
@@ -14,6 +50,8 @@ const GamingNft = () => {
   const [nftFour, setNftFour] = useState(false);
   const [nftFive, setNftFive] = useState(false);
   const [nftSix, setNftSix] = useState(false);
+  const [nftSeven, setNftSeven] = useState(false);
+  const [nftEight, setNftEight] = useState(false);
 
   const handleNftOne = () => {
     setNftOne(true);
@@ -22,6 +60,8 @@ const GamingNft = () => {
     setNftFour(false);
     setNftFive(false);
     setNftSix(false);
+    setNftSeven(false);
+    setNftEight(false);
   };
 
   const handleNftTwo = () => {
@@ -31,6 +71,8 @@ const GamingNft = () => {
     setNftFour(false);
     setNftFive(false);
     setNftSix(false);
+    setNftSeven(false);
+    setNftEight(false);
   };
 
   const handleNftThree = () => {
@@ -40,6 +82,8 @@ const GamingNft = () => {
     setNftFour(false);
     setNftFive(false);
     setNftSix(false);
+    setNftSeven(false);
+    setNftEight(false);
   };
 
   const handleNftFour = () => {
@@ -49,6 +93,8 @@ const GamingNft = () => {
     setNftFour(true);
     setNftFive(false);
     setNftSix(false);
+    setNftSeven(false);
+    setNftEight(false);
   };
 
   const handleNftFive = () => {
@@ -58,6 +104,8 @@ const GamingNft = () => {
     setNftFour(false);
     setNftFive(true);
     setNftSix(false);
+    setNftSeven(false);
+    setNftEight(false);
   };
 
   const handleNftSix = () => {
@@ -67,6 +115,30 @@ const GamingNft = () => {
     setNftFour(false);
     setNftFive(false);
     setNftSix(true);
+    setNftSeven(false);
+    setNftEight(false);
+  };
+
+  const handleNftSeven = () => {
+    setNftOne(false);
+    setNftTwo(false);
+    setNftThree(false);
+    setNftFour(false);
+    setNftFive(false);
+    setNftSix(false);
+    setNftSeven(true);
+    setNftEight(false);
+  };
+
+  const handleNftEight = () => {
+    setNftOne(false);
+    setNftTwo(false);
+    setNftThree(false);
+    setNftFour(false);
+    setNftFive(false);
+    setNftSix(false);
+    setNftSeven(false);
+    setNftEight(true);
   };
 
   const Rightscrol = () => {
@@ -88,10 +160,9 @@ const GamingNft = () => {
               {nftOne && (
                 <div className="col-md-4 gaming-inner-left">
                   <img
-                    src={NFT1}
+                    src={NftOnem}
                     alt=""
-                    height="150px"
-                    width="150px"
+                    className="main-image-style"
                     style={{ borderRadius: "12px" }}
                   />
                 </div>
@@ -100,10 +171,9 @@ const GamingNft = () => {
               {nftTwo && (
                 <div className="col-md-4 gaming-inner-left">
                   <img
-                    src={NFT2}
+                    src={NftTwom}
                     alt=""
-                    height="150px"
-                    width="150px"
+                    className="main-image-style"
                     style={{ borderRadius: "12px" }}
                   />
                 </div>
@@ -111,10 +181,9 @@ const GamingNft = () => {
               {nftThree && (
                 <div className="col-md-4 gaming-inner-left">
                   <img
-                    src={NFT3}
+                    src={NftThreem}
                     alt=""
-                    height="150px"
-                    width="150px"
+                    className="main-image-style"
                     style={{ borderRadius: "12px" }}
                   />
                 </div>
@@ -122,10 +191,9 @@ const GamingNft = () => {
               {nftFour && (
                 <div className="col-md-4 gaming-inner-left">
                   <img
-                    src={NFT4}
+                    src={NftFourm}
                     alt=""
-                    height="150px"
-                    width="150px"
+                    className="main-image-style"
                     style={{ borderRadius: "12px" }}
                   />
                 </div>
@@ -133,10 +201,9 @@ const GamingNft = () => {
               {nftFive && (
                 <div className="col-md-4 gaming-inner-left">
                   <img
-                    src={NFT1}
+                    src={NftFivem}
                     alt=""
-                    height="150px"
-                    width="150px"
+                    className="main-image-style"
                     style={{ borderRadius: "12px" }}
                   />
                 </div>
@@ -144,63 +211,277 @@ const GamingNft = () => {
               {nftSix && (
                 <div className="col-md-4 gaming-inner-left">
                   <img
-                    src={NFT1}
+                    src={NftSixm}
                     alt=""
-                    height="150px"
-                    width="150px"
+                    className="main-image-style"
                     style={{ borderRadius: "12px" }}
                   />
                 </div>
               )}
+              {nftSeven && (
+                <div className="col-md-4 gaming-inner-left">
+                  <img
+                    src={NftSevenm}
+                    alt=""
+                    className="main-image-style"
+                    style={{ borderRadius: "12px" }}
+                  />
+                </div>
+              )}
+              {nftEight && (
+                <div className="col-md-4 gaming-inner-left">
+                  <img
+                    src={NftEightm}
+                    alt=""
+                    className="main-image-style"
+                    style={{ borderRadius: "12px" }}
+                  />
+                </div>
+              )}
+              {/* ---------------------------sub-images(variants)----------- */}
+              {nftOne && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftOne1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftOne2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftOne3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 1</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
+                </div>
+              )}
 
-              <div className="col-md-8">
-                <div className="gamingnft-detail-bottom-outer">
-                  <img
-                    className="gaming-nft-img-resp-margin"
-                    src={NFT1}
-                    alt="nft1"
-                    height="100px"
-                    width="100px"
-                  />
-                  <img
-                    className="gaming-nft-img-resp-margin"
-                    src={NFT1}
-                    alt="nft1"
-                    height="100px"
-                    width="100px"
-                  />
-                  <img
-                    className="gaming-nft-img-resp-margin"
-                    src={NFT1}
-                    alt="nft1"
-                    height="100px"
-                    width="100px"
-                  />
-                  <img
-                    className="gaming-nft-img-resp-margin"
-                    src={NFT1}
-                    alt="nft1"
-                    height="100px"
-                    width="100px"
-                  />
-                  <img
-                    className="gaming-nft-img-resp-margin"
-                    src={NFT1}
-                    alt="nft1"
-                    height="100px"
-                    width="100px"
-                  />
+              {nftTwo && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftTwo1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftTwo2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftTwo3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 2</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="gaming-inner-heading">Lorem Ipsm</h3>
+              )}
+
+              {nftThree && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftThree1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftThree2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftThree3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 3</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
                 </div>
-                <div className="gaming-nft-link-buttons">
-                  <button className="gaming-nft-link-button-inner">Link</button>
+              )}
+
+              {nftFour && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftFour1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftFour2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftFour3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 4</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
                 </div>
-              </div>
+              )}
+
+              {nftFive && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftFive1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftFive2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftFive3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 5</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {nftSix && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftSix1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftSix2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftSix3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 6</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {nftSeven && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftSeven1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftSeven2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftSeven3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 7</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {nftEight && (
+                <div className="col-md-8">
+                  <div className="gamingnft-detail-bottom-outer">
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftEight1}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftEight2}
+                      alt="nft1"
+                    />
+                    <img
+                      className="gaming-nft-img-resp-margin variant-images-size"
+                      src={NftEight3}
+                      alt="nft1"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="gaming-inner-heading">Lorem Ipsm 8</h3>
+                  </div>
+                  <div className="gaming-nft-link-buttons">
+                    <button className="gaming-nft-link-button-inner">
+                      Link
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
+
         {/* -------------gaming-nft-slider--------- */}
         <div className="gaming-nft-slider-outer">
           <div className="gaming-nft-slider" id="nftscroll">
@@ -213,7 +494,7 @@ const GamingNft = () => {
             <img
               onClick={handleNftOne}
               className="image-slider-game"
-              src={NFT1}
+              src={NftOnem}
               alt="nf"
               height="100px"
               width="100px"
@@ -221,7 +502,7 @@ const GamingNft = () => {
             <img
               onClick={handleNftTwo}
               className="image-slider-game"
-              src={NFT2}
+              src={NftTwom}
               alt="nf"
               height="100px"
               width="100px"
@@ -230,7 +511,7 @@ const GamingNft = () => {
             <img
               onClick={handleNftThree}
               className="image-slider-game"
-              src={NFT3}
+              src={NftThreem}
               alt="nf"
               height="100px"
               width="100px"
@@ -239,7 +520,7 @@ const GamingNft = () => {
             <img
               onClick={handleNftFour}
               className="image-slider-game"
-              src={NFT4}
+              src={NftFourm}
               alt="nf"
               height="100px"
               width="100px"
@@ -248,7 +529,7 @@ const GamingNft = () => {
             <img
               onClick={handleNftFive}
               className="image-slider-game"
-              src={NFT1}
+              src={NftFivem}
               alt="nf"
               height="100px"
               width="100px"
@@ -256,23 +537,25 @@ const GamingNft = () => {
             <img
               onClick={handleNftSix}
               className="image-slider-game"
-              src={NFT2}
+              src={NftSixm}
               alt="nf"
               height="100px"
               width="100px"
             />
 
             <img
+              onClick={handleNftSeven}
               className="image-slider-game"
-              src={NFT3}
+              src={NftSevenm}
               alt="nf"
               height="100px"
               width="100px"
             />
 
             <img
+              onClick={handleNftEight}
               className="image-slider-game"
-              src={NFT4}
+              src={NftEightm}
               alt="nf"
               height="100px"
               width="100px"
