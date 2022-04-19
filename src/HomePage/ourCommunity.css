@@ -21,16 +21,25 @@
 }
 .community-heading h3 {
   font-family: "Cinzel";
+  padding: 12px 0px;
 }
 .community-heading p {
   font-family: Nuninto;
 }
-
+.join-content-style {
+  /* font-family: "Cinzel"; */
+}
+.icons-style-join button:focus {
+  background-color: #393469;
+  color: white;
+  font-weight: bold;
+}
 .community-icon-detail {
   color: #ffffff;
   border-radius: 30px;
   box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
-
+  height: 250px;
+  width: 1100px;
   background-color: #262250;
   padding: 40px;
   display: flex;
@@ -44,7 +53,7 @@
   justify-content: center;
 }
 .icon-image-detail {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 12px;
   color: black;
 }
@@ -81,6 +90,11 @@
   letter-spacing: 2px;
   font-weight: bold;
 }
+.join-image-style {
+  height: 200px;
+  width: 500px;
+  border-radius: 12px;
+}
 @media only screen and (max-width: 900px) {
   .ourCommunity-outer-section {
     display: flex;
@@ -97,22 +111,26 @@
     color: white;
     margin-bottom: 38px;
     font-family: "Cinzel";
-}
+  }
   .community-icon-content {
     max-width: 818px;
-    padding: 0px;
+    padding: 9px 20px;
   }
   .community-icon-detail {
     color: #ffffff;
     border-radius: 30px;
     background-color: #262250;
-    padding: 40px;
+    padding: 10px;
     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
-
     width: 320px;
-    height: 370px;
+    height: 336px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+  }
+  .join-image-style {
+    height: 156px;
+    width: 283px;
+    border-radius: 12px;
   }
 }

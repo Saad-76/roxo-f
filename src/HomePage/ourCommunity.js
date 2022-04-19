@@ -1,9 +1,10 @@
 import { React, useState } from "react";
-
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { SiDiscord } from "react-icons/si";
 import { ImTelegram } from "react-icons/im";
 import { RiWechatFill } from "react-icons/ri";
+
+import JoinUs from "../Assests/web roxo/JoinUs.jpeg";
 import "./ourCommunity.css";
 
 const OurCommunity = () => {
@@ -81,20 +82,16 @@ const OurCommunity = () => {
         {showTwitter && (
           <div className="col-md-12 community-icon-display-outer">
             <div className="community-icon-detail">
-              <div className="col-md-4 ">
+              <div className="col-md-6 ">
                 <div className="icon-image-detail">
-                  <h3>
-                    Twitter
-                    <br />
-                    <span>100K+</span>
-                  </h3>
+                  <img className="join-image-style" src={JoinUs} alt="" />
                 </div>
               </div>
-              <div className="col-md-8 community-icon-content">
-                <h3>Lorem Ipsum</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className="col-md-6 community-icon-content">
+                <h3>Join our community</h3>
+                <p className="join-content-style">
+                  Join our community to get updated information about our
+                  upcoming events and announcements.
                 </p>
               </div>
             </div>
@@ -104,19 +101,16 @@ const OurCommunity = () => {
         {showTelegram && (
           <div className="col-md-12 community-icon-display-outer">
             <div className="community-icon-detail">
-              <div className="col-md-4 ">
+              <div className="col-md-6 ">
                 <div className="icon-image-detail">
-                  <h3>
-                    Telegram <br />
-                    <span>100K+</span>
-                  </h3>
+                  <img className="join-image-style" src={JoinUs} alt="" />
                 </div>
               </div>
-              <div className="col-md-8 community-icon-content">
-                <h3>Lorem Ipsum</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className="col-md-6 community-icon-content">
+                <h3>Join our community</h3>
+                <p className="join-content-style">
+                  Join our community to get updated information about our
+                  upcoming events and announcements.
                 </p>
               </div>
             </div>
@@ -126,20 +120,16 @@ const OurCommunity = () => {
         {showDiscord && (
           <div className="col-md-12 community-icon-display-outer">
             <div className="community-icon-detail">
-              <div className="col-md-4 ">
+              <div className="col-md-6 ">
                 <div className="icon-image-detail">
-                  <h3>
-                    Discord
-                    <br />
-                    <span>100K+</span>
-                  </h3>
+                  <img className="join-image-style" src={JoinUs} alt="" />
                 </div>
               </div>
-              <div className="col-md-8 community-icon-content">
-                <h3>Lorem Ipsum</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className="col-md-6 community-icon-content">
+                <h3>Join our community</h3>
+                <p className="join-content-style">
+                  Join our community to get updated information about our
+                  upcoming events and announcements.
                 </p>
               </div>
             </div>
@@ -149,19 +139,16 @@ const OurCommunity = () => {
         {showWechat && (
           <div className="col-md-12 community-icon-display-outer">
             <div className="community-icon-detail">
-              <div className="col-md-4 ">
+              <div className="col-md-6 ">
                 <div className="icon-image-detail">
-                  <h3>
-                    We Chat <br />
-                    <span>100K+</span>
-                  </h3>
+                  <img className="join-image-style" src={JoinUs} alt="" />
                 </div>
               </div>
-              <div className="col-md-8 community-icon-content">
-                <h3>Lorem Ipsum</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className="col-md-6 community-icon-content">
+                <h3>Join our community</h3>
+                <p className="join-content-style">
+                  Join our community to get updated information about our
+                  upcoming events and announcements.
                 </p>
               </div>
             </div>

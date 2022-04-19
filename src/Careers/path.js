@@ -75,11 +75,11 @@ const Path = () => {
           <div className="sections-style">
             <Link to="/no_job">
               <button>
-                <img
+                {/* <img
                   src={IconicImage}
                   alt="IconicImage"
                   className="path-image-style"
-                />
+                /> */}
                 <p>Others</p>
               </button>
             </Link>

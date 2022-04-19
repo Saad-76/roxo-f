@@ -11,12 +11,12 @@
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  padding: 12px;
+  /* padding: 12px; */
 
   text-align: justify;
 }
 .buy-image-style{
-  height: 400px;
+  height: 500px;
   width: 600px;
 }
 .buy-button-style  a{
@@ -28,7 +28,7 @@
   font-weight: 500;
   border-radius: 20px;
   color: #ffffff;
-  background: #58acff;
+  background: #d72843;
   width: 30%;
   border: none;
   padding: 5px 10px;
@@ -44,11 +44,13 @@
   margin-bottom: 15px;
   font-family: "Cinzel";
 }
-.buy-text-section h3{
-  font-family: Cinzel;
+.buy-text-section h2{
+  font-family: Nuninto;
+  font-weight: bold;
 }
 .buy-text-section p{
 font-family: Nuninto;
+/* padding: 12px; */
 }
 .buy-button-outer{
   display: flex;
@@ -76,10 +78,10 @@ font-family: Nuninto;
     text-align: justify;
     padding: 12px 40px;
 }
-  .buy-image-style{
-    height: 300px;
-    width: 350px;
-  }
+.buy-image-style {
+  height: 420px;
+  width: 350px;
+}
   .roxo-heading-style {
     border-left: 4px solid #c438ef;
     padding-left: 15px;
@@ -88,5 +90,16 @@ font-family: Nuninto;
     color: white;
     margin-bottom: 15px;
     font-family: "Cinzel";
+}
+.buy-button-style {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #ffffff;
+  background: #d72843;
+  width: 60%;
+  border: none;
+  padding: 5px 10px;
+  font-family: "Cinzel";
 }
 }
