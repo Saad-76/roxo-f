@@ -34,12 +34,18 @@ const Play = () => {
             <div className="col-md-12 first-buttons-style">
               <div className="col-md-6">
                 <div>
-                  <img
-                    src={PlayStore}
-                    alt="playstore"
-                    height="60px"
-                    width="185px"
-                  />
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.Roxo.Haste_King"
+                    target="_blank"
+                  >
+                    {" "}
+                    <img
+                      src={PlayStore}
+                      alt="playstore"
+                      height="60px"
+                      width="185px"
+                    />
+                  </a>
                 </div>
                 {/* <button className="button-style-play"> Download Wallet</button> */}
               </div>

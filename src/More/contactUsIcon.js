@@ -5,6 +5,13 @@ import { SiDiscord } from "react-icons/si";
 import { ImTelegram } from "react-icons/im";
 import { RiWechatFill } from "react-icons/ri";
 
+import Youtube from "../Assests/web roxo/Icons/Youtube.png";
+import Tiwitter from "../Assests/web roxo/Icons/Tiwitter.png";
+import Telegram from "../Assests/web roxo/Icons/Telegram.png";
+import Reddit from "../Assests/web roxo/Icons/Reddit.png";
+import Instragram from "../Assests/web roxo/Icons/Instragram.png";
+import Facebook from "../Assests/web roxo/Icons/Facebook.png";
+import Discord from "../Assests/web roxo/Icons/Discord.png";
 import JoinUs from "../Assests/web roxo/JoinUs.jpeg";
 import "./contactUsIcon.css";
 
@@ -41,36 +48,118 @@ const ContactUsIcon = () => {
   return (
     <>
       <div className="contact-us-outer">
-        <h3 className="contact-us-heading">Contact Us</h3>
+        <h3 className="contact-us-heading">OUR COMMUNITY</h3>
       </div>
 
       <div className="contact-us-section-pad">
         <div className="ourCommunity-outer-section  col-md-12">
           <div className="">
-            <div className="community-icons col-md-6">
+          <div className="community-icons col-md-6">
               <div onClick={twitterHandler} type="button">
-                <AiFillTwitterCircle size={50} />
-              </div>
-              <div
-                onClick={discordHandler}
-                className="twitter-icon-style"
-                type="button"
-              >
-                <SiDiscord size={40} />
-              </div>
-              <div
-                onClick={telegramHandler}
-                className="twitter-icon-style"
-                type="button"
-              >
-                <ImTelegram size={40} />
+                {/* <AiFillTwitterCircle size={50} /> */}
+                <a
+                  href="https://www.youtube.com/channel/UCa3iLWxbozoKB8K7AK3cKLg"
+                  target="_blank"
+                >
+                  {" "}
+                  <img
+                    className="icons-images-style-community"
+                    src={Youtube}
+                    alt=""
+                  />
+                </a>
               </div>
               <div
                 onClick={wechatHandler}
                 className="twitter-icon-style"
                 type="button"
               >
-                <RiWechatFill size={50} />
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://fb.me/roxoFunPlay" target="_blank">
+                  {" "}
+                  <img
+                    src={Facebook}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://discord.gg/M4ucFW6AHU" target="_blank">
+                  {" "}
+                  <img
+                    src={Discord}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+
+              <div
+                onClick={discordHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <SiDiscord size={40} /> */}
+                <a href="https://twitter.com/RoxoFun" target="_blank">
+                  {" "}
+                  <img
+                    src={Tiwitter}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://www.instagram.com/roxo.fun/" target="_blank">
+                  {" "}
+                  <img
+                    src={Instragram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={telegramHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <ImTelegram size={40} /> */}
+                <a href="https://t.me/roxo_token" target="_blank">
+                  {" "}
+                  <img
+                    src={Telegram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://www.reddit.com/r/roxo/" target="_blank">
+                  {" "}
+                  <img
+                    src={Reddit}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
               </div>
             </div>
           </div>

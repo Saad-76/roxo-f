@@ -18,7 +18,7 @@ const Tescards = (props) => {
           </div>
           <div className="col-md-6 button-col-style">
           {
-         props.button ?  <button><Link to={props.link} >{props.button} </Link></button>   : ""           }
+         props.button ?  <button><a href={props.link} target="_blank" >{props.button} </a></button>   : ""           }
          </div>
          </div>
 

@@ -36,7 +36,8 @@ const TesCards = (props) => {
               tesheading="Haste King"
               tesheading1={<p>Real PVP running battle </p>}
               button="View"
-              link="/portfolio"
+              link="https://play.google.com/store/apps/details?id=com.Roxo.Haste_King"
+              // link="/portfolio"
             />
             <Tescards
               tesicon={<img src={GameSlider2} />}

@@ -4,19 +4,19 @@
   align-items: center;
   color: white;
   justify-content: center;
-  padding-left: 99px;
+  padding-left: 75px;
   padding-right: 20px;
 }
 .buy-text-section{
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 440px;
   /* padding: 12px; */
 
   text-align: justify;
 }
 .buy-image-style{
-  height: 500px;
+  height: 585px;
   width: 600px;
 }
 .buy-button-style  a{
