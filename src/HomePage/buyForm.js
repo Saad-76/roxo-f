@@ -13,6 +13,9 @@ import { AiOutlineClose } from "react-icons/ai";
 // --------------------------------------------
 
 import TokenCoin from "../Assests/Token Coin.png";
+import Coin from "../Assests/web roxo/wallet/Binance.png";
+import MetaMask from "../Assests/web roxo/wallet/MetaMask.jpeg";
+
 import "./buyForm.css";
 
 const BuyForm = () => {
@@ -79,10 +82,12 @@ const BuyForm = () => {
       <Header />
       {showModal && (
         <div className="col-md-12 modal-content-style">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
+          <div class="modal-dialog ">
+            <div class="modal-content wallet-modal-border">
+              <div class="">
                 <div className="wallet-colose-btn" onClick={handleClose}>
+                  <h3 className="wallet-heading-style">Connect Wallet</h3>
+
                   <AiOutlineClose
                     data-bs-dismiss="modal"
                     aria-label="Close"
@@ -90,7 +95,6 @@ const BuyForm = () => {
                     type="button"
                   />
                 </div>
-                <h3 className="wallet-heading-style">Connect MetaMask</h3>
                 <div className="">
                   {account.address ? (
                     <p color="black">
@@ -101,18 +105,24 @@ const BuyForm = () => {
                       <h6 type="button" onClick={connectWallet} className="">
                         Connect MetaMask
                       </h6>
-                      <img src={TokenCoin} alt="" height="50px" width="50px" />
+                      <img
+                        src={MetaMask}
+                        alt=""
+                        height="50px"
+                        width="50px"
+                        style={{ borderRadius: "50px" }}
+                      />
                     </div>
                   )}
                 </div>
-                <div className="wallet-button-background">
+                {/* <div className="wallet-button-background">
                   <h6 type="button">Connect ROXO Wallet</h6>
                   <img src={TokenCoin} alt="" height="50px" width="50px" />
                 </div>
                 <div className="wallet-button-background">
                   <h6 type="button">Connect Safepal</h6>
                   <img src={TokenCoin} alt="" height="50px" width="50px" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -133,14 +143,14 @@ const BuyForm = () => {
               <div className="buy-card-body-flex">
                 <div className="col-md-12 sell-button-main">
                   <div>
-                    <img src={glowCoin} alt="" height="50px" width="50px" />
+                    <img src={TokenCoin} alt="" height="50px" width="50px" />
                   </div>
                   <div>
                     <h3 style={{ textAlign: "center" }}>Buy</h3>
                     <p>Trade tokens in an instant</p>
                   </div>
                   <div className="buy-hidden-image">
-                    <img src={glowCoin} alt="" height="30px" width="30px" />
+                    <img src={Coin} alt="" height="30px" width="30px" />
                   </div>
                 </div>
                 <hr
@@ -149,26 +159,28 @@ const BuyForm = () => {
                 />
                 <div className="col-md-12 input-display-sellform">
                   <label>
-                    <img src={glowCoin} alt="" height="30px" width="30px" />
-                    Metic
+                    <img src={Coin} alt="" height="30px" width="30px" />
+                    BNB
                   </label>
                   <input
                     className="input-field-sellfrom-inner"
                     type="number"
                     min="0"
                     max="10000000"
+                    placeholder="Enter Amount "
                   />
                 </div>
                 <div className="col-md-12 input-display-sellform ">
                   <label>
-                    <img src={glowCoin} alt="" height="30px" width="30px" />
-                    Roxo
+                    <img src={TokenCoin} alt="" height="30px" width="30px" />
+                    ROXO
                   </label>
                   <input
                     className="input-field-sellfrom-inner"
                     type="number"
                     min="0"
                     max="10000000"
+                    // placeholder="Enter Amount "
                   />
                 </div>
                 {/* <hr

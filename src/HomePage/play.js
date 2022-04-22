@@ -38,7 +38,6 @@ const Play = () => {
                     href="https://play.google.com/store/apps/details?id=com.Roxo.Haste_King"
                     target="_blank"
                   >
-                    {" "}
                     <img
                       src={PlayStore}
                       alt="playstore"

@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import NftOnem from "../Assests/web roxo/characters nfts/1-main.jpg";
 import NftOne1 from "../Assests/web roxo/characters nfts/1-1.jpg";
@@ -262,9 +263,12 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      {" "}
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -292,9 +296,12 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      {" "}
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -322,9 +329,12 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      {" "}
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -352,9 +362,12 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      {" "}
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -382,9 +395,12 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      {" "}
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -412,9 +428,12 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      {" "}
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -442,9 +461,12 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      {" "}
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -472,9 +494,11 @@ const GamingNft = () => {
                     <h3 className="gaming-inner-heading">ROXO NFT HUB</h3>
                   </div>
                   <div className="gaming-nft-link-buttons">
-                    <button className="gaming-nft-link-button-inner">
-                   Buy
-                    </button>
+                    <Link to="/marketPlace">
+                      <button className="gaming-nft-link-button-inner">
+                        Buy
+                      </button>
+                    </Link>
                   </div>
                 </div>
               )}

@@ -49,9 +49,10 @@
   padding-bottom: 40px;
 }
 .gaming-nft-link-buttons {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+text-align: center;
 }
 .gaming-inner-flex-images {
   display: flex !important;
@@ -226,10 +227,15 @@
   }
 
   .gaming-nft-link-buttons {
-    display: flex;
+    /* display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+  text-align: center;
+  }
+  .gaming-nft-link-buttons a{
+    text-decoration: none;
+    color: white;
   }
   .gaming-nft-link-button-inner {
     margin-top: 12px;

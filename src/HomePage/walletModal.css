@@ -23,26 +23,37 @@
   padding: 8px 12px;
 }
 .wallet-colose-btn {
+  /* padding: 12px; */
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  padding-top: 5px;
+  justify-content: space-between;
+  /* padding-top: 5px; */
+  align-content: center;
+  background-color: #393469;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 4px 20px;
 }
 .wallet-colose-btn svg {
- 
   color: red;
-  margin-right: 3px;
-  margin-top: 2px;
-
+  /* margin-right: 3px; */
+  margin-top: 14px;
 }
 .wallet-button-background{ 
    background-color: #393469;
   padding: 4px 20px;
   border-radius: 14px;
-  margin-top: 12px;
+  margin-bottom: 12px;
+  margin: 20px;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.wallet-modal-border{
+  border-radius: 26px;
+}
+.modal-outer-style{
+  padding: 0px !important;
 }

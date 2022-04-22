@@ -104,7 +104,7 @@ const MileStoneStepper = () => {
                 <hr className="section-divider-milestone" />
                 <div className="col-md-6 status-col-style ">
                   <h3>STATUS</h3>
-                  <h3 className="status-content">Under Development</h3>
+                  <h3 className="status-content">Complete</h3>
                 </div>
               </div>
             </div>

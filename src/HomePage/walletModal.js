@@ -3,6 +3,7 @@ import { ethers, utils } from "ethers";
 import { AiOutlineClose } from "react-icons/ai";
 
 import TokenCoin from "../Assests/Token Coin.png";
+import MetaMask from "../Assests/web roxo/wallet/MetaMask.jpeg"
 import "./walletModal.css";
 
 const WalletModal = () => {
@@ -45,9 +46,11 @@ const WalletModal = () => {
         aria-hidden="true"
       >
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div className="wallet-colose-btn">
+          <div class="modal-content wallet-modal-border">
+            <div class="modal-body modal-outer-style">
+              <div className="wallet-colose-btn d-flex">
+              <h3 className="wallet-heading-style">Connect Wallet</h3>
+
                 <AiOutlineClose
                   data-bs-dismiss="modal"
                   aria-label="Close"
@@ -55,7 +58,6 @@ const WalletModal = () => {
                   type="button"
                 />
               </div>
-              <h3 className="wallet-heading-style">Connect MetaMask</h3>
               <div className="">
                 {account.address ? (
                   <p color="black">
@@ -66,18 +68,18 @@ const WalletModal = () => {
                     <h6 type="button" onClick={connectWallet} className="">
                       Connect MetaMask
                     </h6>
-                    <img src={TokenCoin} alt="" height="50px" width="50px" />
+                    <img src={MetaMask} alt="" height="50px" width="50px" style={{borderRadius:"50px"}} />
                   </div>
                 )}
               </div>
-              <div className="wallet-button-background">
+              {/* <div className="wallet-button-background">
                 <h6 type="button">Connect ROXO Wallet</h6>
                 <img src={TokenCoin} alt="" height="50px" width="50px" />
               </div>
               <div className="wallet-button-background">
                 <h6 type="button">Connect Safepal</h6>
                 <img src={TokenCoin} alt="" height="50px" width="50px" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@
   flex-direction: row;
   align-items: center;
   color: #ffffff;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .community-heading {
   display: flex;
@@ -139,7 +139,7 @@
     padding: 10px;
     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
     width: 320px;
-    height: 336px;
+    height: 367px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

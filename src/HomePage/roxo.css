@@ -4,8 +4,7 @@
   align-items: center;
   color: white;
   justify-content: center;
-  padding-left: 75px;
-  padding-right: 20px;
+  padding: 0px;
 }
 .buy-text-section{
   display: flex;
@@ -18,6 +17,8 @@
 .buy-image-style{
   height: 585px;
   width: 600px;
+  margin-left: 60px;
+
 }
 .buy-button-style  a{
   text-decoration: none;
@@ -81,6 +82,7 @@ font-family: Nuninto;
 .buy-image-style {
   height: 420px;
   width: 350px;
+  margin: 0px;
 }
   .roxo-heading-style {
     border-left: 4px solid #c438ef;

@@ -53,7 +53,130 @@ const OurCommunity = () => {
         </div>
         <div className="ourCommunity-outer-section col-md-12">
           <div className="">
-          <div className="community-icons col-md-6">
+            {/* <div className="community-icons col-md-6">
+              <div onClick={twitterHandler} type="button">
+                <a
+                  href="https://www.youtube.com/channel/UCa3iLWxbozoKB8K7AK3cKLg"
+                  target="_blank"
+                >
+                  {" "}
+                  <img
+                    className="icons-images-style-community"
+                    src={Youtube}
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <a href="https://fb.me/roxoFunPlay" target="_blank">
+                  {" "}
+                  <img
+                    src={Facebook}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <a href="https://discord.gg/M4ucFW6AHU" target="_blank">
+                  {" "}
+                  <img
+                    src={Discord}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+
+              <div
+                onClick={discordHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <a href="https://twitter.com/RoxoFun" target="_blank">
+                  {" "}
+                  <img
+                    src={Tiwitter}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <a href="https://www.instagram.com/roxo.fun/" target="_blank">
+                  {" "}
+                  <img
+                    src={Instragram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={telegramHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <a href="https://t.me/roxo_token" target="_blank">
+                  {" "}
+                  <img
+                    src={Telegram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                <a href="https://www.reddit.com/r/roxo/" target="_blank">
+                  {" "}
+                  <img
+                    src={Reddit}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+            </div> */}
+          </div>
+          <div className="community-heading col-md-6">
+            <h3>This is Our Community</h3>
+            <h6>Free to Play, Play to Earn</h6>
+          </div>
+        </div>
+        {/* --------twitter Handler------------ */}
+        {showTwitter && (
+            <div className="col-md-12 ">
+            <div className=" community-icon-display-outer">
+              <div className="community-icon-detail">
+                <div className="col-md-6 ">
+                  <div className="icon-image-detail">
+                    <img className="join-image-style" src={JoinUs} alt="" />
+                  </div>
+                </div>
+                <div className="col-md-6 community-icon-content">
+                  <h3>Join our community</h3>
+                  {/* <p className="join-content-style">
+                    Join our community to get updated information about our
+                    upcoming events and announcements.
+                  </p> */}
+                  <div className="community-icons ">
               <div onClick={twitterHandler} type="button">
                 {/* <AiFillTwitterCircle size={50} /> */}
                 <a
@@ -61,9 +184,11 @@ const OurCommunity = () => {
                   target="_blank"
                 >
                   {" "}
-                  <img  
-                  className="icons-images-style-community"
-                  src={Youtube} alt=""  />
+                  <img
+                    className="icons-images-style-community"
+                    src={Youtube}
+                    alt=""
+                  />
                 </a>
               </div>
               <div
@@ -74,8 +199,11 @@ const OurCommunity = () => {
                 {/* <RiWechatFill size={50} /> */}
                 <a href="https://fb.me/roxoFunPlay" target="_blank">
                   {" "}
-                  <img src={Facebook} alt=""                   className="icons-images-style-community"
- />
+                  <img
+                    src={Facebook}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
                 </a>
               </div>
               <div
@@ -86,8 +214,11 @@ const OurCommunity = () => {
                 {/* <RiWechatFill size={50} /> */}
                 <a href="https://discord.gg/M4ucFW6AHU" target="_blank">
                   {" "}
-                  <img src={Discord} alt=""                   className="icons-images-style-community"
- />
+                  <img
+                    src={Discord}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
                 </a>
               </div>
 
@@ -99,8 +230,11 @@ const OurCommunity = () => {
                 {/* <SiDiscord size={40} /> */}
                 <a href="https://twitter.com/RoxoFun" target="_blank">
                   {" "}
-                  <img src={Tiwitter} alt=""                   className="icons-images-style-community"
- />
+                  <img
+                    src={Tiwitter}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
                 </a>
               </div>
               <div
@@ -111,8 +245,11 @@ const OurCommunity = () => {
                 {/* <RiWechatFill size={50} /> */}
                 <a href="https://www.instagram.com/roxo.fun/" target="_blank">
                   {" "}
-                  <img src={Instragram} alt=""                   className="icons-images-style-community"
- />
+                  <img
+                    src={Instragram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
                 </a>
               </div>
               <div
@@ -123,8 +260,11 @@ const OurCommunity = () => {
                 {/* <ImTelegram size={40} /> */}
                 <a href="https://t.me/roxo_token" target="_blank">
                   {" "}
-                  <img src={Telegram} alt=""                   className="icons-images-style-community"
- />
+                  <img
+                    src={Telegram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
                 </a>
               </div>
 
@@ -136,91 +276,303 @@ const OurCommunity = () => {
                 {/* <RiWechatFill size={50} /> */}
                 <a href="https://www.reddit.com/r/roxo/" target="_blank">
                   {" "}
-                  <img src={Reddit} alt=""                   className="icons-images-style-community"
- />
+                  <img
+                    src={Reddit}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
                 </a>
               </div>
             </div>
-          </div>
-          <div className="community-heading col-md-6">
-            <h3>This is Our Community</h3>
-            <h6>Free to Play, Play to Earn</h6>
-          </div>
-        </div>
-        {/* --------twitter Handler------------ */}
-        {showTwitter && (
-          <div className="col-md-12 community-icon-display-outer">
-            <div className="community-icon-detail">
-              <div className="col-md-6 ">
-                <div className="icon-image-detail">
-                  <img className="join-image-style" src={JoinUs} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 community-icon-content">
-                <h3>Join our community</h3>
-                <p className="join-content-style">
-                  Join our community to get updated information about our
-                  upcoming events and announcements.
-                </p>
-              </div>
+            
             </div>
+          
           </div>
         )}
         {/* --------telegram Handler------------ */}
         {showTelegram && (
-          <div className="col-md-12 community-icon-display-outer">
-            <div className="community-icon-detail">
-              <div className="col-md-6 ">
-                <div className="icon-image-detail">
-                  <img className="join-image-style" src={JoinUs} alt="" />
+          <div className="col-md-12">
+            <div className=" community-icon-display-outer">
+              <div className="community-icon-detail">
+                <div className="col-md-6 ">
+                  <div className="icon-image-detail">
+                    <img className="join-image-style" src={JoinUs} alt="" />
+                  </div>
+                </div>
+                <div className="col-md-6 community-icon-content">
+                  <h3>Join our community</h3>
+                  <p className="join-content-style">
+                    Join our community to get updated information about our
+                    upcoming events and announcements.
+                  </p>
                 </div>
               </div>
-              <div className="col-md-6 community-icon-content">
-                <h3>Join our community</h3>
-                <p className="join-content-style">
-                  Join our community to get updated information about our
-                  upcoming events and announcements.
-                </p>
-              </div>
             </div>
+           
           </div>
         )}
         {/* --------discord Handler------------ */}
         {showDiscord && (
-          <div className="col-md-12 community-icon-display-outer">
-            <div className="community-icon-detail">
-              <div className="col-md-6 ">
-                <div className="icon-image-detail">
-                  <img className="join-image-style" src={JoinUs} alt="" />
-                </div>
-              </div>
-              <div className="col-md-6 community-icon-content">
-                <h3>Join our community</h3>
-                <p className="join-content-style">
-                  Join our community to get updated information about our
-                  upcoming events and announcements.
-                </p>
-              </div>
-            </div>
-          </div>
+           <div className="col-md-12 ">
+           <div className=" community-icon-display-outer">
+             <div className="community-icon-detail">
+               <div className="col-md-6 ">
+                 <div className="icon-image-detail">
+                   <img className="join-image-style" src={JoinUs} alt="" />
+                 </div>
+               </div>
+               <div className="col-md-6 community-icon-content">
+                 <h3>Join our community</h3>
+                 {/* <p className="join-content-style">
+                   Join our community to get updated information about our
+                   upcoming events and announcements.
+                 </p> */}
+                 <div className="community-icons ">
+             <div onClick={twitterHandler} type="button">
+               {/* <AiFillTwitterCircle size={50} /> */}
+               <a
+                 href="https://www.youtube.com/channel/UCa3iLWxbozoKB8K7AK3cKLg"
+                 target="_blank"
+               >
+                 {" "}
+                 <img
+                   className="icons-images-style-community"
+                   src={Youtube}
+                   alt=""
+                 />
+               </a>
+             </div>
+             <div
+               onClick={wechatHandler}
+               className="twitter-icon-style"
+               type="button"
+             >
+               {/* <RiWechatFill size={50} /> */}
+               <a href="https://fb.me/roxoFunPlay" target="_blank">
+                 {" "}
+                 <img
+                   src={Facebook}
+                   alt=""
+                   className="icons-images-style-community"
+                 />
+               </a>
+             </div>
+             <div
+               onClick={wechatHandler}
+               className="twitter-icon-style"
+               type="button"
+             >
+               {/* <RiWechatFill size={50} /> */}
+               <a href="https://discord.gg/M4ucFW6AHU" target="_blank">
+                 {" "}
+                 <img
+                   src={Discord}
+                   alt=""
+                   className="icons-images-style-community"
+                 />
+               </a>
+             </div>
+
+             <div
+               onClick={discordHandler}
+               className="twitter-icon-style"
+               type="button"
+             >
+               {/* <SiDiscord size={40} /> */}
+               <a href="https://twitter.com/RoxoFun" target="_blank">
+                 {" "}
+                 <img
+                   src={Tiwitter}
+                   alt=""
+                   className="icons-images-style-community"
+                 />
+               </a>
+             </div>
+             <div
+               onClick={wechatHandler}
+               className="twitter-icon-style"
+               type="button"
+             >
+               {/* <RiWechatFill size={50} /> */}
+               <a href="https://www.instagram.com/roxo.fun/" target="_blank">
+                 {" "}
+                 <img
+                   src={Instragram}
+                   alt=""
+                   className="icons-images-style-community"
+                 />
+               </a>
+             </div>
+             <div
+               onClick={telegramHandler}
+               className="twitter-icon-style"
+               type="button"
+             >
+               {/* <ImTelegram size={40} /> */}
+               <a href="https://t.me/roxo_token" target="_blank">
+                 {" "}
+                 <img
+                   src={Telegram}
+                   alt=""
+                   className="icons-images-style-community"
+                 />
+               </a>
+             </div>
+
+             <div
+               onClick={wechatHandler}
+               className="twitter-icon-style"
+               type="button"
+             >
+               {/* <RiWechatFill size={50} /> */}
+               <a href="https://www.reddit.com/r/roxo/" target="_blank">
+                 {" "}
+                 <img
+                   src={Reddit}
+                   alt=""
+                   className="icons-images-style-community"
+                 />
+               </a>
+             </div>
+           </div>
+               </div>
+             </div>
+           
+           </div>
+         
+         </div>
         )}
         {/* --------weChat Handler------------ */}
         {showWechat && (
-          <div className="col-md-12 community-icon-display-outer">
-            <div className="community-icon-detail">
-              <div className="col-md-6 ">
-                <div className="icon-image-detail">
-                  <img className="join-image-style" src={JoinUs} alt="" />
+          <div className="col-md-12 ">
+            <div className=" community-icon-display-outer">
+              <div className="community-icon-detail">
+                <div className="col-md-6 ">
+                  <div className="icon-image-detail">
+                    <img className="join-image-style" src={JoinUs} alt="" />
+                  </div>
                 </div>
+                <div className="col-md-6 community-icon-content">
+                  <h3>Join our community</h3>
+                  {/* <p className="join-content-style">
+                    Join our community to get updated information about our
+                    upcoming events and announcements.
+                  </p> */}
+                  <div className="community-icons ">
+              <div onClick={twitterHandler} type="button">
+                {/* <AiFillTwitterCircle size={50} /> */}
+                <a
+                  href="https://www.youtube.com/channel/UCa3iLWxbozoKB8K7AK3cKLg"
+                  target="_blank"
+                >
+                  {" "}
+                  <img
+                    className="icons-images-style-community"
+                    src={Youtube}
+                    alt=""
+                  />
+                </a>
               </div>
-              <div className="col-md-6 community-icon-content">
-                <h3>Join our community</h3>
-                <p className="join-content-style">
-                  Join our community to get updated information about our
-                  upcoming events and announcements.
-                </p>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://fb.me/roxoFunPlay" target="_blank">
+                  {" "}
+                  <img
+                    src={Facebook}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://discord.gg/M4ucFW6AHU" target="_blank">
+                  {" "}
+                  <img
+                    src={Discord}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+
+              <div
+                onClick={discordHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <SiDiscord size={40} /> */}
+                <a href="https://twitter.com/RoxoFun" target="_blank">
+                  {" "}
+                  <img
+                    src={Tiwitter}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://www.instagram.com/roxo.fun/" target="_blank">
+                  {" "}
+                  <img
+                    src={Instragram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+              <div
+                onClick={telegramHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <ImTelegram size={40} /> */}
+                <a href="https://t.me/roxo_token" target="_blank">
+                  {" "}
+                  <img
+                    src={Telegram}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
+              </div>
+
+              <div
+                onClick={wechatHandler}
+                className="twitter-icon-style"
+                type="button"
+              >
+                {/* <RiWechatFill size={50} /> */}
+                <a href="https://www.reddit.com/r/roxo/" target="_blank">
+                  {" "}
+                  <img
+                    src={Reddit}
+                    alt=""
+                    className="icons-images-style-community"
+                  />
+                </a>
               </div>
             </div>
+                </div>
+              </div>
+            
+            </div>
+          
           </div>
         )}
       </div>
