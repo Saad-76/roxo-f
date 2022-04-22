@@ -18,10 +18,10 @@ const ContactUsForm = () => {
 
     emailjs
       .sendForm(
-        "service_mq2mpps",
-        "template_89516yg",
+        "service_p84ovwb",
+        "template_k31hdor",
         e.target,
-        "yvC1i7AAhZ7brqQX4"
+        "lPYkl392X4qVXFA_5"
       )
       .then(
         (result) => {

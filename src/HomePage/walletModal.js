@@ -3,7 +3,7 @@ import { ethers, utils } from "ethers";
 import { AiOutlineClose } from "react-icons/ai";
 
 import TokenCoin from "../Assests/Token Coin.png";
-import MetaMask from "../Assests/web roxo/wallet/MetaMask.jpeg"
+import MetaMask from "../Assests/web roxo/wallet/MetaMask.png";
 import "./walletModal.css";
 
 const WalletModal = () => {
@@ -49,7 +49,7 @@ const WalletModal = () => {
           <div class="modal-content wallet-modal-border">
             <div class="modal-body modal-outer-style">
               <div className="wallet-colose-btn d-flex">
-              <h3 className="wallet-heading-style">Connect Wallet</h3>
+                <h3 className="wallet-heading-style">Connect Wallet</h3>
 
                 <AiOutlineClose
                   data-bs-dismiss="modal"
@@ -66,9 +66,15 @@ const WalletModal = () => {
                 ) : (
                   <div className="wallet-button-background ">
                     <h6 type="button" onClick={connectWallet} className="">
-                      Connect MetaMask
+                      MetaMask
                     </h6>
-                    <img src={MetaMask} alt="" height="50px" width="50px" style={{borderRadius:"50px"}} />
+                    <img
+                      src={MetaMask}
+                      alt=""
+                      height="50px"
+                      width="50px"
+                      style={{ borderRadius: "50px" }}
+                    />
                   </div>
                 )}
               </div>

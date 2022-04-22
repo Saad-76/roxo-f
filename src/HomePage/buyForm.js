@@ -14,7 +14,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import TokenCoin from "../Assests/Token Coin.png";
 import Coin from "../Assests/web roxo/wallet/Binance.png";
-import MetaMask from "../Assests/web roxo/wallet/MetaMask.jpeg";
+import MetaMask from "../Assests/web roxo/wallet/MetaMask.png";
 
 import "./buyForm.css";
 
@@ -103,7 +103,7 @@ const BuyForm = () => {
                   ) : (
                     <div className="wallet-button-background">
                       <h6 type="button" onClick={connectWallet} className="">
-                        Connect MetaMask
+                        MetaMask
                       </h6>
                       <img
                         src={MetaMask}
@@ -159,7 +159,7 @@ const BuyForm = () => {
                 />
                 <div className="col-md-12 input-display-sellform">
                   <label>
-                    <img src={Coin} alt="" height="30px" width="30px" />
+                    <img src={Coin} alt="" height="25px" width="25px" style={{margin:"0px 2px"}} />
                     BNB
                   </label>
                   <input

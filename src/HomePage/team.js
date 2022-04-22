@@ -35,9 +35,9 @@ const Team = () => {
               <h3>Zohaib Latif </h3>
               <h5>Founder CEO</h5>
               <p>
-                Zohaib Latif is the Founder of ROXO. The primary strength he
-                brings to the team is his expertise in the field of Development
-                and Innovation, which he utilizes to help guide ROXO to success.
+                The primary strength of expertise in the field of block chain
+                and development, which he utilizes to help guide ROXO to
+                success.
               </p>
             </div>
           </div>
@@ -49,8 +49,8 @@ const Team = () => {
               <h3>Waseem Aslam</h3>
               <h5>CO-Founder</h5>
               <p>
-                As CO-Founder, my duties and responsibilities is to overseeing
-                overall vision and direction and strategy of the company.
+                As CO-Founder, core responsibilities is to overseeing overall
+                vision and direction and strategy of the company.
               </p>
             </div>
           </div>
@@ -62,8 +62,7 @@ const Team = () => {
               <h3>Usman Zaheer </h3>
               <h5>CTO</h5>
               <p>
-                As Chief Technical Officer of ROXO, I am responsible for
-                overseeing the development and dissemination of technology used
+                Overseeing the development and dissemination of technology used
                 in game development especially and increase business efficiency.
               </p>
             </div>
@@ -79,10 +78,9 @@ const Team = () => {
               <h3>Kamran Faiz </h3>
               <h5>Lead 3D Artist</h5>
               <p>
-                As a senior 3D artist at ROXO, he is working closely with
-                engineers and product managers as well as with artists in the
-                team in order to produce cutting-edge environments and visual
-                elements for our products.
+                Working closely with with artists in the team in order to
+                produce cutting-edge environments and visual elements for our
+                products.
               </p>
             </div>
           </div>
@@ -92,11 +90,12 @@ const Team = () => {
 
               <img className="team-member-image-style" src={Team5} alt="NFT1" />
               <h3>Junaid Iqbal </h3>
-              <h5>Lead Environmental <br/> Artist </h5>
+              <h5>
+                 Environmental Artist{" "}
+              </h5>
               <p>
                 Having a creative and detail-oriented illustrator with strong
-                background in gaming and animation films. He is creating
-                outstanding environment background for ROXO.
+                background in gaming and animation films.
               </p>
             </div>
           </div>
@@ -108,9 +107,8 @@ const Team = () => {
               <h3>Asad </h3>
               <h5>Marketing Manager</h5>
               <p>
-                I am responsible for developing, implementing and executing
-                strategic marketing plans for an entire organization in order to
-                attract potential customers and retain existing ones.
+                Implementing and executing strategic marketing plans for an
+                entire organization in order to attract potential customers.
               </p>
             </div>
           </div>

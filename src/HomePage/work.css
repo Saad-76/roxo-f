@@ -16,16 +16,16 @@
   font-weight: bold;
 }
 .work-button-style {
-  border-radius: 100px;
-  background-color: white;
-  color: black;
-  border-radius: 107px;
-  background-color: white;
-  color: black;
-  height: 50px;
-  width: 50px;
-  margin-bottom: 20px;
+  background-color: #fff;
   border: none;
+  border-radius: 100px;
+  border-radius: 107px;
+  color: #000;
+  height: 55px;
+  margin-bottom: 39px;
+  width: 55px;
+
+  font-weight: 100;
 }
 .work-outer-flex-style {
   display: flex;
@@ -64,24 +64,25 @@
   margin-top: 10px;
 }
 .work-button-style-outer button:focus {
-  background-color: #393469;
-  color: white;
-  font-weight: bold;
+  font-family: "Cinzel";
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 22px;
 }
 .first-button-style {
   margin-top: 20px;
 }
 .work-button-style-outer {
-  margin-top: 40px;
+  margin-top: 5px;
 }
 .mbl-img-work {
   display: none;
 }
-.work-resp-back{
+.work-resp-back {
   display: block;
 }
 @media only screen and (max-width: 900px) {
-  .work-resp-back{
+  .work-resp-back {
     display: none;
   }
   .work-heading-outer {
