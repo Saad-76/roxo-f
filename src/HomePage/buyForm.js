@@ -101,10 +101,10 @@ const BuyForm = () => {
                       MetaMask wallet address is : {account.address}
                     </p>
                   ) : (
-                    <div className="wallet-button-background">
-                      <h6 type="button" onClick={connectWallet} className="">
+                    <div className="wallet-button-background" onClick={connectWallet} type="button">
+                      <h4   className="">
                         MetaMask
-                      </h6>
+                      </h4>
                       <img
                         src={MetaMask}
                         alt=""

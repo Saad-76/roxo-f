@@ -87,6 +87,14 @@
   flex-direction: row;
   justify-content: flex-end;
 }
+.wallet-button-background{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wallet-button-background h4{
+  padding-top: 6px;
+}
 .tax-fee-flex {
   display: flex;
   flex-direction: row;

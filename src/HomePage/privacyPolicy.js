@@ -46,12 +46,12 @@ const PrivacyPolicy = () => {
           We may update our Privacy Policy from time to time. Thus, you are
           advised to review this page periodically for any changes. We will
           notify you of any changes by posting the new Privacy Policy on this
-          page. It was last modified on Feb 01, 2022.
+          page. It was last modified on 2022.
         </p>
         <h3>Contact Us</h3>
         <p>
           If you have any questions or suggestions about our Privacy Policy,
-          please do not hesitate to contact us at <b>support@roxo.fun</b>
+          please do not hesitate to contact us at <b>contact@roxo.fun</b>
         </p>
       </div>
       <Footer />

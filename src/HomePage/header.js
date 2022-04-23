@@ -52,60 +52,7 @@ const Header = () => {
         <Link to="/contactus" className="font-style-header">
           Contact Us
         </Link>
-        {/* <Link>
-          <div className="hover-coin">
-            <img className="glowCoin" src={Glowcoin} height="50px"></img>
-            <div className="coin-logo">
-              <img src={coinPic} height="60px"></img>
-              <p>$0.0025</p>
-            </div>
-          </div>
-        </Link> */}
-
-        {/* <Link className="dropbtn ourCommunity">
-            Our Community <AiFillCaretDown size={10} />
-            <div class="dropdown-content">
-              <Link>
-                <img src={blogIcon} height="20px" />
-                Blog
-              </Link>
-              <Link>
-                <img src={discordIcon} height="20px" />
-                Discord
-              </Link>
-              <Link>
-                <img src={twitterIcon} height="20px" />
-                Twitter
-              </Link>
-              <Link>
-                <img src={teleIcon} height="20px" />
-                Telegram
-              </Link>
-            </div>
-          </Link> */}
-
-        {/* <Link className="dropbtn1 more">
-            More
-            <AiFillCaretDown size={10} />
-            <div class="dropdown-content1">
-              <Link to="/support">
-                <img src={contactIcon} height="20px" />
-                Support
-              </Link>
-              <Link to="/careers">
-                <img src={careerIcon} height="20px" />
-                Careers
-              </Link>
-              <Link onClick={onResumeClick}>
-                <img src={WhiteIcon} height="20px" />
-                White Paper
-              </Link>
-              <Link to="/contactus">
-                <img src={contactIcon} height="20px" />
-                Contact Us
-              </Link>
-            </div>
-          </Link> */}
+ 
         <div className="header-buttons-outer-flex">
           <Link to="/buyForm">
             <button className="header-price-button-style font-style-header">
@@ -137,7 +84,7 @@ const Header = () => {
         <Link to="/homepage">
           <div className="logo-head">
             <img src={logoPic} height="50px"></img>
-            {/* <h5>ROXO</h5> */}
+  
           </div>
         </Link>
         <div>
@@ -147,12 +94,7 @@ const Header = () => {
             </button>
           </Link>
         </div>
-        {/* <Link>
-          <div className="coin-logo">
-            <img src={coinPic} height="50px"></img>
-            <p>$0.0025</p>
-          </div>
-        </Link> */}
+  
         <Link>
           <p className="menu-btn" onClick={slideOpen}>
             <GoThreeBars size={35} />
@@ -160,9 +102,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="slides" id="mySidebar">
-        {/* <div className="slide-down-1" onClick={slideClose}>
-          <p>Close</p>
-        </div> */}
+     
         <div className="slide-down">
           <Link className="nav-links  single  " href="#vision" to="/">
             <p className="font-style-header">Home </p>
@@ -202,59 +142,7 @@ const Header = () => {
             <p className="font-style-header"> White Paper</p>
           </Link>
         </div>
-        {/* <div className="slide-down">
-          <Link to="/buyForm">
-            <p className="font-style-header">$5.09</p>
-          </Link>
-        </div> */}
-        {/* <div className="slide-down">
-          <Link className="nav-links-1 single " id="target2" href="#tools">
-            <AiFillCaretLeft size={15} />
-            <div class="dropdown-content">
-              <Link>
-                <img src={blogIcon} height="20px" />
-                Blog
-              </Link>
-              <Link>
-                <img src={discordIcon} height="20px" />
-                Discord
-              </Link>
-              <Link>
-                <img src={twitterIcon} height="20px" />
-                Twitter
-              </Link>
-              <Link>
-                <img src={teleIcon} height="20px" />
-                Telegran
-              </Link>
-            </div>
-            Our Community
-          </Link>
-        </div> */}
-        {/* <div className="slide-down">
-          <Link className="nav-links-2 single" id="target3" href="#news">
-            <AiFillCaretLeft size={15} />
-            <div class="dropdown-content1">
-              <Link>
-                <img src={contactIcon} height="20px" />
-                Support
-              </Link>
-              <Link>
-                <img src={careerIcon} height="20px" />
-                Careers
-              </Link>
-              <Link>
-                <img src={contactIcon} height="20px" />
-                Contact Us
-              </Link>
-              <Link onClick={onResumeClick}>
-                <img src={WhiteIcon} height="20px" />
-                White Paper
-              </Link>
-            </div>
-            <p>More</p>
-          </Link>
-        </div> */}
+   
         <div className="slide-down">
           <p
             className="font-style-header"
