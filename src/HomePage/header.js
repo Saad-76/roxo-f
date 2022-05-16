@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import logoPic from "../Assests/25.png";
@@ -8,7 +8,6 @@ import PDF from "../Assests/PDF.pdf";
 import "./header.css";
 
 const Header = () => {
-  
   const onResumeClick = () => {
     window.open(PDF);
   };
@@ -22,6 +21,26 @@ const Header = () => {
       document.getElementById("mySidebar").style.display = "block";
     }
   };
+
+  // ----------walllet connection-------------
+  const [adress, setAdress] = useState("");
+
+  const func = async () => {
+    const { ethereum } = window;
+    const accounts = await ethereum.request({ method: "eth_accounts" });
+    if (accounts && accounts.length > 0) {
+      console.log("user is connected");
+      const getAddress = localStorage.getItem("wallet_address");
+      setAdress(getAddress);
+    } else {
+      console.log("user not connected");
+      console.log("acc", accounts);
+      setAdress("");
+    }
+  };
+  useEffect(() => {
+    func();
+  }, []);
 
   return (
     <div className="header">
@@ -52,49 +71,54 @@ const Header = () => {
         <Link to="/contactus" className="font-style-header">
           Contact Us
         </Link>
- 
+
         <div className="header-buttons-outer-flex">
           <Link to="/buyForm">
             <button className="header-price-button-style font-style-header">
-              $ 5.09
+              $ 0.0001
             </button>
           </Link>
         </div>
 
         <div>
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#walletModal"
-            className="font-style-header"
-          >
-            <b>Connect Wallet</b>
-          </button>
+          {adress?.length === 0 && (
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#walletModal"
+              className="font-style-header"
+            >
+              <b>Connect Wallet</b>
+            </button>
+          )}
+
+          {adress?.length > 0 && (
+            <button>
+              <b>{adress}</b>
+            </button>
+          )}
         </div>
         <button
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onClick={() => setModalShow(true)}
-          >
-            <b> GAME EARNINGS </b>
-          </button>
-
-      
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          onClick={() => setModalShow(true)}
+        >
+          <b> GAME EARNINGS </b>
+        </button>
       </div>
       <div className="header-nav-sml col 12">
         <Link to="/homepage">
           <div className="logo-head">
             <img src={logoPic} height="50px"></img>
-  
           </div>
         </Link>
         <div>
           <Link to="/buyForm">
             <button className="header-price-button-style font-style-header">
-              $ 5.09
+              $ 0.0001
             </button>
           </Link>
         </div>
-  
+
         <Link>
           <p className="menu-btn" onClick={slideOpen}>
             <GoThreeBars size={35} />
@@ -102,7 +126,6 @@ const Header = () => {
         </Link>
       </div>
       <div className="slides" id="mySidebar">
-     
         <div className="slide-down">
           <Link className="nav-links  single  " href="#vision" to="/">
             <p className="font-style-header">Home </p>
@@ -142,15 +165,23 @@ const Header = () => {
             <p className="font-style-header"> White Paper</p>
           </Link>
         </div>
-   
+
         <div className="slide-down">
-          <p
-            className="font-style-header"
-            data-bs-toggle="modal"
-            data-bs-target="#walletModal"
-          >
-            Connect Wallet
-          </p>
+          {adress?.length === 0 && (
+            <p
+              className="font-style-header"
+              data-bs-toggle="modal"
+              data-bs-target="#walletModal"
+            >
+              Connect Wallet
+            </p>
+          )}
+
+          {adress?.length > 0 && (
+            <p>
+              <b>{adress}</b>
+            </p>
+          )}
         </div>
         <div className="slide-down">
           <p onClick={() => setModalShow(true)}>GAME EARNINGS</p>

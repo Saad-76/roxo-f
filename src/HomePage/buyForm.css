@@ -17,7 +17,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
 }
 .sell-button-main p {
   font-size: 12px;
@@ -87,12 +88,12 @@
   flex-direction: row;
   justify-content: flex-end;
 }
-.wallet-button-background{
+.wallet-button-background {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.wallet-button-background h4{
+.wallet-button-background h4 {
   padding-top: 6px;
 }
 .tax-fee-flex {
@@ -159,7 +160,31 @@
   position: absolute;
   z-index: 40;
   width: 100%;
+}
 
+.buy-sell-buttons-style {
+  text-align: center;
+}
+
+.buy-sell-button-inner {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 25px;
+  color: #ffffff;
+  background: #262250;
+  border: none;
+  padding: 5px 10px;
+  width: 30%;
+  margin: 0px 0px 20px 0px;
+}
+.buy-sell-flex {
+  display: flex;
+  /* flex-direction: row */
+}
+.buy-sell-button-inner:focus {
+  background: #58acff;
+  color: white;
+  font-weight: bold;
 }
 @media screen and (max-width: 900px) {
   .swap-button-inner {
@@ -195,11 +220,14 @@
     justify-content: space-between;
     font-size: 11px;
     align-items: center;
-}
+  }
   .tax-fee-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
+  .buy-sell-flex {
+    display: block;
+    }
 }

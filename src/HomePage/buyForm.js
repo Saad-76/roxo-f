@@ -4,54 +4,84 @@ import Header from "./header";
 import Footer from "./footer";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import glowCoin from "../Assests/Token Coin.png";
-import { useHistory } from "react-router-dom";
-
-// -------------------------------------
-import { ethers, utils } from "ethers";
 import { AiOutlineClose } from "react-icons/ai";
-// --------------------------------------------
-
 import TokenCoin from "../Assests/Token Coin.png";
 import Coin from "../Assests/web roxo/wallet/Binance.png";
 import MetaMask from "../Assests/web roxo/wallet/MetaMask.png";
-
+import { connectWallet, checkNetwork, buyRoxo,getAddress } from "./web3";
+import WalletModal from "./walletModal";
 import "./buyForm.css";
 
-const BuyForm = () => {
-  // --------------------
-  const [account, setAccount] = useState({});
+const BuyForm = ({adressState}) => {
+  // -----------form handling-----------
+  const [buyForm, setBuyForm] = useState(true);
+  const [sellForm, setSellForm] = useState(false);
 
-  const connectWallet = async () => {
-    if (!window.ethereum) {
-      alert("please install MetaMask");
-      return;
-    }
+  const handleSellForm = () => {
+    setBuyForm(false);
+    setSellForm(true);
+  };
 
-    try {
-      await window.ethereum.request({ method: "eth_requestAccounts" });
+  const handleBuyForm = () => {
+    setBuyForm(true);
+    setSellForm(false);
+  };
 
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+  const [data, setData] = useState({
+    amount: "",
+  });
+  const [coinValue, setCoinValue] = useState("");
+  const [waletError, setWalletError] = useState({
+    networkError: "",
+    amountError: "",
+    formError: "",
+  });
 
-      const signer = provider.getSigner();
-      const address = await signer.getAddress();
-      const ens = await provider.lookupAddress(address);
-      // const avatar = await provider.getAvatar(ens);
-
-      setAccount({
-        address,
-        // avatar,
-        ens,
-      });
-
-      console.log("address", address);
-    } catch (error) {
-      console.log(error);
+  const buyHandler = async (e) => {
+    if (data.amount !== "") {
+      try {
+        const buy = await buyRoxo(coinValue);
+        setWalletError({ ...waletError, networkError: "" });
+        setData({ ...data, amount: "" });
+        setWalletError({ ...waletError, formError: "" });
+      } catch (error) {
+        setWalletError({
+          ...waletError,
+          networkError: "Change Your Network to Rinkeyby Test Network",
+        });
+        setWalletError({ ...waletError, formError: "" });
+      }
+    } else {
+      setWalletError({ ...waletError, formError: "Fill above field" });
     }
   };
-  // -------
+  // ----------------net check function---
 
-  const history = useHistory();
+  useEffect(async () => {
+    const add = localStorage.getItem("wallet_address");
+    if (add.length !== 0) {
+      checkNetwork();
+    } else {
+      console.log("check Your Network ");
+    }
+  }, []);
+
+  // ----------------------------------------------
+  const handleData = (e) => {
+    if (e.target.id === "amount") {
+      if (e.target.value !== "") {
+        let inputData = e.target.value;
+        let finalValue = inputData / 0.0001;
+        setData(finalValue);
+        const swapValue = finalValue.toString();
+        setCoinValue(swapValue);
+        setWalletError({ ...waletError, amountError: "" });
+      } else {
+        setWalletError({ ...waletError, amountError: "Field is require" });
+      }
+    }
+  };
+
   const [showModal, setShowModal] = useState(false);
 
   const routePath = useLocation();
@@ -71,11 +101,89 @@ const BuyForm = () => {
     setShowModal(false);
   };
 
+  // -----------wallet connection-----
+  const [connectWalletState, setConnectWalletState] = useState("");
+
+
+  const checkWalletConnection = async () => {
+    let cw = await connectWallet();
+    console.log(cw,"cw is consoled")
+    setConnectWalletState(cw);
+    // console.log(connectWallet, "connectWallet");
+  };
+  // useEffect(() => {
+  //   checkWalletConnection();
+  // }, []);
+  // const walletAdress = localStorage.getItem("wallet_address");
+  // if (walletAdress.length !== 0) {
+
+
+  const checkOpenWallet=()=>{
+    // if (adressState.length === 0) {
+      console.log("working",adressState)
+      setTimeout(() => {
+        handleChange();
+      }, 5000);
+    // } else {
+    //   setShowModal(false);
+    //   console.log("eallet is connected");
+    // }
+  }
+
   useEffect(() => {
-    setTimeout(() => {
-      handleChange();
-    }, 5000);
+    checkOpenWallet();
   }, []);
+  // } else {
+  //   console.log("wallet is connected");
+  // }
+
+  // const walletAdress = localStorage.getItem("wallet_address");
+  // useEffect(() => {
+  //   const walletAdress = localStorage.getItem("wallet_address");
+  //   if (walletAdress.length !== 0) {
+  //     setShowModal(false);
+  //   }
+  // }, [walletAdress]);
+
+  // -----connect wallet--
+  const walletConnection = async () => {
+    let cw = await connectWallet();
+    localStorage.setItem("wallet_address", cw);
+    return cw;
+  };
+
+  // ------------roxo coin sell code--------
+  const [roxoData, setRoxoData] = useState({
+    roxoAmount: "",
+  });
+  const [error, setError] = useState({
+    sellError: "",
+    roxoError: "",
+  });
+
+  const handleSellChange = (e) => {
+    if (e.target.id === "roxoAmount") {
+      if (e.target.value !== "") {
+        const roxoValue = e.target.value;
+        const finalRoxoValue = roxoValue * 0.0001;
+        setRoxoData(finalRoxoValue);
+        setError({ ...error, roxoError: "" });
+      } else {
+        setError({ ...error, roxoError: "Field is require" });
+      }
+    } else {
+      console.log("Fill all fields");
+    }
+  };
+
+  const sellHandler = (e) => {
+    if (roxoData.roxoAmount !== "") {
+      console.log("sell Handler is called");
+      setError({ ...error, sellError: "" });
+    } else {
+      setError({ ...error, sellError: "Fill above field" });
+    }
+  };
 
   return (
     <>
@@ -96,33 +204,21 @@ const BuyForm = () => {
                   />
                 </div>
                 <div className="">
-                  {account.address ? (
-                    <p color="black">
-                      MetaMask wallet address is : {account.address}
-                    </p>
-                  ) : (
-                    <div className="wallet-button-background" onClick={connectWallet} type="button">
-                      <h4   className="">
-                        MetaMask
-                      </h4>
-                      <img
-                        src={MetaMask}
-                        alt=""
-                        height="50px"
-                        width="50px"
-                        style={{ borderRadius: "50px" }}
-                      />
-                    </div>
-                  )}
+                  <div
+                    className="wallet-button-background"
+                    onClick={walletConnection}
+                    type="button"
+                  >
+                    <h4 className="">MetaMask</h4>
+                    <img
+                      src={MetaMask}
+                      alt=""
+                      height="50px"
+                      width="50px"
+                      style={{ borderRadius: "50px" }}
+                    />
+                  </div>
                 </div>
-                {/* <div className="wallet-button-background">
-                  <h6 type="button">Connect ROXO Wallet</h6>
-                  <img src={TokenCoin} alt="" height="50px" width="50px" />
-                </div>
-                <div className="wallet-button-background">
-                  <h6 type="button">Connect Safepal</h6>
-                  <img src={TokenCoin} alt="" height="50px" width="50px" />
-                </div> */}
               </div>
             </div>
           </div>
@@ -132,79 +228,203 @@ const BuyForm = () => {
       <div className="buy-form-style">
         <div className="col-md-12 sell-main-heading">
           <h3>
-            BUY <span className="color-sell"> TOKENS </span>
+            BUY/SELL <span className="color-sell"> TOKENS </span>
           </h3>
         </div>
-
-        <div className="col-md-12 buy-card-main">
+        <div className="col-md-12  buy-sell-flex">
           <div className="col-md-4"></div>
-          <div className="col-md-3">
-            <div className="buy-card-body">
-              <div className="buy-card-body-flex">
-                <div className="col-md-12 sell-button-main">
-                  <div>
-                    <img src={TokenCoin} alt="" height="50px" width="50px" />
-                  </div>
-                  <div>
-                    <h3 style={{ textAlign: "center" }}>Buy</h3>
-                    <p>Trade tokens in an instant</p>
-                  </div>
-                  <div className="buy-hidden-image">
-                    <img src={Coin} alt="" height="30px" width="30px" />
-                  </div>
-                </div>
-                <hr
-                  className="section-divider-sellform"
-                  style={{ marginTop: "1%" }}
-                />
-                <div className="col-md-12 input-display-sellform">
-                  <label>
-                    <img src={Coin} alt="" height="25px" width="25px" style={{margin:"0px 2px"}} />
-                    BNB
-                  </label>
-                  <input
-                    className="input-field-sellfrom-inner"
-                    type="number"
-                    min="0"
-                    max="10000000"
-                    placeholder="Enter Amount "
-                  />
-                </div>
-                <div className="col-md-12 input-display-sellform ">
-                  <label>
-                    <img src={TokenCoin} alt="" height="30px" width="30px" />
-                    ROXO
-                  </label>
-                  <input
-                    className="input-field-sellfrom-inner"
-                    type="number"
-                    min="0"
-                    max="10000000"
-                    // placeholder="Enter Amount "
-                  />
-                </div>
-                {/* <hr
-                className="section-divider-sellform"
-                style={{ marginTop: "14%" }}
-              /> */}
-                <div className="col-md-12 trading-fee-flex">
-                  <div className="col-md-6">
-                    <p>Slipage Tolerance</p>
-                  </div>
-                  <div className="col-md-6 trading-fee-value">
-                    <p>0.5%</p>
-                  </div>
-                </div>
-
-                <div className="col-md-12 swap-button-outer">
-                  <button className="swap-button-inner">Swap</button>
-                </div>
-              </div>
-            </div>
+          <div className="col-md-4 buy-sell-buttons-style">
+            <button onClick={handleBuyForm} className="buy-sell-button-inner">
+              Buy
+            </button>{" "}
+            &nbsp;
+            <button onClick={handleSellForm} className="buy-sell-button-inner">
+              Sell
+            </button>
           </div>
           <div className="col-md-4"></div>
         </div>
+        {buyForm && (
+          <div className="col-md-12 buy-card-main">
+            <div className="col-md-4"></div>
+            <div className="col-md-3">
+              <div className="buy-card-body">
+                <div className="buy-card-body-flex">
+                  <div className="col-md-12 sell-button-main">
+                    {/* <div>
+                      <img src={TokenCoin} alt="" height="50px" width="50px" />
+                    </div> */}
+                    <div>
+                      <h3 style={{ textAlign: "center" }}>Buy</h3>
+                      <p>Trade tokens in an instant</p>
+                    </div>
+                    {/* <div className="buy-hidden-image">
+                      <img src={Coin} alt="" height="30px" width="30px" />
+                    </div> */}
+                  </div>
+                  <hr
+                    className="section-divider-sellform"
+                    style={{ marginTop: "1%" }}
+                  />
+                  <div className="col-md-12 input-display-sellform">
+                    <label>
+                      <img
+                        src={Coin}
+                        alt=""
+                        height="25px"
+                        width="25px"
+                        style={{ margin: "0px 2px" }}
+                      />
+                      BUSD( BNB Smart Chain){" "}
+                    </label>
+                    <input
+                      className="input-field-sellfrom-inner"
+                      type="number"
+                      id="amount"
+                      placeholder="Enter Amount "
+                      value={data.amount}
+                      onChange={handleData}
+                    />
+                    {waletError?.amountError && (
+                      <span class="badge badge-danger">
+                        {waletError?.amountError}
+                      </span>
+                    )}
+                  </div>
+                  <div className="col-md-12 input-display-sellform ">
+                    <label>
+                      <img src={TokenCoin} alt="" height="30px" width="30px" />
+                      ROXO
+                    </label>
+                    <input
+                      className="input-field-sellfrom-inner"
+                      type="number"
+                      value={data}
+                    />
+                  </div>
+
+                  <div className="col-md-12 trading-fee-flex">
+                    <div className="col-md-6">
+                      <p>Slipage Tolerance</p>
+                    </div>
+                    <div className="col-md-6 trading-fee-value">
+                      <p>0.5%</p>
+                    </div>
+                  </div>
+
+                  <div className="col-md-12 swap-button-outer">
+                    <button className="swap-button-inner" onClick={buyHandler}>
+                      Buy
+                    </button>
+                  </div>
+                  {waletError?.networkError && (
+                    <span class="badge badge-danger">
+                      {waletError?.networkError}
+                    </span>
+                  )}
+                  {waletError?.formError && (
+                    <span class="badge badge-danger">
+                      {waletError?.formError}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4"></div>
+          </div>
+        )}
       </div>
+
+      {/* ---------sell form here-------- */}
+      {sellForm && (
+        <div className="buy-form-style">
+          <div className="col-md-12 buy-card-main">
+            <div className="col-md-4"></div>
+            <div className="col-md-3">
+              <div className="buy-card-body">
+                <div className="buy-card-body-flex">
+                  <div className="col-md-12 sell-button-main">
+                    {/* <div>
+                      <img src={TokenCoin} alt="" height="50px" width="50px" />
+                    </div> */}
+                    <div>
+                      <h3 style={{ textAlign: "center" }}>Sell</h3>
+                      <p>Trade tokens in an instant</p>
+                    </div>
+                    {/* <div className="buy-hidden-image">
+                      <img src={Coin} alt="" height="30px" width="30px" />
+                    </div> */}
+                  </div>
+                  <hr
+                    className="section-divider-sellform"
+                    style={{ marginTop: "1%" }}
+                  />
+
+                  <div className="col-md-12 input-display-sellform ">
+                    <label>
+                      <img src={TokenCoin} alt="" height="30px" width="30px" />
+                      ROXO
+                    </label>
+                    <input
+                      className="input-field-sellfrom-inner"
+                      type="number"
+                      id="roxoAmount"
+                      value={roxoData.roxoAmount}
+                      onChange={handleSellChange}
+                      placeholder="Enter Amount "
+                    />
+                    {error?.roxoError && (
+                      <span class="badge badge-danger">{error?.roxoError}</span>
+                    )}
+                  </div>
+                  <div className="col-md-12 input-display-sellform">
+                    <label>
+                      <img
+                        src={Coin}
+                        alt=""
+                        height="25px"
+                        width="25px"
+                        style={{ margin: "0px 2px" }}
+                      />
+                      BUSD
+                    </label>
+                    <input
+                      className="input-field-sellfrom-inner"
+                      type="number"
+                      id="amount"
+                      value={roxoData}
+                    />
+                  </div>
+
+                  <div className="col-md-12 trading-fee-flex">
+                    <div className="col-md-6">
+                      <p>Slipage Tolerance</p>
+                    </div>
+                    <div className="col-md-6 trading-fee-value">
+                      <p>0.5%</p>
+                    </div>
+                  </div>
+
+                  <div className="col-md-12 swap-button-outer">
+                    <button className="swap-button-inner" onClick={sellHandler}>
+                      Sell
+                    </button>
+                  </div>
+                  {waletError?.networkError && (
+                    <span class="badge badge-danger">
+                      {waletError?.networkError}
+                    </span>
+                  )}
+                  {error?.sellError && (
+                    <span class="badge badge-danger">{error?.sellError}</span>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4"></div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </>
