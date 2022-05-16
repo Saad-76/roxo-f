@@ -7,19 +7,12 @@ import { connectWallet } from "./web3";
 import "./walletModal.css";
 
 const WalletModal = () => {
-  const [adressState, setAdressState] = useState("");
-
   const walletConnection = async () => {
     let cw = await connectWallet();
-
     localStorage.setItem("wallet_address", cw);
     console.log(cw, "cw");
-    setAdressState(cw);
-
     return cw;
   };
-
-  
 
   return (
     <>

@@ -8,11 +8,11 @@ import { AiOutlineClose } from "react-icons/ai";
 import TokenCoin from "../Assests/Token Coin.png";
 import Coin from "../Assests/web roxo/wallet/Binance.png";
 import MetaMask from "../Assests/web roxo/wallet/MetaMask.png";
-import { connectWallet, checkNetwork, buyRoxo,getAddress } from "./web3";
+import { connectWallet, checkNetwork, buyRoxo, getAddress } from "./web3";
 import WalletModal from "./walletModal";
 import "./buyForm.css";
 
-const BuyForm = ({adressState}) => {
+const BuyForm = ({ adressState }) => {
   // -----------form handling-----------
   const [buyForm, setBuyForm] = useState(true);
   const [sellForm, setSellForm] = useState(false);
@@ -102,48 +102,32 @@ const BuyForm = ({adressState}) => {
   };
 
   // -----------wallet connection-----
-  const [connectWalletState, setConnectWalletState] = useState("");
+  // const [connectWalletState, setConnectWalletState] = useState("");
 
+  // const checkWalletConnection = async () => {
+  //   let cw = await connectWallet();
+  //   console.log(cw, "cw is consoled");
+  //   setConnectWalletState(cw);
 
-  const checkWalletConnection = async () => {
-    let cw = await connectWallet();
-    console.log(cw,"cw is consoled")
-    setConnectWalletState(cw);
-    // console.log(connectWallet, "connectWallet");
-  };
-  // useEffect(() => {
-  //   checkWalletConnection();
-  // }, []);
-  // const walletAdress = localStorage.getItem("wallet_address");
-  // if (walletAdress.length !== 0) {
+  // };
 
-
-  const checkOpenWallet=()=>{
-    // if (adressState.length === 0) {
-      console.log("working",adressState)
+  // --------auto modal popup-----------
+  const checkOpenWallet = async () => {
+    const { ethereum } = window;
+    const accounts = await ethereum.request({ method: "eth_accounts" });
+    if (accounts && accounts.length > 0) {
+      setShowModal(false);
+    } else {
+      console.log("working", adressState);
       setTimeout(() => {
         handleChange();
       }, 5000);
-    // } else {
-    //   setShowModal(false);
-    //   console.log("eallet is connected");
-    // }
-  }
+    }
+  };
 
   useEffect(() => {
     checkOpenWallet();
   }, []);
-  // } else {
-  //   console.log("wallet is connected");
-  // }
-
-  // const walletAdress = localStorage.getItem("wallet_address");
-  // useEffect(() => {
-  //   const walletAdress = localStorage.getItem("wallet_address");
-  //   if (walletAdress.length !== 0) {
-  //     setShowModal(false);
-  //   }
-  // }, [walletAdress]);
 
   // -----connect wallet--
   const walletConnection = async () => {

@@ -22,7 +22,6 @@ export let address = null;
 export let connected = false;
 
 const connectWallet = async () => {
-  // console.log("button is clicked!!");
   if (!ethereum) {
     alert("please install MetaMask");
     return false;
@@ -35,16 +34,11 @@ const connectWallet = async () => {
     const ens = await provider.lookupAddress(address);
     connected = true;
     const walletAddress = address.substring(0, 4);
-    // console.log(walletAddress, "adsasj");
     const walletlastAddress = address.substring(
       address.length - 4,
       address.length
     );
-
-    // console.log(walletlastAddress, "walletlast adres");
-
     const addressConcat = walletAddress + "***" + walletlastAddress;
-    // console.log(addressConcat, "dataCon");
 
     return addressConcat;
   } catch (error) {
@@ -121,37 +115,29 @@ export async function getBalance(_user) {
 
 const chainId = "0x4";
 
-export async function checkNetwork(){
-
-
+export async function checkNetwork() {
   if (window.ethereum.networkVersion !== chainId) {
     try {
       await window.ethereum.request({
-        method: 'wallet_switchEthereumChain',
-        params: [{chainId: chainId}]
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: chainId }],
       });
     } catch (err) {
       console.log(err);
-        // This error code indicates that the chain has not been added to MetaMask
+      // This error code indicates that the chain has not been added to MetaMask
       if (err.code === 4902) {
         await window.ethereum.request({
-          method: 'wallet_addEthereumChain',
+          method: "wallet_addEthereumChain",
           params: [
             {
-              chainName: 'Rinkeby Test Network',
+              chainName: "Rinkeby Test Network",
               chainId: chainId,
-              nativeCurrency: { name: 'ETH', decimals: 18, symbol: 'ETH' },
-              rpcUrls: ['https://rinkeby.infura.io/v3/']
-            }
-          ]
+              nativeCurrency: { name: "ETH", decimals: 18, symbol: "ETH" },
+              rpcUrls: ["https://rinkeby.infura.io/v3/"],
+            },
+          ],
         });
-        
       }
-
     }
-   }
   }
-  
-  
-  
-  
+}
