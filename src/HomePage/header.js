@@ -6,6 +6,7 @@ import Login from "./login";
 import { GoThreeBars } from "react-icons/go";
 import PDF from "../Assests/PDF.pdf";
 import "./header.css";
+import { arrayify } from "ethers/lib/utils";
 
 const Header = () => {
   const onResumeClick = () => {
@@ -29,9 +30,21 @@ const Header = () => {
     const { ethereum } = window;
     const accounts = await ethereum.request({ method: "eth_accounts" });
     if (accounts && accounts.length > 0) {
+      // console.log(accounts[0], "accounts valye");
+
+      const newWalletAddress = accounts[0].substring(0, 4);
+      // console.log(newWalletAddress,"newwALEE")
+      const walletlastAddress = accounts[0].substring(
+        accounts[0].length - 4,
+        accounts[0].length
+      );
+      const addressConcat = newWalletAddress + "***" + walletlastAddress;
+      
+      // console.log(addressConcat, "addressConcat");
+
       console.log("user is connected");
       const getAddress = localStorage.getItem("wallet_address");
-      setAdress(getAddress);
+      setAdress(addressConcat);
     } else {
       console.log("user not connected");
       console.log("acc", accounts);

@@ -8,8 +8,15 @@ import { AiOutlineClose } from "react-icons/ai";
 import TokenCoin from "../Assests/Token Coin.png";
 import Coin from "../Assests/web roxo/wallet/Binance.png";
 import MetaMask from "../Assests/web roxo/wallet/MetaMask.png";
-import { connectWallet, checkNetwork, buyRoxo, getAddress } from "./web3";
-import WalletModal from "./walletModal";
+import {
+  connectWallet,
+  checkNetwork,
+  buyRoxo,
+  getAddress,
+  getBalance,
+  ironSecure,
+  sellRoxo,
+} from "./web3";
 import "./buyForm.css";
 
 const BuyForm = ({ adressState }) => {
@@ -17,9 +24,16 @@ const BuyForm = ({ adressState }) => {
   const [buyForm, setBuyForm] = useState(true);
   const [sellForm, setSellForm] = useState(false);
 
-  const handleSellForm = () => {
+  const [maxLimit, setMaxLimit] = useState("");
+
+  const handleSellForm = async () => {
     setBuyForm(false);
     setSellForm(true);
+    const localAdress = localStorage.getItem("complete_wallet_address");
+    const secureValue = await ironSecure(localAdress);
+    const maxValueData = secureValue / 0.0001;
+    setMaxLimit(maxValueData);
+    // console.log(maxValueData,"maxValueData")
   };
 
   const handleBuyForm = () => {
@@ -143,14 +157,16 @@ const BuyForm = ({ adressState }) => {
   const [error, setError] = useState({
     sellError: "",
     roxoError: "",
+    limitError: "",
   });
 
   const handleSellChange = (e) => {
-    if (e.target.id === "roxoAmount") {
+    if (e.target.id === "roxoAmounts") {
       if (e.target.value !== "") {
         const roxoValue = e.target.value;
         const finalRoxoValue = roxoValue * 0.0001;
-        setRoxoData(finalRoxoValue);
+        const lastRoxoValue = finalRoxoValue.toString();
+        setRoxoData(lastRoxoValue);
         setError({ ...error, roxoError: "" });
       } else {
         setError({ ...error, roxoError: "Field is require" });
@@ -160,10 +176,16 @@ const BuyForm = ({ adressState }) => {
     }
   };
 
-  const sellHandler = (e) => {
+  const sellHandler = async (e) => {
     if (roxoData.roxoAmount !== "") {
-      console.log("sell Handler is called");
-      setError({ ...error, sellError: "" });
+      if (maxLimit > 0) {
+        const sellRoxoFunc = await sellRoxo(roxoData.toString());
+        console.log(sellRoxoFunc, "sellRoxoFunc");
+        console.log("sell Handler is called");
+        setError({ ...error, sellError: "" });
+      } else {
+        setError({ ...error, limitError: "Your balance is low" });
+      }
     } else {
       setError({ ...error, sellError: "Fill above field" });
     }
@@ -240,7 +262,7 @@ const BuyForm = ({ adressState }) => {
                     </div> */}
                     <div>
                       <h3 style={{ textAlign: "center" }}>Buy</h3>
-                      <p>Trade tokens in an instant</p>
+                      <p>Get back your 70% amount anytime</p>
                     </div>
                     {/* <div className="buy-hidden-image">
                       <img src={Coin} alt="" height="30px" width="30px" />
@@ -333,7 +355,7 @@ const BuyForm = ({ adressState }) => {
                     </div> */}
                     <div>
                       <h3 style={{ textAlign: "center" }}>Sell</h3>
-                      <p>Trade tokens in an instant</p>
+                      <p>Get back your 70% amount anytime</p>
                     </div>
                     {/* <div className="buy-hidden-image">
                       <img src={Coin} alt="" height="30px" width="30px" />
@@ -352,15 +374,26 @@ const BuyForm = ({ adressState }) => {
                     <input
                       className="input-field-sellfrom-inner"
                       type="number"
-                      id="roxoAmount"
+                      id="roxoAmounts"
                       value={roxoData.roxoAmount}
                       onChange={handleSellChange}
+                      max={maxLimit}
                       placeholder="Enter Amount "
                     />
                     {error?.roxoError && (
                       <span class="badge badge-danger">{error?.roxoError}</span>
                     )}
                   </div>
+
+                  <div className="col-md-12 trading-fee-flex">
+                    <div className="col-md-6">
+                      <p>Max Limit</p>
+                    </div>
+                    <div className="col-md-6 trading-fee-value">
+                      {maxLimit && <p>{maxLimit}</p>}
+                    </div>
+                  </div>
+
                   <div className="col-md-12 input-display-sellform">
                     <label>
                       <img
@@ -376,7 +409,7 @@ const BuyForm = ({ adressState }) => {
                       className="input-field-sellfrom-inner"
                       type="number"
                       id="amount"
-                      value={roxoData}
+                      value={roxoData.toString()}
                     />
                   </div>
 
@@ -401,6 +434,9 @@ const BuyForm = ({ adressState }) => {
                   )}
                   {error?.sellError && (
                     <span class="badge badge-danger">{error?.sellError}</span>
+                  )}
+                  {error?.limitError && (
+                    <span class="badge badge-danger">{error?.limitError}</span>
                   )}
                 </div>
               </div>

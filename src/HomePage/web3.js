@@ -33,7 +33,8 @@ const connectWallet = async () => {
     address = await signer.getAddress();
     const ens = await provider.lookupAddress(address);
     connected = true;
-    const walletAddress = address.substring(0, 4);
+    localStorage.setItem("complete_wallet_address", address); 
+       const walletAddress = address.substring(0, 4);
     const walletlastAddress = address.substring(
       address.length - 4,
       address.length
@@ -140,4 +141,32 @@ export async function checkNetwork() {
       }
     }
   }
+}
+
+
+export async function sellRoxo(amountVal) {
+  //its a usd Value
+  const contract = new ethers.Contract(
+    contractInterface.Address,
+    contractInterface.ABI,
+    provider.getSigner()
+  );
+  contract.sell(ethers.utils.parseEther(amountVal)).then((res) => {
+console.log(res);
+
+  }).catch((error) => {
+    console.log(ethers.utils.toUtf8String(Object.values(error.body)));
+  });
+}
+
+export async function ironSecure(_user) {
+  const contract = new ethers.Contract(
+    contractInterface.Address,
+    contractInterface.ABI,
+    provider.getSigner()
+  );
+  console.log(_user);
+  let result = await contract._sercureBalances(_user);
+  console.log(utils.formatEther(BigNumber.from(result)));
+  return utils.formatEther(BigNumber.from(result));
 }

@@ -80,7 +80,7 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 12px;
-  padding: 12px 12px;
+  padding: 12px 12px 0px 12px;
   align-items: center;
 }
 .trading-fee-value {
