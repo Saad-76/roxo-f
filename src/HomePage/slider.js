@@ -1,15 +1,13 @@
 import React from "react";
 
-
 import SliderOneWeb from "../Assests/web roxo/sliders/SliderOneWeb.jpg";
 import SliderTwoWeb from "../Assests/web roxo/sliders/SliderTwoWeb.jpg";
 import SliderOneMbl from "../Assests/imagesHome/for slider/slider1 mobile.png";
 import SliderTwoMbl from "../Assests/imagesHome/for slider/slider 2 mobile.png";
 
-
-
 import { Carousel } from "react-bootstrap";
 import "./slider.css";
+import PreSale from "./preSale";
 
 const Slider = () => {
   return (
@@ -87,6 +85,8 @@ const Slider = () => {
           </Carousel>
         </div>
       </div>
+
+      <PreSale />
     </div>
   );
 };

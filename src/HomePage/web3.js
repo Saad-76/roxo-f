@@ -82,7 +82,7 @@ export async function buyRoxo(amountVal) {
       );
       contractB
         .buy()
-        .then((res) => {})
+        .then((res) => {}) 
         .catch((error) => {
           console.log(ethers.utils.toUtf8String(Object.values(error.body)));
         });

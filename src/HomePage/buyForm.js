@@ -377,7 +377,7 @@ const BuyForm = ({ adressState }) => {
                       id="roxoAmounts"
                       value={roxoData.roxoAmount}
                       onChange={handleSellChange}
-                      max={maxLimit}
+                      max="5"
                       placeholder="Enter Amount "
                     />
                     {error?.roxoError && (

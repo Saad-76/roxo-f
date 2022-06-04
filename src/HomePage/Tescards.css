@@ -27,7 +27,7 @@
   border-left: 4px solid #c438ef;
   padding-left: 15px;
   margin-left: 7vh;
-  margin-top: 4px;
+  margin-top: 129px;
   color: white;
   margin-bottom: 38px;
   font-family: "Cinzel";
@@ -102,7 +102,7 @@
   color: #ffffff;
 }
 .tes-scr a {
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
   text-decoration: none;
   color: white;
 }
@@ -201,7 +201,7 @@
   padding-top: 38px;
   margin-left: 6%;
   margin-top: 0;
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -244,34 +244,34 @@
     color: #ffffff;
     padding-top: 0px;
     padding-bottom: 10px;
-}
-.tes-scr h3 {
-  padding-left: 10px;
-  color: #ffffff;
-  padding-top: 19px;
-  font-size: 25px;
-  font-family: "Cinzel";
-  padding-bottom: 9px;
-}
-.flex-style-props {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-.tes-scr h4 {
-  align-items: center;
-  padding-left: 4px;
-  position: absolute;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 38px;
-  margin-left: 2%;
-  margin-top: 0;
-  font-family: 'Cinzel';
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
+  }
+  .tes-scr h3 {
+    padding-left: 10px;
+    color: #ffffff;
+    padding-top: 19px;
+    font-size: 25px;
+    font-family: "Cinzel";
+    padding-bottom: 9px;
+  }
+  .flex-style-props {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .tes-scr h4 {
+    align-items: center;
+    padding-left: 4px;
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    margin-left: 2%;
+    margin-top: 0;
+    font-family: "Cinzel";
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
 }
