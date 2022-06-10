@@ -58,6 +58,18 @@
   justify-content: flex-start;
   padding-top: 24px;
 }
+
+.input-buy-bottomField {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+.max-mint-style {
+  font-weight: bold;
+  margin: 0px;
+}
+
 .input-display-sellform label {
   display: flex;
   flex-direction: row;
@@ -186,6 +198,16 @@
   color: white;
   font-weight: bold;
 }
+.badge {
+  background-color: rgb(124, 45, 45);
+    margin-top: 6px;
+}
+/* .badge-danger {
+  background-color: rgb(124, 45, 45);
+  color: white;
+  margin-top: 5px;
+  padding: 5px;
+} */
 @media screen and (max-width: 900px) {
   .swap-button-inner {
     margin-top: 24px;
@@ -229,5 +251,5 @@
   }
   .buy-sell-flex {
     display: block;
-    }
+  }
 }

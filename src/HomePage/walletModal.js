@@ -11,7 +11,10 @@ const WalletModal = () => {
     let cw = await connectWallet();
     localStorage.setItem("wallet_address", cw);
     console.log(cw, "cw");
-    return cw;
+    if(cw === false)return cw
+    else{
+      window.location.reload();
+    };
   };
 
   return (

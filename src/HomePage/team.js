@@ -78,7 +78,7 @@ const Team = () => {
               <h3>Kamran Faiz </h3>
               <h5>Lead 3D Artist</h5>
               <p>
-                Working closely with with artists in the team in order to
+                Working closely with  artists in the team in order to
                 produce cutting-edge environments and visual elements for our
                 products.
               </p>

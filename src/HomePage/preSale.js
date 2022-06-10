@@ -46,6 +46,10 @@ const PreSale = () => {
     }, 1000);
   }, []);
 
+  // useEffect(() => {
+  //   console.log(Date.now(), "dataehere");
+  // }, []);
+
   return (
     <>
       {showModal && (
@@ -65,7 +69,7 @@ const PreSale = () => {
                     <div className="time-remain-iner">
                       {/* <h6 className="count-head">Discount Countdown</h6> */}
                       <Countdown
-                        date={Date.now() + 1000000000}
+                        date={1654867966579 + 1000000000}
                         renderer={({ days, hours, minutes, seconds }) => {
                           return (
                             <div className="time timer-style">

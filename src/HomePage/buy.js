@@ -5,7 +5,6 @@ import FINANCE from "../Assests/FINANCE.jpg";
 import "./buy.css";
 
 const Buy = () => {
-
   return (
     <>
       <div className="container">
@@ -15,7 +14,6 @@ const Buy = () => {
             <h4> Roxo Website</h4>
 
             <button className="buy-button-style">
-              {" "}
               <Link to="/buyForm">Buy</Link>
             </button>
           </div>

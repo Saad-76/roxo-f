@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 import logoPic from "../Assests/25.png";
@@ -9,6 +10,7 @@ import "./header.css";
 import { arrayify } from "ethers/lib/utils";
 
 const Header = () => {
+  let history = useHistory();
   const onResumeClick = () => {
     window.open(PDF);
   };
@@ -39,7 +41,7 @@ const Header = () => {
         accounts[0].length
       );
       const addressConcat = newWalletAddress + "***" + walletlastAddress;
-      
+
       // console.log(addressConcat, "addressConcat");
 
       console.log("user is connected");
@@ -49,6 +51,7 @@ const Header = () => {
       console.log("user not connected");
       console.log("acc", accounts);
       setAdress("");
+      // window.location.reload();
     }
   };
   useEffect(() => {

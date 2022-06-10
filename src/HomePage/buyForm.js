@@ -5,6 +5,9 @@ import Footer from "./footer";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import TokenCoin from "../Assests/Token Coin.png";
 import Coin from "../Assests/web roxo/wallet/Binance.png";
 import MetaMask from "../Assests/web roxo/wallet/MetaMask.png";
@@ -23,6 +26,7 @@ const BuyForm = ({ adressState }) => {
   // -----------form handling-----------
   const [buyForm, setBuyForm] = useState(true);
   const [sellForm, setSellForm] = useState(false);
+  const [conct, setConct] = useState(false);
 
   const [maxLimit, setMaxLimit] = useState("");
 
@@ -48,6 +52,7 @@ const BuyForm = ({ adressState }) => {
   const [waletError, setWalletError] = useState({
     networkError: "",
     amountError: "",
+    negAmountError: "",
     formError: "",
   });
 
@@ -84,14 +89,23 @@ const BuyForm = ({ adressState }) => {
   const handleData = (e) => {
     if (e.target.id === "amount") {
       if (e.target.value !== "") {
-        let inputData = e.target.value;
-        let finalValue = inputData / 0.0001;
-        setData(finalValue);
-        const swapValue = finalValue.toString();
-        setCoinValue(swapValue);
-        setWalletError({ ...waletError, amountError: "" });
+        if (e.target.value > 0) {
+          let inputData = e.target.value;
+          let finalValue = inputData / 0.0001;
+          setData(finalValue);
+          const swapValue = finalValue.toString();
+          setCoinValue(swapValue);
+          setWalletError({ ...waletError, amountError: "" });
+          setWalletError({ ...waletError, negAmountError: "" });
+        } else if (e.target.value <= 0) {
+          setWalletError({
+            ...waletError,
+            negAmountError: "Enter positive Value",
+          });
+        }
       } else {
         setWalletError({ ...waletError, amountError: "Field is require" });
+        setWalletError({ ...waletError, negAmountError: "" });
       }
     }
   };
@@ -131,8 +145,10 @@ const BuyForm = ({ adressState }) => {
     const accounts = await ethereum.request({ method: "eth_accounts" });
     if (accounts && accounts.length > 0) {
       setShowModal(false);
+      setConct(true);
     } else {
       console.log("working", adressState);
+      setConct(false);
       setTimeout(() => {
         handleChange();
       }, 5000);
@@ -147,7 +163,10 @@ const BuyForm = ({ adressState }) => {
   const walletConnection = async () => {
     let cw = await connectWallet();
     localStorage.setItem("wallet_address", cw);
-    return cw;
+    if (cw === false) return cw;
+    else {
+      window.location.reload();
+    }
   };
 
   // ------------roxo coin sell code--------
@@ -158,16 +177,22 @@ const BuyForm = ({ adressState }) => {
     sellError: "",
     roxoError: "",
     limitError: "",
+    negValError: "",
   });
 
   const handleSellChange = (e) => {
     if (e.target.id === "roxoAmounts") {
       if (e.target.value !== "") {
-        const roxoValue = e.target.value;
-        const finalRoxoValue = roxoValue * 0.0001;
-        const lastRoxoValue = finalRoxoValue.toString();
-        setRoxoData(lastRoxoValue);
-        setError({ ...error, roxoError: "" });
+        if (e.target.value > 0) {
+          const roxoValue = e.target.value;
+          const finalRoxoValue = roxoValue * 0.0001;
+          const lastRoxoValue = finalRoxoValue.toString();
+          setRoxoData(lastRoxoValue);
+          setError({ ...error, roxoError: "" });
+          setError({ ...error, negValError: "" });
+        } else {
+          setError({ ...error, negValError: "Enter Positive Value" });
+        }
       } else {
         setError({ ...error, roxoError: "Field is require" });
       }
@@ -185,11 +210,15 @@ const BuyForm = ({ adressState }) => {
         setError({ ...error, sellError: "" });
       } else {
         setError({ ...error, limitError: "Your balance is low" });
+        setError({ ...error, sellError: "" });
       }
     } else {
       setError({ ...error, sellError: "Fill above field" });
+      setError({ ...error, limitError: "" });
     }
   };
+
+  // -------------button wallet connection condition-----------
 
   return (
     <>
@@ -281,7 +310,7 @@ const BuyForm = ({ adressState }) => {
                         width="25px"
                         style={{ margin: "0px 2px" }}
                       />
-                      BUSD( BNB Smart Chain){" "}
+                      USDT( MATIC)
                     </label>
                     <input
                       className="input-field-sellfrom-inner"
@@ -292,8 +321,14 @@ const BuyForm = ({ adressState }) => {
                       onChange={handleData}
                     />
                     {waletError?.amountError && (
-                      <span class="badge badge-danger">
+                      <span className="badge badge-danger">
                         {waletError?.amountError}
+                      </span>
+                    )}
+
+                    {waletError?.negAmountError && (
+                      <span className="badge badge-danger">
+                        {waletError?.negAmountError}
                       </span>
                     )}
                   </div>
@@ -309,27 +344,32 @@ const BuyForm = ({ adressState }) => {
                     />
                   </div>
 
-                  <div className="col-md-12 trading-fee-flex">
-                    <div className="col-md-6">
-                      <p>Slipage Tolerance</p>
-                    </div>
-                    <div className="col-md-6 trading-fee-value">
-                      <p>0.5%</p>
-                    </div>
+                  <div className="col-md-12 swap-button-outer">
+                    {conct === true && (
+                      <button
+                        className="swap-button-inner"
+                        onClick={buyHandler}
+                      >
+                        Buy
+                      </button>
+                    )}
+                    {conct === false && (
+                      <button
+                        className="swap-button-inner"
+                        onClick={walletConnection}
+                      >
+                        Connect Wallet
+                      </button>
+                    )}
                   </div>
 
-                  <div className="col-md-12 swap-button-outer">
-                    <button className="swap-button-inner" onClick={buyHandler}>
-                      Buy
-                    </button>
-                  </div>
                   {waletError?.networkError && (
-                    <span class="badge badge-danger">
+                    <span className="badge badge-danger">
                       {waletError?.networkError}
                     </span>
                   )}
                   {waletError?.formError && (
-                    <span class="badge badge-danger">
+                    <span className="badge badge-danger">
                       {waletError?.formError}
                     </span>
                   )}
@@ -381,20 +421,27 @@ const BuyForm = ({ adressState }) => {
                       placeholder="Enter Amount "
                     />
                     {error?.roxoError && (
-                      <span class="badge badge-danger">{error?.roxoError}</span>
+                      <span className="badge badge-danger">
+                        {error?.roxoError}
+                      </span>
+                    )}
+                    {error?.negValError && (
+                      <span className="badge badge-danger">
+                        {error?.negValError}
+                      </span>
                     )}
                   </div>
 
                   <div className="col-md-12 trading-fee-flex">
                     <div className="col-md-6">
-                      <p>Max Limit</p>
+                      <p className="max-mint-style">Max Limit</p>
                     </div>
                     <div className="col-md-6 trading-fee-value">
                       {maxLimit && <p>{maxLimit}</p>}
                     </div>
                   </div>
 
-                  <div className="col-md-12 input-display-sellform">
+                  <div className="col-md-12 input-buy-bottomField">
                     <label>
                       <img
                         src={Coin}
@@ -403,7 +450,7 @@ const BuyForm = ({ adressState }) => {
                         width="25px"
                         style={{ margin: "0px 2px" }}
                       />
-                      BUSD
+                      USDT( MATIC)
                     </label>
                     <input
                       className="input-field-sellfrom-inner"
@@ -413,30 +460,45 @@ const BuyForm = ({ adressState }) => {
                     />
                   </div>
 
-                  <div className="col-md-12 trading-fee-flex">
-                    <div className="col-md-6">
-                      <p>Slipage Tolerance</p>
-                    </div>
-                    <div className="col-md-6 trading-fee-value">
-                      <p>0.5%</p>
-                    </div>
-                  </div>
-
-                  <div className="col-md-12 swap-button-outer">
+                  {/* <div className="col-md-12 swap-button-outer">
                     <button className="swap-button-inner" onClick={sellHandler}>
                       Sell
                     </button>
+                  </div> */}
+
+                  <div className="col-md-12 swap-button-outer">
+                    {conct === true && (
+                      <button
+                        className="swap-button-inner"
+                        onClick={sellHandler}
+                      >
+                        Sell
+                      </button>
+                    )}
+                    {conct === false && (
+                      <button
+                        className="swap-button-inner"
+                        onClick={walletConnection}
+                      >
+                        Connect Wallet
+                      </button>
+                    )}
                   </div>
+
                   {waletError?.networkError && (
-                    <span class="badge badge-danger">
+                    <span className="badge badge-danger">
                       {waletError?.networkError}
                     </span>
                   )}
                   {error?.sellError && (
-                    <span class="badge badge-danger">{error?.sellError}</span>
+                    <span className="badge badge-danger">
+                      {error?.sellError}
+                    </span>
                   )}
                   {error?.limitError && (
-                    <span class="badge badge-danger">{error?.limitError}</span>
+                    <span className="badge badge-danger">
+                      {error?.limitError}
+                    </span>
                   )}
                 </div>
               </div>
