@@ -262,9 +262,9 @@ const BuyForm = ({ adressState }) => {
 
       <div className="buy-form-style">
         <div className="col-md-12 sell-main-heading">
-          <h3>
-            BUY/SELL <span className="color-sell"> TOKENS </span>
-          </h3>
+          <p>
+         Get back your 70% amount anytime, if you purchase in pre-sale duration  <span className="color-sell"> TOKENS </span>
+          </p>
         </div>
         <div className="col-md-12  buy-sell-flex">
           <div className="col-md-4"></div>
@@ -290,8 +290,8 @@ const BuyForm = ({ adressState }) => {
                       <img src={TokenCoin} alt="" height="50px" width="50px" />
                     </div> */}
                     <div>
-                      <h3 style={{ textAlign: "center" }}>Buy</h3>
-                      <p>Get back your 70% amount anytime</p>
+                      <h3 className="form-head-style" style={{ textAlign: "center" }}>Buy</h3>
+                      {/* <p>Get back your 70% amount anytime</p> */}
                     </div>
                     {/* <div className="buy-hidden-image">
                       <img src={Coin} alt="" height="30px" width="30px" />
@@ -306,8 +306,8 @@ const BuyForm = ({ adressState }) => {
                       <img
                         src={Coin}
                         alt=""
-                        height="25px"
-                        width="25px"
+                        height="22px"
+                        width="22px"
                         style={{ margin: "0px 2px" }}
                       />
                       USDT( MATIC)
@@ -394,8 +394,8 @@ const BuyForm = ({ adressState }) => {
                       <img src={TokenCoin} alt="" height="50px" width="50px" />
                     </div> */}
                     <div>
-                      <h3 style={{ textAlign: "center" }}>Sell</h3>
-                      <p>Get back your 70% amount anytime</p>
+                      <h3 className="form-head-style" style={{ textAlign: "center" }}>Sell</h3>
+                      {/* <p>Get back your 70% amount anytime</p> */}
                     </div>
                     {/* <div className="buy-hidden-image">
                       <img src={Coin} alt="" height="30px" width="30px" />
@@ -446,8 +446,8 @@ const BuyForm = ({ adressState }) => {
                       <img
                         src={Coin}
                         alt=""
-                        height="25px"
-                        width="25px"
+                        height="22px"
+                        width="22px"
                         style={{ margin: "0px 2px" }}
                       />
                       USDT( MATIC)
