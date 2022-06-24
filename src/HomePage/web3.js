@@ -33,8 +33,8 @@ const connectWallet = async () => {
     address = await signer.getAddress();
     const ens = await provider.lookupAddress(address);
     connected = true;
-    localStorage.setItem("complete_wallet_address", address); 
-       const walletAddress = address.substring(0, 4);
+    localStorage.setItem("complete_wallet_address", address);
+    const walletAddress = address.substring(0, 4);
     const walletlastAddress = address.substring(
       address.length - 4,
       address.length
@@ -64,33 +64,34 @@ export { test };
 export { connectWallet };
 
 export async function buyRoxo(amountVal) {
-  //Approve
   let usdAddress = await getAddress();
-  const contractInstance = new ethers.Contract(
+  const contract = new ethers.Contract(
     usdAddress,
     contractInterface.ABI,
     provider.getSigner()
   );
+  let approveRes = await contract.approve(
+    CONTRACT_ADDRESS,
+    ethers.utils.parseEther(amountVal)
+  );
+  console.log(approveRes, "approveRes");
 
-  contractInstance
-    .approve(CONTRACT_ADDRESS, ethers.utils.parseEther(amountVal))
-    .then((res) => {
+  provider
+    .waitForTransaction(approveRes.hash, 1, 300000)
+    .then(async (result) => {
       const contractB = new ethers.Contract(
         CONTRACT_ADDRESS,
         contractInterface.ABI,
         provider.getSigner()
       );
-      contractB
-        .buy()
-        .then((res) => {}) 
-        .catch((error) => {
-          console.log(ethers.utils.toUtf8String(Object.values(error.body)));
+      let Buyres = await contractB.buy();
+      provider
+        .waitForTransaction(Buyres.hash, 1, 300000)
+        .then(async (Bresult) => {
+          //Successfully Bought
+          console.log("Successfully Bought ", Bresult);
         });
-    })
-    .catch((error) => {
-      console.log(ethers.utils.toUtf8String(Object.values(error.body)));
     });
-  //Buy Now
 }
 
 export async function getAddress() {
@@ -143,7 +144,6 @@ export async function checkNetwork() {
   }
 }
 
-
 export async function sellRoxo(amountVal) {
   //its a usd Value
   const contract = new ethers.Contract(
@@ -151,12 +151,8 @@ export async function sellRoxo(amountVal) {
     contractInterface.ABI,
     provider.getSigner()
   );
-  contract.sell(ethers.utils.parseEther(amountVal)).then((res) => {
-console.log(res);
-
-  }).catch((error) => {
-    console.log(ethers.utils.toUtf8String(Object.values(error.body)));
-  });
+  let tx = await contract.sell(ethers.utils.parseEther(amountVal));
+  provider.waitForTransaction(tx.hash, 1, 300000, () => {});
 }
 
 export async function ironSecure(_user) {

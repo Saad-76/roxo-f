@@ -49,6 +49,8 @@ const BuyForm = ({ adressState }) => {
     amount: "",
   });
   const [coinValue, setCoinValue] = useState("");
+
+  const [enteredValue, setEnteredValue] = useState("");
   const [waletError, setWalletError] = useState({
     networkError: "",
     amountError: "",
@@ -59,7 +61,7 @@ const BuyForm = ({ adressState }) => {
   const buyHandler = async (e) => {
     if (data.amount !== "") {
       try {
-        const buy = await buyRoxo(coinValue);
+        const buy = await buyRoxo(enteredValue);
         setWalletError({ ...waletError, networkError: "" });
         setData({ ...data, amount: "" });
         setWalletError({ ...waletError, formError: "" });
@@ -91,6 +93,8 @@ const BuyForm = ({ adressState }) => {
       if (e.target.value !== "") {
         if (e.target.value > 0) {
           let inputData = e.target.value;
+          setEnteredValue(inputData);
+
           let finalValue = inputData / 0.0001;
           setData(finalValue);
           const swapValue = finalValue.toString();
@@ -263,7 +267,8 @@ const BuyForm = ({ adressState }) => {
       <div className="buy-form-style">
         <div className="col-md-12 sell-main-heading">
           <p>
-         Get back your 70% amount anytime, if you purchase in pre-sale duration  <span className="color-sell"> TOKENS </span>
+            Get back your 70% amount anytime, if you purchase in pre-sale
+            duration <span className="color-sell"> TOKENS </span>
           </p>
         </div>
         <div className="col-md-12  buy-sell-flex">
@@ -290,7 +295,12 @@ const BuyForm = ({ adressState }) => {
                       <img src={TokenCoin} alt="" height="50px" width="50px" />
                     </div> */}
                     <div>
-                      <h3 className="form-head-style" style={{ textAlign: "center" }}>Buy</h3>
+                      <h3
+                        className="form-head-style"
+                        style={{ textAlign: "center" }}
+                      >
+                        Buy
+                      </h3>
                       {/* <p>Get back your 70% amount anytime</p> */}
                     </div>
                     {/* <div className="buy-hidden-image">
@@ -394,7 +404,12 @@ const BuyForm = ({ adressState }) => {
                       <img src={TokenCoin} alt="" height="50px" width="50px" />
                     </div> */}
                     <div>
-                      <h3 className="form-head-style" style={{ textAlign: "center" }}>Sell</h3>
+                      <h3
+                        className="form-head-style"
+                        style={{ textAlign: "center" }}
+                      >
+                        Sell
+                      </h3>
                       {/* <p>Get back your 70% amount anytime</p> */}
                     </div>
                     {/* <div className="buy-hidden-image">
