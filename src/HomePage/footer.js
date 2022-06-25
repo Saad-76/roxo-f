@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import FooterLeft from "../Assests/bottomleft.png";
 import FooterRight from "../Assests/bottomright.png";
 import "./footerTwo.css";

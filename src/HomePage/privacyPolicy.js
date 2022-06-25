@@ -1,4 +1,4 @@
-import { React,useEffect } from "react";
+import { React, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import Header from "./header";
@@ -6,19 +6,19 @@ import Footer from "./footer";
 import "./privacyPolicy.css";
 
 const PrivacyPolicy = () => {
-    const routePath = useLocation();
+  const routePath = useLocation();
 
-    const onTop = () => {
-      window.scrollTo(0, 4);
-    };
-    useEffect(() => {
-        onTop();
-      }, [routePath]);
+  const onTop = () => {
+    window.scrollTo(0, 4);
+  };
+  useEffect(() => {
+    onTop();
+  }, [routePath]);
   return (
     <>
       <Header />
       <div className="backgroud-privacy-policy">
-        <h1>Terms and Conditions</h1>
+        <h1>Privacy Policy</h1>
         <p>
           Your privacy is valuable to us and we take seriously our duty to take
           care of it. We respect your rights to privacy and are dedicated to

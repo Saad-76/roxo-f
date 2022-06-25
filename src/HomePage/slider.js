@@ -48,40 +48,6 @@ const Slider = () => {
                 height="600px"
               />
             </Carousel.Item>
-
-            {/* <Carousel.Item>
-              <img
-                className="d-block image-height   w-100"
-                id="imagebg"
-                src={moblSlider}
-                alt="Second slide"
-              />
-
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block image-height   w-100"
-                id="imagebg"
-                src={ForWebsite}
-                alt="Second slide"
-              />
-
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block image-height  w-100"
-                src={SliderImage3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-
-            <Carousel.Item className="carousel-image">
-              <img
-                className="d-block image-height   w-100"
-                src={HasteKing}
-                alt="Third slide"
-              />
-            </Carousel.Item> */}
           </Carousel>
         </div>
       </div>

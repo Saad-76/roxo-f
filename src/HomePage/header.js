@@ -8,6 +8,7 @@ import { GoThreeBars } from "react-icons/go";
 import PDF from "../Assests/PDF.pdf";
 import "./header.css";
 import { arrayify } from "ethers/lib/utils";
+import { connectWallet } from "./web3";
 
 const Header = () => {
   let history = useHistory();

@@ -67,7 +67,6 @@ const PreSale = () => {
                   />
                   <div className="time-remain-border">
                     <div className="time-remain-iner">
-                      {/* <h6 className="count-head">Discount Countdown</h6> */}
                       <Countdown
                         date={1654867966579 + 1000000000}
                         renderer={({ days, hours, minutes, seconds }) => {
@@ -96,17 +95,6 @@ const PreSale = () => {
                                 </p>
                                 <h6>Minutes</h6>
                               </div>
-                              {/* <div>
-                                <p>
-                                  <span className="timer-inner">
-                                    {Math.floor(seconds / 10)}
-                                  </span>{" "}
-                                  <span className="timer-inner">
-                                    {seconds % 10}
-                                  </span>
-                                </p>
-                                <h6>Seconds</h6>
-                              </div> */}
                             </div>
                           );
                         }}
@@ -115,7 +103,6 @@ const PreSale = () => {
                   </div>
                 </div>
                 <Link to="/buyForm">
-                  {" "}
                   <div className="buy-btn-outer">
                     <button className="buy-btn-inner">Click me</button>
                   </div>

@@ -68,7 +68,6 @@ const Work = () => {
                 <div>
                   <button
                     className="work-button-style "
-                    // className="work-button-style active  "
                     onClick={handleDataOne}
                   >
                     1
@@ -95,7 +94,6 @@ const Work = () => {
                     4
                   </button>
                 </div>
-              
               </div>
 
               <div>
@@ -119,9 +117,13 @@ const Work = () => {
                 )}
                 {dataTwo && (
                   <>
-                  <div className="work-content-section-backgroud  work-resp-back">
-                    <img className="web-img-work" src={stepTwo} alt="stepTwo" />
-                  </div>
+                    <div className="work-content-section-backgroud  work-resp-back">
+                      <img
+                        className="web-img-work"
+                        src={stepTwo}
+                        alt="stepTwo"
+                      />
+                    </div>
                     {/* ------resp-image--- */}
 
                     <img
@@ -129,20 +131,20 @@ const Work = () => {
                       src={StepOneMb2}
                       alt="StepOneMbl"
                     />
-</>
+                  </>
                 )}
                 {dataThree && (
                   <>
-                  <div className="work-content-section-backgroud  work-resp-back">
-                    <img
-                      className="web-img-work"
-                      src={StepThree}
-                      alt="StepThree"
-                    />
-                  </div>
-                      {/* ------resp-image--- */}
-
+                    <div className="work-content-section-backgroud  work-resp-back">
                       <img
+                        className="web-img-work"
+                        src={StepThree}
+                        alt="StepThree"
+                      />
+                    </div>
+                    {/* ------resp-image--- */}
+
+                    <img
                       className="mbl-img-work"
                       src={StepOneMb3}
                       alt="StepOneMbl"
@@ -151,23 +153,22 @@ const Work = () => {
                 )}
                 {dataFour && (
                   <>
-                  <div className="work-content-section-backgroud  work-resp-back">
-                    <img
-                      className="web-img-work"
-                      src={StepFour}
-                      alt="StepFour"
-                    />
-                  </div>
-                      {/* ------resp-image--- */}
-
+                    <div className="work-content-section-backgroud  work-resp-back">
                       <img
+                        className="web-img-work"
+                        src={StepFour}
+                        alt="StepFour"
+                      />
+                    </div>
+                    {/* ------resp-image--- */}
+
+                    <img
                       className="mbl-img-work"
                       src={StepOneMb4}
                       alt="StepOneMbl"
                     />
                   </>
                 )}
-              
               </div>
             </div>
             <div className="col-md-2"></div>

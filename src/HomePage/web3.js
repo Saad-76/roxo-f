@@ -84,13 +84,23 @@ export async function buyRoxo(amountVal) {
         contractInterface.ABI,
         provider.getSigner()
       );
+
+      // .catch((error) => {
+      //   console.log(error);
+      //   return "tranfer cancelerd";
+      // });
       let Buyres = await contractB.buy();
       provider
         .waitForTransaction(Buyres.hash, 1, 300000)
         .then(async (Bresult) => {
           //Successfully Bought
           console.log("Successfully Bought ", Bresult);
+          // return "successfully transferres";
         });
+      // .catch((error) => {
+      //   console.log(error);
+      //   return "tranfer cancelerd";
+      // });
     });
 }
 

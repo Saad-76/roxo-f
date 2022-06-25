@@ -57,24 +57,29 @@ const BuyForm = ({ adressState }) => {
     negAmountError: "",
     formError: "",
   });
-
+  const [loader, setLoader] = useState(false);
   const buyHandler = async (e) => {
     if (data.amount !== "") {
       try {
+        setLoader(true);
         const buy = await buyRoxo(enteredValue);
         setWalletError({ ...waletError, networkError: "" });
         setData({ ...data, amount: "" });
         setWalletError({ ...waletError, formError: "" });
+        // setLoader(false);
+        console.log(buy, "buy form resp");
       } catch (error) {
         setWalletError({
           ...waletError,
           networkError: "Change Your Network to Rinkeyby Test Network",
         });
         setWalletError({ ...waletError, formError: "" });
+        setLoader(false);
       }
     } else {
       setWalletError({ ...waletError, formError: "Fill above field" });
     }
+    setLoader(false);
   };
   // ----------------net check function---
 
@@ -132,16 +137,6 @@ const BuyForm = ({ adressState }) => {
   const handleClose = () => {
     setShowModal(false);
   };
-
-  // -----------wallet connection-----
-  // const [connectWalletState, setConnectWalletState] = useState("");
-
-  // const checkWalletConnection = async () => {
-  //   let cw = await connectWallet();
-  //   console.log(cw, "cw is consoled");
-  //   setConnectWalletState(cw);
-
-  // };
 
   // --------auto modal popup-----------
   const checkOpenWallet = async () => {
@@ -206,11 +201,11 @@ const BuyForm = ({ adressState }) => {
   };
 
   const sellHandler = async (e) => {
-    if (roxoData.roxoAmount !== "") {
+    if (roxoData.roxoAmount !== "" || roxoData.roxoAmount !== null) {
       if (maxLimit > 0) {
         const sellRoxoFunc = await sellRoxo(roxoData.toString());
-        console.log(sellRoxoFunc, "sellRoxoFunc");
-        console.log("sell Handler is called");
+        // console.log(sellRoxoFunc, "sellRoxoFunc");
+        // console.log("sell Handler is called");
         setError({ ...error, sellError: "" });
       } else {
         setError({ ...error, limitError: "Your balance is low" });
@@ -218,15 +213,15 @@ const BuyForm = ({ adressState }) => {
       }
     } else {
       setError({ ...error, sellError: "Fill above field" });
+      console.log(error, "error");
       setError({ ...error, limitError: "" });
     }
   };
 
-  // -------------button wallet connection condition-----------
-
   return (
     <>
       <Header />
+
       {showModal && (
         <div className="col-md-12 modal-content-style">
           <div class="modal-dialog ">
@@ -268,7 +263,8 @@ const BuyForm = ({ adressState }) => {
         <div className="col-md-12 sell-main-heading">
           <p>
             Get back your 70% amount anytime, if you purchase in pre-sale
-            duration <span className="color-sell"> TOKENS </span>
+            duration <br />
+            <span className="color-sell"> TOKENS </span>
           </p>
         </div>
         <div className="col-md-12  buy-sell-flex">
@@ -391,6 +387,17 @@ const BuyForm = ({ adressState }) => {
         )}
       </div>
 
+      <div className="toast-outer">
+        {loader && (
+          <h3 className="toast-mesage-style">
+            Your Transaction is being processed{" "}
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </h3>
+        )}
+      </div>
+
       {/* ---------sell form here-------- */}
       {sellForm && (
         <div className="buy-form-style">
@@ -400,9 +407,6 @@ const BuyForm = ({ adressState }) => {
               <div className="buy-card-body">
                 <div className="buy-card-body-flex">
                   <div className="col-md-12 sell-button-main">
-                    {/* <div>
-                      <img src={TokenCoin} alt="" height="50px" width="50px" />
-                    </div> */}
                     <div>
                       <h3
                         className="form-head-style"
@@ -410,11 +414,7 @@ const BuyForm = ({ adressState }) => {
                       >
                         Sell
                       </h3>
-                      {/* <p>Get back your 70% amount anytime</p> */}
                     </div>
-                    {/* <div className="buy-hidden-image">
-                      <img src={Coin} alt="" height="30px" width="30px" />
-                    </div> */}
                   </div>
                   <hr
                     className="section-divider-sellform"
@@ -475,12 +475,6 @@ const BuyForm = ({ adressState }) => {
                     />
                   </div>
 
-                  {/* <div className="col-md-12 swap-button-outer">
-                    <button className="swap-button-inner" onClick={sellHandler}>
-                      Sell
-                    </button>
-                  </div> */}
-
                   <div className="col-md-12 swap-button-outer">
                     {conct === true && (
                       <button
@@ -499,17 +493,17 @@ const BuyForm = ({ adressState }) => {
                       </button>
                     )}
                   </div>
-
-                  {waletError?.networkError && (
-                    <span className="badge badge-danger">
-                      {waletError?.networkError}
-                    </span>
-                  )}
                   {error?.sellError && (
                     <span className="badge badge-danger">
                       {error?.sellError}
                     </span>
                   )}
+                  {waletError?.networkError && (
+                    <span className="badge badge-danger">
+                      {waletError?.networkError}
+                    </span>
+                  )}
+
                   {error?.limitError && (
                     <span className="badge badge-danger">
                       {error?.limitError}

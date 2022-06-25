@@ -68,16 +68,14 @@
 .max-mint-style {
   font-weight: bold;
   margin: 0px;
-  font-family: 'Cinzel';
-
+  font-family: "Cinzel";
 }
 
 .input-display-sellform label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: 'Cinzel';
-
+  font-family: "Cinzel";
 }
 .input-field-sellfrom-inner {
   /* margin-top: 4%; */
@@ -97,7 +95,7 @@
   justify-content: space-between;
   font-size: 12px;
   padding: 12px 12px 0px 12px;
-  align-items: center;
+  /* align-items: center; */
 }
 .trading-fee-value {
   display: flex;
@@ -111,8 +109,7 @@
 }
 .wallet-button-background h4 {
   padding-top: 6px;
-  font-family: 'Cinzel';
-
+  font-family: "Cinzel";
 }
 .tax-fee-flex {
   display: flex;
@@ -151,7 +148,7 @@
   padding: 6px 18px;
   width: 100%;
   border-radius: 13px;
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
 
   color: white;
   box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
@@ -175,7 +172,8 @@
 
 .sell-main-heading p {
   color: white;
-  font-family: Cinzel;
+  /* font-family: Cinzel; */
+  text-align: center;
 }
 .modal-content-style {
   position: absolute;
@@ -201,8 +199,7 @@
 .buy-sell-flex {
   display: flex;
   /* flex-direction: row */
-  font-family: 'Cinzel';
-
+  font-family: "Cinzel";
 }
 .buy-sell-button-inner:focus {
   background: #58acff;
@@ -211,11 +208,10 @@
 }
 .badge {
   background-color: rgb(124, 45, 45);
-    margin-top: 6px;
+  margin-top: 6px;
 }
-.form-head-style{
-  font-family: 'Cinzel';
-
+.form-head-style {
+  font-family: "Cinzel";
 }
 /* .badge-danger {
   background-color: rgb(124, 45, 45);
@@ -223,6 +219,28 @@
   margin-top: 5px;
   padding: 5px;
 } */
+
+.toast-mesage-style {
+  position: absolute;
+  background-color: #393469;
+  height: 15%;
+  width: 30%;
+  align-items: center;
+  padding: 12px;
+  color: white;
+  border-radius: 12px;
+}
+.toast-outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0%;
+  font-family: Cinzel;
+  text-align: center;
+  /* position:absolute; */
+}
+
 @media screen and (max-width: 900px) {
   .swap-button-inner {
     margin-top: 24px;
@@ -231,7 +249,7 @@
     border-radius: 12px;
     color: white;
     background: #58acff;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
 
     border: none;
   }
