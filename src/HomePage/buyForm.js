@@ -14,11 +14,12 @@ import MetaMask from "../Assests/web roxo/wallet/MetaMask.png";
 import {
   connectWallet,
   checkNetwork,
-  buyRoxo,
   getAddress,
   getBalance,
   ironSecure,
   sellRoxo,
+  buyRoxoOne,
+  BuyRoxoTwo,
 } from "./web3";
 import "./buyForm.css";
 
@@ -58,16 +59,52 @@ const BuyForm = ({ adressState }) => {
     formError: "",
   });
   const [loader, setLoader] = useState(false);
+  const [sucessMesssage, setSuccessMessage] = useState(false);
+
+  // const buyHandler = async (e) => {
+  //   if (data.amount !== "") {
+  //     try {
+  //       setLoader(true);
+  //       const buy = await buyRoxo(enteredValue);
+  //       setWalletError({ ...waletError, networkError: "" });
+  //       setData({ ...data, amount: "" });
+  //       setWalletError({ ...waletError, formError: "" });
+  //       // setLoader(false);
+  //       console.log(buy, "buy form resp");
+  //     } catch (error) {
+  //       setWalletError({
+  //         ...waletError,
+  //         networkError: "Change Your Network to Rinkeyby Test Network",
+  //       });
+  //       setWalletError({ ...waletError, formError: "" });
+  //       setLoader(false);
+  //     }
+  //   } else {
+  //     setWalletError({ ...waletError, formError: "Fill above field" });
+  //   }
+
+  // };
+  // ----------------net check function---
+
   const buyHandler = async (e) => {
     if (data.amount !== "") {
       try {
-        setLoader(true);
-        const buy = await buyRoxo(enteredValue);
+        const buy = await buyRoxoOne(enteredValue);
+        console.log(buy, "buy form first response ");
+        if (buy.status === "Sucessful") {
+          setLoader(true);
+        }
         setWalletError({ ...waletError, networkError: "" });
         setData({ ...data, amount: "" });
         setWalletError({ ...waletError, formError: "" });
-        // setLoader(false);
-        console.log(buy, "buy form resp");
+
+        const buySecond = await BuyRoxoTwo();
+        console.log(buySecond, "buy Second response ");
+        if (buySecond !== "") {
+          setLoader(false);
+          setSuccessMessage(true);
+          setTimeout(() => setSuccessMessage(false), 4000);
+        }
       } catch (error) {
         setWalletError({
           ...waletError,
@@ -79,9 +116,7 @@ const BuyForm = ({ adressState }) => {
     } else {
       setWalletError({ ...waletError, formError: "Fill above field" });
     }
-    setLoader(false);
   };
-  // ----------------net check function---
 
   useEffect(async () => {
     const add = localStorage.getItem("wallet_address");
@@ -200,11 +235,17 @@ const BuyForm = ({ adressState }) => {
     }
   };
 
+  const [sellMessage, setSellMessage] = useState(false);
+
   const sellHandler = async (e) => {
     if (roxoData.roxoAmount !== "" || roxoData.roxoAmount !== null) {
       if (maxLimit > 0) {
         const sellRoxoFunc = await sellRoxo(roxoData.toString());
-        // console.log(sellRoxoFunc, "sellRoxoFunc");
+        console.log(sellRoxoFunc, "sellRoxoFunc return");
+        // if (sellRoxoFunc) {
+        //   setSellMessage(true);F
+        //   setTimeout(() => setSellMessage(false), 4000);
+        // }
         // console.log("sell Handler is called");
         setError({ ...error, sellError: "" });
       } else {
@@ -262,9 +303,9 @@ const BuyForm = ({ adressState }) => {
       <div className="buy-form-style">
         <div className="col-md-12 sell-main-heading">
           <p>
-            Get back your 70% amount anytime, if you purchase in pre-sale
-            duration <br />
-            <span className="color-sell"> TOKENS </span>
+            "Get back your 70% amount anytime, if you purchase in pre-sale
+            duration" <br />
+            {/* <span className="color-sell"> TOKENS </span> */}
           </p>
         </div>
         <div className="col-md-12  buy-sell-flex">
@@ -398,6 +439,12 @@ const BuyForm = ({ adressState }) => {
         )}
       </div>
 
+      <div className="toast-outer">
+        {sucessMesssage && (
+          <h3 className="toast-successMesage-style">Transaction Successfull</h3>
+        )}
+      </div>
+
       {/* ---------sell form here-------- */}
       {sellForm && (
         <div className="buy-form-style">
@@ -516,7 +563,11 @@ const BuyForm = ({ adressState }) => {
           </div>
         </div>
       )}
-
+      <div className="toast-outer">
+        {sellMessage && (
+          <h3 className="toast-successMesage-style">Successfully Sold</h3>
+        )}
+      </div>
       <Footer />
     </>
   );
