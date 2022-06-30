@@ -36,14 +36,19 @@ const PreSale = () => {
   const [showModal, setShowModal] = useState(false);
   const handleChange = () => {
     setShowModal(true);
+    sessionStorage.setItem("presale", true);
   };
   const handleClose = () => {
     setShowModal(false);
   };
+  const data = sessionStorage.getItem("presale");
+
   useEffect(() => {
-    setTimeout(() => {
-      handleChange();
-    }, 1000);
+    if (!data) {
+      setTimeout(() => {
+        handleChange();
+      }, 1000);
+    }
   }, []);
 
   // useEffect(() => {
@@ -102,7 +107,7 @@ const PreSale = () => {
                     </div>
                   </div>
                 </div>
-                <Link to="/buyForm">
+                <Link to="/buySell">
                   <div className="buy-btn-outer">
                     <button className="buy-btn-inner">Click me</button>
                   </div>

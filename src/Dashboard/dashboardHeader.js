@@ -111,7 +111,7 @@ const DashboardHeader = () => {
             </div>
           </Link> */}
         <div className="header-buttons-outer-flex">
-          <Link to="/buyForm">
+          <Link to="/buySell">
             <button className="header-price-button-style font-style-header">
               $ 5.09
             </button>

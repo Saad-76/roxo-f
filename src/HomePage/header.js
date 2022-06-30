@@ -90,7 +90,7 @@ const Header = () => {
         </Link>
 
         <div className="header-buttons-outer-flex">
-          <Link to="/buyForm">
+          <Link to="/buySell">
             <button className="header-price-button-style font-style-header">
               $ 0.0001
             </button>
@@ -129,7 +129,7 @@ const Header = () => {
           </div>
         </Link>
         <div>
-          <Link to="/buyForm">
+          <Link to="/buySell">
             <button className="header-price-button-style font-style-header">
               $ 0.0001
             </button>

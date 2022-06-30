@@ -14,7 +14,7 @@ const Buy = () => {
             <h4> Roxo Website</h4>
 
             <button className="buy-button-style">
-              <Link to="/buyForm">Buy</Link>
+              <Link to="/buySell">Buy</Link>
             </button>
           </div>
           <div className="col-md-6 buy-image-outer">

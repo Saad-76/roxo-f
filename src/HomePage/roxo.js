@@ -22,7 +22,7 @@ const Roxo = () => {
           </p>
           <div className="buy-button-outer">
             <button className="buy-button-style">
-              <Link to="/buyForm">Buy</Link>
+              <Link to="/buySell">Buy</Link>
             </button>
           </div>
         </div>

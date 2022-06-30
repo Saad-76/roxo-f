@@ -78,7 +78,7 @@ const Routes = () => {
           <Route path="/other">
             <Other />
           </Route>
-          <Route path="/buyForm">
+          <Route path="/buySell">
             <BuyForm />
           </Route>
           <Route path="/portfolio">
@@ -95,13 +95,13 @@ const Routes = () => {
             <MarketProductDetail />
           </Route>
           <Route path="/no_job">
-            <NoJob/>
+            <NoJob />
           </Route>
           <Route path="/terms_conditions">
-            <TermsAndConditions/>
+            <TermsAndConditions />
           </Route>
           <Route path="/privacy_policy">
-            <PrivacyPolicy/>
+            <PrivacyPolicy />
           </Route>
           {/* -----------------Private-------- */}
           <Route path="/dashboard">
