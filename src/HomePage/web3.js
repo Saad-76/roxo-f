@@ -182,6 +182,17 @@ export async function checkNetwork() {
   }
 }
 
+// export async function sellRoxo(amountVal) {
+//   //its a usd Value
+//   const contract = new ethers.Contract(
+//     contractInterface.Address,
+//     contractInterface.ABI,
+//     provider.getSigner()
+//   );
+//   let tx = await contract.sell(ethers.utils.parseEther(amountVal));
+//   provider.waitForTransaction(tx.hash, 1, 300000, () => {});
+// }
+
 export async function sellRoxo(amountVal) {
   //its a usd Value
   const contract = new ethers.Contract(
@@ -190,7 +201,9 @@ export async function sellRoxo(amountVal) {
     provider.getSigner()
   );
   let tx = await contract.sell(ethers.utils.parseEther(amountVal));
-  provider.waitForTransaction(tx.hash, 1, 300000, () => {});
+  let res = await provider.waitForTransaction(tx.hash, 1, 300000, () => {
+    return { status: "Sucessful", result: res };
+  });
 }
 
 export async function ironSecure(_user) {

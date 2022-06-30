@@ -238,16 +238,18 @@ const BuyForm = ({ adressState }) => {
   const [sellMessage, setSellMessage] = useState(false);
 
   const sellHandler = async (e) => {
+    console.log("sell Handler is called");
     if (roxoData.roxoAmount !== "" || roxoData.roxoAmount !== null) {
       if (maxLimit > 0) {
-        const sellRoxoFunc = await sellRoxo(roxoData.toString());
+        const sellRoxoFunc = await sellRoxo(roxoData);
         console.log(sellRoxoFunc, "sellRoxoFunc return");
-        // if (sellRoxoFunc) {
-        //   setSellMessage(true);F
-        //   setTimeout(() => setSellMessage(false), 4000);
-        // }
+        if (sellRoxoFunc !== "" || sellRoxoFunc !== null) {
+          setSellMessage(true);
+          setTimeout(() => setSellMessage(false), 4000);
+        }
         // console.log("sell Handler is called");
         setError({ ...error, sellError: "" });
+        setRoxoData({ ...roxoData, roxoAmount: "" });
       } else {
         setError({ ...error, limitError: "Your balance is low" });
         setError({ ...error, sellError: "" });
