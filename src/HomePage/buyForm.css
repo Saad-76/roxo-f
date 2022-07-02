@@ -250,6 +250,39 @@
   color: white;
   border-radius: 12px;
 }
+.toast-outer-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0%;
+  /* font-family: Cinzel; */
+  /* text-align: center; */
+}
+.toast-outer-message h3 {
+  font-family: Cinzel;
+  font-weight: bold;
+}
+.toast-outer-message p {
+  font-family: Cinzel;
+}
+.toast-message-inner {
+  position: absolute;
+  background-color: #393469;
+  height: 14%;
+  width: 28%;
+  margin-top: -12px;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 12px;
+}
+.loading-style {
+  text-align: center;
+}
+.complete-text-style {
+  margin-top: 6px;
+}
 @media screen and (max-width: 900px) {
   .swap-button-inner {
     margin-top: 24px;

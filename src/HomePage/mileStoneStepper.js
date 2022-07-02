@@ -118,7 +118,7 @@ const MileStoneStepper = () => {
           <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">
               <div className="stepper-inner-heading">
-                <h3>Q2- 2022</h3>
+                <h3>Q2/3- 2022</h3>
               </div>
               <div className="col-md-12 d-flex milestone-inner-content">
                 <div className="col-md-6">

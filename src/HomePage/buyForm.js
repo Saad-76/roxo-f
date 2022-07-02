@@ -21,6 +21,7 @@ import {
   buyRoxoOne,
   BuyRoxoTwo,
 } from "./web3";
+import complete from "../Assests/web roxo/sellForm/complete.png";
 import "./buyForm.css";
 
 const BuyForm = ({ adressState }) => {
@@ -89,17 +90,18 @@ const BuyForm = ({ adressState }) => {
   const buyHandler = async (e) => {
     if (data.amount !== "") {
       try {
+        setLoader(true);
         const buy = await buyRoxoOne(enteredValue);
-        console.log(buy, "buy form first response ");
-        if (buy.status === "Sucessful") {
-          setLoader(true);
-        }
+        // console.log(buy, "buy form first response ");
+        // if (buy.status === "Sucessful") {
+        //   setLoader(true);
+        // }
         setWalletError({ ...waletError, networkError: "" });
         setData({ ...data, amount: "" });
         setWalletError({ ...waletError, formError: "" });
 
         const buySecond = await BuyRoxoTwo();
-        console.log(buySecond, "buy Second response ");
+        // console.log(buySecond, "buy Second response ");
         if (buySecond !== "") {
           setLoader(false);
           setSuccessMessage(true);
@@ -207,7 +209,7 @@ const BuyForm = ({ adressState }) => {
   const [roxoData, setRoxoData] = useState({
     roxoAmount: "",
   });
-  const [error, setError] = useState({
+  const [sellFormError, setError] = useState({
     sellError: "",
     roxoError: "",
     limitError: "",
@@ -222,13 +224,13 @@ const BuyForm = ({ adressState }) => {
           const finalRoxoValue = roxoValue * 0.0001;
           const lastRoxoValue = finalRoxoValue.toString();
           setRoxoData(lastRoxoValue);
-          setError({ ...error, roxoError: "" });
-          setError({ ...error, negValError: "" });
+          setError({ ...sellFormError, roxoError: "" });
+          setError({ ...sellFormError, negValError: "" });
         } else {
-          setError({ ...error, negValError: "Enter Positive Value" });
+          setError({ ...sellFormError, negValError: "Enter Positive Value" });
         }
       } else {
-        setError({ ...error, roxoError: "Field is require" });
+        setError({ ...sellFormError, roxoError: "Field is require" });
       }
     } else {
       console.log("Fill all fields");
@@ -236,28 +238,57 @@ const BuyForm = ({ adressState }) => {
   };
 
   const [sellMessage, setSellMessage] = useState(false);
+  const [sellLoader, setSellLoader] = useState(false);
 
-  const sellHandler = async (e) => {
-    console.log("sell Handler is called");
-    if (roxoData.roxoAmount !== "" || roxoData.roxoAmount !== null) {
+  // const sellHandler = async (e) => {
+  //   console.log(roxoData.roxoAmount,"dtaa vale")
+  //   if (
+  //     roxoData.roxoAmount !== "" ||
+  //     roxoData.roxoAmount !== null
+  //   ) {
+  //     if (maxLimit > 0) {
+  //       setSellLoader(true);
+  //       const sellRoxoFunc = await sellRoxo(roxoData);
+  //       if (sellRoxoFunc !== "" || sellRoxoFunc !== null) {
+  //         setSellLoader(false);
+  //         setSellMessage(true);
+  //         setTimeout(() => setSellMessage(false), 4000);
+  //       }
+  //       setError({ ...error, sellError: "" });
+  //       setRoxoData({ ...roxoData, roxoAmount: "" });
+  //       setError({ ...error, limitError: "" });
+  //     } else {
+  //       setError({ ...error, limitError: "Your balance is low" });
+  //       setError({ ...error, sellError: "" });
+  //     }
+  //   } else {
+  //     setError({ ...error, sellError: "Fill above field" });
+  //     setError({ ...error, limitError: "" });
+  //   }
+  // };
+
+  const sellHandler = async () => {
+    if (roxoData.roxoAmount === "" || roxoData.roxoAmount === null) {
+      // console.log(sellFormError.sellError,"error");
+      setError({ sellFormError, sellError: "Fill above field" });
+      setError({ sellFormError, limitError: "" });
+    } else {
       if (maxLimit > 0) {
+        setSellLoader(true);
         const sellRoxoFunc = await sellRoxo(roxoData);
-        console.log(sellRoxoFunc, "sellRoxoFunc return");
+        console.log(sellRoxoFunc, "sellroxoFunc response ");
         if (sellRoxoFunc !== "" || sellRoxoFunc !== null) {
+          setSellLoader(false);
           setSellMessage(true);
           setTimeout(() => setSellMessage(false), 4000);
         }
-        // console.log("sell Handler is called");
-        setError({ ...error, sellError: "" });
-        setRoxoData({ ...roxoData, roxoAmount: "" });
+        setError({ sellFormError, sellError: "" });
+        setRoxoData({ roxoData, roxoAmount: "" });
+        setError({ sellFormError, limitError: "" });
       } else {
-        setError({ ...error, limitError: "Your balance is low" });
-        setError({ ...error, sellError: "" });
+        setError({ sellFormError, limitError: "Your balance is low" });
+        setError({ sellFormError, sellError: "" });
       }
-    } else {
-      setError({ ...error, sellError: "Fill above field" });
-      console.log(error, "error");
-      setError({ ...error, limitError: "" });
     }
   };
 
@@ -430,20 +461,41 @@ const BuyForm = ({ adressState }) => {
         )}
       </div>
 
-      <div className="toast-outer">
+      <div className="toast-outer-message">
         {loader && (
-          <h3 className="toast-mesage-style">
-            Your Transaction is being processed{" "}
-            <div class="spinner-border text-primary" role="status">
-              <span class="visually-hidden">Loading...</span>
+          <div className="toast-message-inner">
+            <div className="d-flex ">
+              <div className="col-md-6">
+                <h3>Processing...</h3>
+              </div>
+              <div className="col-md-6 loading-style">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
             </div>
-          </h3>
+            <div>
+              <p>Your Transaction in Progress</p>
+            </div>
+          </div>
         )}
       </div>
 
-      <div className="toast-outer">
+      <div className="toast-outer-message">
         {sucessMesssage && (
-          <h3 className="toast-successMesage-style">Transaction Successfull</h3>
+          <div className="toast-message-inner">
+            <div className="d-flex ">
+              <div className="col-md-4 loading-style">
+                <img src={complete} alt="image" height="50px" width="50px" />
+              </div>
+              <div className="col-md-6 complete-text-style">
+                <h3>Completed</h3>
+              </div>
+            </div>
+            <div>
+              <p>Transaction Successfully Completed!</p>
+            </div>
+          </div>
         )}
       </div>
 
@@ -481,24 +533,23 @@ const BuyForm = ({ adressState }) => {
                       id="roxoAmounts"
                       value={roxoData.roxoAmount}
                       onChange={handleSellChange}
-                      max="5"
                       placeholder="Enter Amount "
                     />
-                    {error?.roxoError && (
+                    {sellFormError?.roxoError && (
                       <span className="badge badge-danger">
-                        {error?.roxoError}
+                        {sellFormError?.roxoError}
                       </span>
                     )}
-                    {error?.negValError && (
+                    {sellFormError?.negValError && (
                       <span className="badge badge-danger">
-                        {error?.negValError}
+                        {sellFormError?.negValError}
                       </span>
                     )}
                   </div>
 
                   <div className="col-md-12 trading-fee-flex">
                     <div className="col-md-6">
-                      <p className="max-mint-style">Max Limit</p>
+                      <p className="max-mint-style">Max Selling Amount</p>
                     </div>
                     <div className="col-md-6 trading-fee-value">
                       {maxLimit && <p>{maxLimit}</p>}
@@ -542,9 +593,9 @@ const BuyForm = ({ adressState }) => {
                       </button>
                     )}
                   </div>
-                  {error?.sellError && (
+                  {sellFormError?.sellError && (
                     <span className="badge badge-danger">
-                      {error?.sellError}
+                      {sellFormError?.sellError}
                     </span>
                   )}
                   {waletError?.networkError && (
@@ -553,9 +604,9 @@ const BuyForm = ({ adressState }) => {
                     </span>
                   )}
 
-                  {error?.limitError && (
+                  {sellFormError?.limitError && (
                     <span className="badge badge-danger">
-                      {error?.limitError}
+                      {sellFormError?.limitError}
                     </span>
                   )}
                 </div>
@@ -565,9 +616,41 @@ const BuyForm = ({ adressState }) => {
           </div>
         </div>
       )}
-      <div className="toast-outer">
+
+      <div className="toast-outer-message">
         {sellMessage && (
-          <h3 className="toast-successMesage-style">Successfully Sold</h3>
+          <div className="toast-message-inner">
+            <div className="d-flex ">
+              <div className="col-md-4 loading-style">
+                <img src={complete} alt="image" height="50px" width="50px" />
+              </div>
+              <div className="col-md-6 complete-text-style">
+                <h3>Completed</h3>
+              </div>
+            </div>
+            <div>
+              <p>Transaction Successfully Completed!</p>
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="toast-outer-message">
+        {sellLoader && (
+          <div className="toast-message-inner">
+            <div className="d-flex ">
+              <div className="col-md-6">
+                <h3>Processing...</h3>
+              </div>
+              <div className="col-md-6 loading-style">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p>Your Transaction in Progress</p>
+            </div>
+          </div>
         )}
       </div>
       <Footer />
