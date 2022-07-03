@@ -5,8 +5,6 @@ import Footer from "./footer";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 import TokenCoin from "../Assests/Token Coin.png";
 import Coin from "../Assests/web roxo/wallet/Binance.png";
@@ -37,7 +35,7 @@ const BuyForm = ({ adressState }) => {
     setSellForm(true);
     const localAdress = localStorage.getItem("complete_wallet_address");
     const secureValue = await ironSecure(localAdress);
-    const maxValueData = secureValue / 0.0001;
+    const maxValueData = secureValue / 0.00005;
     setMaxLimit(maxValueData);
     // console.log(maxValueData,"maxValueData")
   };
@@ -209,21 +207,27 @@ const BuyForm = ({ adressState }) => {
   const [roxoData, setRoxoData] = useState({
     roxoAmount: "",
   });
+  const [fieldInput, setFieldInput] = useState("");
+
   const [sellFormError, setError] = useState({
     sellError: "",
     roxoError: "",
     limitError: "",
     negValError: "",
+    exceedError: "",
   });
 
   const handleSellChange = (e) => {
     if (e.target.id === "roxoAmounts") {
       if (e.target.value !== "") {
         if (e.target.value > 0) {
+          setFieldInput(e.target.value);
+          console.log(fieldInput, "fieldInput vlue se");
           const roxoValue = e.target.value;
-          const finalRoxoValue = roxoValue * 0.0001;
+          const finalRoxoValue = roxoValue * 0.00005;
           const lastRoxoValue = finalRoxoValue.toString();
           setRoxoData(lastRoxoValue);
+          // setRoxoData({ ...roxoData, roxoAmount: lastRoxoValue });
           setError({ ...sellFormError, roxoError: "" });
           setError({ ...sellFormError, negValError: "" });
         } else {
@@ -240,54 +244,30 @@ const BuyForm = ({ adressState }) => {
   const [sellMessage, setSellMessage] = useState(false);
   const [sellLoader, setSellLoader] = useState(false);
 
-  // const sellHandler = async (e) => {
-  //   console.log(roxoData.roxoAmount,"dtaa vale")
-  //   if (
-  //     roxoData.roxoAmount !== "" ||
-  //     roxoData.roxoAmount !== null
-  //   ) {
-  //     if (maxLimit > 0) {
-  //       setSellLoader(true);
-  //       const sellRoxoFunc = await sellRoxo(roxoData);
-  //       if (sellRoxoFunc !== "" || sellRoxoFunc !== null) {
-  //         setSellLoader(false);
-  //         setSellMessage(true);
-  //         setTimeout(() => setSellMessage(false), 4000);
-  //       }
-  //       setError({ ...error, sellError: "" });
-  //       setRoxoData({ ...roxoData, roxoAmount: "" });
-  //       setError({ ...error, limitError: "" });
-  //     } else {
-  //       setError({ ...error, limitError: "Your balance is low" });
-  //       setError({ ...error, sellError: "" });
-  //     }
-  //   } else {
-  //     setError({ ...error, sellError: "Fill above field" });
-  //     setError({ ...error, limitError: "" });
-  //   }
-  // };
 
-  const sellHandler = async () => {
+  const sellHandler = async (e) => {
     if (roxoData.roxoAmount === "" || roxoData.roxoAmount === null) {
-      // console.log(sellFormError.sellError,"error");
       setError({ sellFormError, sellError: "Fill above field" });
-      setError({ sellFormError, limitError: "" });
     } else {
       if (maxLimit > 0) {
-        setSellLoader(true);
-        const sellRoxoFunc = await sellRoxo(roxoData);
-        console.log(sellRoxoFunc, "sellroxoFunc response ");
-        if (sellRoxoFunc !== "" || sellRoxoFunc !== null) {
-          setSellLoader(false);
-          setSellMessage(true);
-          setTimeout(() => setSellMessage(false), 4000);
+        if (maxLimit > fieldInput) {
+          setSellLoader(true);
+          const sellRoxoFunc = await sellRoxo(roxoData);
+          console.log(sellRoxoFunc, "sellroxoFunc response ");
+          if (sellRoxoFunc !== "" || sellRoxoFunc !== null) {
+            setSellLoader(false);
+            setSellMessage(true);
+            setTimeout(() => setSellMessage(false), 4000);
+          }
+          setError({ sellFormError, sellError: "" });
+          setRoxoData({ roxoData, roxoAmount: "" });
+          setError({ sellFormError, limitError: "" });
+        } else {
+          setError({ sellFormError, exceedError: "Not Enough Credit" });
         }
-        setError({ sellFormError, sellError: "" });
-        setRoxoData({ roxoData, roxoAmount: "" });
-        setError({ sellFormError, limitError: "" });
       } else {
         setError({ sellFormError, limitError: "Your balance is low" });
-        setError({ sellFormError, sellError: "" });
+        // setError({ sellFormError, sellError: "" });
       }
     }
   };
@@ -332,7 +312,7 @@ const BuyForm = ({ adressState }) => {
           </div>
         </div>
       )}
-
+      {/* ------------buy-form code here---- */}
       <div className="buy-form-style">
         <div className="col-md-12 sell-main-heading">
           <p>
@@ -607,6 +587,11 @@ const BuyForm = ({ adressState }) => {
                   {sellFormError?.limitError && (
                     <span className="badge badge-danger">
                       {sellFormError?.limitError}
+                    </span>
+                  )}
+                  {sellFormError?.exceedError && (
+                    <span className="badge badge-danger">
+                      {sellFormError?.exceedError}
                     </span>
                   )}
                 </div>
