@@ -135,7 +135,7 @@ const BuyForm = ({ adressState }) => {
           let inputData = e.target.value;
           setEnteredValue(inputData);
 
-          let finalValue = inputData / 0.0001;
+          let finalValue = inputData / 0.00005;
           setData(finalValue);
           const swapValue = finalValue.toString();
           setCoinValue(swapValue);
@@ -263,7 +263,7 @@ const BuyForm = ({ adressState }) => {
           setRoxoData({ roxoData, roxoAmount: "" });
           setError({ sellFormError, limitError: "" });
         } else {
-          setError({ sellFormError, exceedError: "Not Enough Credit" });
+          setError({ sellFormError, exceedError: `Amount can't be exceed from "Max selling amount"` });
         }
       } else {
         setError({ sellFormError, limitError: "Your balance is low" });

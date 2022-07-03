@@ -47,7 +47,7 @@ const connectWallet = async () => {
   }
 };
 
-const CONTRACT_ADDRESS = "0x775D514De9578e4501362ec1A46869964F8d66fb";
+const CONTRACT_ADDRESS = "0xE83EF8D8e845679A42B4A08063977C0A336091C1";
 
 const test = async () => {
   const contractInstance = new ethers.Contract(
@@ -61,47 +61,6 @@ const test = async () => {
 
 export { test };
 export { connectWallet };
-
-// export async function buyRoxo(amountVal) {
-//   let usdAddress = await getAddress();
-//   const contract = new ethers.Contract(
-//     usdAddress,
-//     contractInterface.ABI,
-//     provider.getSigner()
-//   );
-//   let approveRes = await contract.approve(
-//     CONTRACT_ADDRESS,
-//     ethers.utils.parseEther(amountVal)
-//   );
-//   console.log(approveRes, "approveRes");
-
-//   provider
-//     .waitForTransaction(approveRes.hash, 1, 300000)
-//     .then(async (result) => {
-//       const contractB = new ethers.Contract(
-//         CONTRACT_ADDRESS,
-//         contractInterface.ABI,
-//         provider.getSigner()
-//       );
-
-//       // .catch((error) => {
-//       //   console.log(error);
-//       //   return "tranfer cancelerd";
-//       // });
-//       let Buyres = await contractB.buy();
-//       provider
-//         .waitForTransaction(Buyres.hash, 1, 300000)
-//         .then(async (Bresult) => {
-//           //Successfully Bought
-//           console.log("Successfully Bought ", Bresult);
-//           // return "successfully transferres";
-//         });
-//       // .catch((error) => {
-//       //   console.log(error);
-//       //   return "tranfer cancelerd";
-//       // });
-//     });
-// }
 
 export async function buyRoxoOne(amountVal) {
   var result;

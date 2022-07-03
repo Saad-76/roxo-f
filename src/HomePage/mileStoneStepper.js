@@ -69,7 +69,7 @@ const MileStoneStepper = () => {
             className="stepper-button-style "
             onClick={handleDataTwo}
           >
-            Q2
+            Q2/3
           </button>
           <div className="stepper-button-inner-line"></div>
 
@@ -78,7 +78,7 @@ const MileStoneStepper = () => {
             className="stepper-button-style "
             onClick={handleDataThree}
           >
-            Q3
+            Q4
           </button>
         </div>
         <div className="col-md-2"></div>
@@ -151,7 +151,7 @@ const MileStoneStepper = () => {
           <div className="col-md-8 mile-stone-middle-flex">
             <div className="stepper-content-background">
               <div className="stepper-inner-heading">
-                <h3>Q3- 2022</h3>
+                <h3>Q4- 2022</h3>
               </div>
               <div className="col-md-12 d-flex milestone-inner-content">
                 <div className="col-md-6">
