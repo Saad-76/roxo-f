@@ -112,8 +112,8 @@ const BuyForm = ({ adressState }) => {
 
   const buyHandler = async (e) => {
     if (data.amount !== "") {
-      try {
-        if (buyInput <= userBalance) {
+      if (buyInput <= userBalance) {
+        try {
           setLoader(true);
           const buy = await buyRoxoOne(enteredValue);
           setWalletError({ ...waletError, networkError: "" });
@@ -126,19 +126,23 @@ const BuyForm = ({ adressState }) => {
             setSuccessMessage(true);
             setTimeout(() => setSuccessMessage(false), 4000);
           }
-        } else {
+        } catch (error) {
           setWalletError({
             ...waletError,
-            moreValueError: "Amount can't be exceed from your balance ",
+            networkError: "Change Your Network to Rinkeyby Test Network",
           });
+          setWalletError({ ...waletError, formError: "" });
+          setLoader(false);
         }
-      } catch (error) {
         setWalletError({
           ...waletError,
-          networkError: "Change Your Network to Rinkeyby Test Network",
+          moreValueError: "",
         });
-        setWalletError({ ...waletError, formError: "" });
-        setLoader(false);
+      } else {
+        setWalletError({
+          ...waletError,
+          moreValueError: "Amount can't be exceed from your balance ",
+        });
       }
     } else {
       setWalletError({ ...waletError, formError: "Fill above field" });
@@ -252,6 +256,10 @@ const BuyForm = ({ adressState }) => {
           setError({ sellFormError, sellError: "" });
           setRoxoData({ roxoData, roxoAmount: "" });
           setError({ sellFormError, limitError: "" });
+          setError({
+            sellFormError,
+            exceedError: "",
+          });
         } else {
           setError({
             sellFormError,
