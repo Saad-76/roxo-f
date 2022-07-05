@@ -47,7 +47,7 @@ const connectWallet = async () => {
   }
 };
 
-const CONTRACT_ADDRESS = "0xE83EF8D8e845679A42B4A08063977C0A336091C1";
+const CONTRACT_ADDRESS = "0x4bD28251a2F6d8b3861A64939C8e33aB95E864Bc";
 
 const test = async () => {
   const contractInstance = new ethers.Contract(
@@ -140,7 +140,6 @@ export async function checkNetwork() {
     }
   }
 }
-
 
 export async function sellRoxo(amountVal) {
   //its a usd Value

@@ -30,6 +30,15 @@ const BuyForm = ({ adressState }) => {
 
   const [maxLimit, setMaxLimit] = useState("");
 
+  const [userBalance, setUserBalance] = useState("");
+  const [buyInput, setBuyInput] = useState("");
+
+  useEffect(async () => {
+    const localAdress = localStorage.getItem("complete_wallet_address");
+    let balance = await getBalance(localAdress);
+    setUserBalance(balance);
+  });
+
   const handleSellForm = async () => {
     setBuyForm(false);
     setSellForm(true);
@@ -56,67 +65,12 @@ const BuyForm = ({ adressState }) => {
     amountError: "",
     negAmountError: "",
     formError: "",
+    moreValueError: "",
   });
   const [loader, setLoader] = useState(false);
   const [sucessMesssage, setSuccessMessage] = useState(false);
 
-  // const buyHandler = async (e) => {
-  //   if (data.amount !== "") {
-  //     try {
-  //       setLoader(true);
-  //       const buy = await buyRoxo(enteredValue);
-  //       setWalletError({ ...waletError, networkError: "" });
-  //       setData({ ...data, amount: "" });
-  //       setWalletError({ ...waletError, formError: "" });
-  //       // setLoader(false);
-  //       console.log(buy, "buy form resp");
-  //     } catch (error) {
-  //       setWalletError({
-  //         ...waletError,
-  //         networkError: "Change Your Network to Rinkeyby Test Network",
-  //       });
-  //       setWalletError({ ...waletError, formError: "" });
-  //       setLoader(false);
-  //     }
-  //   } else {
-  //     setWalletError({ ...waletError, formError: "Fill above field" });
-  //   }
-
-  // };
   // ----------------net check function---
-
-  const buyHandler = async (e) => {
-    if (data.amount !== "") {
-      try {
-        setLoader(true);
-        const buy = await buyRoxoOne(enteredValue);
-        // console.log(buy, "buy form first response ");
-        // if (buy.status === "Sucessful") {
-        //   setLoader(true);
-        // }
-        setWalletError({ ...waletError, networkError: "" });
-        setData({ ...data, amount: "" });
-        setWalletError({ ...waletError, formError: "" });
-
-        const buySecond = await BuyRoxoTwo();
-        // console.log(buySecond, "buy Second response ");
-        if (buySecond !== "") {
-          setLoader(false);
-          setSuccessMessage(true);
-          setTimeout(() => setSuccessMessage(false), 4000);
-        }
-      } catch (error) {
-        setWalletError({
-          ...waletError,
-          networkError: "Change Your Network to Rinkeyby Test Network",
-        });
-        setWalletError({ ...waletError, formError: "" });
-        setLoader(false);
-      }
-    } else {
-      setWalletError({ ...waletError, formError: "Fill above field" });
-    }
-  };
 
   useEffect(async () => {
     const add = localStorage.getItem("wallet_address");
@@ -129,6 +83,8 @@ const BuyForm = ({ adressState }) => {
 
   // ----------------------------------------------
   const handleData = (e) => {
+    // console.log(e.target.value)
+    setBuyInput(e.target.value);
     if (e.target.id === "amount") {
       if (e.target.value !== "") {
         if (e.target.value > 0) {
@@ -151,6 +107,41 @@ const BuyForm = ({ adressState }) => {
         setWalletError({ ...waletError, amountError: "Field is require" });
         setWalletError({ ...waletError, negAmountError: "" });
       }
+    }
+  };
+
+  const buyHandler = async (e) => {
+    if (data.amount !== "") {
+      try {
+        if (buyInput <= userBalance) {
+          setLoader(true);
+          const buy = await buyRoxoOne(enteredValue);
+          setWalletError({ ...waletError, networkError: "" });
+          setData({ ...data, amount: "" });
+          setWalletError({ ...waletError, formError: "" });
+
+          const buySecond = await BuyRoxoTwo();
+          if (buySecond !== "") {
+            setLoader(false);
+            setSuccessMessage(true);
+            setTimeout(() => setSuccessMessage(false), 4000);
+          }
+        } else {
+          setWalletError({
+            ...waletError,
+            moreValueError: "Amount can't be exceed from your balance ",
+          });
+        }
+      } catch (error) {
+        setWalletError({
+          ...waletError,
+          networkError: "Change Your Network to Rinkeyby Test Network",
+        });
+        setWalletError({ ...waletError, formError: "" });
+        setLoader(false);
+      }
+    } else {
+      setWalletError({ ...waletError, formError: "Fill above field" });
     }
   };
 
@@ -244,13 +235,12 @@ const BuyForm = ({ adressState }) => {
   const [sellMessage, setSellMessage] = useState(false);
   const [sellLoader, setSellLoader] = useState(false);
 
-
   const sellHandler = async (e) => {
     if (roxoData.roxoAmount === "" || roxoData.roxoAmount === null) {
       setError({ sellFormError, sellError: "Fill above field" });
     } else {
       if (maxLimit > 0) {
-        if (maxLimit > fieldInput) {
+        if (maxLimit >= fieldInput) {
           setSellLoader(true);
           const sellRoxoFunc = await sellRoxo(roxoData);
           console.log(sellRoxoFunc, "sellroxoFunc response ");
@@ -263,7 +253,10 @@ const BuyForm = ({ adressState }) => {
           setRoxoData({ roxoData, roxoAmount: "" });
           setError({ sellFormError, limitError: "" });
         } else {
-          setError({ sellFormError, exceedError: `Amount can't be exceed from "Max selling amount"` });
+          setError({
+            sellFormError,
+            exceedError: `Amount can't be exceed from "Max selling amount"`,
+          });
         }
       } else {
         setError({ sellFormError, limitError: "Your balance is low" });
@@ -312,6 +305,7 @@ const BuyForm = ({ adressState }) => {
           </div>
         </div>
       )}
+
       {/* ------------buy-form code here---- */}
       <div className="buy-form-style">
         <div className="col-md-12 sell-main-heading">
@@ -426,6 +420,11 @@ const BuyForm = ({ adressState }) => {
                   {waletError?.networkError && (
                     <span className="badge badge-danger">
                       {waletError?.networkError}
+                    </span>
+                  )}
+                  {waletError?.moreValueError && (
+                    <span className="badge badge-danger">
+                      {waletError?.moreValueError}
                     </span>
                   )}
                   {waletError?.formError && (
