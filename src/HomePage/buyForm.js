@@ -119,7 +119,6 @@ const BuyForm = ({ adressState }) => {
           setWalletError({ ...waletError, networkError: "" });
           setData({ ...data, amount: "" });
           setWalletError({ ...waletError, formError: "" });
-
           const buySecond = await BuyRoxoTwo();
           if (buySecond !== "") {
             setLoader(false);
@@ -260,6 +259,12 @@ const BuyForm = ({ adressState }) => {
             sellFormError,
             exceedError: "",
           });
+          // -------
+          setError({
+            sellFormError,
+            exceedError: ``,
+          });
+  
         } else {
           setError({
             sellFormError,
