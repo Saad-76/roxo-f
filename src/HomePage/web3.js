@@ -165,3 +165,15 @@ export async function ironSecure(_user) {
   console.log(utils.formatEther(BigNumber.from(result)));
   return utils.formatEther(BigNumber.from(result));
 }
+
+
+export async function getUsdBalance(_user) {
+  let usdAddress = await getAddress();
+  const contract = new ethers.Contract(
+    usdAddress,
+    contractInterface.ABI,
+    provider.getSigner()
+  );
+  let result = await contract.balanceOf(_user);
+  return utils.formatEther(BigNumber.from(result));
+}

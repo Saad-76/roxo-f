@@ -18,9 +18,11 @@ import {
   sellRoxo,
   buyRoxoOne,
   BuyRoxoTwo,
+  getUsdBalance,
 } from "./web3";
 import complete from "../Assests/web roxo/sellForm/complete.png";
 import "./buyForm.css";
+import { WindowSharp } from "@mui/icons-material";
 
 const BuyForm = ({ adressState }) => {
   // -----------form handling-----------
@@ -33,11 +35,23 @@ const BuyForm = ({ adressState }) => {
   const [userBalance, setUserBalance] = useState("");
   const [buyInput, setBuyInput] = useState("");
 
-  useEffect(async () => {
+  // useEffect(async () => {
+  //   const localAdress = localStorage.getItem("complete_wallet_address");
+  //   let balance = await getBalance(localAdress);
+  //   setUserBalance(balance);
+  // });
+
+  const [usdtBalance, setUsdtBalance] = useState("");
+
+  useEffect(() => {
     const localAdress = localStorage.getItem("complete_wallet_address");
-    let balance = await getBalance(localAdress);
-    setUserBalance(balance);
-  });
+    let usdBalance = getUsdBalance(localAdress);
+    usdBalance.then((res) => {
+      console.log(res, "response");
+      setUsdtBalance(res);
+      setUserBalance(res);
+    });
+  }, []);
 
   const handleSellForm = async () => {
     setBuyForm(false);
@@ -123,6 +137,7 @@ const BuyForm = ({ adressState }) => {
           if (buySecond !== "") {
             setLoader(false);
             setSuccessMessage(true);
+            setTimeout(() => setUsdtBalance(usdtBalance-buyInput), 14000);
             setTimeout(() => setSuccessMessage(false), 4000);
           }
         } catch (error) {
@@ -264,7 +279,6 @@ const BuyForm = ({ adressState }) => {
             sellFormError,
             exceedError: ``,
           });
-  
         } else {
           setError({
             sellFormError,
@@ -398,6 +412,14 @@ const BuyForm = ({ adressState }) => {
                         {waletError?.negAmountError}
                       </span>
                     )}
+                  </div>
+                  <div className="col-md-12 trading-fee-flex">
+                    <div className="col-md-6">
+                      <p className="max-mint-style">Your Balance :</p>
+                    </div>
+                    <div className="col-md-6 trading-fee-value">
+                      {usdtBalance && <p>{usdtBalance}</p>}
+                    </div>
                   </div>
                   <div className="col-md-12 input-display-sellform ">
                     <label>
