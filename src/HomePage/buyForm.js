@@ -126,7 +126,10 @@ const BuyForm = ({ adressState }) => {
 
   const buyHandler = async (e) => {
     if (data.amount !== "") {
-      if (buyInput <= userBalance) {
+      if (
+        parseInt(buyInput) < parseInt(userBalance) ||
+        parseInt(buyInput) === parseInt(userBalance)
+      ) {
         try {
           setLoader(true);
           const buy = await buyRoxoOne(enteredValue);
@@ -137,7 +140,7 @@ const BuyForm = ({ adressState }) => {
           if (buySecond !== "") {
             setLoader(false);
             setSuccessMessage(true);
-            setTimeout(() => setUsdtBalance(usdtBalance-buyInput), 14000);
+            setTimeout(() => setUsdtBalance(usdtBalance - buyInput), 14000);
             setTimeout(() => setSuccessMessage(false), 4000);
           }
         } catch (error) {
