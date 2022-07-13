@@ -66,6 +66,12 @@ const BuyForm = ({ adressState }) => {
   const handleBuyForm = () => {
     setBuyForm(true);
     setSellForm(false);
+    const localAdress = localStorage.getItem("complete_wallet_address");
+    let usdBalance = getUsdBalance(localAdress);
+    usdBalance.then((res) => {
+      console.log(res, "response");
+      setUsdtBalance(res);
+    });
   };
 
   const [data, setData] = useState({
